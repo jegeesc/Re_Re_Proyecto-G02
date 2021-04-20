@@ -3,6 +3,7 @@ body{
 	background-color: #8343A1;
 	margin: 0;
 	padding: 0;
+	position: absolute;
 }
 ul{
 	list-style: none;
@@ -10,9 +11,15 @@ ul{
 	align-items: center;
 }
 .divLanding{
-	border: 1px solid black;
+	border: 1px solid white;
 	background-color: white;
 	height: auto;
+}
+.encabezado{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
 }
 .item{
 	margin: 0 auto;
