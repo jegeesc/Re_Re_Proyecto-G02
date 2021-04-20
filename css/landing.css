@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+	background-color: #8343A1;
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+.divLanding{
+	border: 1px solid black;
+	background-color: white;
+	height: auto;
+}
+.item{
+	margin: 0 auto;
+}
+.logo{
+	width: 70%;
+	height: auto;
+}
+.login{ 
+	float: right;
+	margin-right: 50px; 
+	width: 15%;
+	height: auto;
+}
+.titulo{
+	font-family: "Playlist Caps";
+	font-size: 900%;
+	color: white;
+	text-align: center;
+	margin: 30px;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+.portadagira{
+	background-color: white;
+	transform: skewY(-10deg);
+	height: 700px;
+	position: relative;
+}
+.nogira{
+	position: absolute;
+	transform: skewY(10deg);
+	width: 80%;
+	top: 15%;
+	height: auto;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+}
+.subtitulo{
+	padding-top: 10%; 
+	font-family: "Montserrat";
+	font-size: 95%;
+	text-align: center;
+	color: white;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.div_info{
+	text-align: center;
+	padding-top: 10%;
+}
+.info{
+	font-family: "Montserrat";
+	font-size: 100%;
+	border-radius: 15px;
+	padding: 40px;
+	color: #8343A1;
+	background-color: white;
+	text-decoration: none;
+}
+.centrar_flecha{
+	text-align: center;
+	padding-top: 6%;
+}
+.flecha_bajar{
+	left: 0;
+	right: 0;
+	width: 15%;
+	height: auto;
+}
