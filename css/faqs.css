@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
 .borde{
-    border: red solid 1px;
+   // border: red solid 1px;
 
 }
 #WIP{
@@ -17,20 +17,22 @@
     display: flex;
     flex-direction:row;
     border: solid #2dc5bd 1px;
-    font-family: "Montserrat";
-    font-size: 200%;
-    font-weight: bold;
     text-align: center;
     color: dimgrey;
     margin-left: 10%;
     margin-right: 20px;
     align-items: center;
-
-.pregunta>p{
-    width: 30%;
-    border: mediumslateblue solid 1px;
-    display: block;
+    justify-content: start;
 }
+.texto-pregunta{
+    display: block;
+    display: flex;
+
+    border: chocolate solid 1px;
+    font-family: "Montserrat";
+    font-size: 300%;
+    font-weight: bold;
+    flex: 1 1 0;
 }
 
 .preguntas{
@@ -43,5 +45,14 @@
 }
 
 .flecha-mas{
-    width: 10%;
+    width: 60%;
+    border: #ff3f02 solid 1px;
+
+}
+.flecha-mas-cont{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: red solid 1px;
+    flex: 0.2 1 0;
 }
