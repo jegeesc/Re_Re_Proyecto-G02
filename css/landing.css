@@ -106,14 +106,29 @@ ul{
 /* --------------------FOOTER----------------------------*/
 .piePagina{
 	background-color: white;
-	display: flex;
 	width: 100%;
-	flex-direction: column;
 	text-align: center;
+	display: flex;
+}
+#contenedorFooter{
+	display: flex;
+	flex-direction: column;
+	margin-right: auto;
+	margin-left: 28%;
 }
 .textoFooter{
 	flex: 1 1 0;
+	text-decoration: none;
+	color: darkgrey;
+}
+.copyright{
+	flex: 1 1 0;
+	text-decoration: none;
+	color: darkgrey;
+	font-size: 0.85rem;
 }
 #imagenFooter{
-	flex: 1 1 0;
+	height: 5rem;
+	width: 10rem;
+	order: -1;
 }
