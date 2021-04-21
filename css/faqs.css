@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+.borde{
+    border: red solid 1px;
+
+}
+#WIP{
+    color: red;
+    font-size: 500%;
+    font-family:"Modern No. 20";
+}
+.ng{
+    transform: skewY(10deg);
+}
+.pregunta{
+    width: 70%;
+    display: flex;
+    flex-direction:row;
+    border: solid #2dc5bd 1px;
+    font-family: "Montserrat";
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+    color: dimgrey;
+    margin-left: 10%;
+    margin-right: 20px;
+    align-items: center;
+
+.pregunta>p{
+    width: 30%;
+    border: mediumslateblue solid 1px;
+    display: block;
+}
+}
+
+.preguntas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border: #8343A1 solid 1px;
+
+}
+
+.flecha-mas{
+    width: 10%;
+}
