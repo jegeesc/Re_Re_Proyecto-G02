@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Iniciar sesión</title>
+	<link rel="stylesheet" type="text/css" href="estiloLogin.css">
+</head>
+<body>
+	<!-- empieza la sección del login que se acopla -->
+	<section class="login_inicioSesion" id="login_id01">
+		<form class="login_01" name="login" id="login_formulario" action="#">
+			<!-- contenedor principal de los elementos -->
+			<div class="login_redondeado">
+				<!-- contenedor que incluye la imagen -->
+				<div class="login_circulo">
+					<img src="images_login/usuario.png" alt="usuario" class="login_usuario">
+				</div>
+				<!-- contendor de la casilla usuario -->
+				<div class="login_user" id="login_casilla">
+					<input type="text" name="user" placeholder="Usuario" value="" required>
+				</div>
+				<!-- contenedor de la casilla contraseña -->
+				<div class="login_contraseña" id="login_casilla">
+					<input type="password" name="psw" placeholder="Contraseña" value="" required>
+				</div>
+				<!-- botón enviar -->
+				<input type="button" class="login_boton" value="INICIAR SESIÓN" onclick="Login()"></input>
+				<!-- téxto con un enlace a la parte de contacto (Pablo) -->
+   				<p class="login_cuenta">¿No tienes cuenta? Pídela <a href="#">aquí</a></p>
+			</div>
+		</form>
+		<script src="login.js"></script>
+	</section>
+	<!-- fin de la sección login -->
+</body>
+</html>

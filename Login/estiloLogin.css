@@ -1,0 +1,142 @@
+/*Globales*/
+/*Fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/*Añade en fondo a la pàgina*/
+body {
+	background-image: url("images_login/fondo2.jpg");
+}
+/*Edita las letras de los input correspondientes*/
+input[type=text], input[type=password] {
+  	padding: 12px 20px;
+}
+/*Específicos*/
+/*Relleno en la parte de arriba de la sección*/
+.login_inicioSesion {
+	padding-top: 100px;
+}
+/*Todo el formulario se centra y ocupa el 90% de la página a lo ancho*/
+.login_01{
+	margin: 0 auto;
+  width: 30%
+}
+/*Redondea las esquinas del contenedor que va a incluir todos los elementos*/
+.login_redondeado{
+	position: relative;
+	text-align:center;
+	margin: 0 auto;
+	background: white;
+	margin-top: 20px;
+	border:2px solid black;
+    border-radius:40px;
+    padding-top: 75px; 
+}
+/*Hace un circulo en el contenedor de la imagen y se superpone*/
+.login_circulo {
+	position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: white;
+ 	border: 2px solid #000;
+ 	top: -70px;
+ 	padding: 20px;
+  	left: 0;
+  	right: 0;
+  	margin: 0 auto;
+}	
+/*Para que ocupe el 100% del contenedor en el que está incluido*/
+.login_usuario {
+  max-width: 100%;
+}
+/*Edita las casillas de usuario y contraseña*/
+#login_casilla {
+ 	padding: 12px;
+ 	padding-left: 28px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Añade dentro de la casilla de usuario una imagen y estilo al recuadro*/
+.login_user{
+	border-radius:22px;
+	background-image: url('images_login/usuario.png');
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	background-size: 20px;
+	display: flex;
+	align-items: center;
+	height: 20px;
+	border: 1px solid black;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/*Elimina los bordes del recuadro*/
+.login_user input {
+	width: 100%;
+ 	border: none;
+}
+/*Elimina los bordes del recuadro al escribir*/
+.login_user input:focus {
+  outline: none;
+}
+/*Añade dentro de la casilla de contraseña una imagen y estilo al recuadro*/
+.login_contraseña{
+	border-radius:22px;
+  background-image: url('images_login/password.png');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 20px;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  border: 1px solid black;
+   margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*Elimina los bordes del recuadro*/
+.login_contraseña input {
+	width: 100%;
+  	border: none;
+}
+/*Elimina los bordes del recuadro al escribir*/
+.login_contraseña input:focus {
+  outline: none;
+}
+/*Añade estilo al botón para iniciar sesión*/
+.login_boton {
+  background-color: #8343A1;
+  color: white;
+  padding: 20px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 85%;
+  border-radius:22px;
+  font-size: 18px;
+  font-family: "Montserrat";
+}
+/*Añade estilo al botón para iniciar sesión cuando el ratón está encima*/
+.login_boton:hover {
+  opacity: 0.8;
+}
+/*Añade estilo a la letra del final*/
+.login_cuenta{
+	font-family: "Montserrat";
+	font-size: 18px;
+}
+/*Hace la página responsive*/
+@media (max-width: 1000px){
+  .login_01{
+    width: 35%;
+  }
+}
+@media (max-width: 992px){
+  .login_01{
+    width: 45%;
+  }
+}
+@media (max-width: 768px){
+	.login_01{
+    width: 75%;
+  }
+}
