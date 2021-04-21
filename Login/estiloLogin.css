@@ -19,6 +19,14 @@ input[type=text], input[type=password] {
 	margin: 0 auto;
   width: 30%
 }
+/*Flecha de salir*/
+.login_salir{
+  margin-left: 40px;
+  margin-top: 15px; 
+  width: 2.5%;
+  height: auto;
+  text-align: left;
+}
 /*Redondea las esquinas del contenedor que va a incluir todos los elementos*/
 .login_redondeado{
 	position: relative;
@@ -161,6 +169,9 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
     width: 45%;
   }
 @media (max-width: 800px){
+  .login_salir{ 
+  width: 5%;
+  }
   .login_logo{
     width: 35%;
   }
@@ -169,8 +180,12 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
   body{
     background-image: url("images_login/fondoX.png");
   }
+  .login_salir{ 
+  margin-left: 10px;
+  width: 8%;
+  }
   .login_inicioSesion{
-    padding-top: 200px;
+    padding-top: 150px;
   }
 	.login_01{
     width: 95%;
