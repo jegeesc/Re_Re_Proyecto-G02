@@ -3,11 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 /*Añade en fondo a la pàgina*/
 body {
-	background-image: url("images_login/fondo2.jpg");
+	background-image: url("images_login/fondo11.png");
 }
 /*Edita las letras de los input correspondientes*/
 input[type=text], input[type=password] {
-  	padding: 12px 20px;
+  padding: 12px 20px;
 }
 /*Específicos*/
 /*Relleno en la parte de arriba de la sección*/
@@ -25,40 +25,53 @@ input[type=text], input[type=password] {
 	text-align:center;
 	margin: 0 auto;
 	background: white;
-	margin-top: 20px;
-	border:2px solid black;
-    border-radius:40px;
-    padding-top: 75px; 
+	margin-top: 10px;
+  border:2px solid grey;
+  border-radius:38px;
+  padding-top: 60px; 
+  padding-bottom: 10px;
 }
 /*Hace un circulo en el contenedor de la imagen y se superpone*/
 .login_circulo {
 	position: absolute;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: white;
- 	border: 2px solid #000;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: white;
+ 	border: 2px solid grey;
  	top: -70px;
- 	padding: 20px;
-  	left: 0;
-  	right: 0;
-  	margin: 0 auto;
+ 	padding: 18px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }	
 /*Para que ocupe el 100% del contenedor en el que está incluido*/
 .login_usuario {
-  max-width: 100%;
+  max-width: 90%;
+}
+/*Logo*/
+.login_divlogo{
+  width: 100%;
+  position: absolute;
+  height: auto;
+  text-align: right;
+  left: -11px;
+  top: 10px;
+}
+.login_logo{
+  width: 35%;
 }
 /*Edita las casillas de usuario y contraseña*/
 #login_casilla {
  	padding: 12px;
  	padding-left: 28px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*Añade dentro de la casilla de usuario una imagen y estilo al recuadro*/
 .login_user{
-	border-radius:22px;
+	border-radius:12px;
 	background-image: url('images_login/usuario.png');
 	background-repeat: no-repeat;
 	background-position: 10px center;
@@ -81,7 +94,7 @@ input[type=text], input[type=password] {
 }
 /*Añade dentro de la casilla de contraseña una imagen y estilo al recuadro*/
 .login_contraseña{
-	border-radius:22px;
+	border-radius:12px;
   background-image: url('images_login/password.png');
   background-repeat: no-repeat;
   background-position: 10px center;
@@ -90,13 +103,13 @@ input[type=text], input[type=password] {
   align-items: center;
   height: 20px;
   border: 1px solid black;
-   margin-top: 10px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 /*Elimina los bordes del recuadro*/
 .login_contraseña input {
 	width: 100%;
-  	border: none;
+  border: none;
 }
 /*Elimina los bordes del recuadro al escribir*/
 .login_contraseña input:focus {
@@ -110,8 +123,8 @@ input[type=text], input[type=password] {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 85%;
-  border-radius:22px;
+  width: 90%;
+  border-radius:12px;
   font-size: 18px;
   font-family: "Montserrat";
 }
@@ -120,23 +133,62 @@ input[type=text], input[type=password] {
   opacity: 0.8;
 }
 /*Añade estilo a la letra del final*/
+a, a:link, a:visited, a:focus, a:hover, a:active{
+  text-decoration:none; 
+  color: black;
+}
+
 .login_cuenta{
 	font-family: "Montserrat";
-	font-size: 18px;
+	font-size: 14px;
+  padding-bottom: 10px;
+
+}
+.login_cuenta:hover{
+  text-decoration: underline;
 }
 /*Hace la página responsive*/
-@media (max-width: 1000px){
+@media (max-width: 2000px){
   .login_01{
     width: 35%;
   }
+  .login_logo{
+    width: 25%;
+  }
 }
-@media (max-width: 992px){
+@media (max-width: 1200px){
   .login_01{
     width: 45%;
   }
-}
-@media (max-width: 768px){
-	.login_01{
-    width: 75%;
+@media (max-width: 800px){
+  .login_logo{
+    width: 35%;
   }
+}
+@media (max-width: 500px){
+  body{
+    background-image: url("images_login/fondoX.png");
+  }
+  .login_inicioSesion{
+    padding-top: 200px;
+  }
+	.login_01{
+    width: 95%;
+  }
+  .login_cuenta{
+    padding-bottom: 10px;
+  }
+}
+@media (max-height: 750px){
+  body{
+    background-image: url("images_login/fondo_movilpeque.png");
+  }
+}
+@media (max-width: 320px){
+  .login_01{
+    width: 100%;
+  }
+  .login_inicioSesion{
+    padding-top: 120px;
+  }  
 }
