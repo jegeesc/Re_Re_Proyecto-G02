@@ -1,77 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<title>LaningPage</title>
-	<link rel="stylesheet" type="text/css" href="css/landing.css">
-	<link rel="stylesheet" type="text/css" href="css/faqs.css">
-	<link rel="stylesheet" type="text/css" href="css/Fuente/style.css">
+    <meta charset="UTF-8">
+    <title>LaningPage</title>
+    <link rel="stylesheet" type="text/css" href="css/landing.css">
+    <link rel="stylesheet" type="text/css" href="css/faqs.css">
+    <link rel="stylesheet" type="text/css" href="css/Fuente/style.css">
+    <link rel="stylesheet" type="text/css" href="css/estiloSensores.css">
+
 </head>
 <body>
 <section class="LaningPage" id="inicio">
-	<header class="encabezado">
-		<div class="divLanding">
-			<nav class="navegacion">
-				<ul>
-					<div class="item">
-						<li><a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a></li>
-					</div>
-					<div class="item"> 
-						<li><a href="Login/login.html"><img class="login" src="images/login.png" alt="login"></a></li>
-					</div>
-				</ul>
-		</nav>
-		</div>
-	</header>
-	<h1 class="titulo">Líderes en control de precisión</h1>
-	<div class="portadagira">
-		<img class="nogira" src="images/portada.png" alt="portada">
-	</div>
-	<p class="subtitulo">Dispón de la capacidad de monitorizar el estado de tu plantación</p>
-	<div class="div_info">
-		<a class="info" href="#">INFÓRMATE</a>
-	</div>
-	<div class="centrar_flecha">
-		<a href="#"><img class="flecha_bajar" src="images/flecha.png"></a>
-	</div>
+    <header class="encabezado">
+        <div class="divLanding">
+            <nav class="navegacion">
+                <ul>
+                    <div class="item">
+                        <li><a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a></li>
+                    </div>
+                    <div class="item">
+                        <li><a href="Login/login.html"><img class="login" src="images/login.png" alt="login"></a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h1 class="titulo">Líderes en control de precisión</h1>
+    <div class="portadagira">
+        <img class="nogira" src="images/portada.png" alt="portada">
+    </div>
+    <p class="subtitulo">Dispón de la capacidad de monitorizar el estado de tu plantación</p>
+    <div class="div_info">
+        <a class="info" href="#">INFÓRMATE</a>
+    </div>
+    <div class="centrar_flecha">
+        <a href="#"><img class="flecha_bajar" src="images/flecha.png"></a>
+    </div>
 
-<!------------------------------------------------------------------------------->
-<!--SECCIÓN SERVICIOS-->
-	<h2>¿Qué sensores ofrecemos?</h2>
+    <!------------------------------------------------------------------------------->
+    <!--SECCIÓN SERVICIOS-->
+    <h2 class="tituloservicios">¿Qué sensores ofrecemos?</h2>
 
-	<div class="sensores">
-		<h4>Sensor de temperatura</h4>
-		<p class="ajustar">
-			<img class="imagenes" src="images/Temperatura.jpg" alt="Sensor Temperatura">
-			<div class="texto">El sensor evalua, mide y recopila la temperatura
-                    ambiental, ajustando el tiempo entre cada medición.
-                        <br>Así los agricultores pueden determinar y variar el trabajo que realizan
-                        según las condiciones en las
-                        que se encuentre la<br> sonda, sin tener que
-                        estar pendiente se la plantación en cada momento.
-                        <br>Tiene una efectividad de entre -15 y 60 ºC.
-			</div>
-		</p>
-	</div>
+    <div>
+        <h4 class="subtitulosensores">Sensor de temperatura</h4>
+        <span class="ajustar">
+            <img class="imagenes" src="images/Temperatura.jpg" alt="Sensor Temperatura">
+        <p class="texto">El sensor evalua, mide y recopila la temperatura
+            ambiental, ajustando el tiempo entre cada medición.
+            <br>Así los agricultores pueden determinar y variar el trabajo que realizan
+            según las condiciones en las
+            que se encuentre la<br> sonda, sin tener que
+            estar pendiente se la plantación en cada momento.
+            <br>Tiene una efectividad de entre -15 y 60 ºC.
+        </p>
+        </span>
+    </div>
 
-	<div class="sensores">
-		<h4>Sensor de humedad</h4>
-		<span class="ajustar">
+    <div class="sensores">
+        <div class="girar">
+        <h4 class="subtitulosensores morado">Sensor de humedad</h4>
+        <span class="ajustar">
                     <p class="texto">
                         El sensor está diseñado para realizar un control a tiempo real sobre
                         la humedad y estado de las plantas, permitiendo así
                         <br> a los agricultores
                         regular el riego de manera más eficiente, sin sufrir excesos con el agua o la alimentación.
-                        <br>Siendo avisados de los diferentes cambios que se pudan encontrar en la
+                        Siendo avisados de los diferentes cambios que se pudan encontrar en la
                         plantació, sin necesidad de que alguien este en el lugar del cultivo.
 						<img class="imagenes" src="images/Humedad.jpg" alt="Sensor Humedad">
 					</p>
 		</span>
-	</div>
+        </div>
+    </div>
 
-	<div class="sensores">
-		<h4>Sensor de salinidad</h4>
-		<span class="ajustar">
+    <div>
+        <h4 class="subtitulosensores">Sensor de salinidad</h4>
+        <span class="ajustar">
 			<img class="imagenes" src="images/Salinidad.jpg" alt="Sensor Salinidad">
 			<p class="texto">
                         Este sensor está diseñado para controlar el nivel de salinidad de los pozos de riego de las
@@ -81,24 +85,26 @@
                         <br>al alcance de tu mano, y además  mejorar la producción.
 			</p>
 		</span>
-	</div>
+    </div>
 
-	<div class="sensores">
-		<h4>Sensor de iluminación</h4>
-		<span class="ajustar">
+    <div class="sensores">
+        <div class="girar">
+            <h4 class="subtitulosensores morado">Sensor de iluminación</h4>
+            <span class="ajustar">
                     <p class="texto">
                         El sensor está diseñado para controlar los niveles de luminosidad, y así determinar si la
                         <br>sonda se encuentra en luz artificial, luz natural o si es de noche o hay luz apagada.
                         <br>Para mejorar el rendimiento de los invernaderos, así como saber las
                         mejores condiciones de crecimiento de los cultivos
                     </p>
-			<img class="imagenes" src="images/Iluminación.jpg" alt="Sensor Iluminación">
-		</span>
-	</div>
+			    <img class="imagenes" src="images/Iluminación.jpg" alt="Sensor Iluminación">
+            </span>
+        </div>
+    </div>
 
-	<div class="sensores">
-		<h4>Acelerómetro</h4>
-		<span class="ajustar">
+    <div>
+        <h4 class="subtitulosensores">Acelerómetro</h4>
+        <span class="ajustar">
                     <img class="imagenes" src="images/Acelerómetro.jpg" alt="Acelerómetro">
                     <p class="texto">
                         El sensor está diseñado para detectar la aceleración puntual sufrida en cada uno de los ejes del mismo.
@@ -107,8 +113,8 @@
                         <br>le afectan en función del tiempo. Informando al agricultor de un posible hurto de la sonda.
                     </p>
                 </span>
-	</div>
-<!------------------------------------------------------------------------------->
+    </div>
+    <!------------------------------------------------------------------------------->
 
 
 </section>
@@ -117,23 +123,24 @@
 <!------------------------------------------------------------------------------->
 <<<<<<< Updated upstream
 <section class="faqs" id="faqs">
-	<h2 id="WIP">EN CONSTRUCCIÓN</h2>
-=======
-<section class="faqs">
->>>>>>> Stashed changes
-	<h2 class="titulo">PREGUNTAS FRECUENTES</h2>
-	<div class="portadagira borde preguntas">
-		<div class="borde ng pregunta">
-			<p class="texto-pregunta">¿Cómo se instalan las sondas?</p>
-		</div>
-		<div class="borde ng pregunta">
-			<p class="texto-pregunta">¿Hay límite de sondas?</p>
-			<a class="flecha-mas-cont" href="#inicio"><img src="images/flechaAbajo.png" class="flecha-mas"></a>
-		</div>
-		<div class="borde ng pregunta">
-			<p class="texto-pregunta">¿Són fáciles de reparar?</p>
-		</div>
-	</div>
+    <h2 id="WIP">EN CONSTRUCCIÓN</h2>
+    =======
+    <section class="faqs">
+        >>>>>>> Stashed changes
+        <h2 class="titulo">PREGUNTAS FRECUENTES</h2>
+        <div class="portadagira borde preguntas">
+            <div class="borde ng pregunta">
+                <p class="texto-pregunta">¿Cómo se instalan las sondas?</p>
+            </div>
+            <div class="borde ng pregunta">
+                <p class="texto-pregunta">¿Hay límite de sondas?</p>
+                <a class="flecha-mas-cont" href="#inicio"><img src="images/flechaAbajo.png" class="flecha-mas"></a>
+            </div>
+            <div class="borde ng pregunta">
+                <p class="texto-pregunta">¿Són fáciles de reparar?</p>
+            </div>
+        </div>
+    </section>
 </section>
 </body>
 </html>
