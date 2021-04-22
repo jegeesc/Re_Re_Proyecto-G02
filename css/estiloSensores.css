@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 .sensores{
     background-color: white;
     position: relative;
     transform: skewY(-10deg);
+    height: 700px;
+    margin-top: 10%;
 }
-
 .girar{
     transform: skewY(10deg);
 }
@@ -12,8 +14,7 @@
 .ajustar{
     display: flex;
     justify-content: space-around;
-    width: 70%;
-    border: black 1px solid;
+    width: 80%;
     margin: 1rem auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -21,8 +22,9 @@
 
 }
 .imagenes{
-    width: 200px;
-    height: 200px;
+    width: 370px;
+    height: 370px;
+    border-radius: 15%;
 }
 
 .tituloservicios{
@@ -31,7 +33,7 @@
     color: white;
     text-align: center;
     margin: 30px;
-    padding-top: 27%;
+    padding-top: 10%;
     text-transform: uppercase;
 }
 
@@ -42,9 +44,23 @@
     text-align: center;
     margin: 50px;
     padding-top: 10%;
-    padding-bottom: 10%;
     text-transform: uppercase;
 }
 .morado{
     color: #8343a1;
+}
+
+.textow{
+    color: white;
+    font-family: "Montserrat";
+    font-size: 160%;
+    margin: 10px;
+}
+
+.textom{
+    color: #8343a1;
+    font-family: "Montserrat";
+    font-size: 160%;
+    margin: 10px;
+    font-weight: bold;
 }

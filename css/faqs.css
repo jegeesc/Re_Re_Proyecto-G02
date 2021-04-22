@@ -27,7 +27,6 @@
 .texto-pregunta{
     display: block;
     display: flex;
-
     border: chocolate solid 1px;
     font-family: "Montserrat";
     font-size: 300%;
