@@ -32,20 +32,26 @@ ul{
 .item{
 	margin: 0 auto;
 }
+.item.contacto{
+	text-align: right;
+	width: auto;
+	position: relative;
+	right: -150px;
+	margin: 0 auto;
+}
 .logo{
+	right: 20px;
 	width: 100%;
 	height: auto;
 }
 .cont{
-	float: right;
-	margin-right: 50px;
-	width: 30%;
+	width: 40%;
 	height: auto;
 }
 .login{ 
 	float: right;
 	margin-right: 100px;
-	width: 15%;
+	width: 20%;
 	height: auto;
 }
 .titulo{
