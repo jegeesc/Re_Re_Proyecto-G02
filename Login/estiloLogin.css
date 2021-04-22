@@ -8,6 +8,11 @@ body {
 /*Edita las letras de los input correspondientes*/
 input[type=text], input[type=password] {
   padding: 12px 20px;
+	background-image: url("images_login/fondo2.jpg");
+}
+/*Edita las letras de los input correspondientes*/
+input[type=text], input[type=password] {
+  	padding: 12px 20px;
 }
 /*Específicos*/
 /*Relleno en la parte de arriba de la sección*/
@@ -36,8 +41,13 @@ input[type=text], input[type=password] {
 	margin-top: 10px;
   border:2px solid grey;
   border-radius:38px;
-  padding-top: 60px; 
+  padding-top: 60px;
   padding-bottom: 10px;
+
+	margin-top: 20px;
+	border:2px solid black;
+    border-radius:40px;
+    padding-top: 75px;
 }
 /*Hace un circulo en el contenedor de la imagen y se superpone*/
 .login_circulo {
@@ -68,6 +78,19 @@ input[type=text], input[type=password] {
 }
 .login_logo{
   width: 35%;
+    height: 80px;
+    border-radius: 50%;
+    background: white;
+ 	border: 2px solid #000;
+ 	top: -70px;
+ 	padding: 20px;
+  	left: 0;
+  	right: 0;
+  	margin: 0 auto;
+}	
+/*Para que ocupe el 100% del contenedor en el que está incluido*/
+.login_usuario {
+  max-width: 100%;
 }
 /*Edita las casillas de usuario y contraseña*/
 #login_casilla {
@@ -113,6 +136,17 @@ input[type=text], input[type=password] {
   border: 1px solid black;
   margin-top: 10px;
   margin-bottom: 10px;
+    border-radius:22px;
+    background-image: url('images_login/password.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 /*Elimina los bordes del recuadro*/
 .login_contraseña input {
@@ -133,6 +167,8 @@ input[type=text], input[type=password] {
   cursor: pointer;
   width: 90%;
   border-radius:12px;
+  width: 85%;
+  border-radius:22px;
   font-size: 18px;
   font-family: "Montserrat";
 }
@@ -164,10 +200,11 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
     width: 25%;
   }
 }
-@media (max-width: 1200px){
-  .login_01{
-    width: 45%;
-  }
+@media (max-width: 1200px) {
+    .login_01 {
+        width: 45%;
+    }
+}
 @media (max-width: 800px){
   .login_salir{ 
   width: 5%;
