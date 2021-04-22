@@ -7,8 +7,7 @@ var clic = 1;
 
 //PREGUNTA 1
 function preg1show(){
-    console.log("Entrado")
-    console.log(clic)
+
     if(clic==1){
         document.getElementById("cont-preg").style.height = "100%";
         //preg1
@@ -71,8 +70,7 @@ function preg1show(){
 
 //PREGUNTA 2
 function preg2show(){
-    console.log("Entrado")
-    console.log(clic)
+
     if(clic==1){
         document.getElementById("cont-preg").style.height = "100%";
         //preg2
@@ -130,8 +128,7 @@ function preg2show(){
 
 //PREGUNTA 3
 function preg3show(){
-    console.log("Entrado")
-    console.log(clic)
+
     if(clic==1){
         document.getElementById("cont-preg").style.height = "100%";
         //preg3
