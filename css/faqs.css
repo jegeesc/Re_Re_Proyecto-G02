@@ -49,19 +49,18 @@
     height: 0%;
     opacity: 0%;
     transition: 1s;
+    text-align: justify;
+
 }
 
 .texto-respuesta {
-    display: flex;
-    display: block;
-    flex: 1 1 0;
+
     border: solid 1px coral;
     font-family: "Montserrat";
-    font-size: 100%;
-    max-width: 100%;
+    font-size: 50%;
     font-weight: bold;
-    color: dimgrey;
-    text-align: justify;
+    color: grey;
+
 }
 
 .preguntas {
