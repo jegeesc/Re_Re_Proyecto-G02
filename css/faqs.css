@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
-.borde{
-   // border: red solid 1px;
+
+.borde {
+    border: red solid 1px;
 
 }
-#WIP{
+
+#WIP {
     color: red;
     font-size: 500%;
-    font-family:"Modern No. 20";
+    font-family: "Modern No. 20";
 }
-.ng{
+
+.ng {
     transform: skewY(10deg);
 }
-.pregunta{
+
+.pregunta {
     width: 70%;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     border: solid #2dc5bd 1px;
     text-align: center;
     color: dimgrey;
@@ -23,11 +27,14 @@
     margin-right: 20px;
     align-items: center;
     justify-content: start;
+    opacity: 100%;
+    transition: 1s;
+    height: 30%;
 }
-.texto-pregunta{
+
+.texto-pregunta {
     display: block;
     display: flex;
-
     border: chocolate solid 1px;
     font-family: "Montserrat";
     font-size: 300%;
@@ -35,24 +42,52 @@
     flex: 1 1 0;
 }
 
-.preguntas{
+.respuesta {
+    border: chocolate solid 1px;
+    display: flex;
+    width: 90%;
+    height: 0%;
+    opacity: 0%;
+    transition: 1s;
+}
+
+.texto-respuesta {
+    display: flex;
+    display: block;
+    flex: 1 1 0;
+    border: solid 1px coral;
+    font-family: "Montserrat";
+    font-size: 100%;
+    max-width: 100%;
+    font-weight: bold;
+    color: dimgrey;
+    text-align: justify;
+}
+
+.preguntas {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     border: #8343A1 solid 1px;
 
 }
 
-.flecha-mas{
+.flecha-mas {
     width: 60%;
     border: #ff3f02 solid 1px;
 
 }
-.flecha-mas-cont{
+
+.flecha-mas-cont {
     display: flex;
     justify-content: center;
     width: 100%;
     border: red solid 1px;
     flex: 0.2 1 0;
+}
+.flecha-mas-cont:hover{
+    transition: 1s all;
+    transform: scale(1.2,1.2);
+
 }
