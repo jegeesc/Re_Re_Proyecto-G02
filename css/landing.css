@@ -33,12 +33,18 @@ ul{
 	margin: 0 auto;
 }
 .logo{
-	width: 70%;
+	width: 100%;
+	height: auto;
+}
+.cont{
+	float: right;
+	margin-right: 50px;
+	width: 30%;
 	height: auto;
 }
 .login{ 
 	float: right;
-	margin-right: 50px; 
+	margin-right: 100px;
 	width: 15%;
 	height: auto;
 }
