@@ -146,10 +146,6 @@ function preg3show(){
         document.getElementById("cont-preg2").style.opacity = "100%";
         document.getElementById("cont-preg2").style.height = "10%";
 
-        //preg1
-        document.getElementById("cont-preg1").style.opacity = "0%";
-        document.getElementById("cont-preg1").style.height = "0%";
-
 
         clic = clic + 1;
 
