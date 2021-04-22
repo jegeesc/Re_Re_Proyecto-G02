@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
-.borde{
-   // border: red solid 1px;
+
+.borde {
+ border: red solid 1 px;
 
 }
-#WIP{
+
+#WIP {
     color: red;
     font-size: 500%;
-    font-family:"Modern No. 20";
+    font-family: "Modern No. 20";
 }
-.ng{
+
+.ng {
     transform: skewY(10deg);
 }
-.pregunta{
+
+.pregunta {
     width: 70%;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     border: solid #2dc5bd 1px;
     text-align: center;
     color: dimgrey;
@@ -24,7 +28,8 @@
     align-items: center;
     justify-content: start;
 }
-.texto-pregunta{
+
+.texto-pregunta {
     display: block;
     display: flex;
 
@@ -35,21 +40,22 @@
     flex: 1 1 0;
 }
 
-.preguntas{
+.preguntas {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     border: #8343A1 solid 1px;
 
 }
 
-.flecha-mas{
+.flecha-mas {
     width: 60%;
     border: #ff3f02 solid 1px;
 
 }
-.flecha-mas-cont{
+
+.flecha-mas-cont {
     display: flex;
     justify-content: center;
     width: 100%;
