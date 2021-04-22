@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
 
 .borde {
- border: red solid 1 px;
+    border: red solid 1px;
 
 }
 
@@ -27,17 +27,41 @@
     margin-right: 20px;
     align-items: center;
     justify-content: start;
+    opacity: 100%;
+    transition: 1s;
+    height: 30%;
 }
 
 .texto-pregunta {
     display: block;
     display: flex;
-
     border: chocolate solid 1px;
     font-family: "Montserrat";
     font-size: 300%;
     font-weight: bold;
     flex: 1 1 0;
+}
+
+.respuesta {
+    border: chocolate solid 1px;
+    display: flex;
+    width: 90%;
+    height: 0%;
+    opacity: 0%;
+    transition: 1s;
+}
+
+.texto-respuesta {
+    display: flex;
+    display: block;
+    flex: 1 1 0;
+    border: solid 1px coral;
+    font-family: "Montserrat";
+    font-size: 100%;
+    max-width: 100%;
+    font-weight: bold;
+    color: dimgrey;
+    text-align: justify;
 }
 
 .preguntas {
@@ -61,4 +85,9 @@
     width: 100%;
     border: red solid 1px;
     flex: 0.2 1 0;
+}
+.flecha-mas-cont:hover{
+    transition: 1s all;
+    transform: scale(1.2,1.2);
+
 }
