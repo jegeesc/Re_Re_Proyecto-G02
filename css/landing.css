@@ -115,12 +115,15 @@ ul{
 	width: 100%;
 	text-align: center;
 	display: flex;
+	flex-direction: column;
+	position: relative;
+	bottom: -69px;
+	padding-top: 20px;
 }
-#contenedorFooter{
+.contenedorFooter{
 	display: flex;
 	flex-direction: column;
-	margin-right: auto;
-	margin-left: 28%;
+	width: 100%;
 }
 .textoFooter{
 	flex: 1 1 0;
@@ -134,7 +137,7 @@ ul{
 	font-size: 0.85rem;
 }
 #imagenFooter{
+	display: block;
 	height: 5rem;
 	width: 10rem;
-	order: -1;
 }
