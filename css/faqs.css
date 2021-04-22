@@ -1,17 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
 
-.borde {
-    border: red solid 1px;
-
-}
-
-#WIP {
-    color: red;
-    font-size: 500%;
-    font-family: "Modern No. 20";
-}
-
 .ng {
     transform: skewY(10deg);
 }
@@ -20,7 +9,6 @@
     width: 70%;
     display: flex;
     flex-direction: row;
-    border: solid #2dc5bd 1px;
     text-align: center;
     color: dimgrey;
     margin-left: 10%;
@@ -35,7 +23,6 @@
 .texto-pregunta {
     display: block;
     display: flex;
-    border: chocolate solid 1px;
     font-family: "Montserrat";
     font-size: 300%;
     font-weight: bold;
@@ -43,25 +30,20 @@
 }
 
 .respuesta {
-    border: chocolate solid 1px;
     display: flex;
     width: 90%;
     height: 0%;
     opacity: 0%;
     transition: 1s;
+    text-align: justify;
+
 }
 
 .texto-respuesta {
-    display: flex;
-    display: block;
-    flex: 1 1 0;
-    border: solid 1px coral;
     font-family: "Montserrat";
-    font-size: 100%;
-    max-width: 100%;
+    font-size: 50%;
     font-weight: bold;
-    color: dimgrey;
-    text-align: justify;
+    color: grey;
 }
 
 .preguntas {
@@ -69,25 +51,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: #8343A1 solid 1px;
-
+    padding: 3%;
 }
 
 .flecha-mas {
-    width: 60%;
-    border: #ff3f02 solid 1px;
-
+    width: 65%;
 }
 
 .flecha-mas-cont {
     display: flex;
     justify-content: center;
     width: 100%;
-    border: red solid 1px;
     flex: 0.2 1 0;
 }
-.flecha-mas-cont:hover{
-    transition: 1s all;
-    transform: scale(1.2,1.2);
 
+.flecha-mas-cont:hover {
+    transition: 1s all;
+    transform: scale(1.2, 1.2);
 }
