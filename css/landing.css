@@ -18,6 +18,11 @@ ul{
 	width: 100%;
 	top: 0;
 }
+.LaningPage{
+	position: relative;
+	background-color: #8343a1 ;
+	z-index: 100;
+}
 .divLanding{
 	border: 1px solid white;
 	background-color: white;
@@ -143,4 +148,30 @@ ul{
 	height: 5rem;
 	width: 10rem;
 	order: -1;
+}
+/* ----- BOTON SUBIR ----- */
+
+#flechaSubir{
+	display: inline;
+	text-align: center;
+	position: fixed;
+	z-index: 1;
+	bottom: 125px;
+	right: 0;
+	height: 150px;
+	width: 150px;
+	cursor: pointer;
+	text-decoration: none;
+	padding: 5px;
+	border-radius: 100%;
+	background-color: rgba(198,116,234,0.5);
+	box-shadow: 1px 1px 1px grey;
+
+}
+#flechaSubir{
+	background-color: rgba(198,116,234,0.8);
+}
+#imagenSubir{
+	width: 150px;
+	height: 150px;
 }
