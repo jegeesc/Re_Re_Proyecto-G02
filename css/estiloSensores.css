@@ -10,7 +10,6 @@
 .girar{
     transform: skewY(10deg);
 }
-
 .ajustar{
     display: flex;
     justify-content: space-around;
@@ -19,14 +18,12 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     flex-grow: 1;
-
 }
 .imagenes{
     width: 370px;
     height: 370px;
     border-radius: 15%;
 }
-
 .tituloservicios{
     font-family: "Yanone Kaffeesatz";
     font-size: 900%;
@@ -36,7 +33,6 @@
     padding-top: 10%;
     text-transform: uppercase;
 }
-
 .subtitulosensores{
     font-family: "Yanone Kaffeesatz";
     font-size: 450%;
@@ -49,14 +45,12 @@
 .morado{
     color: #8343a1;
 }
-
 .textow{
     color: white;
     font-family: "Montserrat";
     font-size: 160%;
     margin: 10px;
 }
-
 .textom{
     color: #8343a1;
     font-family: "Montserrat";
