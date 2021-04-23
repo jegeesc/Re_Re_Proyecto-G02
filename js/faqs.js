@@ -24,10 +24,11 @@ function preg1show(){
         //preg2
         document.getElementById("cont-preg2").style.opacity = "100%";
         document.getElementById("cont-preg2").style.height = "10%";
+        document.getElementById("txres2").style.fontSize = "0%";
 
         //preg3
-        document.getElementById("cont-preg3").style.opacity = "0%";
-        document.getElementById("cont-preg3").style.height = "0%";
+        document.getElementById("cont-preg3").style.height = "10%";
+        document.getElementById("txres3").style.fontSize = "0%";
 
 
 
@@ -39,28 +40,32 @@ function preg1show(){
         document.getElementById("respuesta1").style.opacity = "0%";
         document.getElementById("respuesta1").style.height = "0%";
         document.getElementById("preg1").style.transform = "rotate(0deg)";
+        document.getElementById("txres1").style.fontSize = "0%";
 
         document.getElementById("respuesta1").style.transition = "0s";
         document.getElementById("txres1").style.fontSize = "0%";
 
+        document.getElementById("cont-preg1").style.height = "30%";
+
 
         //preg2
         document.getElementById("cont-preg2").style.opacity = "100%";
-        document.getElementById("cont-preg2").style.height = "100%";
+        document.getElementById("cont-preg2").style.height = "30%";
 
         document.getElementById("respuesta2").style.opacity = "0%";
         document.getElementById("respuesta2").style.height = "0%";
         document.getElementById("preg2").style.transform = "rotate(0deg)";
+        document.getElementById("txres2").style.fontSize = "0%";
 
         //preg3
         document.getElementById("cont-preg3").style.opacity = "100%";
-        document.getElementById("cont-preg3").style.height = "100%";
+        document.getElementById("cont-preg3").style.height = "30%";
 
 
         document.getElementById("respuesta3").style.opacity = "0%";
         document.getElementById("respuesta3").style.height = "0%";
         document.getElementById("preg3").style.transform = "rotate(0deg)";
-
+        document.getElementById("txres3").style.fontSize = "0%";
 
         clic = 1;
 
@@ -81,14 +86,15 @@ function preg2show(){
 
         document.getElementById("txres2").style.fontSize = "250%";
 
+
         //preg1
         document.getElementById("cont-preg1").style.opacity = "100%";
         document.getElementById("cont-preg1").style.height = "10%";
 
 
         //preg3
-        document.getElementById("cont-preg3").style.opacity = "0%";
-        document.getElementById("cont-preg3").style.height = "0%";
+        document.getElementById("cont-preg3").style.height = "10%";
+
 
 
         clic = clic + 1;
@@ -103,6 +109,8 @@ function preg2show(){
         document.getElementById("respuesta2").style.transition = "0s";
         document.getElementById("txres2").style.fontSize = "0%";
 
+        document.getElementById("cont-preg2").style.height = "30%";
+
         //preg1
         document.getElementById("cont-preg1").style.opacity = "100%";
         document.getElementById("cont-preg1").style.height = "30%";
@@ -110,6 +118,7 @@ function preg2show(){
         document.getElementById("respuesta1").style.opacity = "0%";
         document.getElementById("respuesta1").style.height = "0%";
         document.getElementById("preg1").style.transform = "rotate(0deg)";
+        document.getElementById("txres1").style.fontSize = "0%";
 
         //preg3
         document.getElementById("cont-preg3").style.opacity = "100%";
@@ -118,7 +127,7 @@ function preg2show(){
         document.getElementById("respuesta3").style.opacity = "0%";
         document.getElementById("respuesta3").style.height = "0%";
         document.getElementById("preg3").style.transform = "rotate(0deg)";
-
+        document.getElementById("txres3").style.fontSize = "0%";
 
         clic = 1;
 
@@ -156,12 +165,16 @@ function preg3show(){
         document.getElementById("respuesta3").style.transition = "0s";
         document.getElementById("txres3").style.fontSize = "0%";
 
+        document.getElementById("cont-preg3").style.height = "30%";
+
         //preg2
         document.getElementById("cont-preg2").style.opacity = "100%";
         document.getElementById("cont-preg2").style.height = "30%";
 
         document.getElementById("respuesta2").style.opacity = "0%";
         document.getElementById("respuesta2").style.height = "0%";
+        document.getElementById("txres2").style.fontSize = "0%";
+        document.getElementById("preg2").style.transform = "rotate(0deg)";
 
         //preg1
         document.getElementById("cont-preg1").style.opacity = "100%";
@@ -170,7 +183,7 @@ function preg3show(){
         document.getElementById("respuesta1").style.opacity = "0%";
         document.getElementById("respuesta1").style.height = "0%";
         document.getElementById("preg1").style.transform = "rotate(0deg)";
-
+        document.getElementById("txres1").style.fontSize = "0%";
 
         clic = 1;
 
