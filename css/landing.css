@@ -121,11 +121,17 @@ ul{
 /* justify-content: ;  ->  Ajustar contenido en el eje horizontal */
 
 /* --------------------FOOTER----------------------------*/
+#foter{
+	position: absolute;
+	width: 100%;
+	z-index: 5;
+}
 .piePagina{
 	background-color: white;
 	width: 100%;
 	text-align: center;
 	display: flex;
+	flex-direction: column;
 }
 #contenedorFooter{
 	display: flex;
@@ -135,6 +141,7 @@ ul{
 }
 .textoFooter{
 	flex: 1 1 0;
+	display: block;
 	text-decoration: none;
 	color: darkgrey;
 }
@@ -147,7 +154,6 @@ ul{
 #imagenFooter{
 	height: 5rem;
 	width: 10rem;
-	order: -1;
 }
 /* ----- BOTON SUBIR ----- */
 
@@ -155,7 +161,7 @@ ul{
 	display: inline;
 	text-align: center;
 	position: fixed;
-	z-index: 1;
+	z-index: 10;
 	bottom: 125px;
 	right: 0;
 	height: 150px;

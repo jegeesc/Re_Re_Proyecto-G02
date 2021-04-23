@@ -113,10 +113,7 @@ input[type=text], input[type=password] {
   border: 1px solid black;
   margin-top: 10px;
   margin-bottom: 10px;
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
 }
 /*Elimina los bordes del recuadro*/
 .login_contraseña input {
@@ -137,10 +134,6 @@ input[type=text], input[type=password] {
   cursor: pointer;
   width: 90%;
   border-radius:12px;
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
   font-size: 18px;
   font-family: "Montserrat";
 }
@@ -172,10 +165,11 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
     width: 25%;
   }
 }
-@media (max-width: 1200px){
-  .login_01{
-    width: 45%;
-  }
+@media (max-width: 1200px) {
+    .login_01 {
+        width: 45%;
+    }
+}
 @media (max-width: 800px){
   .login_salir{ 
   width: 5%;
