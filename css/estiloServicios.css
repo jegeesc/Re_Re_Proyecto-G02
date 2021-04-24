@@ -4,7 +4,7 @@
     background-color: white;
     position: relative;
     transform: skewY(-10deg);
-    height: 700px;
+    height: 800px;
     margin-top: 10%;
 }
 .girar{
@@ -20,8 +20,8 @@
     flex-grow: 1;
 }
 .imagenes{
-    width: 370px;
-    height: 370px;
+    width: 350px;
+    height: 350px;
     border-radius: 15%;
 }
 .tituloservicios{
@@ -48,13 +48,13 @@
 .textow{
     color: white;
     font-family: "Montserrat";
-    font-size: 160%;
+    font-size: 180%;
     margin: 10px;
 }
 .textom{
     color: #8343a1;
     font-family: "Montserrat";
-    font-size: 160%;
+    font-size: 180%;
     margin: 10px;
     font-weight: bold;
 }
