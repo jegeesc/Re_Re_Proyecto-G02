@@ -164,20 +164,21 @@ ul{
 	z-index: 10;
 	bottom: 125px;
 	right: 0;
-	height: 150px;
-	width: 150px;
+	height: 100px;
+	width: 100px;
 	cursor: pointer;
 	text-decoration: none;
 	padding: 5px;
 	border-radius: 100%;
-	background-color: rgba(198,116,234,0.5);
 	box-shadow: 1px 1px 1px grey;
 
 }
 #flechaSubir{
-	background-color: rgba(198,116,234,0.8);
+	background-color: rgba(198,116,234,0.4);
 }
 #imagenSubir{
-	width: 150px;
-	height: 150px;
+	position: relative;
+	left:2px;
+	width: 100px;
+	height: 100px;
 }
