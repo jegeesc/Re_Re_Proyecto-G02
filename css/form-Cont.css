@@ -1,0 +1,144 @@
+
+input[type=text], select, textarea { /* Full width */
+
+    /* white border */
+
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    /* Bottom margin */
+    resize: vertical ;/* Allow the user to vertically resize the textarea (not horizontally) */
+    /*border: 2px solid #FFFFFF;*/
+    background: transparent;
+    flex:display;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border-radius:0px ;
+    width: 100%
+    /*background: transparent;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+*/
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color:transparent;
+    border-radius:12px;
+    border:3px solid #FFFFFF;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:montserrat;
+    font-size:300%;
+    padding:3%;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    background-color:transparent;
+    position:relative;
+    top:1px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color
+input[type=submit]:hover {
+   // background-color: white;
+}
+*/
+/* Add a background color and some padding around the form */
+#fname{
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 300%;
+    width: 120%
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #FFFFFF;
+    color: white;
+
+
+}
+
+#lname{
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 300%;
+    width: 100%
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #FFFFFF;
+    color: white;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1%;
+    background-color: #8343a1;
+    padding: 5%;
+    padding-bottom: 10%;
+    align-items: center;
+}
+
+#subject{
+    background: transparent;
+    border:2px solid #FFFFFF;
+    color: white;
+    font-size: 250%;
+
+}
+
+
+h2 {
+    color: #FFFFFF;
+    font-family:montserrat;
+    font-size: 500%;
+    width: 90%;
+    margin: auto;
+    background: none;
+    padding:10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-bottom: 10%;
+
+}
+form label{
+    color: #ffffff;
+    font-family:montserrat;
+    font-weight: bolder;
+    font-size: 300%;
+}
+#mail{
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 300%;
+    width: 100%
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #FFFFFF;
+    color: white;
+
+}
+form{
+    width: 80%;
+    margin: auto;
+    background: none;
+    padding:10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    font-family: Montserrat;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;}
+submit{
+    top:800px;
+    right:900px
+}
