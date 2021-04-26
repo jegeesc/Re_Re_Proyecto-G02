@@ -113,7 +113,6 @@ input[type=text], input[type=password] {
   border: 1px solid black;
   margin-top: 10px;
   margin-bottom: 10px;
-
 }
 /*Elimina los bordes del recuadro*/
 .login_contraseña input {
