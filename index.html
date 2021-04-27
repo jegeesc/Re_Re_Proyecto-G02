@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>GTI | Líderes en sondas</title>
-    <link rel="shortcut icon" href="images/logoGTI.png" />
+    <link rel="shortcut icon" href="images/logoGTI.png"/>
     <link rel="stylesheet" type="text/css" href="css/landing.css">
     <link rel="stylesheet" type="text/css" href="css/faqs.css">
     <link rel="stylesheet" type="text/css" href="css/estiloServicios.css">
-    <script src="js/faqs.js"></script>
     <link rel="stylesheet" type="text/css" href="css/form-Cont.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <script src="js/faqs.js"></script>
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    <meta name="viewport" content="width=devide-width,
+    shrink-to-fit=yes, initial-scale=0.38, user-scalable=no">
+
 
 </head>
 
@@ -17,11 +22,11 @@
     <header class="encabezado">
         <div class="divLanding">
             <nav class="navegacion">
-                <ul>
+                <ul id="encabezado">
                     <div class="item">
                         <li><a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a></li>
                     </div>
-                    <div class="item contacto">
+                    <div class="item-contacto">
                         <li><a href="#contacto"><img class="cont" src="images/cont.png" alt="contacto"></a></li>
                     </div>
                     <div class="item">
@@ -31,9 +36,13 @@
             </nav>
         </div>
     </header>
+
+
     <h1 class="titulo">Líderes en control de precisión</h1>
-    <div class="portadagira">
-        <img class="nogira" src="images/portada.png" alt="portada">
+    <div class="portadagira" >
+
+            <img class="nogira" src="images/portada.png" alt="portada" id="img-portada">
+
     </div>
     <p class="subtitulo">Dispón de la capacidad de monitorizar el estado de tu plantación</p>
     <div class="div_info">
@@ -81,9 +90,9 @@
                     <img class="imagenes" src="images/Humedad.jpg" alt="Sensor Humedad">
 		    </span>
 
-		</span>
-            </div>
+            </span>
         </div>
+    </div>
     </div>
     <!------------------------------------------------------------------------------->
 
@@ -172,7 +181,7 @@
 
 </section>
 
-    <!------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------->
 
 <!------------------------------------------------------------------------------->
 <!--SECCIÓN FAQS-->
@@ -181,10 +190,11 @@
     <section class="faqs">
         <h2 class="titulo">PREGUNTAS FRECUENTES</h2>
         <div class="portadagira borde preguntas" id="cont-preg">
-<!--            PREGUNTA 1-->
+            <!--            PREGUNTA 1-->
             <div class="borde ng pregunta" id="cont-preg1">
                 <p class="texto-pregunta">¿Cómo se instalan las sondas?</p>
-                <a class="flecha-mas-cont" href="#faqs" id="preg1" onclick="preg1show()"><img src="images/flechaAbajo.png" class="flecha-mas"></a>
+                <a class="flecha-mas-cont" href="#faqs" id="preg1" onclick="preg1show()"><img
+                        src="images/flechaAbajo.png" class="flecha-mas"></a>
             </div>
             <div class="respuesta ng" id="respuesta1">
 
@@ -196,10 +206,11 @@
 
                 </p>
             </div>
-<!--            PREGUNTA 2-->
+            <!--            PREGUNTA 2-->
             <div class="borde ng pregunta" id="cont-preg2">
                 <p class="texto-pregunta">¿Hay límite de sondas?</p>
-                <a class="flecha-mas-cont" href="#faqs" id="preg2" onclick="preg2show()"><img src="images/flechaAbajo.png" class="flecha-mas"></a>
+                <a class="flecha-mas-cont" href="#faqs" id="preg2" onclick="preg2show()"><img
+                        src="images/flechaAbajo.png" class="flecha-mas"></a>
             </div>
             <div class="respuesta ng" id="respuesta2">
                 <p class="texto-respuesta" id="txres2">
@@ -208,10 +219,11 @@
                     alcance de unos clicks.
                 </p>
             </div>
-<!--            PREGUNTA 3-->
+            <!--            PREGUNTA 3-->
             <div class="borde ng pregunta" id="cont-preg3">
                 <p class="texto-pregunta">¿Són fáciles de reparar?</p>
-                <a class="flecha-mas-cont" href="#faqs" id="preg3" onclick="preg3show()"><img src="images/flechaAbajo.png" class="flecha-mas"></a>
+                <a class="flecha-mas-cont" href="#faqs" id="preg3" onclick="preg3show()"><img
+                        src="images/flechaAbajo.png" class="flecha-mas"></a>
             </div>
             <div class="respuesta ng" id="respuesta3">
                 <p class="texto-respuesta" id="txres3">
@@ -242,7 +254,7 @@
             <input type="text" id="fname" name="firstname">
 
             <label for="lname">Apellido</label>
-            <input type="text" id="lname" name="lastname" >
+            <input type="text" id="lname" name="lastname">
 
             <label for="mail">Mail</label>
             <input type="text" id="mail" name="mail">
@@ -250,7 +262,7 @@
             </select>
 
             <label for="subject">Motivo</label>
-            <textarea id="subject" name="subject"  style="height:200px"></textarea>
+            <textarea id="subject" name="subject" style="height:200px"></textarea>
 
             <input type="submit" value="Enviar">
 
@@ -262,15 +274,15 @@
 <!-- -------    FOOTER    ------- -->
 <footer id="foter">
     <div class="piePagina">
-    <div class="contenedorFooter">
-        <h3 id="tituloFoter">GTI</h3>
-        <a class="textoFooter" href="#Servicios">Servicios</a>
-        <a class="textoFooter" href="#">Contacto</a>
-    </div>
-    <img id="imagenFooter" src="images/logoGTI.svg" alt="logo GTI">
-    <div class="contenedorFooter">
-    <p class="copyright">SumiWeb © 2021</p>
-    </div>
+        <div class="contenedorFooter">
+            <h3 id="tituloFoter">GTI</h3>
+            <a class="textoFooter" href="#Servicios">Servicios</a>
+            <a class="textoFooter" href="#">Contacto</a>
+        </div>
+        <img id="imagenFooter" src="images/logoGTI.svg" alt="logo GTI">
+        <div class="contenedorFooter">
+            <p class="copyright">SumiWeb © 2021</p>
+        </div>
     </div>
 </footer>
 </body>

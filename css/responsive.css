@@ -1,0 +1,78 @@
+@media screen and (min-width: 1300px) {
+    .divLanding {
+        height: 10vh;
+    }
+
+    .item-contacto {
+        text-align: right;
+        width: auto;
+        position: relative;
+        right: -25%;
+        margin: 0 auto;
+    }
+   .nogira{
+       max-width: 70%;
+       transform: skewY(5deg);
+       padding-bottom: 5%;
+   }
+    .portadagira{
+        background-color: white;
+        transform: skewY(-5deg);
+        height: 50vh;
+        position: relative;
+    }
+    .cont{
+        width: 50%;
+    }
+    .logo{
+        width: 70%;
+    }
+
+    .titulo{
+        font-size: 1300%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .subtitulo{
+        font-size: 350%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .info{
+        font-size: 400%;
+    }
+
+}
+
+@media screen and (min-width: 2500px) {
+    .portadagira{
+        background-color: white;
+        transform: skewY(-5deg);
+        height: 50vh;
+        position: relative;
+        padding-top: -100%;
+    }
+    .nogira{
+        max-width: 30%;
+    }
+    .titulo{
+        font-size: 1400%;
+        padding-top: 13%;
+        padding-bottom: 4%;
+    }
+    .subtitulo{
+        font-size: 650%;
+    }
+    .info{
+        font-size: 500%;
+        padding: 2%;
+    }
+    .cont{
+        max-width: 30%;
+    }
+    .login{
+        max-width: 15%;
+    }
+
+
+}
