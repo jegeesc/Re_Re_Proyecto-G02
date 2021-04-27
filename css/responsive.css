@@ -1,8 +1,7 @@
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1700px) {
     .divLanding {
         height: 10vh;
     }
-
     .item-contacto {
         text-align: right;
         width: auto;
@@ -42,9 +41,56 @@
         font-size: 400%;
     }
 
+
+    .tituloservicios{
+        text-justify: auto;
+        padding-left: 10%;
+        font-size: 1100%;
+    }
+    .contenedor-apartado{
+        align-content: center;
+        max-width: 70%;
+        padding-left: 15%;
+    }
+    .textow{
+        font-size: 3rem;
+    }
+    .textom{
+        font-size: 3rem;
+    }
+    .sensores {
+        height: 1000px;
+    }
+    #final-apartados{
+        padding-right: 20%;
+    }
+    .texto-pregunta{
+        font-size: 500%;
+    }
+
+    .titulo{
+        padding-bottom: 1%;
+        padding-top: 17%;
+        padding-left: 10%;
+    }
+    .container {
+        padding: -0%;
+    }
+    .subtitulo{
+        font-size: 500%;
+    }
+    .form{
+        max-width: 50%;
+        padding-bottom: 10%;
+    }
+    .flecha-mas{
+        max-width: 45%;
+    }
+
+
 }
 
-@media screen and (min-width: 2500px) {
+@media screen and (min-width: 3000px) {
     .portadagira{
         background-color: white;
         transform: skewY(-5deg);
@@ -57,11 +103,11 @@
     }
     .titulo{
         font-size: 1400%;
-        padding-top: 13%;
+        padding-top: 10%;
         padding-bottom: 4%;
     }
     .subtitulo{
-        font-size: 650%;
+        font-size: 1000%;
     }
     .info{
         font-size: 500%;
@@ -73,6 +119,45 @@
     .login{
         max-width: 15%;
     }
+    .imagenes{
+        width: 600px;
+        height: 600px;
+    }
+    .sensores{
+        padding-bottom: 10%;
+    }
+    .subtitulosensores{
+        font-size: 900%;
+    }
+    .textom{
+        font-size: 500%;
+    }
+    .textow{
+        font-size: 500%;
+    }
+
+    .preguntas{
+        padding-top: 7%;
+        padding-bottom: 5%;
+    }
+    .texto-pregunta{
+        font-size: 700%;
+    }
+    .titulo{
+        padding-bottom: 1%;
+        padding-top: 17%;
+        padding-left: 10%;
+    }
+    .form{
+        max-width: 40%;
+        padding-bottom: 10%;
+    }
+    .flecha-mas{
+        max-width: 35%;
+    }
+
+
+
 
 
 }

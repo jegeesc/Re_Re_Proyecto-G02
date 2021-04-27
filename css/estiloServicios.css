@@ -6,6 +6,7 @@
     transform: skewY(-10deg);
     height: 800px;
     margin-top: 10%;
+
 }
 .girar{
     transform: skewY(10deg);
@@ -29,7 +30,7 @@
     font-size: 900%;
     color: white;
     text-align: center;
-    margin: 30px;
+    margin: 0px;
     padding-top: 10%;
     text-transform: uppercase;
 }
