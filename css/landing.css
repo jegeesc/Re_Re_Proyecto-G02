@@ -1,189 +1,219 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
 
-body{
-	background-color: #8343a1;
-	margin: 0;
-	padding: 0;
-	position: absolute;
+body {
+    background-color: #8343a1;
+    margin: 0;
+    padding: 0;
+    position: absolute;
 
 }
-ul{
-	list-style: none;
-	display: flex;
-	align-items: center;
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
 }
-.encabezado{
-	z-index: 100;
-	position: fixed;
-	width: 100%;
-	top: 0;
+
+.encabezado {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
-.LaningPage{
-	position: relative;
-	background-color: #8343a1 ;
-	z-index: 100;
+
+.LaningPage {
+    position: relative;
+    background-color: #8343a1;
+    z-index: 100;
 }
-.divLanding{
-	border: 1px solid white;
-	background-color: white;
-	height: auto;
+
+.divLanding {
+    border: 1px solid #ffffff;
+    background-color: white;
+    height: auto;
 }
-.encabezado{
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
+
+.encabezado {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
-.item{
-	margin: 0 auto;
+
+.item {
+    margin: 0 auto;
 }
-.item.contacto{
-	text-align: right;
-	width: auto;
-	position: relative;
-	right: -150px;
-	margin: 0 auto;
+
+.item-contacto {
+    text-align: right;
+    width: auto;
+    position: relative;
+    right: -150px;
+    margin: 0 auto;
 }
-.logo{
-	right: 20px;
-	width: 100%;
-	height: auto;
+
+.logo {
+    right: 20px;
+    width: 100%;
+    height: auto;
 }
-.cont{
-	width: 40%;
-	height: auto;
+
+.cont {
+    width: 40%;
+    height: auto;
 }
-.login{ 
-	float: right;
-	margin-right: 100px;
-	width: 20%;
-	height: auto;
+
+.login {
+    float: right;
+    margin-right: 100px;
+    width: 20%;
+    height: auto;
 }
-.titulo{
-	font-family: "Yanone Kaffeesatz";
-	font-size: 900%;
-	color: white;
-	text-align: center;
-	margin: 30px;
-	padding-top: 27%;
-	padding-bottom: 10%;
-	text-transform: uppercase;
+
+.titulo {
+    font-family: "Yanone Kaffeesatz";
+    font-size: 900%;
+    color: white;
+    text-align: center;
+    margin: 30px;
+    padding-top: 27%;
+    padding-bottom: 10%;
+    text-transform: uppercase;
 }
-.portadagira{
-	background-color: white;
-	transform: skewY(-10deg);
-	height: 700px;
-	position: relative;
+
+.portadagira {
+    background-color: white;
+    transform: skewY(-10deg);
+    height: 700px;
+    position: relative;
 }
-.nogira{
-	position: absolute;
-	transform: skewY(10deg);
-	width: 80%;
-	top: 15%;
-	height: auto;
-	right: 0;
-	left: 0;
-	margin: 0 auto;
+
+
+.nogira {
+    transform: skewY(10deg);
+    position: absolute;
+    width: 80%;
+    top: 20%;
+    height: auto;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
 }
-.subtitulo{
-	padding-top: 10%; 
-	font-family: "Montserrat";
-	font-size: 167%;
-	font-weight: bold;
-	text-align: center;
-	color: white;
-	margin-left: 20px;
-	margin-right: 20px;
+
+.subtitulo {
+    padding-top: 10%;
+    font-family: "Montserrat";
+    font-size: 167%;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-.div_info{
-	text-align: center;
-	padding-top: 10%;
+
+.div_info {
+    text-align: center;
+    padding-top: 10%;
 }
-.info{
-	font-family: "Montserrat";
-	font-size: 100%;
-	border-radius: 55px;
-	padding: 40px;
-	color: #8343A1;
-	background-color: whitesmoke;
-	text-decoration: none;
+
+.info {
+    font-family: "Montserrat";
+    font-size: 100%;
+    border-radius: 55px;
+    padding: 40px;
+    color: #8343A1;
+    background-color: whitesmoke;
+    text-decoration: none;
 }
-.centrar_flecha{
-	text-align: center;
-	padding-top: 6%;
+
+.centrar_flecha {
+    text-align: center;
+    padding-top: 6%;
 }
-.flecha_bajar{
-	left: 0;
-	right: 0;
-	width: 15%;
-	height: auto;
+
+.flecha_bajar {
+    left: 0;
+    right: 0;
+    width: 15%;
+    height: auto;
 }
+
 /* justify-content: ;  ->  Ajustar contenido en el eje horizontal */
 
 /* --------------------FOOTER----------------------------*/
-#foter{
-	position: absolute;
-	width: 100%;
-	z-index: 5;
+#foter {
+    position: absolute;
+    width: 100%;
+    z-index: 5;
 }
-.piePagina{
-	background-color: white;
-	width: 100%;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
+
+.piePagina {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
-#contenedorFooter{
-	display: flex;
-	flex-direction: column;
-	margin-right: auto;
-	margin-left: 28%;
+
+#contenedorFooter {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: 28%;
 }
-#tituloFoter{
-	font-size: 175%;
+
+#tituloFoter {
+    font-size: 175%;
 }
-.textoFooter{
-	font-size: 150%;
-	flex: 1 1 0;
-	display: block;
-	text-decoration: none;
-	color: darkgrey;
+
+.textoFooter {
+    font-size: 150%;
+    flex: 1 1 0;
+    display: block;
+    text-decoration: none;
+    color: darkgrey;
 }
-.copyright{
-	flex: 1 1 0;
-	text-decoration: none;
-	color: darkgrey;
-	font-size: 100%;
+
+.copyright {
+    flex: 1 1 0;
+    text-decoration: none;
+    color: darkgrey;
+    font-size: 100%;
 }
-#imagenFooter{
-	height: 5rem;
-	width: 10rem;
+
+#imagenFooter {
+    height: 5rem;
+    width: 10rem;
 }
+
 /* ----- BOTON SUBIR ----- */
 
-#flechaSubir{
-	display: inline;
-	text-align: center;
-	position: fixed;
-	z-index: 10;
-	bottom: 125px;
-	right: 0;
-	height: 100px;
-	width: 100px;
-	cursor: pointer;
-	text-decoration: none;
-	padding: 5px;
-	border-radius: 100%;
-	box-shadow: 1px 1px 1px grey;
+#flechaSubir {
+    display: inline;
+    text-align: center;
+    position: fixed;
+    z-index: 10;
+    bottom: 125px;
+    right: 0;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 100%;
+    box-shadow: 1px 1px 1px grey;
 
 }
-#flechaSubir{
-	background-color: rgba(198,116,234,0.4);
+
+#flechaSubir {
+    background-color: rgba(198, 116, 234, 0.4);
 }
-#imagenSubir{
-	position: relative;
-	left:2px;
-	width: 100px;
-	height: 100px;
+
+#imagenSubir {
+    position: relative;
+    left: 2px;
+    width: 100px;
+    height: 100px;
 }
+
