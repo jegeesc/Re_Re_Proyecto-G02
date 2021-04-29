@@ -24,19 +24,21 @@
 					<img class="login_logo" src="../images/logoGTI.svg">
 				</div>	
 				<div class="login_user" id="login_casilla">
-					<input type="text" name="user" placeholder="Usuario" value="" required>
+					<input type="text" name="usuario" placeholder="Usuario" value="" required>
 				</div>
 				<!-- contenedor de la casilla contraseña -->
 				<div class="login_contraseña" id="login_casilla">
-					<input type="password" name="psw" placeholder="Contraseña" value="" required>
+					<input type="password" name="contrasenya" placeholder="Contraseña" value="" required>
 				</div>
 				<!-- botón enviar -->
-				<input type="button" class="login_boton" value="INICIAR SESIÓN" onclick="Login()"></input>
+
+				<input type="submit" class="login_boton" value="INICIAR SESIÓN">
 				<!-- téxto con un enlace a la parte de contacto (Pablo) -->
    				<p class="login_cuenta"><a href="#">¿Has olvidado tu contraseña?</a></p>
 			</div>
+			<div id="outputLogin"></div>
+			<script src="login.js"></script>
 		</form>
-		<script src="login.js"></script>
 	</section>
 	<!-- fin de la sección login -->
 </body>

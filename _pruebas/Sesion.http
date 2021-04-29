@@ -1,0 +1,7 @@
+POST http://localhost/bbdd/login.php
+Content-Type: application/x-www-form-urlencoded
+
+usuario=admin&contrasenya=1234
+
+
+###
