@@ -6,7 +6,6 @@ body {
     margin: 0;
     padding: 0;
     position: absolute;
-
 }
 
 ul {
@@ -20,6 +19,7 @@ ul {
     position: fixed;
     width: 100%;
     top: 0;
+    left: 0;
 }
 
 .LaningPage {
@@ -32,13 +32,6 @@ ul {
     border: 1px solid #ffffff;
     background-color: white;
     height: auto;
-}
-
-.encabezado {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
 }
 
 .item {

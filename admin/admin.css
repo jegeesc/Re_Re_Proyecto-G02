@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
 /*------------------HEADER------------------------*/
 ul{
     list-style: none;
@@ -7,23 +9,24 @@ ul{
 .header{
     margin: 0 auto;
 }
-/*.header.contacto{
-    text-align: right;
-    width: auto;
-    position: relative;
-    right: -150px;
-    margin: 0 auto;
-}*/
-.logo{
-    right: 20px;
+.encabezado{
+    z-index: 100;
+    position: fixed;
     width: 100%;
+    top: 0;
+    left: 0;
+}
+.header_admin{
+    border: 1px solid white;
+    background-color: white;
     height: auto;
 }
-/*.cont{
-    width: 40%;
+.logo{
+    right: 20px;
+    width: 75%;
     height: auto;
-}*/
-.menu{
+}
+.salir{
     float: right;
     margin-right: 100px;
     width: 20%;
@@ -36,28 +39,135 @@ ul{
     background-color: green;
     height: 200px;
     width: 100%;
+    margin-top: 20%;
+    display: flex;
+    flex: 1 1 0;
+    align-items: center;
 }
 .seccion_clientes{
     border: black 1px solid;
-    height: 1050px;
+    height:1200px;
     width: 80%;
     margin: auto;
-    margin-top: 200px;
-    border-radius: 5%;
+    border-radius: 50px;
 }
 .imagen{
-    width: 20%;
+    width: 17%;
     height: auto;
-    position: absolute;
-    margin-top: 100px;
+    margin: 1rem 2rem;
     border-radius: 50%;
-    margin-left: 400px;
+
 }
 .nombre_cliente{
-    position: absolute;
-    margin-top: 300px;
     font-family: "Yanone Kaffeesatz";
+    font-size: 500%;
+    margin-left: 2rem;
+    color: white;
+
+
+}
+h3{
+    font-family: "Montserrat";
     font-size: 400%;
-    text-align: center;
-    margin-left: 200px;
+    color: green;
+    text-align: left;
+    margin: 30px;
+}
+.agregar{
+    background-color: green;
+    height: 10rem;
+    width: 85%;
+    margin: auto;
+    border-radius: 20px;
+}
+.añadir_cosas{
+    height: 5rem;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-around;
+    flex: 1 1 0px;
+}
+.añadir{
+    height: 80px;
+    width: 80px;
+}
+.filtrar{
+    height: 5rem;
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-around;
+    flex: 1 1 0px;
+}
+.caja{
+    padding-top: 10px;
+    background-color: white;
+    height: 30px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.flecha{
+    height: 40px;
+    width: 40px;
+    padding-right: 10px;
+    margin-left: 220px;
+    position: absolute;
+}
+p{
+    margin-left: 40px;
+    margin-top:6px;
+    font-family: "Montserrat";
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.recuadro_clientes{
+    height: 45rem;
+    width: 85%;
+    margin:4.5rem auto;
+}
+
+
+.vista_usuario{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+h4{
+    margin-right: 1rem;
+    font-family: "Yanone Kaffeesatz";
+    font-size: 30px;
+}
+.ojo{
+    width: 10%;
+    height: 10%;
+    margin-right: 4rem;
+}
+.img_ojo{
+    height: auto;
+    width: 80%;
+}
+.cliente{
+    background: rgba(99, 99, 99, 0.3);
+    height: 10rem;
+    margin:2rem auto;
+    border-radius: 40px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.texto{
+    margin-right:200px;
+    margin-top: 2rem;
+    font-family: "Montserrat";
+    font-size: 22px;
+}
+.flecha_texto{
+    height: 80px;
+    width: 80px;
+    margin-right: 20px;
+    margin-top: 2.5rem;
+
 }
