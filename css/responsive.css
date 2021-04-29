@@ -1,4 +1,4 @@
-@media screen and (min-width: 1700px) {
+@media screen and (min-device-width: 700px ) {
     .divLanding {
         height: 10vh;
     }
@@ -31,6 +31,7 @@
         font-size: 1300%;
         padding-left: 5%;
         padding-right: 5%;
+        border: solid red 2px;
     }
     .subtitulo{
         font-size: 350%;
@@ -86,11 +87,14 @@
     .flecha-mas{
         max-width: 45%;
     }
+    .respuesta{
+        font-size: 30px;
+    }
 
 
 }
 
-@media screen and (min-width: 3000px) {
+@media screen and (min-device-width: 1100px ) {
     .portadagira{
         background-color: white;
         transform: skewY(-5deg);
@@ -103,8 +107,9 @@
     }
     .titulo{
         font-size: 1400%;
-        padding-top: 10%;
+        padding-top: 1%;
         padding-bottom: 4%;
+        border: green 3px solid;
     }
     .subtitulo{
         font-size: 1000%;
@@ -130,10 +135,12 @@
         font-size: 900%;
     }
     .textom{
-        font-size: 500%;
+        font-size: 4rem;
+        margin: 6rem;
     }
     .textow{
-        font-size: 500%;
+        font-size: 4rem;
+        margin: 6rem;
     }
 
     .preguntas{
@@ -155,6 +162,20 @@
     .flecha-mas{
         max-width: 35%;
     }
+    .texto-respuesta{
+        display: block;
+        max-width: 50%;
+        text-align: center;
+        align-self: center;
+    }
+    .respuesta{
+        display: flex;
+        justify-content: center;
+    }
+    .subtitulocont{
+        font-size: 10rem;
+    }
+
 
 
 
