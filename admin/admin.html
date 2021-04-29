@@ -2,35 +2,95 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images_admin/logo.png"/>
     <link rel="stylesheet" type="text/css" href="admin.css">
     <title>Página administrador</title>
 </head>
 <body>
 
-<nav>
-    <ul>
-        <div class="header">
-            <li><a href="#"><img class="logo" src="images_admin/logo.png" alt="Logo"></a></li>
-        </div>
-        <!--<div class="header contacto">
-            <li><a href="#"><img class="cont" src="images/cont.png" alt="contacto"></a></li>
-        </div>-->
-        <div class="header">
-            <li><a href="#"><img class="menu" src="images_admin/menu.png" alt="Menú"></a></li>
-        </div>
-    </ul>
-</nav>
+<!----------------------------Encabezado-------------------------------------->
+<header class="encabezado">
+    <div class="header_admin">
+        <nav>
+            <ul>
+                <div class="header">
+                    <li><a href="#"><img class="logo" src="images_admin/logo1.png" alt="Logo"></a></li>
+                </div>
+                <div class="header">
+                    <li><a href="../index.html"><img class="salir" src="images_admin/salir.png" alt="Salir"></a></li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!------------------------------------------------------------------------------->
 
 <div class="verde">
     <img src="images_admin/persona.jpg" class="imagen">
     <h1 class="nombre_cliente">María López García</h1>
 </div>
 
+<div class="vista_usuario">
+    <h4>Cambiar vista usuario</h4>
+    <div class="ojo" ><a href="../normie/normal.html"><img class="img_ojo" src="images_admin/ojo2.PNG" alt="Ojo"></a></div>
+</div>
+
 <div class="seccion_clientes">
+    <h3>Clientes</h3>
 
+    <div class="agregar">
+        <div class="añadir_cosas">
+            <img class="añadir" src="images_admin/añadir_persona.PNG" alt="Añadir personas">
+            <img class="añadir" src="images_admin/añadir_lista.PNG" alt="Añadir lista">
+            <img class="añadir" src="images_admin/notificaciones.PNG" alt="Notificaciones">
+            <img class="añadir" src="images_admin/eliminar.PNG" alt="Eliminar">
+        </div>
+        <div class="filtrar">
+            <div class="caja">
+                <p>Cantidad de sondas</p>
+                <img class="flecha" src="images_admin/flechaAbajo.png" alt="Flecha">
+            </div>
+            <div class="caja">
+                <p>Zona de asignación</p>
+                <img class="flecha" src="images_admin/flechaAbajo.png" alt="Flecha">
+            </div>
+        </div>
+    </div>
 
+    <div class="recuadro_clientes">
+        <div class="cliente">
+            <p class="texto">Juan Martínez Ramón
+                <br>Asociación los Naranjos
+                <br>Número de sondas: 5</p>
+            <img class="flecha_texto" src="images_admin/flechaAbajo.png" alt="Más información">
+        </div>
+        <div class="cliente">
+            <p class="texto">Aitana Pérez González
+                <br>Individuo
+                <br>Número de sondas: 2</p>
+            <img class="flecha_texto" src="images_admin/flechaAbajo.png" alt="Más información">
+        </div>
+        <div class="cliente">
+            <p class="texto">Sara Muñoz Romero
+                <br>Cooperativa Tots junts
+                <br>Número de sondas: 11</p>
+            <img class="flecha_texto" src="images_admin/flechaAbajo.png" alt="Más información">
+        </div>
+        <div class="cliente">
+            <p class="texto">Aaron Fernández Tineo
+                <br>Individuo
+                <br>Número de sondas: 7</p>
+            <img class="flecha_texto" src="images_admin/flechaAbajo.png" alt="Más información">
+        </div>
+
+    </div>
 </div>
 
 
 </body>
 </html>
+
+<!--
+        <script> confirm("mensaje");</script>
+        <script> alert("mensaje");</script>
+-->

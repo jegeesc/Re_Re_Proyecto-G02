@@ -6,8 +6,8 @@ function Login(){
 var usuario=document.login.user.value
 var password=document.login.psw.value
 // si se cumple se redirige a otra página
-if (usuario=="usuario1" && password=="1234") { 
-	window.location="cosa.html" 
+if (usuario=="admin" && password=="1234") {
+	window.location="../admin/admin.html"
 	return
 } 
 if (usuario=="usuario2" && password=="1234") { 

@@ -1,6 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
 input[type=text], select, textarea {
-
     margin-top: 6px;
     resize: vertical ;
     background: transparent;
@@ -11,7 +10,6 @@ input[type=text], select, textarea {
     font-size: 17px;
     border-radius:0px ;
     width: 100%
-
 }
 
 
@@ -76,10 +74,10 @@ input[type=submit] {
 }
 
 
-h2 {
+.subtitulocont {
     color: #FFFFFF;
-    font-family:montserrat;
-    font-size: 600%;
+    font-family: "Yanone Kaffeesatz";
+    font-size: 700%;
     width: 90%;
     margin: auto;
     background: none;
