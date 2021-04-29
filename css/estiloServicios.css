@@ -49,13 +49,14 @@
 .textow{
     color: white;
     font-family: "Montserrat";
-    font-size: 2rem;
-    margin: 10px;
+    font-size: 1.8rem;
+    margin: 2rem;
+
 }
 .textom{
     color: #8343a1;
     font-family: "Montserrat";
-    font-size: 2rem;
-    margin: 10px;
+    font-size: 1.8rem;
+    margin: 2rem;
     font-weight: bold;
 }

@@ -16,7 +16,7 @@ function preg1show(){
 
         document.getElementById("preg1").style.transform = "rotate(180deg)";
 
-        document.getElementById("txres1").style.fontSize = "250%";
+        document.getElementById("txres1").style.fontSize = "2.5em";
 
 
 
@@ -84,7 +84,7 @@ function preg2show(){
 
         document.getElementById("preg2").style.transform = "rotate(180deg)";
 
-        document.getElementById("txres2").style.fontSize = "250%";
+        document.getElementById("txres2").style.fontSize = "2.5em";
 
 
         //preg1
@@ -146,7 +146,7 @@ function preg3show(){
 
         document.getElementById("preg3").style.transform = "rotate(180deg)";
 
-        document.getElementById("txres3").style.fontSize = "250%";
+        document.getElementById("txres3").style.fontSize = "2.5em";
 
         //preg2
         document.getElementById("cont-preg2").style.opacity = "100%";
