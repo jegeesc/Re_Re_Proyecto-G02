@@ -39,8 +39,8 @@ ul {
 .fondo_verde{
 	width: 200%;
 	height: 520px;
-	background-color: #96F2BB;
-	border: 1px solid #96F2BB;
+	background-color: #29b21a;
+	border: 1px solid #29b21a;
 }
 .primerCirculo{
 	left: 50%;
@@ -86,7 +86,7 @@ ul {
 }
 .submenu_item{
 	text-align: center;
-	background-color: #DAFAE7;
+	background-color:  #defada;
 	padding: 3%;
 	width: 160px;
 	height: auto;
@@ -146,7 +146,7 @@ ul {
 	padding-bottom: 20%;
 }
 .añadir{
-	background-color: #DAFAE7;
+	background-color: #defada;
   	width: 100px;
  	height: 100px;
   	border-radius: 50%;
