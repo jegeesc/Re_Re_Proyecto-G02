@@ -1,0 +1,58 @@
+
+#olvido-contrasenya {
+    visibility: hidden;
+    opacity: 0;
+    margin: 0 auto;
+
+
+}
+
+/*Para hacer que se muestre*/
+#olvido-contrasenya:target {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#olvido-contrasenya:target #recuperar-contrasenya {
+    position: fixed;
+    margin: 0 auto;
+    transform: rotate(0deg) translate(0%, -110%);
+    visibility: visible;
+    text-align: center;
+    margin: 0 auto;
+    background: white;
+    margin-top: 10px;
+    border: 2px solid grey;
+    border-radius: 38px;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 70px #000000;
+}
+
+#texto-olvido-contrasenya {
+    font-family: "Montserrat";
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.cerrar-ico-cont {
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    padding: 20px;
+}
+
+
+.login_divlogo_2{
+    position: absolute;
+    left: 60%;
+    top: 5px;
+    width: 40%;
+    height:15%;
+    text-align: right;
+}
+.login_logo_2{
+    width: 100%;
+}

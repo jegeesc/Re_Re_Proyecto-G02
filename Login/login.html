@@ -1,45 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Iniciar sesión</title>
-	<link rel="shortcut icon" href="images_login/logo.png"/>
-	<link rel="stylesheet" type="text/css" href="estiloLogin.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Iniciar sesión</title>
+    <link rel="shortcut icon" href="images_login/logo.png"/>
+    <link rel="stylesheet" type="text/css" href="estiloLogin.css">
+    <link rel="stylesheet" type="text/css" href="recuperarContrasenya.css">
 </head>
 <body>
-	<!-- empieza la sección del login que se acopla -->
-	<a class="login_a_salir" href="../index.html"><img class="login_salir" src="images_login/salir.png"></a>
-	<section class="login_inicioSesion" id="login_id01">
-		<form class="login_01" name="login" id="login_formulario" action="#">
-			<!-- contenedor principal de los elementos -->
-			<div class="login_redondeado">
-				<!-- contenedor que incluye la imagen -->
-				<div class="login_circulo">
-					<img src="images_login/usuario.png" alt="usuario" class="login_usuario">
-				</div>
-				<!-- contendor de la casilla usuario -->
-				<div class="login_divlogo">
-					<img class="login_logo" src="../images/logoGTI.svg">
-				</div>	
-				<div class="login_user" id="login_casilla">
-					<input type="text" name="usuario" placeholder="Usuario" value="" required>
-				</div>
-				<!-- contenedor de la casilla contraseña -->
-				<div class="login_contraseña" id="login_casilla">
-					<input type="password" name="contrasenya" placeholder="Contraseña" value="" required>
-				</div>
-				<!-- botón enviar -->
+<!-- empieza la sección del login que se acopla -->
+<a class="login_a_salir" href="../index.html"><img class="login_salir" src="images_login/salir.png"></a>
+<section class="login_inicioSesion" id="login_id01">
+    <form class="login_01" name="login" id="login_formulario" action="#">
+        <!-- contenedor principal de los elementos -->
+        <div class="login_redondeado">
+            <!-- contenedor que incluye la imagen -->
+            <div class="login_circulo">
+                <img src="images_login/usuario.png" alt="usuario" class="login_usuario">
+            </div>
+            <!-- contendor de la casilla usuario -->
+            <div class="login_divlogo">
+                <img class="login_logo" src="../images/logoGTI.svg">
+            </div>
+            <div class="login_user" id="login_casilla">
+                <input type="text" name="usuario" placeholder="Usuario" value="" required>
+            </div>
+            <!-- contenedor de la casilla contraseña -->
+            <div class="login_contraseña" id="login_casilla">
+                <input type="password" name="contrasenya" placeholder="Contraseña" value="" required>
+            </div>
+            <!-- botón enviar -->
 
-				<input type="submit" class="login_boton" value="INICIAR SESIÓN">
-				<!-- téxto con un enlace a la parte de contacto (Pablo) -->
-   				<p class="login_cuenta"><a href="../index.html#contacto">¿Has olvidado tu contraseña?</a></p>
-			</div>
-			<div id="outputLogin"></div>
-			<script src="login.js"></script>
-		</form>
-	</section>
-	<!-- fin de la sección login -->
+            <input type="submit" class="login_boton" value="INICIAR SESIÓN">
+            <!-- téxto con un enlace a la parte de contacto (Pablo) -->
+            <p class="login_cuenta"><a href="#olvido-contrasenya">¿Has olvidado tu contraseña?</a></p>
+        </div>
+        <div id="outputLogin"></div>
+        <script src="login.js"></script>
+    </form>
+</section>
+<!-- fin de la sección login -->
+
+<!--	Sección del apartado para recuperar la contraseña	-->
+<section id="olvido-contrasenya">
+
+    <form class="login_01" name="login" id="recuperar-contrasenya" action="#">
+        <!-- contenedor principal de los elementos -->
+        <div class="recuperar-contraseña">
+
+            <!-- contendor de la casilla del usuario -->
+            <div id="salir-recuperar-baner">
+                <div class="cerrar-ico-cont">
+                    <a href="#" class="test"> <img src="../images/cerrar.svg" width="40"> </a>
+                </div>
+            </div>
+                <div class="login_divlogo_2">
+                    <a href="../index.html"><img class="login_logo_2" src="../images/logoGTI.svg"></a>
+
+            </div>
+            <div id="texto-olvido-contrasenya">
+                <p>
+                    Introduce el nombre de usuario para recuperar la contraseña
+                </p>
+            </div>
+            <div class="login_user" id="login_casilla">
+                <input type="text" name="Usuario" placeholder="Usuario" value="" required>
+            </div>
+
+            <!-- botón enviar -->
+            <input type="submit-rec" class="login_boton" value="RECUPERAR CONTRASEÑA">
+        </div>
+
+        <script src="login.js"></script>
+    </form>
+
+</section>
 </body>
 </html>
