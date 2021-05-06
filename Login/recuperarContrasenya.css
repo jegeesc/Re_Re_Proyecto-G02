@@ -1,0 +1,35 @@
+
+#olvido-contrasenya{
+    visibility: hidden;
+    transition: all 1s;
+    opacity: 0;
+    transition: all 1.5s;
+    transform: rotate(0deg) translate(2%, 0%);
+
+
+}
+
+/*Para hacer que se muestre*/
+#olvido-contrasenya:target {
+    visibility: visible;
+    opacity: 1;
+
+}
+
+#olvido-contrasenya:target #recuperar-contrasenya {
+    position: fixed;
+    margin: 0 auto;
+    transform: rotate(0deg) translate(0%, -130%);
+    visibility: visible;
+    text-align:center;
+    margin: 0 auto;
+    background: white;
+    margin-top: 10px;
+    border:2px solid grey;
+    border-radius:38px;
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+#texto-olvido-contrasenya{
+
+}
