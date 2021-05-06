@@ -2,6 +2,7 @@
 #olvido-contrasenya {
     visibility: hidden;
     opacity: 0;
+    margin: 0 auto;
 
 
 }
@@ -10,7 +11,7 @@
 #olvido-contrasenya:target {
     visibility: visible;
     opacity: 1;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 #olvido-contrasenya:target #recuperar-contrasenya {
@@ -38,18 +39,20 @@
 
 .cerrar-ico-cont {
     position: absolute;
-    width: 13%;
-    height: 13%;
-    text-align: left;
-    left: 30px;
-    top: 15px;
-    border: green 1px solid;
+    left: -5px;
+    top: -5px;
+    padding: 20px;
 }
 
-.cerrar-ico {
+
+.login_divlogo_2{
+    position: absolute;
+    left: 60%;
+    top: 5px;
+    width: 40%;
+    height:15%;
+    text-align: right;
+}
+.login_logo_2{
     width: 100%;
-}
-
-.test {
-    border: red solid 1px;
 }
