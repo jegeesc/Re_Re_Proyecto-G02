@@ -1,10 +1,7 @@
 
-#olvido-contrasenya{
+#olvido-contrasenya {
     visibility: hidden;
-    transition: all 1s;
     opacity: 0;
-    transition: all 1.5s;
-    transform: rotate(0deg) translate(2%, 0%);
 
 
 }
@@ -13,23 +10,46 @@
 #olvido-contrasenya:target {
     visibility: visible;
     opacity: 1;
-
+    transition: 1s;
 }
 
 #olvido-contrasenya:target #recuperar-contrasenya {
     position: fixed;
     margin: 0 auto;
-    transform: rotate(0deg) translate(0%, -130%);
+    transform: rotate(0deg) translate(0%, -110%);
     visibility: visible;
-    text-align:center;
+    text-align: center;
     margin: 0 auto;
     background: white;
     margin-top: 10px;
-    border:2px solid grey;
-    border-radius:38px;
+    border: 2px solid grey;
+    border-radius: 38px;
     padding-top: 60px;
     padding-bottom: 10px;
+    box-shadow: 0 0 70px #000000;
 }
-#texto-olvido-contrasenya{
 
+#texto-olvido-contrasenya {
+    font-family: "Montserrat";
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.cerrar-ico-cont {
+    position: absolute;
+    width: 13%;
+    height: 13%;
+    text-align: left;
+    left: 30px;
+    top: 15px;
+    border: green 1px solid;
+}
+
+.cerrar-ico {
+    width: 100%;
+}
+
+.test {
+    border: red solid 1px;
 }
