@@ -1,0 +1,79 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+/*------------------RESPONSIVE----------------*/
+@media(max-width:500px){
+
+    header{
+        height: 10%;
+    }
+    .logo_header{
+        max-width: 30%;
+    }
+    .menu_header{
+        width: 13%;
+    }
+    .verde{
+        max-height: 6rem;
+        flex-direction: column;
+    }
+    .imagen_user{
+        max-width: 90px;
+        max-height: 90px;
+        margin-top: 3rem;
+    }
+    .nombre_user{
+    }
+
+    #map{
+        max-width: 20rem;
+        max-height: 20rem;
+    }
+}
+/*-------------------------------------------*/
+header{
+    max-height: 20%;
+}
+.logo_header{
+    max-width: 40%;
+    height: auto;
+    margin: auto 2rem;
+}
+.menu_header{
+    max-width: 4rem;
+    height: auto;
+    margin: auto 2rem;
+}
+
+.verde{
+    background: #29B21A;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+}
+.imagen_user{
+    border-radius: 50rem;
+    width: 8rem;
+    height: 8rem;
+    align-items: center;
+
+}
+.nombre_user{
+    text-align: center;
+}
+
+
+#map{
+    width: 800px;
+    height: 90vh;
+    border: black 1px solid;
+    margin: auto auto;
+    border-radius: 5px;
+}
+.buscar_sondas{
+    text-align: center;
+}
+input{
+    border-radius: 5px;
+}
