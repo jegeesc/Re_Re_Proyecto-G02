@@ -49,12 +49,12 @@ ul {
 
 .logo {
     right: 20px;
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
 .cont {
-    width: 40%;
+    width: 20%;
     height: auto;
 }
 
@@ -67,7 +67,7 @@ ul {
 
 .titulo {
     font-family: "Yanone Kaffeesatz";
-    font-size: 900%;
+    font-size: 2rem;
     color: white;
     text-align: center;
     margin: 30px;

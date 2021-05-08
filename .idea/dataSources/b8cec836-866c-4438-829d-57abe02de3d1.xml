@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="g02_usuarios@localhost">
+<dataSource name="MariaDB - g02_usuarios@localhost">
   <database-model serializer="dbm" dbms="MARIADB" family-id="MARIADB" format-version="4.20">
     <root id="1">
       <ServerVersion>10.4.18</ServerVersion>
@@ -13,20 +13,20 @@
     <schema id="3" parent="1" name="information_schema">
       <Collation>utf8_general_ci</Collation>
     </schema>
-    <schema id="4" parent="1" name="jegeesc_usuarios">
+    <schema id="4" parent="1" name="mysql">
       <Collation>utf8mb4_general_ci</Collation>
     </schema>
-    <schema id="5" parent="1" name="mysql">
-      <Collation>utf8mb4_general_ci</Collation>
-    </schema>
-    <schema id="6" parent="1" name="performance_schema">
+    <schema id="5" parent="1" name="performance_schema">
       <Collation>utf8_general_ci</Collation>
     </schema>
-    <schema id="7" parent="1" name="phpmyadmin">
+    <schema id="6" parent="1" name="phpmyadmin">
       <Collation>utf8_bin</Collation>
     </schema>
-    <schema id="8" parent="1" name="test">
+    <schema id="7" parent="1" name="test">
       <Collation>latin1_swedish_ci</Collation>
+    </schema>
+    <schema id="8" parent="1" name="vetas_pl1">
+      <Collation>utf8mb4_general_ci</Collation>
     </schema>
     <collation id="9" parent="1" name="armscii8_bin">
       <Charset>armscii8</Charset>
