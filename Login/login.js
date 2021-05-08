@@ -22,12 +22,12 @@ document.querySelector("form").addEventListener("submit", function (event) {
             document.getElementById("outputLogin").textContent = "Bienvenido, " + datos.usuario + "!"
             setTimeout(function () {
                 window.location = "../normie/normal.html";
-            }, 3000)
+            }, 0)
         } else {
             document.getElementById("outputLogin").textContent = "Bienvenido, " + datos.usuario + "!"
             setTimeout(function () {
                 location.href = "../admin/admin.html"
-            }, 3000)
+            }, 0)
         }
     }).catch(function (error) {
         document.getElementById("outputLogin").textContent = "Los datos introducidos son incorrectos :/";

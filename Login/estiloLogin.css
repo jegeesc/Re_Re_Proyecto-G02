@@ -20,10 +20,10 @@ input[type=text], input[type=password] {
   width: 30%
 }
 /*Flecha de salir*/
-.login_salir{
+.login_landing{
   margin-left: 40px;
   margin-top: 15px; 
-  width: 2.5%;
+  width: 10%;
   height: auto;
   text-align: left;
 }
@@ -131,7 +131,7 @@ input[type=text], input[type=password] {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 70%;
+  width: 90%;
   border-radius:12px;
   font-size: 18px;
   font-family: "Montserrat";
@@ -194,10 +194,18 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
   .login_cuenta{
     padding-bottom: 10px;
   }
+  .login_landing{
+  margin-left: 10px;
+  width: 25%;
+  }
 }
-@media (max-height: 750px){
+@media (max-height: 700px){
   body{
     background-image: url("images_login/fondo_movilpeque.png");
+  }
+  .login_landing{
+  margin-left: 10px;
+  width: 25%;
   }
 }
 @media (max-width: 320px){
