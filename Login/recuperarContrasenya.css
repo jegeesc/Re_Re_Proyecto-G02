@@ -1,9 +1,15 @@
+/*Container que tiene todo lo relacionado con el olvido de la contrasenya*/
+.container-olvido-contrasenya {
+    display: flex;
+    justify-content: center;
+}
 
 #olvido-contrasenya {
+    display: flex;
+    justify-content: center;
     visibility: hidden;
     opacity: 0;
-    margin: 0 auto;
-
+    width: 50%;
 
 }
 
@@ -15,14 +21,12 @@
 }
 
 #olvido-contrasenya:target #recuperar-contrasenya {
-    position: fixed;
-    margin: 0 auto;
+    position: absolute;
     transform: rotate(0deg) translate(0%, -110%);
     visibility: visible;
     text-align: center;
-    margin: 0 auto;
     background: white;
-    margin-top: 10px;
+    margin-top: 40px;
     border: 2px solid grey;
     border-radius: 38px;
     padding-top: 60px;
@@ -31,12 +35,14 @@
 }
 
 #texto-olvido-contrasenya {
+    margin-top: 1rem;
     font-family: "Montserrat";
     font-size: 1.2rem;
     font-weight: bold;
     padding: 1rem;
 }
 
+/*Container de la x para cerrar la ventana*/
 .cerrar-ico-cont {
     position: absolute;
     left: -5px;
@@ -44,15 +50,24 @@
     padding: 20px;
 }
 
-
-.login_divlogo_2{
+/*Container de el logo */
+.login_divlogo_2 {
     position: absolute;
-    left: 60%;
+    left: 65%;
     top: 5px;
-    width: 40%;
-    height:15%;
+    width: 35%;
+    height: 15%;
     text-align: right;
 }
-.login_logo_2{
+
+.login_logo_2 {
     width: 100%;
+}
+#user_casilla{
+    padding: 12px;
+    padding-left: 28px;
+    width: 80%;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 5%;
 }

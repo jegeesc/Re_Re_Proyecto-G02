@@ -3,216 +3,252 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 /*Añade en fondo a la pàgina*/
 body {
-	background-image: url("images_login/fondo11.png");
+    background-image: url("images_login/fondo11.png");
 }
+
 /*Edita las letras de los input correspondientes*/
 input[type=text], input[type=password] {
-  padding: 12px 20px;
+    padding: 12px 20px;
 }
+
 /*Específicos*/
 /*Relleno en la parte de arriba de la sección*/
 .login_inicioSesion {
-	padding-top: 100px;
+    padding-top: 100px;
 }
+
 /*Todo el formulario se centra y ocupa el 90% de la página a lo ancho*/
-.login_01{
-	margin: 0 auto;
-  width: 30%
+.login_01 {
+    margin: 0 auto;
+    width: 30%
 }
+
 /*Flecha de salir*/
-.login_landing{
-  margin-left: 40px;
-  margin-top: 15px; 
-  width: 10%;
-  height: auto;
-  text-align: left;
+.login_landing {
+    margin-left: 40px;
+    margin-top: 15px;
+    width: 10%;
+    height: auto;
+    text-align: left;
 }
+
 /*Redondea las esquinas del contenedor que va a incluir todos los elementos*/
-.login_redondeado{
-	position: relative;
-	text-align:center;
-	margin: 0 auto;
-	background: white;
-	margin-top: 10px;
-  border:2px solid grey;
-  border-radius:38px;
-  padding-top: 60px; 
-  padding-bottom: 10px;
+.login_redondeado {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    background: white;
+    margin-top: 10px;
+    border: 2px solid grey;
+    border-radius: 38px;
+    padding-top: 60px;
+    padding-bottom: 10px;
 }
+
 /*Hace un circulo en el contenedor de la imagen y se superpone*/
 .login_circulo {
-	position: absolute;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background: white;
- 	border: 2px solid grey;
- 	top: -70px;
- 	padding: 18px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}	
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid grey;
+    top: -70px;
+    padding: 18px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
 /*Para que ocupe el 100% del contenedor en el que está incluido*/
 .login_usuario {
-  max-width: 90%;
+    max-width: 90%;
 }
+
 /*Logo*/
-.login_divlogo{
-  width: 100%;
-  position: absolute;
-  height: auto;
-  text-align: right;
-  left: -11px;
-  top: 10px;
+.login_divlogo {
+    width: 100%;
+    position: absolute;
+    height: auto;
+    text-align: right;
+    left: -11px;
+    top: 10px;
 }
-.login_logo{
-  width: 35%;
+
+.login_logo {
+    width: 35%;
 }
+
 /*Edita las casillas de usuario y contraseña*/
 #login_casilla {
- 	padding: 12px;
- 	padding-left: 28px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+    padding: 12px;
+    padding-left: 28px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 /*Añade dentro de la casilla de usuario una imagen y estilo al recuadro*/
-.login_user{
-	border-radius:12px;
-	background-image: url('images_login/usuario.png');
-	background-repeat: no-repeat;
-	background-position: 10px center;
-	background-size: 20px;
-	display: flex;
-	align-items: center;
-	height: 20px;
-	border: 1px solid black;
-	margin-top: 10px;
-	margin-bottom: 10px;
+.login_user {
+    border-radius: 12px;
+    background-image: url('images_login/usuario.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
 /*Elimina los bordes del recuadro*/
 .login_user input {
-	width: 100%;
- 	border: none;
+    width: 100%;
+    border: none;
 }
+
 /*Elimina los bordes del recuadro al escribir*/
 .login_user input:focus {
-  outline: none;
+    outline: none;
 }
+
 /*Añade dentro de la casilla de contraseña una imagen y estilo al recuadro*/
-.login_contraseña{
-	border-radius:12px;
-  background-image: url('images_login/password.png');
-  background-repeat: no-repeat;
-  background-position: 10px center;
-  background-size: 20px;
-  display: flex;
-  align-items: center;
-  height: 20px;
-  border: 1px solid black;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.login_contraseña {
+    border-radius: 12px;
+    background-image: url('images_login/password.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
 /*Elimina los bordes del recuadro*/
 .login_contraseña input {
-	width: 100%;
-  border: none;
+    width: 100%;
+    border: none;
 }
+
 /*Elimina los bordes del recuadro al escribir*/
 .login_contraseña input:focus {
-  outline: none;
+    outline: none;
 }
+
 /*Añade estilo al botón para iniciar sesión*/
 .login_boton {
-  background-color: #8343A1;
-  color: white;
-  padding: 20px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 90%;
-  border-radius:12px;
-  font-size: 18px;
-  font-family: "Montserrat";
+    background-color: #8343A1;
+    color: white;
+    padding: 20px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+    border-radius: 12px;
+    font-size: 18px;
+    font-family: "Montserrat";
+    text-align: center;
 }
+
 /*Añade estilo al botón para iniciar sesión cuando el ratón está encima*/
 .login_boton:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
+
 /*Añade estilo a la letra del final*/
-a, a:link, a:visited, a:focus, a:hover, a:active{
-  text-decoration:none; 
-  color: black;
+a, a:link, a:visited, a:focus, a:hover, a:active {
+    text-decoration: none;
+    color: black;
 }
 
-.login_cuenta{
-	font-family: "Montserrat";
-	font-size: 14px;
-  padding-bottom: 10px;
+.login_cuenta {
+    font-family: "Montserrat";
+    font-size: 14px;
+    padding-bottom: 10px;
 
 }
-.login_cuenta:hover{
-  text-decoration: underline;
+
+.login_cuenta:hover {
+    text-decoration: underline;
 }
+
 /*Hace la página responsive*/
-@media (max-width: 2000px){
-  .login_01{
-    width: 35%;
-  }
-  .login_logo{
-    width: 25%;
-  }
+@media (max-width: 2000px) {
+    .login_01 {
+        width: 35%;
+    }
+
+    .login_logo {
+        width: 25%;
+    }
 }
+
 @media (max-width: 1200px) {
     .login_01 {
         width: 45%;
     }
 }
-@media (max-width: 800px){
-  .login_salir{ 
-  width: 5%;
-  }
-  .login_logo{
-    width: 35%;
-  }
+
+@media (max-width: 800px) {
+    .login_salir {
+        width: 5%;
+    }
+
+    .login_logo {
+        width: 35%;
+    }
 }
-@media (max-width: 500px){
-  body{
-    background-image: url("images_login/fondoX.png");
-  }
-  .login_salir{ 
-  margin-left: 10px;
-  width: 8%;
-  }
-  .login_inicioSesion{
-    padding-top: 150px;
-  }
-	.login_01{
-    width: 95%;
-  }
-  .login_cuenta{
-    padding-bottom: 10px;
-  }
-  .login_landing{
-  margin-left: 10px;
-  width: 25%;
-  }
+
+@media (max-width: 500px) {
+    body {
+        background-image: url("images_login/fondoX.png");
+    }
+
+    .login_salir {
+        margin-left: 10px;
+        width: 8%;
+    }
+
+    .login_inicioSesion {
+        padding-top: 150px;
+    }
+
+    .login_01 {
+        width: 95%;
+    }
+
+    .login_cuenta {
+        padding-bottom: 10px;
+    }
+
+    .login_landing {
+        margin-left: 10px;
+        width: 25%;
+    }
 }
-@media (max-height: 700px){
-  body{
-    background-image: url("images_login/fondo_movilpeque.png");
-  }
-  .login_landing{
-  margin-left: 10px;
-  width: 25%;
-  }
+
+@media (max-height: 700px) {
+    body {
+        background-image: url("images_login/fondo_movilpeque.png");
+    }
+
+    .login_landing {
+        margin-left: 10px;
+        width: 25%;
+    }
 }
-@media (max-width: 320px){
-  .login_01{
-    width: 100%;
-  }
-  .login_inicioSesion{
-    padding-top: 120px;
-  }  
+
+@media (max-width: 320px) {
+    .login_01 {
+        width: 100%;
+    }
+
+    .login_inicioSesion {
+        padding-top: 120px;
+    }
 }
