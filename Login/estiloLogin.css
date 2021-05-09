@@ -131,10 +131,11 @@ input[type=text], input[type=password] {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 90%;
+  width: 70%;
   border-radius:12px;
   font-size: 18px;
   font-family: "Montserrat";
+    text-align: center;
 }
 /*Añade estilo al botón para iniciar sesión cuando el ratón está encima*/
 .login_boton:hover {
