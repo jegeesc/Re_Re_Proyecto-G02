@@ -1,11 +1,16 @@
-
+/*Container que tiene todo lo relacionado con el olvido de la contrasenya*/
+.container-olvido-contrasenya {
+    display: flex;
+    justify-content: center;
+}
 
 #olvido-contrasenya {
+    display: flex;
+    justify-content: center;
     visibility: hidden;
     opacity: 0;
-    align-self: center;
-    border: red solid 1px;
-    
+    width: 50%;
+
 }
 
 /*Para hacer que se muestre*/
@@ -48,9 +53,9 @@
 /*Container de el logo */
 .login_divlogo_2 {
     position: absolute;
-    left: 60%;
+    left: 65%;
     top: 5px;
-    width: 40%;
+    width: 35%;
     height: 15%;
     text-align: right;
 }
