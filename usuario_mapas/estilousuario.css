@@ -57,7 +57,7 @@ header{
     width: 8rem;
     height: 8rem;
     align-items: center;
-
+    margin: 2rem 2rem;
 }
 .nombre_user{
     text-align: center;
