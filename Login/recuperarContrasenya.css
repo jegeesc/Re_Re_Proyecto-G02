@@ -33,6 +33,7 @@
     padding-top: 60px;
     padding-bottom: 10px;
     box-shadow: 0 0 70px #000000;
+    width: auto;
 }
 
 #texto-olvido-contrasenya {
@@ -64,15 +65,25 @@
 .login_logo_2 {
     width: 100%;
 }
-#user_casilla{
+
+/*Campo donde se escribe el nombre de usuario*/
+#user_casilla {
     padding: 12px;
     padding-left: 28px;
-    width: 80%;
+    width: auto;
     margin-left: 7%;
     margin-right: 7%;
     margin-bottom: 5%;
 }
-#confirmación-envio-cont{
-    opacity: 0%;
-    visibility: hidden;
+
+/*Boton de recuperar contraseña*/
+#boton-recuperar-contrasenya {
+    width: auto;
+}
+
+
+@media (max-width: 650px) {
+    #olvido-contrasenya:target #recuperar-contrasenya{
+        width: 80%;
+    }
 }
