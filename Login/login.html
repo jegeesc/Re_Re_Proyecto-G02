@@ -35,7 +35,8 @@
 
             <input type="submit" class="login_boton" value="INICIAR SESIÓN">
             <!-- téxto con un enlace a la parte de contacto (Pablo) -->
-            <p class="login_cuenta"><a href="#olvido-contrasenya">¿Has olvidado tu contraseña?</a></p>
+            <p class="login_cuenta" id="boton-olv-cont"><a href="#olvido-contrasenya">¿Has olvidado tu contraseña?</a>
+            </p>
         </div>
         <div id="outputLogin"></div>
         <script src="login.js"></script>
@@ -45,39 +46,41 @@
 
 <!--	Sección del apartado para recuperar la contraseña	-->
 <div class="container-olvido-contrasenya">
-<section id="olvido-contrasenya">
+    <section id="olvido-contrasenya">
 
-    <form class="login_01" name="login" id="recuperar-contrasenya" action="#">
-        <!-- contenedor principal de los elementos -->
-        <div class="recuperar-contraseña">
+        <form class="login_01" name="login" id="recuperar-contrasenya" action="#">
+            <!-- contenedor principal de los elementos -->
+            <div class="recuperar-contraseña">
 
-            <!-- contendor de la casilla del usuario -->
-            <div id="salir-recuperar-baner">
-                <div class="cerrar-ico-cont">
-                    <a href="#" class="test"> <img src="../images/cerrar.svg" width="40"> </a>
+                <!-- contendor de la casilla del usuario -->
+                <div id="salir-recuperar-baner">
+                    <div class="cerrar-ico-cont">
+                        <a href="#" class="test"> <img src="../images/cerrar.svg" width="40"> </a>
+                    </div>
                 </div>
-            </div>
                 <div class="login_divlogo_2">
                     <a href="../index.html"><img class="login_logo_2" src="../images/logoGTI.svg"></a>
 
-            </div>
-            <div id="texto-olvido-contrasenya">
-                <p>
-                    Introduce el nombre de usuario para recuperar la contraseña
-                </p>
-            </div>
-            <div class="login_user" id="user_casilla">
-                <input type="text" name="Usuario" placeholder="Usuario" value="" required>
+                </div>
+                <div id="texto-olvido-contrasenya">
+                    <p>
+                        Introduce el nombre de usuario para recuperar la contraseña
+                    </p>
+                </div>
+                <div class="login_user" id="user_casilla">
+                    <input type="text" name="Usuario" placeholder="Usuario" value="" required>
+                </div>
+
+                <!-- botón enviar -->
+                <input type="submit" class="login_boton" id="boton-recuperar-contrasenya" value="RECUPERAR CONTRASEÑA"
+                       onclick="clicEnRecuperar()">
             </div>
 
-            <!-- botón enviar -->
-            <input type="submit" class="login_boton" id="boton-recuperar-contrasenya" value="RECUPERAR CONTRASEÑA" onclick="">
-        </div>
 
-        <script src="login.js"></script>
-    </form>
+            <script src="login.js"></script>
+        </form>
 
-</section>
+    </section>
 </div>
 </body>
 </html>
