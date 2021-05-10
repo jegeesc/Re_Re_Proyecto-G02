@@ -37,3 +37,11 @@ document.querySelector("form").addEventListener("submit", function (event) {
 //Si no se cumple lo anterior sale un mensaje de error por pantalla
 });
 
+
+//----------------------------------------------------------------------
+//  Función que se inicia al darle click en el "Recuperar Contraseña"
+//----------------------------------------------------------------------
+
+function clicEnRecuperar() {
+    alert("Se ha enviado correctamente la petición para reestaurar la contraseña")
+}
