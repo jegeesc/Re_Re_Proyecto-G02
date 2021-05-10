@@ -2,6 +2,7 @@
 .container-olvido-contrasenya {
     display: flex;
     justify-content: center;
+    align-content: center;
 }
 
 #olvido-contrasenya {
@@ -26,7 +27,7 @@
     visibility: visible;
     text-align: center;
     background: white;
-    margin-top: 40px;
+    margin-top: auto;
     border: 2px solid grey;
     border-radius: 38px;
     padding-top: 60px;
