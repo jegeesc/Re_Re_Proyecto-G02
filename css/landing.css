@@ -5,69 +5,61 @@ body {
     background-color: #8343a1;
     margin: 0;
     padding: 0;
-    position: absolute;
-    font-size: 15px;
 }
-
-ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
 .encabezado {
     z-index: 100;
     position: fixed;
-    width: 100%;
     top: 0;
     left: 0;
+    width: 100%;
+    max-height: 4rem;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
 }
-
 .LaningPage {
     position: relative;
     background-color: #8343a1;
     z-index: 100;
 }
-
-.divLanding {
-    border: 1px solid #ffffff;
-    background-color: white;
-    height: auto;
+.divlogoHeader{
+    display: flex;
+    width: fit-content;
 }
-
+.contactoyLogin{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin-right: 2rem;
+}
 .item {
-    margin: 0 auto;
+    margin: 0 2rem;
+    width: fit-content;
+    max-width: 4rem;
+    height: fit-content;
 }
-
 .item-contacto {
+    display: inline;
     text-align: right;
-    width: auto;
-    position: relative;
-    right: -150px;
     margin: 0 auto;
+    max-height: 4rem;
 }
 
 .logo {
     right: 20px;
-    width: 80%;
-    height: auto;
+    max-width: 7rem;
 }
-
 .cont {
-    width: 20%;
-    height: auto;
+    max-width: 4rem;
+    margin-left: auto;
 }
-
 .login {
     float: right;
-    margin-right: 100px;
-    width: 20%;
-    height: auto;
+    width: 3rem;
 }
-
 .titulo {
     font-family: "Yanone Kaffeesatz";
-    font-size: 2rem;
+    font-size: 5rem;
     color: white;
     text-align: center;
     margin: 30px;
@@ -75,37 +67,32 @@ ul {
     padding-bottom: 10%;
     text-transform: uppercase;
 }
-
-.portadagira {
-    background-color: white;
-    transform: skewY(-10deg);
-    height: 700px;
-    position: relative;
-}
-
-
-.nogira {
-    transform: skewY(10deg);
-    position: absolute;
-    width: 80%;
-    top: 20%;
-    height: auto;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-}
-
 .subtitulo {
     padding-top: 15%;
     font-family: "Montserrat";
-    font-size: 167%;
+    font-size: 6rem;
     font-weight: bold;
     text-align: center;
     color: white;
     margin-left: 20px;
     margin-right: 20px;
 }
-
+.portadagira {
+    background-color: white;
+    transform: skewY(-5deg);
+    height: 33rem;
+    position: relative;
+}
+.nogira {
+    transform: skewY(5deg);
+    position: absolute;
+    width: 15rem;
+    top: 20%;
+    height: auto;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
 .div_info {
     text-align: center;
     padding-top: 10%;
@@ -113,7 +100,7 @@ ul {
 
 .info {
     font-family: "Montserrat";
-    font-size: 100%;
+    font-size: 3rem;
     border-radius: 55px;
     padding: 40px;
     color: #8343A1;
@@ -129,7 +116,7 @@ ul {
 .flecha_bajar {
     left: 0;
     right: 0;
-    width: 15%;
+    width: 3rem;
     height: auto;
 }
 

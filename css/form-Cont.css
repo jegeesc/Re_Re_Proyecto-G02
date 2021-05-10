@@ -3,7 +3,7 @@ input[type=text], select, textarea {
     margin-top: 6px;
     resize: vertical ;
     background: transparent;
-    flex:display;
+    display: flex;
     margin-bottom: 20px;
     padding: 7px;
     box-sizing: border-box;
@@ -24,8 +24,7 @@ input[type=submit] {
     font-size:300%;
     padding:3%;
     text-decoration:none;
-    text-shadow:0px 1px 0px #2f6627;
-    background-color:transparent;
+    text-shadow:0 1px 0 #2f6627;
     position:relative;
     top:1px;
 }
@@ -36,7 +35,7 @@ input[type=submit] {
     padding: 7px;
     box-sizing: border-box;
     font-size: 300%;
-    width: 120%
+    width: 120%;
     background: transparent;
     border: none;
     border-bottom: 2px solid #FFFFFF;
@@ -49,7 +48,7 @@ input[type=submit] {
     padding: 7px;
     box-sizing: border-box;
     font-size: 300%;
-    width: 100%
+    width: 100%;
     background: transparent;
     border: none;
     border-bottom: 2px solid #FFFFFF;
@@ -100,7 +99,7 @@ form label{
     padding: 7px;
     box-sizing: border-box;
     font-size: 300%;
-    width: 100%
+    width: 100%;
     background: transparent;
     border: none;
     border-bottom: 2px solid #FFFFFF;

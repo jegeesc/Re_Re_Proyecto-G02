@@ -1,188 +1,183 @@
-@media screen and (min-device-width: 700px ) {
-    .divLanding {
-        height: 10vh;
-    }
-    .item-contacto {
-        text-align: right;
-        width: auto;
-        position: relative;
-        right: -25%;
-        margin: 0 auto;
-    }
-   .nogira{
-       max-width: 70%;
-       transform: skewY(5deg);
-       padding-bottom: 5%;
-   }
-    .portadagira{
-        background-color: white;
-        transform: skewY(-5deg);
-        height: 50vh;
-        position: relative;
-    }
-    .cont{
-        width: 50%;
+
+@media (min-width: 460px ) {
+    /* HEADER */
+
+    .encabezado {
+        z-index: 100;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 4rem;
+        display: flex;
     }
     .logo{
-        width: 70%;
+        min-width: 5rem;
     }
-
-    .titulo{
-        font-size: 1300%;
-        padding-left: 5%;
-        padding-right: 5%;
-
+    .cont {
+        width: 3.5rem;
     }
-    .subtitulo{
-        font-size: 350%;
-        padding-left: 5%;
-        padding-right: 5%;
+    .login {
+        width: 3.5rem;
     }
-    .info{
-        font-size: 400%;
-    }
-
-
-    .tituloservicios{
-        text-justify: auto;
-        padding-left: 10%;
-        font-size: 1100%;
-    }
-    .contenedor-apartado{
-        align-content: center;
-        max-width: 70%;
-        padding-left: 15%;
-    }
-    .textow{
-        font-size: 3rem;
-    }
-    .textom{
-        font-size: 3rem;
-    }
-    .sensores {
-        height: 1000px;
-    }
-    #final-apartados{
-        padding-right: 20%;
-    }
-    .texto-pregunta{
-        font-size: 500%;
-    }
-
-    .titulo{
-        padding-bottom: 1%;
-        padding-top: 17%;
-        padding-left: 10%;
-    }
-    .container {
-        padding: -0%;
-    }
-    .subtitulo{
-        font-size: 500%;
-    }
-    .form{
-        max-width: 50%;
-        padding-bottom: 10%;
-    }
-    .flecha-mas{
-        max-width: 45%;
-    }
-    .respuesta{
-        font-size: 30px;
-    }
-
-
-}
-
-@media screen and (min-device-width: 1100px ) {
-    .portadagira{
+    /* FIN HEADER */
+    .portadagira {
         background-color: white;
         transform: skewY(-5deg);
-        height: 50vh;
+        height: 15rem;
         position: relative;
-        padding-top: -100%;
     }
-    .nogira{
-        max-width: 30%;
+    .nogira {
+        max-width: 40%;
+        max-height: 75%;
     }
-    .titulo{
-        font-size: 1400%;
+    .titulo {
+        margin-top: 5rem;
+        font-size: 4rem;
         padding-top: 1%;
         padding-bottom: 4%;
     }
-    .subtitulo{
-        font-size: 1000%;
-        padding-top: 5%;
+    .subtitulo {
+        font-size: 1.5rem;
+        position: relative;
+        top:-4rem;
     }
     .info{
-        font-size: 500%;
-        padding: 2%;
+        font-size: 1rem;
+        border-radius: 25px;
+        position: relative;
+        top:-5rem;
+        padding: 1.5rem;
+        box-shadow: 1px 1px 5px wheat;
     }
-    .cont{
-        max-width: 30%;
+    .flecha_bajar{
+        position: relative;
+        top:-4rem;
+        max-width: 3rem;
     }
-    .login{
-        max-width: 15%;
+    /* FIN PRIMERA PÁGINA */
+
+    #flechaSubir{
+        width: 3rem;
+        height: 3rem;
     }
-    .imagenes{
+    #imagenSubir {
+        position: relative;
+        left: 2px;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .imagenes {
         width: 600px;
         height: 600px;
     }
-    .sensores{
+
+    .sensores {
         padding-bottom: 10%;
     }
-    .subtitulosensores{
+
+    .subtitulosensores {
         font-size: 900%;
     }
-    .textom{
-        font-size: 4rem;
-        margin: 6rem;
-    }
-    .textow{
+
+    .textom {
         font-size: 4rem;
         margin: 6rem;
     }
 
-    .preguntas{
+    .textow {
+        font-size: 4rem;
+        margin: 6rem;
+    }
+
+    .preguntas {
         padding-top: 7%;
         padding-bottom: 5%;
     }
-    .texto-pregunta{
+
+    .texto-pregunta {
         font-size: 700%;
     }
-    .titulo{
-        padding-bottom: 1%;
-        padding-top: 14%;
-        padding-left: 10%;
-        padding-bottom: 2%;
-    }
-    .tituloservicios{
+
+    .tituloservicios {
         font-size: 14rem;
     }
-    .form{
+
+    .form {
         max-width: 40%;
         padding-bottom: 10%;
     }
-    .flecha-mas{
+
+    .flecha-mas {
         max-width: 35%;
     }
-    .texto-respuesta{
+
+    .texto-respuesta {
         display: block;
         max-width: 50%;
         text-align: center;
         align-self: center;
     }
-    .respuesta{
+
+    .respuesta {
         display: flex;
         justify-content: center;
     }
-    .subtitulocont{
+
+    .subtitulocont {
         font-size: 10rem;
     }
 
 
-
-
-
-
 }
+@media (min-width: 1300px) {
+    /* HEADER */
+    .portadagira {
+        background-color: white;
+        transform: skewY(-5deg);
+        height: 20rem;
+        position: relative;
+        top:-3rem;
+
+    }
+    /* FIN HEADER */
+
+    /* PRIMERA PÁGINA */
+    .titulo{
+        font-size: 7rem;
+    }
+    .nogira{
+        width: 25rem;
+    }
+    .subtitulo{
+        position: relative;
+        top:-12rem;
+        font-size: 2rem;
+    }
+    .info{
+        font-size: 2rem;
+        border-radius: 30px;
+        position: relative;
+        top:-15rem;
+        box-shadow: 1px 1px 5px wheat;
+    }
+    .flecha_bajar{
+        position: relative;
+        top:-15rem;
+        width: 4rem;
+    }
+    /* FIN PRIMERA PÁGINA */
+
+    #flechaSubir{
+        width: 3rem;
+        height: 3rem;
+    }
+    #imagenSubir {
+        position: relative;
+        left: 2px;
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
