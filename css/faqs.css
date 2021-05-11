@@ -5,6 +5,7 @@
     transform: skewY(10deg);
 }
 .tit-preg{
+    font-family: "Montserrat";
     font-family: "Yanone Kaffeesatz";
     font-size: 5rem;
     color: white;
