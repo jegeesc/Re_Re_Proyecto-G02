@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 /*Añade en fondo a la pàgina*/
 body {
-    background-image: url("images_login/fondo11.png");
+    background-image: url("../Login/images_login/fondo11.png");
 }
 
 /*Edita las letras de los input correspondientes*/
@@ -91,7 +91,7 @@ input[type=text], input[type=password] {
 /*Añade dentro de la casilla de usuario una imagen y estilo al recuadro*/
 .login_user {
     border-radius: 12px;
-    background-image: url('images_login/usuario.png');
+    background-image: url('../Login/images_login/usuario.png');
     background-repeat: no-repeat;
     background-position: 10px center;
     background-size: 20px;
@@ -117,7 +117,7 @@ input[type=text], input[type=password] {
 /*Añade dentro de la casilla de contraseña una imagen y estilo al recuadro*/
 .login_contraseña {
     border-radius: 12px;
-    background-image: url('images_login/password.png');
+    background-image: url('../Login/images_login/password.png');
     background-repeat: no-repeat;
     background-position: 10px center;
     background-size: 20px;
@@ -206,7 +206,7 @@ a, a:link, a:visited, a:focus, a:hover, a:active {
 
 @media (max-width: 550px) {
     body {
-        background-image: url("images_login/fondoX.png");
+        background-image: url("../Login/images_login/fondoX.png");
     }
 
     .login_salir {
@@ -234,7 +234,7 @@ a, a:link, a:visited, a:focus, a:hover, a:active {
 
 @media (max-height: 700px) {
     body {
-        background-image: url("images_login/fondo_movilpeque.png");
+        background-image: url("../Login/images_login/fondo_movilpeque.png");
     }
 
     .login_landing {

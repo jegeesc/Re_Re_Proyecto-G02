@@ -59,7 +59,7 @@ ul {
 	margin-left:-100px; 
 	position: absolute;
 	display: block;
-	background-image: url("images/perfilejemplo.jpeg");
+	background-image: url("../normie/images/perfilejemplo.jpeg");
   	background-position: center; 
   	background-size: cover;
   	width: 200px;

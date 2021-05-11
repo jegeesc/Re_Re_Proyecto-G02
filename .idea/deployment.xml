@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="XAMPP" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="XAMPP">
+        <serverdata>
+          <mappings>
+            <mapping deploy="\" local="$PROJECT_DIR$/../../../../../../../../XAVI UNIVERSIDAD/Primer Curso/Proyecto diseño y prog. Web/Re-Proyecto Equipo 02" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

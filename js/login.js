@@ -9,7 +9,7 @@ document.querySelector("form").addEventListener("submit", function (event) {
     console.log(dataLogin.get("usuario"));
     console.log(dataLogin.get("contrasenya"));
 
-    fetch("http://localhost/bbdd/login.php", {
+    fetch("../bbdd/login.php", {
         method: "POST",
         body: dataLogin
     }).then(function (respuesta) {
@@ -21,12 +21,12 @@ document.querySelector("form").addEventListener("submit", function (event) {
         if (dataLogin.get("usuario") == "user" && dataLogin.get("contrasenya") == "1234") {
             document.getElementById("outputLogin").textContent = "Bienvenido, " + datos.usuario + "!"
             setTimeout(function () {
-                window.location = "../normie/normal.html";
+                window.location = "../html/normal.html";
             }, 0)
         } else {
             document.getElementById("outputLogin").textContent = "Bienvenido, " + datos.usuario + "!"
             setTimeout(function () {
-                location.href = "../admin/admin.html"
+                location.href = "../html/admin.html"
             }, 0)
         }
     }).catch(function (error) {
