@@ -82,7 +82,7 @@
     }
 
     .sensores {
-        height: 600px;
+        height: 700px;
     }
     .tituloservicios{
         font-size: 4rem;
@@ -125,6 +125,7 @@
         max-width: 35%;
     }
 
+
     .texto-respuesta {
         display: block;
         width: 80%;
@@ -140,6 +141,9 @@
 
     .subtitulocont {
         font-size: 4rem;
+    }
+    .tit-preg{
+        margin: 2rem;
     }
 
 }
@@ -196,6 +200,8 @@
         height: 3rem;
     }
 
+
+
 }
 
 /*SECCION SERVICIOS*/
@@ -204,6 +210,25 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+    }
+    .flecha-mas-cont {
+        display: flex;
+        height: auto;
+        justify-content: center;
+        flex: 0.4 1 0;
+    }
+    .flecha-mas {
+        max-width: 35%;
+    }
+    .preguntas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin-bottom: 20%;
     }
 
 }
