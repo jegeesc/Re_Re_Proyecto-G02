@@ -74,7 +74,7 @@
     }
 
     .sensores {
-        padding-bottom: 10%;
+        height: 600px;
     }
     .tituloservicios{
         font-size: 4rem;
@@ -109,7 +109,7 @@
     }
 
     .form {
-        max-width: 40%;
+        max-width: 70%;
         padding-bottom: 10%;
     }
 
@@ -133,7 +133,6 @@
     .subtitulocont {
         font-size: 4rem;
     }
-
 
 }
 @media (min-width: 1300px) {
