@@ -1,5 +1,5 @@
 
-@media (min-width: 460px ) {
+@media (max-width: 700px ) {
     /* HEADER */
 
     .encabezado {
@@ -10,6 +10,10 @@
         left: 0;
         height: 4rem;
         display: flex;
+        justify-content: space-between;
+    }
+    .contactoyLogin{
+        margin-left: 100px;
     }
     .logo{
         min-width: 5rem;
@@ -55,6 +59,10 @@
         top:-4rem;
         max-width: 3rem;
     }
+    #img-portada{
+        width: 100%;
+        height: 50%;
+    }
     /* FIN PRIMERA PÁGINA */
 
     #flechaSubir{
@@ -69,26 +77,34 @@
     }
 
     .imagenes {
-        width: 600px;
-        height: 600px;
+        width: 200px;
+        height: 200px;
     }
 
     .sensores {
-        padding-bottom: 10%;
+        height: 600px;
+    }
+    .tituloservicios{
+        font-size: 4rem;
     }
 
     .subtitulosensores {
-        font-size: 900%;
+        font-size: 3rem;
     }
 
     .textom {
-        font-size: 4rem;
-        margin: 6rem;
+        font-size: 1rem;
+        margin: 1rem;
     }
 
     .textow {
-        font-size: 4rem;
-        margin: 6rem;
+        font-size: 1rem;
+        margin: 1rem;
+    }
+    .ajustar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .preguntas {
@@ -97,15 +113,11 @@
     }
 
     .texto-pregunta {
-        font-size: 700%;
-    }
-
-    .tituloservicios {
-        font-size: 14rem;
+        font-size: 2rem;
     }
 
     .form {
-        max-width: 40%;
+        max-width: 70%;
         padding-bottom: 10%;
     }
 
@@ -115,24 +127,28 @@
 
     .texto-respuesta {
         display: block;
-        max-width: 50%;
-        text-align: center;
-        align-self: center;
+        width: 80%;
+        text-align: justify;
+        align-self: auto;
     }
 
     .respuesta {
         display: flex;
         justify-content: center;
+
     }
 
     .subtitulocont {
-        font-size: 10rem;
+        font-size: 4rem;
     }
 
-
 }
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
     /* HEADER */
+    #img-portada{
+        width: 400px;
+        height: 250px;
+    }
     .portadagira {
         background-color: white;
         transform: skewY(-5deg);
@@ -179,5 +195,15 @@
         width: 3rem;
         height: 3rem;
     }
+
 }
 
+/*SECCION SERVICIOS*/
+@media (min-width: 1000px) {
+    .ajustar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+}

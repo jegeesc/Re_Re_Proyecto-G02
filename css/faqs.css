@@ -4,6 +4,15 @@
 .ng {
     transform: skewY(10deg);
 }
+.tit-preg{
+    font-family: "Montserrat";
+    font-family: "Yanone Kaffeesatz";
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    padding-top: 7%;
+    text-transform: uppercase;
+}
 
 .pregunta {
     width: 70%;
@@ -17,7 +26,7 @@
     justify-content: start;
     opacity: 100%;
     transition: 1s;
-    height: 30%;
+    height: 20%;
     font-size: 20px;
 }
 
@@ -25,7 +34,7 @@
     display: block;
     display: flex;
     font-family: "Montserrat";
-    font-size: 300%;
+    font-size: 2rem;
     font-weight: bold;
     flex: 1 1 0;
 }
@@ -36,14 +45,14 @@
     height: 0%;
     opacity: 0%;
     transition: 1s;
-    text-align: justify;
-    font-size: 15px;
+    text-align: center;
+    font-size: 10px;
 
 }
 
 .texto-respuesta {
     font-family: "Montserrat";
-    font-size: 50%;
+    font-size: 0rem;
     font-weight: bold;
     color: gray;
 }
