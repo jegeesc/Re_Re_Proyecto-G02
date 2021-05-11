@@ -21,7 +21,7 @@ input[type=submit] {
     cursor:pointer;
     color:#ffffff;
     font-family:montserrat;
-    font-size:300%;
+    font-size:2rem;
     padding:3%;
     text-decoration:none;
     text-shadow:0 1px 0 #2f6627;
@@ -34,8 +34,8 @@ input[type=submit] {
     margin-bottom: 20px;
     padding: 7px;
     box-sizing: border-box;
-    font-size: 300%;
-    width: 120%;
+    font-size: 2rem;
+    width: 100%;
     background: transparent;
     border: none;
     border-bottom: 2px solid #FFFFFF;
@@ -68,7 +68,7 @@ input[type=submit] {
     background: transparent;
     border:2px solid #FFFFFF;
     color: white;
-    font-size: 250%;
+    font-size: 2rem;
 
 }
 
@@ -76,14 +76,12 @@ input[type=submit] {
 .subtitulocont {
     color: #FFFFFF;
     font-family: "Yanone Kaffeesatz";
-    font-size: 700%;
+    font-size: 5rem;
     width: 90%;
-    margin: auto;
     background: none;
-    padding:10px 20px;
+    padding:0px 0px;
     box-sizing: border-box;
-    margin-top: 20px;
-    padding-bottom: 30px;
+    margin-top: 00px;
     text-align: center;
     margin-bottom: 10%;
 
@@ -92,7 +90,7 @@ form label{
     color: #ffffff;
     font-family:montserrat;
     font-weight: bolder;
-    font-size: 300%;
+    font-size: 2rem;
 }
 #mail{
     margin-bottom: 20px;
@@ -120,7 +118,8 @@ form{
 textarea{
     min-height: 100px;
     max-height: 200px;
-    max-width: 100%;}
+    max-width: 100%;
+}
 submit{
     top:800px;
     right:900px
