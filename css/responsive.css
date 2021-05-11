@@ -1,5 +1,5 @@
 
-@media (min-width: 500px ) {
+@media (max-width: 700px ) {
     /* HEADER */
 
     .encabezado {
@@ -76,6 +76,9 @@
     .sensores {
         padding-bottom: 10%;
     }
+    .tituloservicios{
+        font-size: 4rem;
+    }
 
     .subtitulosensores {
         font-size: 3rem;
@@ -90,6 +93,11 @@
         font-size: 1rem;
         margin: 1rem;
     }
+    .ajustar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     .preguntas {
         padding-top: 7%;
@@ -97,11 +105,7 @@
     }
 
     .texto-pregunta {
-        font-size: 700%;
-    }
-
-    .tituloservicios {
-        font-size: 5rem;
+        font-size: 2rem;
     }
 
     .form {
@@ -115,18 +119,19 @@
 
     .texto-respuesta {
         display: block;
-        max-width: 50%;
-        text-align: center;
-        align-self: center;
+        width: 80%;
+        text-align: justify;
+        align-self: auto;
     }
 
     .respuesta {
         display: flex;
         justify-content: center;
+
     }
 
     .subtitulocont {
-        font-size: 10rem;
+        font-size: 4rem;
     }
 
 
@@ -181,3 +186,12 @@
     }
 }
 
+/*SECCION SERVICIOS*/
+@media (min-width: 1000px) {
+    .ajustar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+}

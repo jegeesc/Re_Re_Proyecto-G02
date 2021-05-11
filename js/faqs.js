@@ -45,12 +45,12 @@ function preg1show(){
         document.getElementById("respuesta1").style.transition = "0s";
         document.getElementById("txres1").style.fontSize = "0%";
 
-        document.getElementById("cont-preg1").style.height = "30%";
+        document.getElementById("cont-preg1").style.height = "20%";
 
 
         //preg2
         document.getElementById("cont-preg2").style.opacity = "100%";
-        document.getElementById("cont-preg2").style.height = "30%";
+        document.getElementById("cont-preg2").style.height = "20%";
 
         document.getElementById("respuesta2").style.opacity = "0%";
         document.getElementById("respuesta2").style.height = "0%";
@@ -59,7 +59,7 @@ function preg1show(){
 
         //preg3
         document.getElementById("cont-preg3").style.opacity = "100%";
-        document.getElementById("cont-preg3").style.height = "30%";
+        document.getElementById("cont-preg3").style.height = "20%";
 
 
         document.getElementById("respuesta3").style.opacity = "0%";
@@ -109,11 +109,11 @@ function preg2show(){
         document.getElementById("respuesta2").style.transition = "0s";
         document.getElementById("txres2").style.fontSize = "0%";
 
-        document.getElementById("cont-preg2").style.height = "30%";
+        document.getElementById("cont-preg2").style.height = "20%";
 
         //preg1
         document.getElementById("cont-preg1").style.opacity = "100%";
-        document.getElementById("cont-preg1").style.height = "30%";
+        document.getElementById("cont-preg1").style.height = "20%";
 
         document.getElementById("respuesta1").style.opacity = "0%";
         document.getElementById("respuesta1").style.height = "0%";
@@ -122,7 +122,7 @@ function preg2show(){
 
         //preg3
         document.getElementById("cont-preg3").style.opacity = "100%";
-        document.getElementById("cont-preg3").style.height = "30%";
+        document.getElementById("cont-preg3").style.height = "20%";
 
         document.getElementById("respuesta3").style.opacity = "0%";
         document.getElementById("respuesta3").style.height = "0%";
@@ -139,7 +139,7 @@ function preg2show(){
 function preg3show(){
 
     if(clic==1){
-        document.getElementById("cont-preg").style.height = "100%";
+        document.getElementById("cont-preg").style.height = "130%";
         //preg3
         document.getElementById("respuesta3").style.opacity = "100%";
         document.getElementById("respuesta3").style.height = "30%";
@@ -165,11 +165,11 @@ function preg3show(){
         document.getElementById("respuesta3").style.transition = "0s";
         document.getElementById("txres3").style.fontSize = "0%";
 
-        document.getElementById("cont-preg3").style.height = "30%";
+        document.getElementById("cont-preg3").style.height = "20%";
 
         //preg2
         document.getElementById("cont-preg2").style.opacity = "100%";
-        document.getElementById("cont-preg2").style.height = "30%";
+        document.getElementById("cont-preg2").style.height = "20%";
 
         document.getElementById("respuesta2").style.opacity = "0%";
         document.getElementById("respuesta2").style.height = "0%";
@@ -178,7 +178,7 @@ function preg3show(){
 
         //preg1
         document.getElementById("cont-preg1").style.opacity = "100%";
-        document.getElementById("cont-preg1").style.height = "30%";
+        document.getElementById("cont-preg1").style.height = "20%";
 
         document.getElementById("respuesta1").style.opacity = "0%";
         document.getElementById("respuesta1").style.height = "0%";
