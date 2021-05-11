@@ -46,10 +46,12 @@ body {
 .logo {
     right: 20px;
     max-width: 7rem;
+    margin-top: 6px;
 }
 .cont {
     max-width: 4rem;
     margin-left: auto;
+    margin-top: 4px;
 }
 .login {
     float: right;
