@@ -10,6 +10,10 @@
         left: 0;
         height: 4rem;
         display: flex;
+        justify-content: space-between;
+    }
+    .contactoyLogin{
+        margin-left: 100px;
     }
     .logo{
         min-width: 5rem;

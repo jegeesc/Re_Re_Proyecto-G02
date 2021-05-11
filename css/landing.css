@@ -28,12 +28,10 @@ body {
 }
 .contactoyLogin{
     display: flex;
-    width: fit-content;
-    height: fit-content;
     margin-right: 2rem;
 }
 .item {
-    margin: 0 2rem;
+    margin: 0 1rem;
     width: fit-content;
     max-width: 4rem;
     height: fit-content;
@@ -56,6 +54,7 @@ body {
 .login {
     float: right;
     width: 3rem;
+    margin-top: 5px;
 }
 .titulo {
     font-family: "Yanone Kaffeesatz";
