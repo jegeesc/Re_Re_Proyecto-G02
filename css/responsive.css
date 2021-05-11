@@ -1,5 +1,5 @@
 
-@media (min-width: 460px ) {
+@media (min-width: 500px ) {
     /* HEADER */
 
     .encabezado {
@@ -69,8 +69,8 @@
     }
 
     .imagenes {
-        width: 600px;
-        height: 600px;
+        width: 200px;
+        height: 200px;
     }
 
     .sensores {
@@ -78,17 +78,17 @@
     }
 
     .subtitulosensores {
-        font-size: 900%;
+        font-size: 3rem;
     }
 
     .textom {
-        font-size: 4rem;
-        margin: 6rem;
+        font-size: 1rem;
+        margin: 1rem;
     }
 
     .textow {
-        font-size: 4rem;
-        margin: 6rem;
+        font-size: 1rem;
+        margin: 1rem;
     }
 
     .preguntas {
@@ -101,7 +101,7 @@
     }
 
     .tituloservicios {
-        font-size: 14rem;
+        font-size: 5rem;
     }
 
     .form {
