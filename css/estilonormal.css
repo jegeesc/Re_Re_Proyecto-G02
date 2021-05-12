@@ -108,11 +108,7 @@ ul {
 	padding-top: 1%;
 	margin: 0 auto;
 	border: 1px solid black;
-<<<<<<< HEAD
 	width: 90%;
-=======
-	width: 800px;
->>>>>>> develop
 	height: 350px;
 	display: flex;
 	justify-content: space-around;
@@ -206,8 +202,8 @@ ul {
 		font-size: 1rem;
 	}
 	.etiqueta{
-		width: 350px;
-		height: 200px;
+		width: 80%;
+		height: 220px;
 	}
 	.contenedor_img{
 		margin-left: 4px;

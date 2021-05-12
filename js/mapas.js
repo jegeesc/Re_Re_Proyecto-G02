@@ -4,7 +4,7 @@
         //console.log("Google Maps cargado!!");
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 39.00971602044704, lng: -0.18356627613238444},
-          zoom: 14,
+          zoom: 15,
           mapTypeId: 'hybrid',
           styles: [
             {

@@ -91,7 +91,7 @@ input{
 /*-------------------------------------------*/
 
 /*------------------RESPONSIVE----------------*/
-@media(max-width:500px){
+@media(max-width:700px){
 
     header{
         height: 10%;
