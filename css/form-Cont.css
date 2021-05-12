@@ -21,7 +21,7 @@ input[type=submit] {
     cursor:pointer;
     color:#ffffff;
     font-family:montserrat;
-    font-size:300%;
+    font-size:1rem;
     padding:3%;
     text-decoration:none;
     text-shadow:0 1px 0 #2f6627;
@@ -34,25 +34,70 @@ input[type=submit] {
     margin-bottom: 20px;
     padding: 7px;
     box-sizing: border-box;
-    font-size: 300%;
-    width: 120%;
+    font-size: 2rem;
+    width: 100%;
     background: transparent;
     border: none;
     border-bottom: 2px solid #FFFFFF;
-    color: white;
+    color: #c1c1c1;
 
 }
+#fname:hover{
+    border-bottom: 2px solid #c5c5c5;
+}
+
 
 #lname{
     margin-bottom: 20px;
     padding: 7px;
     box-sizing: border-box;
-    font-size: 300%;
+    font-size: 2Rem;
     width: 100%;
     background: transparent;
     border: none;
     border-bottom: 2px solid #FFFFFF;
-    color: white;
+    color: #c1c1c1;
+}
+#lname:hover{
+    border-bottom: 2px solid #c5c5c5;
+}
+
+
+#mail{
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 2rem;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #FFFFFF;
+    color: #c1c1c1;
+
+}
+#mail:hover{
+    border-bottom: 2px solid #c5c5c5;
+}
+
+#subject{
+    background: transparent;
+    border:2px solid #FFFFFF;
+    color: #c1c1c1;
+    font-size: 2rem;
+
+}
+#subject:hover{
+    border: 2px solid #c5c5c5;
+}
+
+#boton-enviar{
+    font-size: 2rem;
+    width:20%;
+    justify-content: left;
+}
+#boton-enviar:hover{
+    background: #a156c9;
+    box-shadow: gray 0 0 50px;
 }
 .container {
     display: flex;
@@ -64,26 +109,18 @@ input[type=submit] {
     align-items: center;
 }
 
-#subject{
-    background: transparent;
-    border:2px solid #FFFFFF;
-    color: white;
-    font-size: 250%;
 
-}
 
 
 .subtitulocont {
     color: #FFFFFF;
     font-family: "Yanone Kaffeesatz";
-    font-size: 700%;
+    font-size: 5rem;
     width: 90%;
-    margin: auto;
     background: none;
-    padding:10px 20px;
+    padding:0px 0px;
     box-sizing: border-box;
-    margin-top: 20px;
-    padding-bottom: 30px;
+    margin-top: 00px;
     text-align: center;
     margin-bottom: 10%;
 
@@ -92,21 +129,12 @@ form label{
     color: #ffffff;
     font-family:montserrat;
     font-weight: bolder;
-    font-size: 300%;
+    font-size: 2rem;
 }
-#mail{
-    margin-bottom: 20px;
-    padding: 7px;
-    box-sizing: border-box;
-    font-size: 300%;
-    width: 100%;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #FFFFFF;
-    color: white;
 
-}
 form{
+    display: flex;
+    flex-direction: column;
     width: 80%;
     margin: auto;
     background: none;
@@ -120,8 +148,10 @@ form{
 textarea{
     min-height: 100px;
     max-height: 200px;
-    max-width: 100%;}
+    max-width: 100%;
+}
 submit{
     top:800px;
-    right:900px
+    right:900px;
+    font-size: 4rem;
 }

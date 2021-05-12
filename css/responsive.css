@@ -1,5 +1,5 @@
 
-@media (min-width: 460px ) {
+@media (max-width: 700px ) {
     /* HEADER */
 
     .encabezado {
@@ -10,15 +10,21 @@
         left: 0;
         height: 4rem;
         display: flex;
+        justify-content: space-between;
+    }
+    .contactoyLogin{
+        margin-left: 100px;
     }
     .logo{
         min-width: 5rem;
     }
     .cont {
-        width: 3.5rem;
+        width: 2.5rem;
+        margin-top: 10px;
     }
     .login {
-        width: 3.5rem;
+        width: 2.5rem;
+        margin-top: 9px;
     }
     /* FIN HEADER */
     .portadagira {
@@ -55,6 +61,10 @@
         top:-4rem;
         max-width: 3rem;
     }
+    #img-portada{
+        width: 100%;
+        height: 50%;
+    }
     /* FIN PRIMERA PÁGINA */
 
     #flechaSubir{
@@ -69,70 +79,110 @@
     }
 
     .imagenes {
-        width: 600px;
-        height: 600px;
+        width: 200px;
+        height: 200px;
     }
 
     .sensores {
-        padding-bottom: 10%;
+        height: 700px;
+    }
+    .tituloservicios{
+        font-size: 4rem;
     }
 
     .subtitulosensores {
-        font-size: 900%;
+        font-size: 3rem;
     }
 
     .textom {
-        font-size: 4rem;
-        margin: 6rem;
+        font-size: 1rem;
+        margin: 1rem;
     }
 
     .textow {
-        font-size: 4rem;
-        margin: 6rem;
+        font-size: 1rem;
+        margin: 1rem;
     }
-
+    .ajustar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /*FAQS*/
     .preguntas {
         padding-top: 7%;
         padding-bottom: 5%;
     }
 
     .texto-pregunta {
-        font-size: 700%;
+        font-size: 2rem;
     }
 
-    .tituloservicios {
-        font-size: 14rem;
-    }
 
-    .form {
-        max-width: 40%;
-        padding-bottom: 10%;
-    }
 
     .flecha-mas {
-        max-width: 35%;
+        max-width: 55%;
     }
+
 
     .texto-respuesta {
         display: block;
-        max-width: 50%;
+        width: 80%;
         text-align: center;
-        align-self: center;
+        align-self: auto;
     }
 
     .respuesta {
         display: flex;
         justify-content: center;
+        font-size: 0.5rem;
+
     }
 
     .subtitulocont {
-        font-size: 10rem;
+        font-size: 4rem;
+    }
+    .tit-preg{
+        margin: 2rem;
     }
 
+    /*CONTACTO*/
+    .form {
+        max-width: 85%;
+        padding-bottom: 10%;
+    }
+    form label{
+        font-size: 1.5rem;
+    }
+
+    #fname{
+        font-size: 1rem;
+    }
+    #lname{
+        font-size: 1rem;
+    }
+    #mail{
+        font-size: 1rem;
+    }
+    #subject{
+        font-size: 1rem;
+    }
+    #boton-enviar{
+        font-size: 1rem;
+        width: 40%;
+    }
+    /*FOOTER*/
+    .piePagina{
+        height: 10%;
+    }
 
 }
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
     /* HEADER */
+    #img-portada{
+        width: 400px;
+        height: 250px;
+    }
     .portadagira {
         background-color: white;
         transform: skewY(-5deg);
@@ -179,5 +229,36 @@
         width: 3rem;
         height: 3rem;
     }
+
+
+
 }
 
+/*SECCION SERVICIOS*/
+@media (min-width: 1000px) {
+    .ajustar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .flecha-mas-cont {
+        display: flex;
+        height: auto;
+        justify-content: center;
+        flex: 0.4 1 0;
+    }
+    .flecha-mas {
+        max-width: 25%;
+    }
+    .preguntas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin-bottom: 20%;
+    }
+
+}

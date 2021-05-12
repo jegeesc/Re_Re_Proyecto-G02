@@ -27,7 +27,7 @@
 }
 .tituloservicios{
     font-family: "Yanone Kaffeesatz";
-    font-size: 900%;
+    font-size: 5rem;
     color: white;
     text-align: center;
     margin: 0px;
@@ -49,14 +49,22 @@
 .textow{
     color: white;
     font-family: "Montserrat";
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin: 2rem;
+    text-align: center;
 
 }
 .textom{
     color: #8343a1;
     font-family: "Montserrat";
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin: 2rem;
     font-weight: bold;
+    text-align: center;
+}
+
+.ajustar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

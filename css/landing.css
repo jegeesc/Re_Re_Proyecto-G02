@@ -28,12 +28,10 @@ body {
 }
 .contactoyLogin{
     display: flex;
-    width: fit-content;
-    height: fit-content;
     margin-right: 2rem;
 }
 .item {
-    margin: 0 2rem;
+    margin: 0 1rem;
     width: fit-content;
     max-width: 4rem;
     height: fit-content;
@@ -48,14 +46,17 @@ body {
 .logo {
     right: 20px;
     max-width: 7rem;
+    margin-top: 6px;
 }
 .cont {
     max-width: 4rem;
     margin-left: auto;
+    margin-top: 3px;
 }
 .login {
     float: right;
     width: 3rem;
+    margin-top: 5px;
 }
 .titulo {
     font-family: "Yanone Kaffeesatz";
@@ -63,14 +64,14 @@ body {
     color: white;
     text-align: center;
     margin: 30px;
-    padding-top: 27%;
+    padding-top: 7%;
     padding-bottom: 10%;
     text-transform: uppercase;
 }
 .subtitulo {
     padding-top: 15%;
     font-family: "Montserrat";
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: bold;
     text-align: center;
     color: white;
@@ -145,11 +146,11 @@ body {
 }
 
 #tituloFoter {
-    font-size: 175%;
+    font-size: 2rem;
 }
 
 .textoFooter {
-    font-size: 150%;
+    font-size: 1.5rem;
     flex: 1 1 0;
     display: block;
     text-decoration: none;
@@ -160,7 +161,7 @@ body {
     flex: 1 1 0;
     text-decoration: none;
     color: darkgrey;
-    font-size: 100%;
+    font-size: 1rem;
 }
 
 #imagenFooter {

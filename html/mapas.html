@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mapas</title>
+  <link rel="shortcut icon" href="../normie/images/logo.png"/>
+  <link rel="stylesheet" type="text/css" href="../css/usuario_mapa.css">
+  <meta name="viewport" content="width=devide-width,
+    shrink-to-fit=yes, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="../css/estilonormal.css">
+</head>
+<body>
+<div id="body">
+  <!-------------------------------HEADER-------------------------------------->
+  <header class="encabezado">
+    <div class="BarraNav">
+      <nav class="navNormal">
+        <ul class="suprema">
+          <div class="item">
+            <li><a href="../index.html"><img class="logo" src="../images/logoGTI.png" alt="logo"></a></li>
+          </div>
+          <div class="menudiv">
+            <li><a href=""><img class="menu" src="../images/menu.png" alt="salir"></a></li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="fondo_verde"></div>
+  <div class="auxiliar">
+    <div class="primerCirculo"></div>
+    <div class="segundoCirculo"></div>
+  </div>
+  <h1 class="nombre">Roberto Pérez García</h1>
+  <!-- Comienza el submenu -->
+  <nav class="submenu">
+    <ul class="ulsubmenu">
+      <div class="submenu_item">
+        <li><a class="enlace" href="sondas.html">SONDAS</a></li>
+      </div>
+      <div class="submenu_item">
+        <li><a class="enlace" href="#">GRÁFICAS</a></li>
+      </div>
+      <div class="submenu_item" id="mapass">
+        <li><a class="enlace" href="mapas.html">MAPAS</a></li>
+      </div>
+    </ul>
+  </nav>
+  <!--------------------------------------------------------------------------->
+
+  <!-------------------------------MAPAS 1------------------------------------->
+  <div class="triangulo"></div>
+
+  <div class="recuadro_mapa">
+    <div class="editar">
+      <h2 class="nombre_mapa">SONDAS GANDÍA</h2>
+      <img class="ediatar_imagen" src="../usuario_mapas/images/editar.PNG" alt="Editar">
+    </div>
+
+    <div id="map"></div>
+
+    <div class="buscar_sondas">
+      <input placeholder="Latitud" type="number" id="lat">
+      <input placeholder="Longitud" type="number" id="lng">
+      <button onclick="addMarker()">BUSCAR SONDAS</button>
+    </div>
+  </div>
+  <!--------------------------------------------------------------------------->
+  <div class="triangulo2"></div>
+
+  <!-------------------------------MAPAS 2------------------------------------->
+  <div class="triangulo"></div>
+
+  <div class="recuadro_mapa">
+    <div class="editar">
+      <h2 class="nombre_mapa">SONDAS CULLERA</h2>
+      <img class="ediatar_imagen" src="../usuario_mapas/images/editar.PNG" alt="Editar">
+    </div>
+
+    <div id="map"></div>
+
+    <div class="buscar_sondas">
+      <input placeholder="Latitud" type="number" id="lat">
+      <input placeholder="Longitud" type="number" id="lng">
+      <button onclick="addMarker()">BUSCAR SONDAS</button>
+    </div>
+    <script src="../js/mapas.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"async defer></script>
+  </div>
+
+  <div class="triangulo2"></div>
+  <!--------------------------------------------------------------------------->
+
+</div>
+</body>
+</html>
