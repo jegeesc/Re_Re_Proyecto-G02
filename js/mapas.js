@@ -1,5 +1,5 @@
     let map;
-
+    let map2;
       function initMap() {
         //console.log("Google Maps cargado!!");
         map = new google.maps.Map(document.getElementById('map'), {
@@ -69,28 +69,8 @@
     bounds.extend(v);
     })
     map.fitBounds(bounds);
-      }
-
-      function addMarker() {
-        let lat = parseFloat(document.getElementById('lat').value);
-        let lng = parseFloat(document.getElementById('lng').value);
-
-        var nuevasonda = new google.maps.Marker({
-          position: {lat: lat, lng: lng},
-          label: "Nueva Sonda",
-          animation: google.maps.Animation.DROP,
-          map: map
-        });
-
-        map.panTo(nuevasonda.getPosition());
-      //Marcadores
-  }
-
-//////
- /*     let map;
-      function initMap() {
-        //console.log("Google Maps cargado!!");
-        map = new google.maps.Map(document.getElementById('map'), {
+    //Segundo mapa
+    /*map2 = new google.maps.Map(document.getElementById('map2'), {
           center: {lat: 39.00971602044704, lng: -0.18356627613238444},
           zoom: 14,
           mapTypeId: 'hybrid',
@@ -108,43 +88,61 @@
           streetViewControl: false,
           rotateControl: false,
         });
-        <!-- ------Poner un punto fijo en el mapa---------------- -->
+       //Poner un punto
         var sonda1 = new google.maps.Marker({
           position: {lat: 39.01068307409519, lng: -0.18946713596529477},
           label: "Sonda 1",
           animation: google.maps.Animation.DROP,
-          map: map
+          map: map2
         });
 
         var sonda2 = new google.maps.Marker({
           position: {lat: 39.012583796216596, lng: -0.18343753009972605},
           label: "Sonda 2",
           animation: google.maps.Animation.DROP,
-          map: map
+          map: map2
         });
 
         var sonda3 = new google.maps.Marker({
           position: {lat: 39.00720495033061, lng: -0.183881301062853},
           label: "Sonda 3",
           animation: google.maps.Animation.DROP,
-          map: map
+          map: map2
         });
 
         var sonda4 = new google.maps.Marker({
           position: {lat: 39.00934263744238, lng: -0.1784923340801241},
           label: "Sonda 4",
           animation: google.maps.Animation.DROP,
-          map: map
+          map: map2
         });
 
         var sonda5 = new google.maps.Marker({
           position: {lat: 39.010120421070205, lng: -0.18338794918204276},
           label: "Sonda 4",
           animation: google.maps.Animation.DROP,
-          map: map
+          map: map2
         });
-        <!-- ---------------------------------------------------- -->
       }
+
+      function addMarker2() {
+        let lat = parseFloat(document.getElementById('lat').value);
+        let lng = parseFloat(document.getElementById('lng').value);
+
+        var nuevasonda = new google.maps.Marker({
+          position: {lat: lat, lng: lng},
+          label: "Nueva Sonda",
+          animation: google.maps.Animation.DROP,
+          map: map2
+        });
+
+        map.panTo(nuevasonda.getPosition());
+      }
+
+
+
+
+
 
       function addMarker() {
         let lat = parseFloat(document.getElementById('lat').value);
@@ -157,5 +155,5 @@
           map: map
         });
 
-        map.panTo(nuevasonda.getPosition());
-      }*/
+        map.panTo(nuevasonda.getPosition());*/
+  }
