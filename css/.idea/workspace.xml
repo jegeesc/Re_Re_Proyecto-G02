@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="236e6bf2-b160-4901-a612-055d35018a2c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/usuario_mapa2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../html/usuario2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../html/normal.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +44,7 @@
       <option name="presentableId" value="Default" />
       <updated>1620755242595</updated>
       <workItem from="1620755243709" duration="92000" />
+      <workItem from="1620842372618" duration="62000" />
     </task>
     <servers />
   </component>
@@ -61,5 +61,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

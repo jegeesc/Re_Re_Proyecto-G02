@@ -1,28 +1,19 @@
-
+body{
+    background: white;
+    margin: 0;
+}
+.todo {
+    width: 100%
+}
 /*-------------------------------------------*/
-.triangulo{
-    border-top:70px solid white;
-    border-right:700px solid #29B21A;
-    border-left:700px solid #29B21A;
-    opacity: 0.4;
-    height:0;
-    width:0;
-}
-.triangulo2{
-    border-top:70px solid #29B21A;
-    border-right:700px solid white;
-    border-left:700px solid white;
-    opacity: 0.4;
-    height:0;
-    width:0;
-}
-#mapass{
+#mapas{
     padding: 1.5%;
     background-color: #c5ffbc;
     box-shadow: 0 0 20px grey;
 }
 /*------------------MAPAS--------------------*/
 .recuadro_mapa{
+    margin-top: 2.5rem;
     position: relative;
     background: rgba(41, 178, 26, 0.4);
 }
@@ -42,7 +33,7 @@
 }
 
 #map{
-    width: 800px;
+    width: 90%;
     height: 90vh;
     border: black 1px solid;
     margin: auto auto;
@@ -107,14 +98,10 @@ input{
 /*-------------------------------------------*/
 
 /*------------------RESPONSIVE---------------*/
-@media(max-width:500px){
+@media(max-width:700px){
     #map{
-        max-width: 20rem;
-        max-height: 20rem;
-    }
-    #map2{
-        max-width: 20rem;
-        max-height: 20rem;
+        width: 70%;
+        height: 70vh ;
     }
     .filtro{
         margin: 2rem 0.5rem;
@@ -133,6 +120,10 @@ input{
     }
     .nombre_mapa{
         font-size: 2rem;
+    }
+    #mapas{
+        margin-right: 47px;
+        padding: 4%;
     }
 }
 /*-------------------------------------------*/
