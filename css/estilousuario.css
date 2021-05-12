@@ -76,7 +76,7 @@ header{
 }
 
 #map{
-    width: 800px;
+    width: 90%;
     height: 90vh;
     border: black 1px solid;
     margin: auto auto;
@@ -116,8 +116,8 @@ input{
     }
 
     #map{
-        max-width: 20rem;
-        max-height: 20rem;
+        max-width: 70%;
+        max-height: 70vh;
     }
     .filtro{
         margin: 2rem 0.5rem;

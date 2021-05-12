@@ -104,8 +104,8 @@ ul {
 	padding-top: 1%;
 	margin: 0 auto;
 	border: 1px solid black;
-	width: 800px;
-	height: 400px;
+	width: 90%;
+	height: 350px;
 	display: flex;
 	justify-content: space-around;
 }
