@@ -1,57 +1,4 @@
-body{
-    margin:0;
-}
-/*------------------HEADER-------------------*/
-header{
-    max-height: 20%;
-    display: flex;
-    justify-content: space-between;
-}
-.logo_header{
-    max-width: 40%;
-    height: auto;
-    margin: auto 2rem;
-}
-.menu_header{
-    max-width: 4rem;
-    height: auto;
-    margin: auto 2rem;
-}
-/*-------------------------------------------*/
 
-/*-----------------PERFIL--------------------*/
-.verde{
-    background: #29B21A;
-    height: 15rem;
-    display: flex;
-    align-items: center;
-}
-.imagen_user{
-    border-radius: 50rem;
-    width: 8rem;
-    height: 8rem;
-    align-items: center;
-    margin-left: 2rem;
-}
-.nombre_user{
-    text-align: center;
-    margin-left: 2rem;
-}
-/*-------------------------------------------*/
-
-/*------------------FILTRO-------------------*/
-.filtro{
-    margin: 3rem 5rem;
-    display: flex;
-    justify-content: space-between;
-}
-.enlace{
-    text-decoration: none;
-    background: rgba(41, 178, 26, 0.4);
-    padding: 0.5rem 2rem;
-    border-radius: 7px;
-    color: black;
-}
 /*-------------------------------------------*/
 .triangulo{
     border-top:70px solid white;
@@ -68,6 +15,11 @@ header{
     opacity: 0.4;
     height:0;
     width:0;
+}
+#mapass{
+    padding: 1.5%;
+    background-color: #c5ffbc;
+    box-shadow: 0 0 20px grey;
 }
 /*------------------MAPAS--------------------*/
 .recuadro_mapa{
@@ -128,7 +80,8 @@ input{
     visibility: visible;
 }
 /*ASPECTO DE LA CAJA */
-.menu {
+/*-----------------Te lo comento porque hace cosas con mi codigo uwu---------------------------*/
+/*.menu {
     width: 100%;
     height: auto;
     max-width: 40%;
@@ -150,34 +103,11 @@ input{
 }
 .texto_menu{
 
-}
+}*/
 /*-------------------------------------------*/
 
 /*------------------RESPONSIVE---------------*/
 @media(max-width:500px){
-
-    header{
-        height: 10%;
-    }
-    .logo_header{
-        max-width: 30%;
-    }
-    .menu_header{
-        width: 13%;
-    }
-    .verde{
-        max-height: 6rem;
-        flex-direction: column;
-    }
-    .imagen_user{
-        max-width: 90px;
-        max-height: 90px;
-        margin-top: 3rem;
-    }
-    .nombre_user{
-        color: #29b21a;
-    }
-
     #map{
         max-width: 20rem;
         max-height: 20rem;
@@ -190,10 +120,6 @@ input{
         margin: 2rem 0.5rem;
         display: flex;
         justify-content: space-between;
-    }
-    .enlace{
-        margin-top: 5rem;
-        margin-right: 2rem;
     }
     .triangulo{
         border-top:40px solid white;
