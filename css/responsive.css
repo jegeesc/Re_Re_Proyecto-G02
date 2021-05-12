@@ -19,10 +19,12 @@
         min-width: 5rem;
     }
     .cont {
-        width: 3.5rem;
+        width: 2.5rem;
+        margin-top: 10px;
     }
     .login {
-        width: 3.5rem;
+        width: 2.5rem;
+        margin-top: 9px;
     }
     /* FIN HEADER */
     .portadagira {
