@@ -2,48 +2,50 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Usuario</title>
+    <title>Mapas</title>
+    <link rel="shortcut icon" href="../normie/images/logo.png"/>
     <link rel="stylesheet" type="text/css" href="../css/usuario_mapa.css">
+    <meta name="viewport" content="width=devide-width,
+    shrink-to-fit=yes, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../css/estilonormal.css">
 </head>
 <body>
 <div id="body">
     <!-------------------------------HEADER-------------------------------------->
-    <header>
-        <a href="#"><img class="logo_header" src="../usuario_mapas/images/logoGTI.png" alt="Logo GTI"></a>
-        <a href="#container_menu"><img class="menu_header" src="../usuario_mapas/images/menu.png" alt="Menú"></a>
-        <!----------------------------------------------------------------------->
-        <div id="container_menu" class="container_menu" >
-            <nav class="menu" id="menu_lp">
-                <!--BOTON DE CERRAR EL MENU-->
-                <div id="boton_menu_cerrar" class="boton_menu_cerrar">
-                    <a href="#">  <img src="../images/cerrar.svg" width="40"> </a>
-                </div>
-                <!--  APARTADOS CON TEXTO DEL MENÚ   -->
-                <div class="texto_menu">
-                    <img src="" alt="Imagen Contacto"><a href="" class="link">Contacto</a>
-                    <img src="" alt="Imagen Perfil"><a href="" class="link">Perfil</a>
-                    <img src="" alt="Imagen Salir"><a href="" class="link">Salir</a>
-                </div>
+    <header class="encabezado">
+        <div class="BarraNav">
+            <nav class="navNormal">
+                <ul class="suprema">
+                    <div class="item">
+                        <li><a href="../index.html"><img class="logo" src="../images/logoGTI.png" alt="logo"></a></li>
+                    </div>
+                    <div class="menudiv">
+                        <li><a href=""><img class="menu" src="../images/menu.png" alt="salir"></a></li>
+                    </div>
+                </ul>
             </nav>
         </div>
-        <!----------------------------------------------------------------------->
     </header>
-    <!--------------------------------------------------------------------------->
-
-    <!-------------------------------PERFIL-------------------------------------->
-    <div class="verde">
-        <div><img class="imagen_user" src="../usuario_mapas/images/perfilejemplo.jpeg" alt=""></div>
-        <div><h2 class="nombre_user">ROBERTO LÓPEZ GARCÍZ</h2></div>
+      <div class="fondo_verde"></div>
+    <div class="auxiliar">
+      <div class="primerCirculo"></div>
+      <div class="segundoCirculo"></div>
     </div>
-    <!--------------------------------------------------------------------------->
-
-    <!-------------------------------FILTRO-------------------------------------->
-    <div class="filtro">
-        <a class="enlace" href="#">SONDAS</a>
-        <a class="enlace" href="#">GRÁFICAS</a>
-        <a class="enlace" href="#body">MAPAS</a>
-
-    </div>
+    <h1 class="nombre">Roberto Pérez García</h1>
+    <!-- Comienza el submenu -->
+    <nav class="submenu">
+        <ul class="ulsubmenu">
+            <div class="submenu_item">
+                <li><a class="enlace" href="sondas.html">SONDAS</a></li>
+            </div>
+            <div class="submenu_item">
+                <li><a class="enlace" href="#">GRÁFICAS</a></li>
+            </div>
+            <div class="submenu_item" id="mapass">
+                <li><a class="enlace" href="mapas.html">MAPAS</a></li>
+            </div>
+        </ul>
+    </nav>
     <!--------------------------------------------------------------------------->
 
     <!-------------------------------MAPAS 1------------------------------------->
