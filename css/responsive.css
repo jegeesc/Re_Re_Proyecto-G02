@@ -106,7 +106,7 @@
         flex-direction: column;
         align-items: center;
     }
-
+    /*FAQS*/
     .preguntas {
         padding-top: 7%;
         padding-bottom: 5%;
@@ -116,26 +116,24 @@
         font-size: 2rem;
     }
 
-    .form {
-        max-width: 70%;
-        padding-bottom: 10%;
-    }
+
 
     .flecha-mas {
-        max-width: 35%;
+        max-width: 55%;
     }
 
 
     .texto-respuesta {
         display: block;
         width: 80%;
-        text-align: justify;
+        text-align: center;
         align-self: auto;
     }
 
     .respuesta {
         display: flex;
         justify-content: center;
+        font-size: 0.5rem;
 
     }
 
@@ -144,6 +142,36 @@
     }
     .tit-preg{
         margin: 2rem;
+    }
+
+    /*CONTACTO*/
+    .form {
+        max-width: 85%;
+        padding-bottom: 10%;
+    }
+    form label{
+        font-size: 1.5rem;
+    }
+
+    #fname{
+        font-size: 1rem;
+    }
+    #lname{
+        font-size: 1rem;
+    }
+    #mail{
+        font-size: 1rem;
+    }
+    #subject{
+        font-size: 1rem;
+    }
+    #boton-enviar{
+        font-size: 1rem;
+        width: 40%;
+    }
+    /*FOOTER*/
+    .piePagina{
+        height: 10%;
     }
 
 }
@@ -218,7 +246,7 @@
         flex: 0.4 1 0;
     }
     .flecha-mas {
-        max-width: 35%;
+        max-width: 25%;
     }
     .preguntas {
         display: flex;

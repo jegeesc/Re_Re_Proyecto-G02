@@ -146,11 +146,11 @@ body {
 }
 
 #tituloFoter {
-    font-size: 175%;
+    font-size: 2rem;
 }
 
 .textoFooter {
-    font-size: 150%;
+    font-size: 1.5rem;
     flex: 1 1 0;
     display: block;
     text-decoration: none;
@@ -161,7 +161,7 @@ body {
     flex: 1 1 0;
     text-decoration: none;
     color: darkgrey;
-    font-size: 100%;
+    font-size: 1rem;
 }
 
 #imagenFooter {
