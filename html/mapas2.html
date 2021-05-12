@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapas</title>
+    <link rel="shortcut icon" href="../normie/images/logo.png"/>
+    <link rel="stylesheet" type="text/css" href="../css/usuario_mapa.css">
+    <meta name="viewport" content="width=devide-width,
+    shrink-to-fit=yes, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../css/estilonormal.css">
+</head>
+<body>
+<div id="body">
+    <!-------------------------------HEADER-------------------------------------->
+    <header class="encabezado">
+        <div class="BarraNav">
+            <nav class="navNormal">
+                <ul class="suprema">
+                    <div class="item">
+                        <li><a href="../index.html"><img class="logo" src="../images/logoGTI.png" alt="logo"></a></li>
+                    </div>
+                    <div class="menudiv">
+                        <li><a href=""><img class="menu" src="../images/menu.png" alt="salir"></a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="fondo_verde"></div>
+    <div class="auxiliar">
+        <div class="primerCirculo"></div>
+        <div class="segundoCirculo2"></div>
+    </div>
+    <h1 class="nombre">Sandra Cuevas Soriano</h1>
+    <!-- Comienza el submenu -->
+    <nav class="submenu">
+        <ul class="ulsubmenu">
+            <div class="submenu_item">
+                <li><a class="enlace" href="sondas2.html">SONDAS</a></li>
+            </div>
+            <div class="submenu_item">
+                <li><a class="enlace" href="#">GRÁFICAS</a></li>
+            </div>
+            <div class="submenu_item" id="mapas">
+                <li><a class="enlace" href="mapas2.html">MAPAS</a></li>
+            </div>
+        </ul>
+    </nav>
+    <!--------------------------------------------------------------------------->
+
+    <!-------------------------------MAPAS 1------------------------------------->
+    <div class="todo">
+
+        <div class="recuadro_mapa">
+            <div class="editar">
+                <h2 class="nombre_mapa">SONDAS CULLERA</h2>
+                <img class="ediatar_imagen" src="../usuario_mapas/images/editar.PNG" alt="Editar">
+            </div>
+
+            <div id="map"></div>
+
+            <div class="buscar_sondas">
+                <input placeholder="Latitud" type="number" id="lat">
+                <input placeholder="Longitud" type="number" id="lng">
+                <button onclick="addMarker()">BUSCAR SONDAS</button>
+            </div>
+
+            <script>
+                let map;
+
+                function initMap() {
+                    //console.log("Google Maps cargado!!");
+                    map = new google.maps.Map(document.getElementById('map'), {
+                        center: {lat: 39.16472494155615, lng:  -0.2700451991719377},
+                        zoom: 18,
+                        mapTypeId: 'hybrid',
+                        styles: [
+                            {
+                                featureType: 'poi',
+                                stylers: [{visibility: 'off'}]
+                            },
+                            {
+                                featureType: 'transit',
+                                stylers: [{visibility: 'off'}]
+                            }
+                        ],
+                        mapTypeControl: false,
+                        streetViewControl: false,
+                        rotateControl: false,
+                    });
+                    <!-- ------Poner un punto fijo en el mapa---------------- -->
+                    var sonda1 = new google.maps.Marker({
+                        position: {lat: 39.1652749318471, lng: -0.27025114311226095},
+                        label: "1",
+                        animation: google.maps.Animation.DROP,
+                        map: map
+                    });
+
+                    var sonda2 = new google.maps.Marker({
+                        position: {lat: 39.16463978138466, lng: -0.26966534701534145},
+                        label: "2",
+                        animation: google.maps.Animation.DROP,
+                        map: map
+                    });
+
+                    var sonda3 = new google.maps.Marker({
+                        position: {lat: 39.16412526982216, lng: -0.270850668805202},
+                        label: "3",
+                        animation: google.maps.Animation.DROP,
+                        map: map
+                    });
+
+                    <!-- ---------------------------------------------------- -->
+                }
+                <!-- ---------------------Añadir sonda----------------------- -->
+                function addMarker() {
+                    let lat = parseFloat(document.getElementById('lat').value);
+                    let lng = parseFloat(document.getElementById('lng').value);
+
+                    var nuevasonda = new google.maps.Marker({
+                        position: {lat: lat, lng: lng},
+                        label: "Nueva Sonda",
+                        animation: google.maps.Animation.DROP,
+                        map: map
+                    });
+
+                    map.panTo(nuevasonda.getPosition());
+                }
+                <!-- ------------------------------------------------------- -->
+
+            </script>
+
+            <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+                    async defer></script>
+        </div>
+        <!--------------------------------------------------------------------------->
+
+    </div>
+</div>
+</body>
+</html>
