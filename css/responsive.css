@@ -106,7 +106,7 @@
         flex-direction: column;
         align-items: center;
     }
-
+    /*FAQS*/
     .preguntas {
         padding-top: 7%;
         padding-bottom: 5%;
@@ -133,6 +133,7 @@
     .respuesta {
         display: flex;
         justify-content: center;
+        font-size: 0.5rem;
 
     }
 
@@ -167,6 +168,10 @@
     #boton-enviar{
         font-size: 1rem;
         width: 40%;
+    }
+    /*FOOTER*/
+    .piePagina{
+        height: 10%;
     }
 
 }
