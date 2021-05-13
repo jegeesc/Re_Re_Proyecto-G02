@@ -9,21 +9,20 @@ ul {
     align-items: center;
     justify-content: space-between;
 }
-.encabezado {
-    z-index: 100;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
+header{
+	max-height: 20%;
+	display: flex;
+	justify-content: space-between;
 }
 .BarraNav {
     border: 1px solid #ffffff;
     background-color: white;
     height: 100px;
 }
-.logo {
-    width: 33%;
-    height: auto;
+.logo_header{
+	max-width: 40%;
+	height: auto;
+	margin: auto 2rem;
 }
 .menudiv{
 	text-align: right;
@@ -90,12 +89,14 @@ ul {
 	width: 160px;
 	height: auto;
 	border-radius: 20px;
+
 }
 .enlace{
 	font-family: "Montserrat";
 	color: black;
 	font-size: 1.5rem;
 	text-decoration: none;
+	margin: 0;
 	font-weight: bold;
 }
 #sondas{
@@ -167,10 +168,50 @@ ul {
 .padding{
 	padding-top: 4%;
 }
+#btn-menu{
+	display:none;
+
+}
+header label{
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+
+}
+header label:hover{
+	cursor:pointer;
+	background: rgba(0, 0, 0, 0.3);
+}
+header label:hover{
+	cursor:pointer;
+	background: rgba(0, 0, 0, 0.3);
+}
+.menu ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+}
+.menu li{
+
+}
+.menu li a{
+	display:block;
+	padding: 15px 20px;
+	color:black;
+	text-decoration: none;
+
+}
 
 @media (max-width: 700px) {
 	.BarraNav{
 		height: auto;
+	}
+	.logo_header{
+		max-width: 30%;
 	}
 	.suprema{
 		padding: 0;
@@ -239,4 +280,55 @@ ul {
 	#sondas{
 		padding: 4%;
 	}
+	.menu_header{
+		width: 13%;
+		min-width: 2rem;
+	}
+	.verde{
+		max-height: 6rem;
+		flex-direction: column;
+	}
+	.imagen_user{
+		max-width: 90px;
+		max-height: 90px;
+		margin-top: 3rem;
+	}
+	.nombre_user{
+		color: #29b21a;
+	}
+
+	#map{
+		max-width: 70%;
+		max-height: 70vh;
+	}
+	.filtro{
+		margin: 2rem 0.5rem;
+		display: flex;
+		justify-content: space-between;
+	}
+	.enlace{
+		margin: 5rem 0 0;
+		padding: 0 1rem;
+	}
+	header label{
+		display:block;
+	}
+	.menu{
+		display: flex;
+		flex-direction: column;
+		width: 2rem;
+	}
+
+	#btn-menu:checked ~ .menu{
+		margin: 0;
+
+	}
+	.menu ul{
+		margin: 0;
+		list-style: none;
+		padding: 0;
+		display: block;
+
+	}
+
 }
