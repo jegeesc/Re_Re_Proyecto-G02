@@ -21,13 +21,18 @@ document.querySelector("form").addEventListener("submit", function (event) {
         if (dataLogin.get("usuario") == "user" && dataLogin.get("contrasenya") == "1234") {
             document.getElementById("outputLogin").textContent = "Bienvenido, " + datos.usuario + "!"
             setTimeout(function () {
-                window.location = "../html/normal.html";
-            }, 0)
-        } else {
+                window.location = "../html/landingUser.html";
+            }, 10)
+        } else if (dataLogin.get("usuario") == "user2" && dataLogin.get("contrasenya") == "1234"){
+            document.getElementById("outputLogin").textContent = "Bienvenido, " + datos.usuario + "!"
+            setTimeout(function () {
+                location.href = "../html/landingUser2.html"
+            }, 10)
+        }else{
             document.getElementById("outputLogin").textContent = "Bienvenido, " + datos.usuario + "!"
             setTimeout(function () {
                 location.href = "../html/admin.html"
-            }, 0)
+            }, 10)
         }
     }).catch(function (error) {
         document.getElementById("outputLogin").textContent = "Los datos introducidos son incorrectos :/";
