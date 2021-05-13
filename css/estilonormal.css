@@ -47,24 +47,24 @@ header{
 .primerCirculo{
 	position: absolute;
 	display: block;
-    width: 150px; 
-    height: 150px; 
-    background: white;
-    border-radius: 50%;
-    top: 215px;
-    opacity: 42%;
+	width: 150px;
+	height: 150px;
+	background: white;
+	border-radius: 50%;
+	top: 215px;
+	opacity: 42%;
 }
 .segundoCirculo{
 	position: absolute;
 	display: block;
 	background-image: url("../normie/images/perfilejemplo.jpeg");
-  	background-position: center; 
-  	background-size: cover;
-  	width: 120px;
- 	height: 120px;
-  	border-radius: 50%;
- 	border: 2px solid grey;
- 	top: 230px;
+	background-position: center;
+	background-size: cover;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	border: 2px solid grey;
+	top: 230px;
 }
 .nombre{
 	color: #006629;
@@ -89,14 +89,12 @@ header{
 	width: 160px;
 	height: auto;
 	border-radius: 20px;
-
 }
 .enlace{
 	font-family: "Montserrat";
 	color: black;
 	font-size: 1.5rem;
 	text-decoration: none;
-	margin: 0;
 	font-weight: bold;
 }
 #sondas{
@@ -109,7 +107,7 @@ header{
 	padding-top: 1%;
 	margin: 0 auto;
 	border: 1px solid black;
-	width: 90%;
+	width: 800px;
 	height: 350px;
 	display: flex;
 	justify-content: space-around;
@@ -128,7 +126,7 @@ header{
 	justify-content: space-around;
 	text-align: center;
 	font-family: "Montserrat";
-	font-size: 150%;	
+	font-size: 150%;
 }
 .lista1{
 	flex-direction: column;
@@ -154,12 +152,12 @@ header{
 }
 .añadir{
 	background-color: #defada;
-  	width: 70px;
- 	height: 70px;
-  	border-radius: 50%;
- 	margin: 0 auto;
- 	text-align: center;
- 	bottom: 20%;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin: 0 auto;
+	text-align: center;
+	bottom: 20%;
 }
 .foto_añadir{
 	border: none;
@@ -168,50 +166,10 @@ header{
 .padding{
 	padding-top: 4%;
 }
-#btn-menu{
-	display:none;
-
-}
-header label{
-	display: none;
-	width: 30px;
-	height: 30px;
-	padding: 10px;
-
-}
-header label:hover{
-	cursor:pointer;
-	background: rgba(0, 0, 0, 0.3);
-}
-header label:hover{
-	cursor:pointer;
-	background: rgba(0, 0, 0, 0.3);
-}
-.menu ul{
-	margin: 0;
-	list-style: none;
-	padding: 0;
-	display: flex;
-	justify-content: flex-end;
-	flex-direction: row;
-}
-.menu li{
-
-}
-.menu li a{
-	display:block;
-	padding: 15px 20px;
-	color:black;
-	text-decoration: none;
-
-}
 
 @media (max-width: 700px) {
 	.BarraNav{
 		height: auto;
-	}
-	.logo_header{
-		max-width: 30%;
 	}
 	.suprema{
 		padding: 0;
@@ -226,12 +184,12 @@ header label:hover{
 		height: 220px;
 	}
 	.primerCirculo{
-		width: 110px; 
+		width: 110px;
 		height: 110px;
 		top: 160px;
 	}
 	.segundoCirculo{
-		width: 90px; 
+		width: 90px;
 		height: 90px;
 		top: 170px;
 	}
@@ -243,8 +201,8 @@ header label:hover{
 		font-size: 1rem;
 	}
 	.etiqueta{
-		width: 80%;
-		height: 220px;
+		width: 350px;
+		height: 200px;
 	}
 	.contenedor_img{
 		margin-left: 4px;
@@ -280,55 +238,4 @@ header label:hover{
 	#sondas{
 		padding: 4%;
 	}
-	.menu_header{
-		width: 13%;
-		min-width: 2rem;
-	}
-	.verde{
-		max-height: 6rem;
-		flex-direction: column;
-	}
-	.imagen_user{
-		max-width: 90px;
-		max-height: 90px;
-		margin-top: 3rem;
-	}
-	.nombre_user{
-		color: #29b21a;
-	}
-
-	#map{
-		max-width: 70%;
-		max-height: 70vh;
-	}
-	.filtro{
-		margin: 2rem 0.5rem;
-		display: flex;
-		justify-content: space-between;
-	}
-	.enlace{
-		margin: 5rem 0 0;
-		padding: 0 1rem;
-	}
-	header label{
-		display:block;
-	}
-	.menu{
-		display: flex;
-		flex-direction: column;
-		width: 2rem;
-	}
-
-	#btn-menu:checked ~ .menu{
-		margin: 0;
-
-	}
-	.menu ul{
-		margin: 0;
-		list-style: none;
-		padding: 0;
-		display: block;
-
-	}
-
 }
