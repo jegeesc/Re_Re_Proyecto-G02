@@ -1,0 +1,35 @@
+.list-group{
+    width: 80%;
+    margin:3rem auto 0;
+}
+.list-group-item{
+    position: relative;
+    text-align: center;
+    transform: skew(0deg, 3grad);
+    padding:4rem 0 0;
+    height: 10rem;
+    align-items: center;
+    border-top: none;
+    border-right:none ;
+    border-left:none ;
+    border-bottom: 5px solid #008000;
+}
+.list-group-item:hover{
+    background-color: rgba(0,128,0,0.1);
+}
+.itemSelector{
+    transform: skew(0deg, -3grad);
+}
+.tituloselector{
+    color: #FFFFFF;
+    text-shadow: -1px 0 2px green, 0 1px 2px green, 1px 0 2px green, 0 -1px 2px green;
+}
+@media(max-width:700px){
+    .list-group{
+        width: 80%;
+        margin:6rem auto 0;
+    }
+    .nombre_user{
+        margin-top: 1rem;
+    }
+}
