@@ -186,12 +186,11 @@ header{
 	.primerCirculo{
 		width: 110px;
 		height: 110px;
-		top: 160px;
+		top: 220px;
 	}
 	.segundoCirculo{
 		width: 90px;
 		height: 90px;
-		top: 170px;
 	}
 	.nombre{
 		padding-top: 15%;
