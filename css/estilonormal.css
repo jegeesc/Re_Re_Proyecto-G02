@@ -18,6 +18,7 @@ header{
     border: 1px solid #ffffff;
     background-color: white;
     height: 100px;
+	text-decoration: none;
 }
 .logo_header{
 	max-width: 40%;
@@ -166,10 +167,15 @@ header{
 .padding{
 	padding-top: 4%;
 }
+.linkNav{
+	text-decoration: none;
+	color: black;
+}
 
 @media (max-width: 700px) {
 	.BarraNav{
 		height: auto;
+		text-decoration: none;
 	}
 	.suprema{
 		padding: 0;

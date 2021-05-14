@@ -166,7 +166,10 @@ header{
 .padding{
 	padding-top: 4%;
 }
-
+.linkNav{
+	text-decoration: none;
+	color: black;
+}
 @media (max-width: 700px) {
 	.BarraNav{
 		height: auto;

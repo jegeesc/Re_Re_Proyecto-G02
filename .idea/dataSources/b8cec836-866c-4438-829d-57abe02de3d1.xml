@@ -13,20 +13,20 @@
     <schema id="3" parent="1" name="information_schema">
       <Collation>utf8_general_ci</Collation>
     </schema>
-    <schema id="4" parent="1" name="mysql">
+    <schema id="4" parent="1" name="jegeesc_usuarios">
       <Collation>utf8mb4_general_ci</Collation>
     </schema>
-    <schema id="5" parent="1" name="performance_schema">
+    <schema id="5" parent="1" name="mysql">
+      <Collation>utf8mb4_general_ci</Collation>
+    </schema>
+    <schema id="6" parent="1" name="performance_schema">
       <Collation>utf8_general_ci</Collation>
     </schema>
-    <schema id="6" parent="1" name="phpmyadmin">
+    <schema id="7" parent="1" name="phpmyadmin">
       <Collation>utf8_bin</Collation>
     </schema>
-    <schema id="7" parent="1" name="test">
+    <schema id="8" parent="1" name="test">
       <Collation>latin1_swedish_ci</Collation>
-    </schema>
-    <schema id="8" parent="1" name="vetas_pl1">
-      <Collation>utf8mb4_general_ci</Collation>
     </schema>
     <collation id="9" parent="1" name="armscii8_bin">
       <Charset>armscii8</Charset>
@@ -1055,78 +1055,140 @@
 </ObjectGrants>
     </user>
     <table id="335" parent="2" name="datos_usuarios"/>
-    <table id="336" parent="2" name="usuariosregistrados"/>
-    <column id="337" parent="335" name="id">
+    <table id="336" parent="2" name="sondas"/>
+    <table id="337" parent="2" name="usuariosregistrados"/>
+    <column id="338" parent="335" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="338" parent="335" name="nombre">
+    <column id="339" parent="335" name="nombre">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
     </column>
-    <column id="339" parent="335" name="apellidos">
+    <column id="340" parent="335" name="apellidos">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
     </column>
-    <column id="340" parent="335" name="email">
+    <column id="341" parent="335" name="email">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
     </column>
-    <column id="341" parent="335" name="nSondas">
+    <column id="342" parent="335" name="nSondas">
       <Position>5</Position>
       <DataType>int(255)|0s</DataType>
-      <NotNull>1</NotNull>
     </column>
-    <column id="342" parent="335" name="multiRecinto">
+    <column id="343" parent="335" name="multiRecinto">
       <Position>6</Position>
       <DataType>enum(&apos;Sí&apos;, &apos;No&apos;)|0e</DataType>
-      <NotNull>1</NotNull>
     </column>
-    <column id="343" parent="335" name="tipoUsuario">
+    <column id="344" parent="335" name="tipoUsuario">
       <Position>7</Position>
       <DataType>enum(&apos;admin&apos;, &apos;usuario&apos;)|0e</DataType>
-      <NotNull>1</NotNull>
     </column>
-    <column id="344" parent="335" name="ubicacion">
+    <column id="345" parent="335" name="ubicacion">
       <Position>8</Position>
       <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
     </column>
-    <key id="345" parent="335" name="PRIMARY">
+    <key id="346" parent="335" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="346" parent="336" name="id">
+    <column id="347" parent="336" name="id_usuario">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="347" parent="336" name="usuario">
+    <column id="348" parent="336" name="id_sonda">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="348" parent="336" name="contrasenya">
+    <column id="349" parent="336" name="nombre_sonda">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="349" parent="336" name="tipoUsuario">
+    <column id="350" parent="336" name="Lat">
+      <Position>4</Position>
+      <DataType>double|0s</DataType>
+    </column>
+    <column id="351" parent="336" name="Long">
+      <Position>5</Position>
+      <DataType>double|0s</DataType>
+    </column>
+    <column id="352" parent="336" name="temperatura">
+      <Position>6</Position>
+      <DataType>double|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="353" parent="336" name="humedad">
+      <Position>7</Position>
+      <DataType>double|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="354" parent="336" name="salinidad">
+      <Position>8</Position>
+      <DataType>double|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="355" parent="336" name="iluminacion">
+      <Position>9</Position>
+      <DataType>enum(&apos;Soleado&apos;, &apos;Parcialmente Nublado&apos;, &apos;Muy Nublado&apos;, &apos;Noche&apos;)|0e</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="356" parent="336" name="id_usuario">
+      <ColNames>id_usuario</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="357" parent="336" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_sonda</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="358" parent="336" name="sondas_ibfk_1">
+      <ColNames>id_usuario</ColNames>
+      <RefTableName>datos_usuarios</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="359" parent="337" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="360" parent="337" name="usuario">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="361" parent="337" name="contrasenya">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="362" parent="337" name="tipoUsuario">
       <Position>4</Position>
       <DataType>enum(&apos;Admin&apos;, &apos;User&apos;)|0e</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="350" parent="336" name="id">
+    <index id="363" parent="337" name="usuario">
+      <ColNames>usuario</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <index id="364" parent="337" name="id">
       <ColNames>id</ColNames>
       <Type>btree</Type>
     </index>
-    <foreign-key id="351" parent="336" name="usuariosregistrados_ibfk_1">
+    <key id="365" parent="337" name="usuario">
+      <ColNames>usuario</ColNames>
+      <UnderlyingIndexName>usuario</UnderlyingIndexName>
+    </key>
+    <foreign-key id="366" parent="337" name="usuariosregistrados_ibfk_1">
       <ColNames>id</ColNames>
       <RefTableName>datos_usuarios</RefTableName>
       <RefColNames>id</RefColNames>
