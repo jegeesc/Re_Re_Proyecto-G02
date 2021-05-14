@@ -18,12 +18,12 @@ document.querySelector("form").addEventListener("submit", function (event) {
             return respuesta.json();
         }
     }).then(function (datos) {
-        if (dataLogin.get("usuario") == "user" && dataLogin.get("contrasenya") == "1234") {
+        if (dataLogin.get("usuario") == "roberto" && dataLogin.get("contrasenya") == "1234") {
             document.getElementById("outputLogin").textContent = "Bienvenido, " + datos.usuario + "!"
             setTimeout(function () {
                 window.location = "../html/landingUser.html";
             }, 10)
-        } else if (dataLogin.get("usuario") == "user2" && dataLogin.get("contrasenya") == "1234"){
+        } else if (dataLogin.get("usuario") == "sandra" && dataLogin.get("contrasenya") == "1234"){
             document.getElementById("outputLogin").textContent = "Bienvenido, " + datos.usuario + "!"
             setTimeout(function () {
                 location.href = "../html/landingUser2.html"
