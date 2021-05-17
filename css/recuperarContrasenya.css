@@ -3,6 +3,8 @@
     display: flex;
     justify-content: center;
     align-content: center;
+    border: red solid 1px;
+
 
 }
 
@@ -11,7 +13,8 @@
     justify-content: center;
     visibility: hidden;
     opacity: 0;
-    width: 50%;
+    width:0%;
+    font-size: 0px;
 
 }
 
@@ -20,6 +23,7 @@
     visibility: visible;
     opacity: 1;
     transition: 0.5s;
+
 }
 
 #olvido-contrasenya:target #recuperar-contrasenya {
@@ -38,11 +42,11 @@
 }
 
 #texto-olvido-contrasenya {
-    margin-top: 1rem;
+    margin-top: 1em;
     font-family: "Montserrat";
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: bold;
-    padding: 1rem;
+    padding: 1em;
 }
 
 /*Container de la x para cerrar la ventana*/
