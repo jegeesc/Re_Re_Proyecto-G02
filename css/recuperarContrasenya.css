@@ -11,7 +11,8 @@
     justify-content: center;
     visibility: hidden;
     opacity: 0;
-    width: 50%;
+    width: 0%;
+    font-size: 0px;
 
 }
 
@@ -19,7 +20,9 @@
 #olvido-contrasenya:target {
     visibility: visible;
     opacity: 1;
-    transition: 0.5s;
+    transition:0.5s;
+    font-size: 16px;
+
 }
 
 #olvido-contrasenya:target #recuperar-contrasenya {
@@ -38,11 +41,11 @@
 }
 
 #texto-olvido-contrasenya {
-    margin-top: 1rem;
+    margin-top: 1em;
     font-family: "Montserrat";
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: bold;
-    padding: 1rem;
+    padding: 1em;
 }
 
 /*Container de la x para cerrar la ventana*/
@@ -84,7 +87,7 @@
 
 
 @media (max-width: 650px) {
-    #olvido-contrasenya:target #recuperar-contrasenya{
+    #olvido-contrasenya:target #recuperar-contrasenya {
         width: 80%;
     }
 }
