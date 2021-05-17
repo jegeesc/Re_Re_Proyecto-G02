@@ -21,12 +21,12 @@ document.querySelector("form").addEventListener("submit", function (event) {
         if (dataLogin.get("usuario") == "roberto" && dataLogin.get("contrasenya") == "1234") {
             document.getElementById("outputLogin").textContent = "Bienvenido, " + datos.usuario + "!"
             setTimeout(function () {
-                window.location = "../html/landingUser.html";
+                window.location = "../html/mapas.html";
             }, 10)
         } else if (dataLogin.get("usuario") == "sandra" && dataLogin.get("contrasenya") == "1234"){
             document.getElementById("outputLogin").textContent = "Bienvenido, " + datos.usuario + "!"
             setTimeout(function () {
-                location.href = "../html/landingUser2.html"
+                location.href = "../html/mapas2.html"
             }, 10)
         }else{
             document.getElementById("outputLogin").textContent = "Bienvenido, " + datos.usuario + "!"
