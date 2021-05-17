@@ -3,8 +3,6 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    border: red solid 1px;
-
 
 }
 
@@ -13,7 +11,7 @@
     justify-content: center;
     visibility: hidden;
     opacity: 0;
-    width:0%;
+    width: 0%;
     font-size: 0px;
 
 }
@@ -22,7 +20,8 @@
 #olvido-contrasenya:target {
     visibility: visible;
     opacity: 1;
-    transition: 0.5s;
+    transition:0.5s;
+    font-size: 16px;
 
 }
 
@@ -88,7 +87,7 @@
 
 
 @media (max-width: 650px) {
-    #olvido-contrasenya:target #recuperar-contrasenya{
+    #olvido-contrasenya:target #recuperar-contrasenya {
         width: 80%;
     }
 }
