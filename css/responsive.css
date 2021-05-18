@@ -1,7 +1,5 @@
-
 @media (max-width: 700px ) {
     /* HEADER */
-
     .encabezado {
         z-index: 100;
         position: fixed;
@@ -12,20 +10,25 @@
         display: flex;
         justify-content: space-between;
     }
-    .contactoyLogin{
+
+    .contactoyLogin {
         margin-left: 100px;
     }
-    .logo{
+
+    .logo {
         min-width: 5rem;
     }
+
     .cont {
         width: 2.5rem;
         margin-top: 10px;
     }
+
     .login {
         width: 2.5rem;
         margin-top: 9px;
     }
+
     /* FIN HEADER */
     .portadagira {
         background-color: white;
@@ -33,44 +36,51 @@
         height: 15rem;
         position: relative;
     }
+
     .nogira {
         max-width: 40%;
         max-height: 75%;
     }
+
     .titulo {
         margin-top: 5rem;
         font-size: 4rem;
         padding-top: 1%;
         padding-bottom: 4%;
     }
+
     .subtitulo {
         font-size: 1.5rem;
         position: relative;
-        top:-4rem;
+        top: -4rem;
     }
-    .info{
+
+    .info {
         font-size: 1rem;
         border-radius: 25px;
         position: relative;
-        top:-5rem;
+        top: -5rem;
         padding: 1.5rem;
         box-shadow: 1px 1px 5px wheat;
     }
-    .flecha_bajar{
+
+    .flecha_bajar {
         position: relative;
-        top:-4rem;
+        top: -4rem;
         max-width: 3rem;
     }
-    #img-portada{
+
+    #img-portada {
         width: 100%;
         height: 50%;
     }
-    /* FIN PRIMERA PÁGINA */
 
-    #flechaSubir{
+    /* FIN PRIMERA PÁGINA */
+    #flechaSubir {
         width: 3rem;
         height: 3rem;
     }
+
     #imagenSubir {
         position: relative;
         left: 2px;
@@ -86,7 +96,8 @@
     .sensores {
         height: 700px;
     }
-    .tituloservicios{
+
+    .tituloservicios {
         font-size: 4rem;
     }
 
@@ -103,11 +114,13 @@
         font-size: 1rem;
         margin: 1rem;
     }
-    .ajustar{
+
+    .ajustar {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     /*FAQS*/
     .preguntas {
         padding-top: 7%;
@@ -117,7 +130,6 @@
     .texto-pregunta {
         font-size: 2rem;
     }
-
 
 
     .flecha-mas {
@@ -142,7 +154,8 @@
     .subtitulocont {
         font-size: 4rem;
     }
-    .tit-preg{
+
+    .tit-preg {
         margin: 2rem;
     }
 
@@ -151,85 +164,97 @@
         max-width: 85%;
         padding-bottom: 10%;
     }
-    form label{
+
+    form label {
         font-size: 1.5rem;
     }
 
-    #fname{
+    #fname {
         font-size: 1rem;
     }
-    #lname{
+
+    #lname {
         font-size: 1rem;
     }
-    #mail{
+
+    #mail {
         font-size: 1rem;
     }
-    #subject{
+
+    #subject {
         font-size: 1rem;
     }
-    #boton-enviar{
+
+    #boton-enviar {
         font-size: 1rem;
         width: 40%;
     }
+
     /*FOOTER*/
-    .piePagina{
+    .piePagina {
         height: 10%;
     }
 
 }
+
 @media (min-width: 1000px) {
     /* HEADER */
-    #img-portada{
+    #img-portada {
         width: 400px;
         height: 250px;
     }
+
     .portadagira {
         background-color: white;
         transform: skewY(-5deg);
         height: 20rem;
         position: relative;
-        top:-3rem;
+        top: -3rem;
 
     }
-    /* FIN HEADER */
 
+    /* FIN HEADER */
     /* PRIMERA PÁGINA */
-    .titulo{
+    .titulo {
         font-size: 7rem;
     }
-    .nogira{
+
+    .nogira {
         width: 25rem;
     }
-    .subtitulo{
+
+    .subtitulo {
         position: relative;
-        top:-12rem;
+        top: -12rem;
         font-size: 2rem;
     }
-    .info{
+
+    .info {
         font-size: 2rem;
         border-radius: 30px;
         position: relative;
-        top:-15rem;
+        top: -15rem;
         box-shadow: 1px 1px 5px wheat;
     }
-    .flecha_bajar{
+
+    .flecha_bajar {
         position: relative;
-        top:-15rem;
+        top: -15rem;
         width: 4rem;
     }
-    /* FIN PRIMERA PÁGINA */
 
-    #flechaSubir{
+    /* FIN PRIMERA PÁGINA */
+    #flechaSubir {
         width: 3rem;
         height: 3rem;
     }
+
     #imagenSubir {
         position: relative;
         left: 2px;
         width: 3rem;
         height: 3rem;
     }
-
 
 
 }
@@ -241,15 +266,18 @@
         flex-direction: row;
         align-items: center;
     }
+
     .flecha-mas-cont {
         display: flex;
         height: auto;
         justify-content: center;
         flex: 0.4 1 0;
     }
+
     .flecha-mas {
         max-width: 25%;
     }
+
     .preguntas {
         display: flex;
         flex-direction: column;
@@ -261,4 +289,39 @@
         margin-bottom: 20%;
     }
 
+}
+
+@media (min-width: 1250px) {
+    .titulo {
+        padding-bottom: 4%;
+
+    }
+
+    #img-portada {
+        position: absolute;
+        right: 50%;
+    }
+
+    #texto-reclamo {
+        position: absolute;
+        color: #8343a1;
+        top: 8%;
+        right: 05%;
+        width: 30%;
+    }
+    .div_info{
+        position: absolute;
+        top: 75%;
+        right:40%;
+    }
+    .info{
+        box-shadow: 1px 1px 20px grey ;
+    }
+    .centrar_flecha{
+
+        position: absolute;
+        top: 120%;
+        right: 47%;
+
+    }
 }

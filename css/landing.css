@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
 
+/*Hacer que el scroll sea suave*/
+html {
+    scroll-behavior:smooth;
+    }
+
 body {
+    margin: 0 auto;
     background-color: #8343a1;
-    margin: 0;
     padding: 0;
+    max-width: 1600px;
 }
 .encabezado {
     z-index: 100;
@@ -107,6 +113,13 @@ body {
     color: #8343A1;
     background-color: whitesmoke;
     text-decoration: none;
+}
+.info:hover{
+    background-color: #ececec;
+    color: #d791fc;
+}
+#Servicios{
+    transition: 1s;
 }
 
 .centrar_flecha {
