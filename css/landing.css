@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
 
-body {
-    background-color: #8343a1;
-    margin: 0;
-    padding: 0;
+/*Hacer que el scroll sea suave*/
+html {
+    scroll-behavior: smooth;
 }
+
+body {
+    margin: 0 auto;
+    background-color: #8343a1;
+    padding: 0;
+    max-width: 1600px;
+}
+
 .encabezado {
     z-index: 100;
     position: fixed;
@@ -17,25 +24,30 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
 .LaningPage {
     position: relative;
     background-color: #8343a1;
     z-index: 100;
 }
-.divlogoHeader{
+
+.divlogoHeader {
     display: flex;
     width: fit-content;
 }
-.contactoyLogin{
+
+.contactoyLogin {
     display: flex;
     margin-right: 2rem;
 }
+
 .item {
     margin: 0 1rem;
     width: fit-content;
     max-width: 4rem;
     height: fit-content;
 }
+
 .item-contacto {
     display: inline;
     text-align: right;
@@ -48,16 +60,19 @@ body {
     max-width: 7rem;
     margin-top: 6px;
 }
+
 .cont {
     max-width: 4rem;
     margin-left: auto;
     margin-top: 3px;
 }
+
 .login {
     float: right;
     width: 3rem;
     margin-top: 5px;
 }
+
 .titulo {
     font-family: "Yanone Kaffeesatz";
     font-size: 5rem;
@@ -68,6 +83,7 @@ body {
     padding-bottom: 10%;
     text-transform: uppercase;
 }
+
 .subtitulo {
     padding-top: 15%;
     font-family: "Montserrat";
@@ -78,12 +94,14 @@ body {
     margin-left: 20px;
     margin-right: 20px;
 }
+
 .portadagira {
     background-color: white;
     transform: skewY(-5deg);
     height: 33rem;
     position: relative;
 }
+
 .nogira {
     transform: skewY(5deg);
     position: absolute;
@@ -94,6 +112,7 @@ body {
     left: 0;
     margin: 0 auto;
 }
+
 .div_info {
     text-align: center;
     padding-top: 10%;
@@ -107,6 +126,15 @@ body {
     color: #8343A1;
     background-color: whitesmoke;
     text-decoration: none;
+}
+
+.info:hover {
+    background-color: #ececec;
+    color: #d791fc;
+}
+
+#Servicios {
+    transition: 1s;
 }
 
 .centrar_flecha {
