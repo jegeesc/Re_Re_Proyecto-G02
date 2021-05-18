@@ -309,15 +309,18 @@
         right: 05%;
         width: 30%;
     }
-    .div_info{
+
+    .div_info {
         position: absolute;
         top: 75%;
-        right:40%;
+        right: 40%;
     }
-    .info{
-        box-shadow: 1px 1px 20px grey ;
+
+    .info {
+        box-shadow: 1px 1px 20px grey;
     }
-    .centrar_flecha{
+
+    .centrar_flecha {
 
         position: absolute;
         top: 120%;
