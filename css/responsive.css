@@ -37,11 +37,6 @@
         position: relative;
     }
 
-    .nogira {
-        max-width: 40%;
-        max-height: 75%;
-    }
-
     .titulo {
         margin-top: 5rem;
         font-size: 4rem;
@@ -61,18 +56,13 @@
         position: relative;
         top: -5rem;
         padding: 1.5rem;
-        box-shadow: 1px 1px 5px wheat;
+        box-shadow: 1px 1px 20px grey;
     }
 
     .flecha_bajar {
         position: relative;
         top: -4rem;
         max-width: 3rem;
-    }
-
-    #img-portada {
-        width: 100%;
-        height: 50%;
     }
 
     /* FIN PRIMERA PÁGINA */
@@ -234,7 +224,7 @@
         border-radius: 30px;
         position: relative;
         top: -15rem;
-        box-shadow: 1px 1px 5px wheat;
+        box-shadow: 1px 1px 20px grey;
     }
 
     .flecha_bajar {

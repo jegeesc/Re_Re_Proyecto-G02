@@ -126,6 +126,7 @@ body {
     color: #8343A1;
     background-color: whitesmoke;
     text-decoration: none;
+    font-weight: bolder;
 }
 
 .info:hover {
