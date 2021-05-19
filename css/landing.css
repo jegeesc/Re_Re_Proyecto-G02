@@ -5,12 +5,12 @@
 html {
     scroll-behavior: smooth;
 }
-
+/*Hacer que el contenido de la pagina no se estire demasiado*/
 body {
     margin: 0 auto;
     background-color: #8343a1;
     padding: 0;
-    max-width: 1600px;
+    max-width: 1900px;
 }
 
 .encabezado {

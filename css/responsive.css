@@ -291,10 +291,15 @@
 
 }
 
+/*Adaptar a pantallas grandes la LP*/
+
 @media (min-width: 1250px) {
     .titulo {
         padding-bottom: 4%;
 
+    }
+    .guia{
+        background: red;
     }
 
     #img-portada {
