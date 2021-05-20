@@ -1,256 +1,316 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-body{
-	background: white;
-	margin: 0;
+
+body {
+    background: white;
+    margin: 0;
 }
+
 ul {
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-header{
-	max-height: 20%;
-	display: flex;
-	justify-content: space-between;
+
+header {
+    max-height: 20%;
+    display: flex;
+    justify-content: space-between;
 }
+
 .BarraNav {
     border: 1px solid #ffffff;
     background-color: white;
     height: 100px;
-	text-decoration: none;
+    text-decoration: none;
 }
-.logo_header{
-	max-width: 40%;
-	height: auto;
-	margin: auto 2rem;
+
+.logo_header {
+    max-width: 40%;
+    height: auto;
+    margin: auto 2rem;
 }
-.menudiv{
-	text-align: right;
-	margin-right: 5%;
+
+.menudiv {
+    text-align: right;
+    margin-right: 5%;
 }
+
 .menu {
-	left: 10%;
+    left: 10%;
     width: 10%;
     height: auto;
 }
-.fondo_verde{
-	width: 100%;
-	height: 300px;
-	background-color: #29b21a;
-	border: 1px solid #29b21a;
+
+.fondo_verde {
+    width: 100%;
+    height: 300px;
+    background-color: #29b21a;
+    border: 1px solid #29b21a;
 }
-.auxiliar{
-	width: 100%;
-	display: flex;
-	justify-content: center;
+
+.auxiliar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
-.primerCirculo{
-	position: absolute;
-	display: block;
-	width: 150px;
-	height: 150px;
-	background: white;
-	border-radius: 50%;
-	top: 305px;
-	opacity: 42%;
+
+.primerCirculo {
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 50%;
+    top: 305px;
+    opacity: 42%;
 }
-.segundoCirculo{
-	position: absolute;
-	display: block;
-	background-image: url("../normie/images/perfilejemplo.jpeg");
-	background-position: center;
-	background-size: cover;
-	width: 120px;
-	height: 120px;
-	border-radius: 50%;
-	border: 2px solid grey;
-	top: 320px;
+
+.segundoCirculo {
+    position: absolute;
+    display: block;
+    background-image: url("../normie/images/perfilejemplo.jpeg");
+    background-position: center;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid grey;
+    top: 320px;
 }
-.nombre{
-	color: #006629;
-	font-family: "Montserrat";
-	font-size: 2rem;
-	text-align: center;
-	padding-top: 5%;
-	padding-bottom: 3%;
-	font-weight: bolder;
+
+.nombre {
+    color: #006629;
+    font-family: "Montserrat";
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    font-weight: bolder;
 }
-.ulsubmenu{
-	justify-content: space-around;
+
+.ulsubmenu {
+    justify-content: space-around;
 }
-.submenu{
-	height: auto;
-	margin: 0 auto;
+
+.submenu {
+    height: auto;
+    margin: 0 auto;
 }
-.submenu_item{
-	text-align: center;
-	background-color:  #defada;
-	padding: 1%;
-	width: 160px;
-	height: auto;
-	border-radius: 20px;
+
+.submenu_item {
+    text-align: center;
+    background-color: #defada;
+    padding: 1%;
+    width: 160px;
+    height: auto;
+    border-radius: 20px;
 }
-.enlace{
-	font-family: "Montserrat";
-	color: black;
-	font-size: 1.5rem;
-	text-decoration: none;
-	font-weight: bold;
+
+.enlace {
+    font-family: "Montserrat";
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
 }
-#sondas, #mapas, #graficas{
-	padding: 1.5%;
-	background-color: #c5ffbc;
-	box-shadow: 0 0 20px grey;
+
+#sondas, #mapas, #graficas {
+    padding: 1.5%;
+    background-color: #c5ffbc;
+    box-shadow: 0 0 20px grey;
 }
-.etiqueta{
-	border-radius: 40px;
-	padding-top: 1%;
-	margin: 0 auto;
-	border: 1px solid black;
-	width: 800px;
-	height: 350px;
-	display: flex;
-	justify-content: space-around;
+
+.etiqueta {
+    border-radius: 40px;
+    padding-top: 1%;
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 800px;
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
 }
-.contenedor_img{
-	text-align: center;
-	font-family: "Montserrat";
-	font-size: 120%;
+
+.contenedor_img {
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 120%;
 }
-.imagen_sonda{
-	width: 87%;
-	height: auto;
+
+.imagen_sonda {
+    width: 87%;
+    height: auto;
 }
-.listas{
-	display: flex;
-	justify-content: space-around;
-	text-align: center;
-	font-family: "Montserrat";
-	font-size: 150%;
+
+.listas {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 150%;
 }
-.lista1{
-	flex-direction: column;
-	padding-bottom: 2%;
+
+.lista1 {
+    flex-direction: column;
+    padding-bottom: 2%;
 }
-.lista2{
-	flex-direction: column;
-	padding-bottom: 2%;
+
+.lista2 {
+    flex-direction: column;
+    padding-bottom: 2%;
 }
-.primero{
-	font-weight: bolder;
-	padding-bottom: 25%;
+
+.primero {
+    font-weight: bolder;
+    padding-bottom: 25%;
 }
-.segundo{
-	font-weight: bolder;
-	padding-bottom: 55%;
+
+.segundo {
+    font-weight: bolder;
+    padding-bottom: 55%;
 }
-.itemli{
-	padding-bottom: 10%;
+
+.itemli {
+    padding-bottom: 10%;
 }
-.itemli2{
-	padding-bottom: 20%;
+
+.itemli2 {
+    padding-bottom: 20%;
 }
-.añadir{
-	background-color: #defada;
-	width: 70px;
-	height: 70px;
-	border-radius: 50%;
-	margin: 0 auto;
-	text-align: center;
-	bottom: 20%;
+
+.añadir {
+    background-color: #defada;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+    bottom: 20%;
 }
-.foto_añadir{
-	border: none;
-	max-width: 100%;
+
+.foto_añadir {
+    border: none;
+    max-width: 100%;
 }
-.padding{
-	padding-top: 4%;
+
+.padding {
+    padding-top: 4%;
 }
-.linkNav{
-	text-decoration: none;
-	color: black;
+
+.linkNav {
+    text-decoration: none;
+    color: black;
 }
 
 @media (max-width: 700px) {
-	.BarraNav{
-		height: auto;
-		text-decoration: none;
-	}
-	.suprema{
-		padding: 0;
-	}
-	.menu{
-		width: 20%;
-	}
-	.logo{
-		width: 75%;
-	}
-	.fondo_verde{
-		height: 220px;
-	}
-	.primerCirculo{
-		width: 110px;
-		height: 110px;
-		top: 220px;
-	}
-	.segundoCirculo{
-		width: 90px;
-		height: 90px;
-		top: 230px;
-	}
-	.nombre{
-		padding-top: 15%;
-		font-size: 1.3rem;
-	}
-	.enlace{
-		font-size: 1rem;
-	}
-	.etiqueta{
-		width: 350px;
-		height: 200px;
-	}
-	.contenedor_img{
-		margin-left: 4px;
-		width: 135px;
-		font-size: 80%;
-	}
-	.item{
-		margin-left: 5px;
-	}
-	.imagen_sonda{
-		width: 140%;
-		border-radius: 100%;
-	}
-	.listas{
-		margin-right: 10px;
-		font-size: 100%;
-	}
-	.añadir{
-		width:40px;
-		height:40px;
-	}
-	.ulsubmenu{
-		text-align: center;
-	}
-	.submenu_item{
-		margin-left: 10px;
-		margin-right: 2px;
-		padding: 3%;
-	}
-	#mapas{
-		margin-right: 47px;
-	}
-	#sondas{
-		padding: 4%;
-	}
+    .BarraNav {
+        height: auto;
+        text-decoration: none;
+    }
+
+    .suprema {
+        padding: 0;
+    }
+
+    .menu {
+        width: 20%;
+    }
+
+    .logo {
+        width: 75%;
+    }
+
+    .fondo_verde {
+        height: 220px;
+    }
+
+    .primerCirculo {
+        width: 110px;
+        height: 110px;
+        top: 220px;
+    }
+
+    .segundoCirculo {
+        width: 90px;
+        height: 90px;
+        top: 230px;
+    }
+
+    .nombre {
+        padding-top: 15%;
+        font-size: 1.3rem;
+    }
+
+    .enlace {
+        font-size: 1rem;
+    }
+
+    .etiqueta {
+        width: 350px;
+        height: 200px;
+    }
+
+    .contenedor_img {
+        margin-left: 4px;
+        width: 135px;
+        font-size: 80%;
+    }
+
+    .item {
+        margin-left: 5px;
+    }
+
+    .imagen_sonda {
+        width: 140%;
+        border-radius: 100%;
+    }
+
+    .listas {
+        margin-right: 10px;
+        font-size: 100%;
+    }
+
+    .añadir {
+        width: 40px;
+        height: 40px;
+    }
+
+    .ulsubmenu {
+        text-align: center;
+    }
+
+    .submenu_item {
+        margin-left: 10px;
+        margin-right: 2px;
+        padding: 3%;
+    }
+
+    #mapas {
+        margin-right: 47px;
+    }
+
+    #sondas {
+        padding: 4%;
+    }
 }
 
 /*Gráfica chart uwu*/
-	.chart-container{
-		position: relative;
-		width: 80vh;
-		height: 50vh;
-		border: 2px solid black;
-		margin: 0 auto;
-	}
+.chart-container {
+    position: relative;
+    padding: 2%;
+    width: 60%;
+    height: 50vh;    height: 50vh;
+    border-radius: 30px;
+    box-shadow: 0 0 50px grey;
+    margin: 50px auto;
+}
+.menu-desplegable {
+    margin: 0 auto;
+    width: 60%;
+
+}
+.selector{
+    box-shadow: 0 0 20px grey;
+    color: green;
+}
