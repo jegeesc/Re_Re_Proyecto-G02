@@ -245,3 +245,12 @@ header{
 		padding: 4%;
 	}
 }
+
+/*Gráfica chart uwu*/
+	.chart-container{
+		position: relative;
+		width: 80vh;
+		height: 50vh;
+		border: 2px solid black;
+		margin: 0 auto;
+	}
