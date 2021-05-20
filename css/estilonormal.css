@@ -314,3 +314,20 @@ header {
     box-shadow: 0 0 20px grey;
     color: green;
 }
+.alerta{
+    margin: 4% auto;
+    width: 50%;
+}
+@media (max-width: 700px){
+    .chart-container{
+        width: 80%;
+    }
+    .menu-desplegable {
+        width: 80%;
+    }
+    .alerta{
+        width: 70%;
+        margin: 5% auto;
+    }
+}
+
