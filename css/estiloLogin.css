@@ -233,10 +233,6 @@ a, a:link, a:visited, a:focus, a:hover, a:active {
 }
 
 @media (max-width: 700px) {
-    body {
-        background-image: url("../Login/images_login/fondo_movilpeque.png");
-    }
-
     .login_landing {
         margin-left: 10px;
         width: 25%;

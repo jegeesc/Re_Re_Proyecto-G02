@@ -20,13 +20,13 @@
     }
 
     .cont {
-        width: 2.5rem;
-        margin-top: 10px;
+        width: 30px;
+        margin-top: 20px;
     }
 
     .login {
-        width: 2.5rem;
-        margin-top: 9px;
+        width: 30px;
+        margin-top: 20px;
     }
 
     /* FIN HEADER */
@@ -67,15 +67,15 @@
 
     /* FIN PRIMERA PÁGINA */
     #flechaSubir {
-        width: 3rem;
-        height: 3rem;
+        width: 2.3rem;
+        height: 2.3rem;
     }
 
     #imagenSubir {
         position: relative;
-        left: 2px;
-        width: 3rem;
-        height: 3rem;
+        left: -.2px;
+        width: 2.3rem;
+        height: 2.3rem;
     }
 
     .imagenes {
