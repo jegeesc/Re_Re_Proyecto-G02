@@ -98,7 +98,7 @@ header{
 	text-decoration: none;
 	font-weight: bold;
 }
-#sondas{
+#sondas, #mapas, #graficas{
 	padding: 1.5%;
 	background-color: #c5ffbc;
 	box-shadow: 0 0 20px grey;
