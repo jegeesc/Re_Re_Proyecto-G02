@@ -96,6 +96,7 @@ header {
 .submenu {
     height: auto;
     margin: 0 auto;
+
 }
 
 .submenu_item {
@@ -105,6 +106,10 @@ header {
     width: 160px;
     height: auto;
     border-radius: 20px;
+    transition: 2s;
+}
+.submenu_item:hover{
+    box-shadow: 0 0 50px #b3b3b3;
 }
 
 .enlace {
@@ -286,6 +291,7 @@ header {
         padding: 3%;
     }
 
+
     #mapas {
         margin-right: 47px;
     }
@@ -319,12 +325,21 @@ header {
 .alerta {
     margin: 4% auto;
     width: 50%;
-    transition: 10s;
+    transition: 2s;
+}
+.dropdown-item:hover{
+    box-shadow: 0 0 60px #ababab;
 }
 
-/*Hacer que la alerta desaparezca al pasar el ratón por ella o al hacer click*/
+.btn:hover{
+    transition: 1s;
+    box-shadow: 0 0 60px grey;
+}
+
+
 .alerta:hover {
-    opacity: 0%;
+    transition: 1s;
+    box-shadow: 0 0 60px grey;
 }
 
 .selectores-graficas {

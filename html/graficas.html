@@ -88,7 +88,7 @@
                         Cambiar rango
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#chart" onclick="">EL RANGO ACTUALMENTE NO FUNCIONA</a>
+                        <li><a class="dropdown-item" href="#chart" onclick="" style="color: red">EL RANGO ACTUALMENTE NO FUNCIONA</a>
                         </li>
                         <li><a class="dropdown-item" href="#chart" onclick="">1 Día</a></li>
                         <li><a class="dropdown-item" href="#chart" onclick="">1 Semana</a></li>
@@ -136,9 +136,11 @@
         <!--   Hacer que la alerta desaparezca a los 30 segs    -->
         <script>
             setTimeout(function () {
+                document.getElementById("alerta").style.transition = "10s"
                 document.getElementById("alerta").style.opacity = "0%";
             }, 30000)
             setTimeout(function () {
+                document.getElementById("alerta").style.transition = "1s"
                 document.getElementById("alerta").style.width = "0%"
                 document.getElementById("alerta").style.height = "0%"
                 document.getElementById("alerta").style.fontSize = "0%"
