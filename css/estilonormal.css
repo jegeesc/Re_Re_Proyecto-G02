@@ -44,7 +44,7 @@ header {
 
 .fondo_verde {
     width: 100%;
-    height:200px;
+    height: 200px;
     background-color: #29b21a;
     border: 1px solid #29b21a;
 }
@@ -306,38 +306,53 @@ header {
     box-shadow: 0 0 50px grey;
     margin: 50px auto;
 }
+
 .menu-desplegable {
     max-width: 50%;
 }
-.selector{
+
+.selector {
     box-shadow: 0 0 20px grey;
 
 }
-.alerta{
+
+.alerta {
     margin: 4% auto;
     width: 50%;
+    transition: 10s;
 }
-.selectores-graficas{
+
+/*Hacer que la alerta desaparezca al pasar el ratón por ella o al hacer click*/
+.alerta:hover {
+    opacity: 0%;
+}
+
+.selectores-graficas {
     margin: 0 auto;
     max-width: 60%;
     display: flex;
     justify-content: space-around;
 }
-@media (max-width: 700px){
-    .chart-container{
+
+@media (max-width: 700px) {
+    .chart-container {
         width: 85%;
     }
+
     .menu-desplegable {
 
         width: 100%;
         padding-bottom: 10%;
         margin-left: 15%;
     }
-    .alerta{
+
+    .alerta {
         width: 70%;
         margin: 5% auto;
+
     }
-    .selectores-graficas{
+
+    .selectores-graficas {
         margin: 0 auto;
         max-width: 60%;
         display: flex;
