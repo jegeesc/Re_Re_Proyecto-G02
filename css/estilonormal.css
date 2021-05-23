@@ -323,9 +323,10 @@ header {
 }
 
 .alerta {
-    margin: 4% auto;
+    margin: 0 auto;
     width: 50%;
     transition: 2s;
+    margin-bottom: 2%;
 }
 .dropdown-item:hover{
     box-shadow: 0 0 60px #ababab;
@@ -347,6 +348,7 @@ header {
     max-width: 60%;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 5%;
 }
 
 @media (max-width: 700px) {
