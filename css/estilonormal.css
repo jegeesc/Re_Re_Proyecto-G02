@@ -307,28 +307,42 @@ header {
     margin: 50px auto;
 }
 .menu-desplegable {
-    margin: 0 auto;
-    width: 60%;
-
+    max-width: 50%;
 }
 .selector{
     box-shadow: 0 0 20px grey;
-    color: green;
+
 }
 .alerta{
     margin: 4% auto;
     width: 50%;
 }
+.selectores-graficas{
+    margin: 0 auto;
+    max-width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
 @media (max-width: 700px){
     .chart-container{
-        width: 80%;
+        width: 85%;
     }
     .menu-desplegable {
-        width: 80%;
+
+        width: 100%;
+        padding-bottom: 10%;
+        margin-left: 15%;
     }
     .alerta{
         width: 70%;
         margin: 5% auto;
+    }
+    .selectores-graficas{
+        margin: 0 auto;
+        max-width: 60%;
+        display: flex;
+        flex-direction: column;
+
     }
 }
 

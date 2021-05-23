@@ -1,5 +1,6 @@
 var miGrafica;
 graficaDefault()
+
 //SELECTOR DE GRÁFICAS
 function obtenerTipoGrafica(tipo) {
     if (tipo === 'barras') {
@@ -7,28 +8,36 @@ function obtenerTipoGrafica(tipo) {
         console.log("BARRAS")
         var tipoGrafica = 'bar';
         var ejePrincipal = ['lunes', 'martes', 'miércoles', 'jueves', 'viernes'];
-        cargarGrafica(ejePrincipal,tipoGrafica)
+        cargarGrafica(ejePrincipal, tipoGrafica)
 
     } else {
         if (tipo === 'lineas') {
             console.log("LÍENAS")
             var tipoGrafica = 'line'
-            var ejePrincipal = ['']
-            cargarGrafica(ejePrincipal,tipoGrafica)
+            var ejePrincipal = ['lunes', 'martes', 'miércoles', 'jueves', 'viernes']
+            cargarGrafica(ejePrincipal, tipoGrafica)
         } else {
-            console.log("ERROR")
+            if(tipo==='default'){
+                graficaDefault()
+            }else{
+                console.log('ERROR')
+            }
         }
     }
 }
-//DEFINICION DE LOS DATOS DE CADA TIPO DE GRAFICA
-function grafica(ejePrincipal,tipoGrafica){
+
+//-----------------------------------------------------------------------------------------
+//CONSTRUCTOR DE LA GRAFICA
+//-----------------------------------------------------------------------------------------
+function grafica(ejePrincipal, tipoGrafica, axis) {
+    //DATOS DE LA GRAFICA
     let datos = {
 
         labels: ejePrincipal,
-        //Se definen los conjuntos de datos de nombre ventas y con los valores del array
+        //Se definen los conjuntos de datos  con los valores del array
         datasets: [
             {
-                label: 'humedad',
+                label: 'Humedad',
                 data: [100, 234, 45, 210, 430],
                 //así se rellena
                 fill: true,
@@ -43,7 +52,7 @@ function grafica(ejePrincipal,tipoGrafica){
                 //tamaño de los puntos
                 pointRadius: 5,
             }, { //esto es otro objeto de valores que se pondría encima de la otra
-                label: 'salinidad',
+                label: 'Salinidad',
                 data: [350, 34, 267, 110, 30],
                 fill: true,
                 tension: 0,
@@ -52,7 +61,7 @@ function grafica(ejePrincipal,tipoGrafica){
                 pointStyle: 'circle',
                 pointRadius: 5,
             }, { //esto es otro objeto de valores que se pondría encima de la otra
-                label: 'iluminación',
+                label: 'Iluminación',
                 data: [20, 14, 67, 10, 30],
                 fill: true,
                 tension: 0,
@@ -61,7 +70,7 @@ function grafica(ejePrincipal,tipoGrafica){
                 pointStyle: 'circle',
                 pointRadius: 5,
             }, { //esto es otro objeto de valores que se pondría encima de la otra
-                label: 'temperatura',
+                label: 'Temperatura',
                 data: [120, 114, 167, 110, 130],
                 fill: true,
                 tension: 0,
@@ -75,17 +84,20 @@ function grafica(ejePrincipal,tipoGrafica){
 
     //--------------------------------------------------------
 
-
+    //CREAR GRAFICA
     let ctx = document.getElementById('chart');
     //Destuir grafica antes de crear la nueva
-    if(miGrafica){
+    if (miGrafica) {
         miGrafica.destroy();
     }
 
+    //Crea el objeto grafica
     miGrafica = new Chart(ctx, {
         type: tipoGrafica,
         data: datos,
+        //OPCIONES DE LA GRAFICA
         options: {
+            indexAxis: axis,
             responsive: true,
             maintainAspectRatio: false,
             transitions: {
@@ -113,18 +125,25 @@ function grafica(ejePrincipal,tipoGrafica){
         }
     });
 }
-//Definimos los datos en el eje horizontal con los valores del array
+
+
 
 //LA GRÁFICA SE DIBUJA EN PANTALLA
-function cargarGrafica(ejePrincipal,tipoGrafica) {
-
-        grafica(ejePrincipal,tipoGrafica)
-
+function cargarGrafica(ejePrincipal, tipoGrafica) {
+    //Se puede cambiar el eje de los datos
+    if (tipoGrafica === 'bar') {
+        var axis = 'x';
+    } else {
+        var axis = 'x'
+    }
+    grafica(ejePrincipal, tipoGrafica, axis)
 
 
 }
 
-function graficaDefault(){
+//GRAFICA PREDETERMINADA AL ABRIR LA PAGINA
+function graficaDefault() {
+    var axis = 'y';
     var ejePrincipal = [''];
-    cargarGrafica(ejePrincipal,'bar')
+    grafica(ejePrincipal, 'bar', axis)
 }
