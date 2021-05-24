@@ -1,7 +1,7 @@
 let map;
 let map2;
 
-setTimeout(close(),2000)
+
 
 function initMap() {
     //console.log("Google Maps cargado!!");
@@ -107,7 +107,7 @@ function initMap() {
                 '<div class="iw_abajo">' +
                     '<a class="iw_enlace" href="../html/graficas.html">Más parámetros</a>'+
 
-                    '<a class="iw_enlace" href="" onclick="close()">Cerrar</a>'+
+                    '<a class="iw_enlace" href="" >Cerrar</a>'+
                 "</div>" +
             "</div>" +
         "</div>"
