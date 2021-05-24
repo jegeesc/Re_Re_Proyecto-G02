@@ -45,8 +45,8 @@ header {
 .fondo_verde {
     width: 100%;
     height: 200px;
-    background-color: #29b21a;
-    border: 1px solid #29b21a;
+    background-color: #198754;
+    border: 1px solid #198754;
 }
 
 .auxiliar {
@@ -101,7 +101,7 @@ header {
 
 .submenu_item {
     text-align: center;
-    background-color: #defada;
+    background-color: #19875463;
     padding: 1%;
     width: 160px;
     height: auto;
@@ -124,7 +124,7 @@ header {
 
 #sondas, #mapas, #graficas {
     padding: 1.5%;
-    background-color: #c5ffbc;
+    background-color: #19875463;
     box-shadow: 0 0 20px grey;
 }
 
