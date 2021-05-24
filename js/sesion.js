@@ -6,5 +6,6 @@ fetch('../bbdd/datosSesion.php', {
         return respuesta.json();
     }
 }).then(function (datos) {
-    document.getElementById("nombreUsuario").textContent = datos.usuario;
-});
+    document.getElementById("nombreUsuario").textContent = datos.nombre + " " + datos.apellidos;
+})
+

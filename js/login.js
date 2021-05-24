@@ -18,7 +18,7 @@ document.querySelector("form").addEventListener("submit", function (event) {
             return respuesta.json();
         }
     }).then(function (datos) {
-        if (dataLogin.get("usuario") == "roberto" && dataLogin.get("contrasenya") == "1234") {
+        /*if (dataLogin.get("usuario") == "roberto" && dataLogin.get("contrasenya") == "1234") {
             document.getElementById("outputLogin").textContent = "Bienvenido, " + datos.usuario + "!"
             setTimeout(function () {
                 window.location = "../html/mapas.html";
@@ -33,7 +33,19 @@ document.querySelector("form").addEventListener("submit", function (event) {
             setTimeout(function () {
                 location.href = "../html/admin.html"
             }, 10)
-        }
+        }*/
+
+         if(datos.tipoUsuario == 'User'){
+             document.getElementById("outputLogin").textContent = "Bienvenido, " + datos.usuario + "!"
+             setTimeout(function () {
+                 window.location = "../html/mapas.html";
+             }, 10)
+         }else {
+             document.getElementById("outputLogin").textContent = "Bienvenido, " + datos.usuario + "!"
+             setTimeout(function () {
+                 location.href = "../html/admin.html"
+             }, 10)
+         }
     }).catch(function (error) {
         document.getElementById("outputLogin").textContent = "Los datos introducidos son incorrectos :/";
     });

@@ -1,7 +1,7 @@
-POST http://localhost/bbdd/login.php
+POST http://localhost/bbdd/contacto.php
 Content-Type: application/x-www-form-urlencoded
 
-usuario=admin&contrasenya=1234
+id_contacto=12&nombre=roberto&apellidos=garzia_aparisi&mail=robertopeneabierto@gmail.com&motivo=contratoSondas&
 
 
 ###

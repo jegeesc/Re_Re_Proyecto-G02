@@ -1,8 +1,10 @@
 <?php
 
-define('INCLUDE_PATH', './ruta/hasta/includes/');
+define('INCLUDE_PATH', '../php_mailer/');
+
 $metodo = $_SERVER["REQUEST_METHOD"];
-require_once INCLUDE_PATH.'../php_mailer/SendMail.php';
+require_once INCLUDE_PATH.'SendMail.php';
+
 
 if($metodo === 'POST') {
 

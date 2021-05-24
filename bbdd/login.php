@@ -24,6 +24,7 @@ if($metodo === 'POST') {
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) > 0) {
+        session_name("loginUsuarios");
         session_start();
         while ($fila = mysqli_fetch_assoc($result)) {
 
@@ -35,15 +36,18 @@ if($metodo === 'POST') {
             $_SESSION["id"] = $fila["id"];
             $_SESSION["usuario"] = $fila["usuario"];
             $_SESSION["tipoUsuario"] = $fila["tipoUsuario"];
+
             header('Content-Type: application/json');
             echo json_encode($respuesta);
         }
     } else {
-        echo "No hay resultados";
+        header("Location: login.html?errorusuario=si");
         http_response_code(401);
         die();
     }
 }
-
+else if($metodo === 'GET') {
+    echo json_encode($_SESSION);
+}
 
 
