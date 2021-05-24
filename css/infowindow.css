@@ -1,3 +1,102 @@
-#texto11{
-	color: red;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+
+:root{
+    --principal: 2rem;
+    --subtitulo: 1.3rem;
+    --piedelsubtitulo: 1rem;
+    --subsubtitulo: 0.7rem;
+    --fuente: Montserrat;
+    --tamIcon: 10%;
+
+}
+
+.iw_div_principal{
+    display: flex;
+    justify-content: center;
+}
+
+
+.iw_titulo{
+    font-family: var(--fuente);
+    font-size: var(--principal);
+}
+
+.iw_logosytext{
+    display: flex;
+    flex-direction: column;
+}
+
+.iw_iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.iw_imagen{
+    width: var(--tamIcon);
+    height: auto;
+}
+
+
+.iw_textos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.iw_subtitulo{
+    text-align: center;
+    display: block;
+    font-family: var(--fuente);
+    font-size: var(--subtitulo);
+    width: 30%;
+
+}
+
+.iw_textos h2{
+    font-size: var(--subsubtitulo);
+}
+
+.iw_subtitulo.temperatura{
+    color: darkred;
+
+}
+
+.iw_subtitulo.humedad{
+    color: royalblue;
+}
+
+.iw_subtitulo.iluminacion{
+    color: darkorange;
+}
+
+.iw_subtitulo.salinidad{
+    color: lightskyblue;
+}
+.iw_abajo{
+    display: flex;
+    justify-content: center;
+}
+
+.iw_enlace{
+    font-family: var(--fuente);
+    font-size: var(--piedelsubtitulo);
+}
+.gm-ui-hover-effect{
+    width: var(--tamIcon);
+}
+
+@media (max-width: 700px) {
+    :root {
+        --principal: 1.5rem;
+        --subtitulo: 1.2rem;
+        --piedelsubtitulo: 0.7rem;
+        --subsubtitulo: 0rem;
+        --fuente: Montserrat;
+        --tamIcon: 15%;
+    }
+
 }
