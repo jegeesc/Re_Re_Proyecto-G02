@@ -17,9 +17,9 @@ function obtenerTipoGrafica(tipo) {
             var ejePrincipal = ['lunes', 'martes', 'miércoles', 'jueves', 'viernes']
             cargarGrafica(ejePrincipal, tipoGrafica)
         } else {
-            if(tipo==='default'){
+            if (tipo === 'default') {
                 graficaDefault()
-            }else{
+            } else {
                 console.log('ERROR')
             }
         }
@@ -36,9 +36,37 @@ function grafica(ejePrincipal, tipoGrafica, axis) {
         labels: ejePrincipal,
         //Se definen los conjuntos de datos  con los valores del array
         datasets: [
-            {
+            { //esto es otro objeto de valores que se pondría encima de la otra
+                label: 'Temperatura',
+                data: [7, 14, 26, 20, 18],
+                fill: true,
+                tension: 0,
+                backgroundColor: 'rgba(255, 99, 99, 0.7)',
+                borderColor: 'rgba(255, 77, 77, 0.7)',
+                pointStyle: 'circle',
+                pointRadius: 5,
+            },
+            { //esto es otro objeto de valores que se pondría encima de la otra
+                label: 'Salinidad',
+                data: [20, 34, 60, 53, 30],
+                fill: true,
+                tension: 0,
+                backgroundColor: 'rgba(179, 252, 246, 0.7)',
+                borderColor: 'rgba(113, 217, 209, 0.7)',
+                pointStyle: 'circle',
+                pointRadius: 5,
+            }, { //esto es otro objeto de valores que se pondría encima de la otra
+                label: 'Iluminación',
+                data: [10, 28, 67, 89, 80],
+                fill: true,
+                tension: 0,
+                backgroundColor: 'rgba(239, 255, 133, 0.7)',
+                borderColor: 'rgba(234, 255, 94, 0.7)',
+                pointStyle: 'circle',
+                pointRadius: 5,
+            }, {
                 label: 'Humedad',
-                data: [100, 234, 45, 210, 430],
+                data: [100, 70, 45, 60, 53],
                 //así se rellena
                 fill: true,
                 //color de fondo
@@ -50,33 +78,6 @@ function grafica(ejePrincipal, tipoGrafica, axis) {
                 //Cambia la forma de los puntos
                 pointStyle: 'circle',
                 //tamaño de los puntos
-                pointRadius: 5,
-            }, { //esto es otro objeto de valores que se pondría encima de la otra
-                label: 'Salinidad',
-                data: [350, 34, 267, 110, 30],
-                fill: true,
-                tension: 0,
-                backgroundColor: 'rgba(179, 252, 246, 0.7)',
-                borderColor: 'rgba(113, 217, 209, 0.7)',
-                pointStyle: 'circle',
-                pointRadius: 5,
-            }, { //esto es otro objeto de valores que se pondría encima de la otra
-                label: 'Iluminación',
-                data: [20, 14, 67, 10, 30],
-                fill: true,
-                tension: 0,
-                backgroundColor: 'rgba(239, 255, 133, 0.7)',
-                borderColor: 'rgba(234, 255, 94, 0.7)',
-                pointStyle: 'circle',
-                pointRadius: 5,
-            }, { //esto es otro objeto de valores que se pondría encima de la otra
-                label: 'Temperatura',
-                data: [120, 114, 167, 110, 130],
-                fill: true,
-                tension: 0,
-                backgroundColor: 'rgba(255, 99, 99, 0.7)',
-                borderColor: 'rgba(255, 77, 77, 0.7)',
-                pointStyle: 'circle',
                 pointRadius: 5,
             }
         ]
@@ -125,7 +126,6 @@ function grafica(ejePrincipal, tipoGrafica, axis) {
         }
     });
 }
-
 
 
 //LA GRÁFICA SE DIBUJA EN PANTALLA

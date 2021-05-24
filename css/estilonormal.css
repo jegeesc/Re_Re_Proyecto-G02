@@ -96,7 +96,7 @@ header {
 .submenu {
     height: auto;
     margin: 0 auto;
-
+    margin-right: 2rem;
 }
 
 .submenu_item {
@@ -127,6 +127,7 @@ header {
     background-color: #19875463;
     box-shadow: 0 0 20px grey;
 }
+
 
 .etiqueta {
     border-radius: 40px;
