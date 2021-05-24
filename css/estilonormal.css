@@ -106,10 +106,12 @@ header {
     width: 160px;
     height: auto;
     border-radius: 20px;
-    transition: 2s;
+    transition: 1s;
 }
 .submenu_item:hover{
     box-shadow: 0 0 50px #b3b3b3;
+    width: 15rem;
+    height: 50%;
 }
 
 .enlace {
