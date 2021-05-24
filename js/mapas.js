@@ -26,11 +26,11 @@
           label: "Sonda 1",
           animation: google.maps.Animation.DROP,
           map: map
-            marker.addListener("click", () => {
-                infowindow.open(map, marker);
-            });
-        });
 
+        });
+         sonda1.addListener("click", () => {
+                infowindow.open(map, sonda1);
+            });
         var sonda2 = new google.maps.Marker({
           position: {lat: 39.012583796216596, lng: -0.18343753009972605},
           label: "Sonda 2",
@@ -72,16 +72,16 @@
     bounds.extend(v);
     })
     map.fitBounds(bounds);
-          const contentString =
+                const contentString =
               '<div id="content">' +
               '<div id="siteNotice">' +
               "</div>" +
-              '<h1 id="firstHeading" class="firstHeading">Sonda 1</h1>' +
+              '<h1 id="texto11" class="firstHeading">Sonda 1</h1>' +
               '<div id="bodyContent">' +
-              '<h2>Humedad</h2>+
-              <h2>Salinidad</h2>+
-              <h2>Temperatura</h2>+
-              <h2>Iluminación</h2>+
+              '<h2>Humedad</h2>'+
+              '<h2>Salinidad</h2>'+
+              '<h2>Temperatura</h2>'+
+              '<h2>Iluminación</h2>'+
               "<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large " +
               "sandstone rock formation in the southern part of the " +
               "Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) " +
@@ -100,3 +100,6 @@
           const infowindow = new google.maps.InfoWindow({
               content: contentString,
           });
+  }
+
+
