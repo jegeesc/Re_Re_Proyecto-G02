@@ -24,7 +24,6 @@ if ($metodo == 'GET') {
 
         while ($fila = mysqli_fetch_assoc($result)) {
 
-
             $respuesta = [];
             $respuesta["id"] = $fila["id"];
             $respuesta["nombre"] = $fila["nombre"];
