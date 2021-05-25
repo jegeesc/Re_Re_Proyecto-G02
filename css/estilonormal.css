@@ -221,8 +221,11 @@ h2{
     color: var(--colorHeader);
     font-size: 4rem;
 }
+
 .iconos{
-    max-width: 4%;
+    display: flex;
+    flex: 1 1 0 ;
+    max-width: 20%;
     height: auto;
 }
 .parcelas{
@@ -233,10 +236,12 @@ h2{
     margin: 2rem auto;
     display:flex;
     justify-content: space-around;
+    flex: 1 1 0;
 }
 .nombre_parcela{
     font-size: 2rem;
 }
+
 /*------------------MAPAS--------------------*/
 .recuadro_mapa{
     margin-top: 2.5rem;

@@ -77,6 +77,11 @@ function initMap() {
         var contentString = crearInfoWindow(infowindow,'Sonda 3',datos);
         var infowindow = crearVar(contentString,map);
         infowindow.open(map, sonda3);
+        setTimeout(closeIW(infowindow),2000)
+        setTimeout(console.log('llegado'),2000)
+        function closeIW(infowindow){
+            infowindow.close()
+        }
     });
         //------------------------SONDA 4------------------------
     var sonda4 = new google.maps.Marker({
@@ -164,6 +169,7 @@ function crearInfoWindow(infowindow,sonda,datos){
             maxWidth: 500,
             minWidth: 250,
         });
+
     return  infowindow;
     }
 }
