@@ -13,20 +13,20 @@
     <schema id="3" parent="1" name="information_schema">
       <Collation>utf8_general_ci</Collation>
     </schema>
-    <schema id="4" parent="1" name="jegeesc_usuarios">
+    <schema id="4" parent="1" name="mysql">
       <Collation>utf8mb4_general_ci</Collation>
     </schema>
-    <schema id="5" parent="1" name="mysql">
-      <Collation>utf8mb4_general_ci</Collation>
-    </schema>
-    <schema id="6" parent="1" name="performance_schema">
+    <schema id="5" parent="1" name="performance_schema">
       <Collation>utf8_general_ci</Collation>
     </schema>
-    <schema id="7" parent="1" name="phpmyadmin">
+    <schema id="6" parent="1" name="phpmyadmin">
       <Collation>utf8_bin</Collation>
     </schema>
-    <schema id="8" parent="1" name="test">
+    <schema id="7" parent="1" name="test">
       <Collation>latin1_swedish_ci</Collation>
+    </schema>
+    <schema id="8" parent="1" name="vetas_pl1">
+      <Collation>utf8mb4_general_ci</Collation>
     </schema>
     <collation id="9" parent="1" name="armscii8_bin">
       <Charset>armscii8</Charset>
@@ -1137,37 +1137,30 @@
     <column id="358" parent="337" name="nombre">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
     </column>
     <column id="359" parent="337" name="apellidos">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
     </column>
     <column id="360" parent="337" name="email">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
     </column>
     <column id="361" parent="337" name="nSondas">
       <Position>5</Position>
       <DataType>int(255)|0s</DataType>
-      <NotNull>1</NotNull>
     </column>
     <column id="362" parent="337" name="multiRecinto">
       <Position>6</Position>
       <DataType>enum(&apos;Sí&apos;, &apos;No&apos;)|0e</DataType>
-      <NotNull>1</NotNull>
     </column>
     <column id="363" parent="337" name="tipoUsuario">
       <Position>7</Position>
       <DataType>enum(&apos;admin&apos;, &apos;usuario&apos;)|0e</DataType>
-      <NotNull>1</NotNull>
     </column>
     <column id="364" parent="337" name="ubicacion">
       <Position>8</Position>
       <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
     </column>
     <key id="365" parent="337" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
