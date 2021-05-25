@@ -1,6 +1,8 @@
 let map;
 var datos=[1,2,3,4];
 var infowindow;
+
+
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 39.00971602044704, lng: -0.18356627613238444},
@@ -103,7 +105,6 @@ function initMap() {
 
 function crearInfoWindow(infowindow,sonda,datos){
 
-        infowindow.destroy();
         console.log('Cerrado')
 
     //------------------------ CREA CODIGO HTML ------------------------
