@@ -220,12 +220,12 @@ header {
 .iconos{
     display: flex;
     flex: 1 1 0 ;
-    max-width: 20%;
+    max-width: 5%;
     height: auto;
 }
 .parcelas{
     max-width: 80%;
-    height: 25%;
+    height: 30%;
     background: var(--colorSubmenu);
     border-radius: var(--redondeado);
     margin: 2.5rem auto;
@@ -236,7 +236,10 @@ header {
 .nombre_parcela{
     font-size: 2rem;
 }
-
+.separar_left{
+    justify-content: left;
+    display: flex;
+}
 /*------------------MAPAS--------------------*/
 .recuadro_mapa{
     margin-top: 2.5rem;

@@ -15,8 +15,8 @@ function cerrarIW(){
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 39.00971602044704, lng: -0.18356627613238444},
-        zoom: 15,
+        center: {lat: 39.01455194283243, lng: -0.1912415504303265},
+        zoom: 14,
         mapTypeId: 'roadmap',
         styles: [
             {
@@ -35,8 +35,9 @@ function initMap() {
     //------------------------Marcadores------------------------
     //-------------------------------------------------------------------------------------------
                                 //PARCELA 1
+    //------------------------SONDA 5------------------------
     var sonda5 = new google.maps.Marker({
-        position: {lat: 40, lng: -0.2},
+        position: {lat: 39.01904650081264, lng: -0.2042888124011707},
         label: "Sonda 5",
         animation: google.maps.Animation.DROP,
         map: map
@@ -45,6 +46,34 @@ function initMap() {
     sonda5.addListener("click", () => {
 
         var contentString = crearInfoWindow(infowindow,'Sonda 5',datos);
+        var infowindow = crearVar(contentString,map);
+        infowindow.open(map, sonda5);
+    });
+    //------------------------SONDA 6------------------------
+    var sonda6 = new google.maps.Marker({
+        position: {lat: 39.01890480192713, lng: -0.2016986904601482},
+        label: "Sonda 6",
+        animation: google.maps.Animation.DROP,
+        map: map
+
+    });
+    sonda6.addListener("click", () => {
+
+        var contentString = crearInfoWindow(infowindow,'Sonda 6',datos);
+        var infowindow = crearVar(contentString,map);
+        infowindow.open(map, sonda5);
+    });
+    //------------------------SONDA 7------------------------
+    var sonda7 = new google.maps.Marker({
+        position: {lat: 39.01743771350213, lng: -0.2030934391479297},
+        label: "Sonda 7",
+        animation: google.maps.Animation.DROP,
+        map: map
+
+    });
+    sonda7.addListener("click", () => {
+
+        var contentString = crearInfoWindow(infowindow,'Sonda 7',datos);
         var infowindow = crearVar(contentString,map);
         infowindow.open(map, sonda5);
     });
@@ -104,6 +133,37 @@ function initMap() {
         var infowindow = crearVar(contentString,map);
         infowindow.open(map, sonda4);
 
+    });
+
+    //-------------------------------------------------------------------------------------------
+    //PARCELA 2
+    //------------------------SONDA 8------------------------
+    var sonda8 = new google.maps.Marker({
+        position: {lat: 39.014902060520114, lng: -0.19763593672180033},
+        label: "Sonda 8",
+        animation: google.maps.Animation.DROP,
+        map: map
+    });
+
+    sonda8.addListener("click", () => {
+
+        var contentString = crearInfoWindow(infowindow,'Sonda 8',datos);
+        var infowindow = crearVar(contentString,map);
+        infowindow.open(map, sonda1);
+    });
+
+    //------------------------SONDA 9------------------------
+    var sonda9 = new google.maps.Marker({
+        position: {lat: 39.01253456421008, lng: -0.19690637586973003},
+        label: "Sonda 9",
+        animation: google.maps.Animation.DROP,
+        map: map
+    });
+    sonda9.addListener("click", () => {
+
+        var contentString = crearInfoWindow(infowindow,'Sonda 9',datos);
+        var infowindow = crearVar(contentString,map);
+        infowindow.open(map, sonda2);
     });
 //-------------------------------------------------------------------------------------------
 
