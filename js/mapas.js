@@ -1,7 +1,7 @@
 let map;
 
 
-
+///hola
 
 function initMap() {
     //console.log("Google Maps cargado!!");
@@ -71,12 +71,15 @@ function initMap() {
         fillOpacity: 0.35,
         map: map
     });
-    //Ajustar el mapa a un polígono
+    /*Ajustar el mapa a un polígono
     let bounds = new google.maps.LatLngBounds();
     polygon.getPath().getArray().forEach(function (v) {
         bounds.extend(v);
     })
     map.fitBounds(bounds);
+    */
+
+    //------------------------ CREA CODIGO HTML ------------------------
     const contentString =
         '<div class="iw_container">' +
             '<div class="iw_div_principal">' +
