@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
 
+:root{
+    --fuente
+}
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*-------------------FRONT PAGE----------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
 /*Hacer que el scroll sea suave*/
 html {
     scroll-behavior: smooth;
@@ -150,10 +159,245 @@ body {
     height: auto;
   
 }
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/* --------------------SERVICIOS----------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+.sensores{
+    background-color: white;
+    position: relative;
+    transform: skewY(-10deg);
+    height: 800px;
+    margin-top: 10%;
 
-/* justify-content: ;  ->  Ajustar contenido en el eje horizontal */
+}
+.girar{
+    transform: skewY(10deg);
+}
+.ajustar{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 1rem auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    flex-grow: 1;
+}
+.imagenes{
+    width: 350px;
+    height: 350px;
+    border-radius: 15%;
+}
+.tituloservicios{
+    font-family: "Yanone Kaffeesatz";
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding-top: 10%;
+    text-transform: uppercase;
+}
+.subtitulosensores{
+    font-family: "Yanone Kaffeesatz";
+    font-size: 450%;
+    color: white;
+    text-align: center;
+    margin: 50px;
+    padding-top: 10%;
+    text-transform: uppercase;
+}
+.morado{
+    color: #8343a1;
+}
+.textow{
+    color: white;
+    font-family: "Montserrat";
+    font-size: 2rem;
+    margin: 2rem;
+    text-align: center;
 
+}
+.textom{
+    color: #8343a1;
+    font-family: "Montserrat";
+    font-size: 2rem;
+    margin: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ajustar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/* --------------------CONTACTO----------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+input[type=text], select, textarea {
+    margin-top: 6px;
+    resize: vertical ;
+    background: transparent;
+    display: flex;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border-radius:0px ;
+    width: 100%
+}
+
+
+input[type=submit] {
+    background-color:transparent;
+    border-radius:12px;
+    border:3px solid #FFFFFF;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:montserrat;
+    font-size:1rem;
+    padding:3%;
+    text-decoration:none;
+    text-shadow:0 1px 0 #2f6627;
+    position:relative;
+    top:1px;
+}
+
+
+#fname{
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 2rem;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #FFFFFF;
+    color: #c1c1c1;
+
+}
+#fname:hover{
+    border-bottom: 2px solid #c5c5c5;
+}
+
+
+#lname{
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 2Rem;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #FFFFFF;
+    color: #c1c1c1;
+}
+#lname:hover{
+    border-bottom: 2px solid #c5c5c5;
+}
+
+
+#mail{
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 2rem;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #FFFFFF;
+    color: #c1c1c1;
+
+}
+#mail:hover{
+    border-bottom: 2px solid #c5c5c5;
+}
+
+#subject{
+    background: transparent;
+    border:2px solid #FFFFFF;
+    color: #c1c1c1;
+    font-size: 2rem;
+
+}
+#subject:hover{
+    border: 2px solid #c5c5c5;
+}
+
+#boton-enviar{
+    font-size: 2rem;
+    width:20%;
+    justify-content: left;
+}
+#boton-enviar:hover{
+    background: #a156c9;
+    box-shadow: gray 0 0 50px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1%;
+    background-color: #8343a1;
+    padding: 5%;
+    padding-bottom: 10%;
+    align-items: center;
+}
+
+
+
+
+.subtitulocont {
+    color: #FFFFFF;
+    font-family: "Yanone Kaffeesatz";
+    font-size: 5rem;
+    width: 90%;
+    background: none;
+    padding:0px 0px;
+    box-sizing: border-box;
+    margin-top: 00px;
+    text-align: center;
+    margin-bottom: 10%;
+
+}
+form label{
+    color: #ffffff;
+    font-family:montserrat;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    background: none;
+    padding:10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    font-family: Montserrat;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+submit{
+    top:800px;
+    right:900px;
+    font-size: 4rem;
+}
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
 /* --------------------FOOTER----------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
 #foter {
     position: absolute;
     width: 100%;
@@ -198,9 +442,11 @@ body {
     height: 5rem;
     width: 10rem;
 }
-
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
 /* ----- BOTON SUBIR ----- */
-
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
 #flechaSubir {
     display: inline;
     text-align: center;

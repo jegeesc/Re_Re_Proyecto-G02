@@ -1,6 +1,20 @@
 let map;
 var datos=[1,2,3,4];
-var infowindow;
+
+
+const infowindow = new google.maps.InfoWindow({
+    maxWidth: 500,
+    minWidth: 250,
+});
+
+
+
+/*
+function cerrarIW(){
+    console.log('Se ha cerrado')
+    infowindow.close();
+}
+*/
 
 
 function initMap() {
@@ -37,7 +51,6 @@ function initMap() {
         var contentString = crearInfoWindow(infowindow,'Sonda 1',datos);
         var infowindow = crearVar(contentString,map);
         infowindow.open(map, sonda1);
-
     });
 
         //------------------------SONDA 2------------------------
@@ -48,6 +61,7 @@ function initMap() {
         map: map
     });
     sonda2.addListener("click", () => {
+
         var contentString = crearInfoWindow(infowindow,'Sonda 2',datos);
         var infowindow = crearVar(contentString,map);
         infowindow.open(map, sonda2);
@@ -75,6 +89,7 @@ function initMap() {
         var contentString = crearInfoWindow(infowindow,'Sonda 4',datos);
         var infowindow = crearVar(contentString,map);
         infowindow.open(map, sonda4);
+
     });
 
     //------------------------POLIGONOS------------------------
@@ -104,8 +119,6 @@ function initMap() {
 
 
 function crearInfoWindow(infowindow,sonda,datos){
-
-        console.log('Cerrado')
 
     //------------------------ CREA CODIGO HTML ------------------------
     const contentString =
@@ -145,6 +158,7 @@ function crearInfoWindow(infowindow,sonda,datos){
 }
 
     function crearVar(contentString,map){
+
         const infowindow = new google.maps.InfoWindow({
             content: contentString,
             maxWidth: 500,

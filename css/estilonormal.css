@@ -216,12 +216,32 @@ header {
     text-decoration: none;
     color: black;
 }
+/*------------------SONDAS--------------------*/
+h2{
+    color: var(--colorHeader);
+    font-size: 4rem;
+}
+.iconos{
+    max-width: 4%;
+    height: auto;
+}
+.parcelas{
+    max-width: 80%;
+    height: 25%;
+    background: var(--colorSubmenu);
+    border-radius: var(--redondeado);
+    margin: 2rem auto;
+    display:flex;
+    justify-content: space-around;
+}
+.nombre_parcela{
+    font-size: 2rem;
+}
 /*------------------MAPAS--------------------*/
 .recuadro_mapa{
     margin-top: 2.5rem;
     position: relative
 }
-
 #map{
     width: 90%;
     height: 90vh;
@@ -278,6 +298,8 @@ header {
     justify-content: space-around;
     margin-bottom: 5%;
 }
+
+
 /*-------------------------ESTO ES PARA QUE SEA RESPONSIVE-------------------------*/
 @media (max-width: 700px) {
     :root{

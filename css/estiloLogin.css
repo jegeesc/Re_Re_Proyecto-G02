@@ -1,6 +1,17 @@
 /*Globales*/
 /*Fuente*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root{
+    --divlogin: 30%;
+    --logoDiv: 35%;
+    --fuente: Montserrat;
+    --paddingSeccion: 100px;
+    --paddingSubtitulo: 10px;
+    --logoTam: 10%;
+    --logoMargenIzq: 40px;
+}
+
 /*Añade en fondo a la pàgina*/
 body {
     background-image: url("../Login/images_login/fondo11.png");
@@ -14,20 +25,22 @@ input[type=text], input[type=password] {
 /*Específicos*/
 /*Relleno en la parte de arriba de la sección*/
 .login_inicioSesion {
-    padding-top: 100px;
+    padding-top: var(--paddingSeccion);
 }
 
-/*Todo el formulario se centra y ocupa el 90% de la página a lo ancho*/
+
+
+/*El formulario se centra y ocupa el porcentaje de pagina puesto en el root*/
 .login_01 {
     margin: 0 auto;
-    width: 30%
+    width: var(--divlogin);
 }
 
 /*Flecha de salir*/
 .login_landing {
-    margin-left: 40px;
+    margin-left: var(--logoMargenIzq);
     margin-top: 15px;
-    width: 10%;
+    width: var(--logoTam);
     height: auto;
     text-align: left;
 }
@@ -76,7 +89,7 @@ input[type=text], input[type=password] {
 }
 
 .login_logo {
-    width: 35%;
+    width: var(--logoDiv);
 }
 
 /*Edita las casillas de usuario y contraseña*/
@@ -151,7 +164,7 @@ input[type=text], input[type=password] {
     width: 70%;
     border-radius: 12px;
     font-size: 18px;
-    font-family: "Montserrat";
+    font-family: var(--fuente);
     text-align: center;
 }
 
@@ -167,9 +180,9 @@ a, a:link, a:visited, a:focus, a:hover, a:active {
 }
 
 .login_cuenta {
-    font-family: "Montserrat";
+    font-family: var(--fuente);
     font-size: 14px;
-    padding-bottom: 10px;
+    padding-bottom: var(--paddingSubtitulo);
 
 }
 
@@ -179,72 +192,47 @@ a, a:link, a:visited, a:focus, a:hover, a:active {
 
 /*Hace la página responsive*/
 @media (max-width: 2000px) {
-    .login_01 {
-        width: 35%;
-    }
-
-    .login_logo {
-        width: 25%;
+    :root{
+        --divlogin: 35%;
+        --logoDiv: 25%;
     }
 }
 
 @media (max-width: 1200px) {
-    .login_01 {
-        width: 45%;
+    :root{
+        --divlogin: 45%;
     }
 }
 
 @media (max-width: 800px) {
-    .login_salir {
-        width: 5%;
-    }
-
-    .login_logo {
-        width: 35%;
+    :root{
+        --logoDiv: 35%;
     }
 }
 
 @media (max-width: 550px) {
+    :root{
+        --divlogin: 95%;
+        --paddingSeccion: 150px;
+        --paddingSubtitulo: 10px;
+        --logoTam: 25%;
+        --logoMargenIzq: 10px;
+    }
     body {
         background-image: url("../Login/images_login/fondoX.png");
-    }
-
-    .login_salir {
-        margin-left: 10px;
-        width: 8%;
-    }
-
-    .login_inicioSesion {
-        padding-top: 150px;
-    }
-
-    .login_01 {
-        width: 95%;
-    }
-
-    .login_cuenta {
-        padding-bottom: 10px;
-    }
-
-    .login_landing {
-        margin-left: 10px;
-        width: 25%;
     }
 }
 
 @media (max-width: 700px) {
-    .login_landing {
-        margin-left: 10px;
-        width: 25%;
+    :root{
+        --logoTam: 25%;
+        --logoMargenIzq: 10px;
     }
 }
 
 @media (max-width: 320px) {
-    .login_01 {
-        width: 100%;
-    }
-
-    .login_inicioSesion {
-        padding-top: 120px;
+    :root{
+        --divlogin: 100% ;
+        --paddingSeccion: 120px;
     }
 }
