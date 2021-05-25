@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/*--------------------ESTO ES PARA TODOS LOS HTML USER--------------------*/
+/*--------------------VARIABLES--------------------*/
+:root{
+    --fuente: Montserrat;
+    --titulo: 2rem;
+    --colorSubmenu: #19875463;
+    --colorHeader: #198754;
+    --paddingListas: 2%;
+    --sombraSubmenu: 0 0 50px #b3b3b3;
+    --sombraItems: 0 0 50px grey;
+    --sombraBotones: 0 0 60px grey;
+    --redondeado: 30px;
 
+}
 body {
     background: white;
     margin: 0;
@@ -81,7 +94,7 @@ header {
 
 .nombre {
     color: #006629;
-    font-family: "Montserrat";
+    font-family: var(--fuente);
     font-size: 2rem;
     text-align: center;
     padding-top: 5%;
@@ -115,7 +128,7 @@ header {
 }
 
 .enlace {
-    font-family: "Montserrat";
+    font-family: var(--fuente);
     color: black;
     font-size: 1.5rem;
     text-decoration: none;
@@ -142,7 +155,7 @@ header {
 
 .contenedor_img {
     text-align: center;
-    font-family: "Montserrat";
+    font-family: var(--fuente);
     font-size: 120%;
 }
 
@@ -155,7 +168,7 @@ header {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    font-family: "Montserrat";
+    font-family: var(--fuente);
     font-size: 150%;
 }
 
@@ -210,7 +223,70 @@ header {
     text-decoration: none;
     color: black;
 }
+/*------------------MAPAS--------------------*/
+.recuadro_mapa{
+    margin-top: 2.5rem;
+    position: relative
+}
 
+#map{
+    width: 90%;
+    height: 90vh;
+    border: black 1px solid;
+    margin: auto auto;
+    border-radius: 30px;
+    box-shadow: 0 0 50px grey;
+}
+/*--------------------Gráfica chart uwu--------------------*/
+.chart-container {
+    position: relative;
+    padding: 2%;
+    width: 60%;
+    height: 50vh;
+
+    border-radius: 30px;
+    box-shadow: 0 0 50px grey;
+    margin: 50px auto;
+}
+
+.menu-desplegable {
+    max-width: 50%;
+}
+
+.selector {
+    box-shadow: 0 0 20px grey;
+
+}
+
+.alerta {
+    margin: 0 auto;
+    width: 50%;
+    transition: 2s;
+    margin-bottom: 2%;
+}
+.dropdown-item:hover{
+    box-shadow: 0 0 60px #ababab;
+}
+
+.btn:hover{
+    transition: 1s;
+    box-shadow: 0 0 60px grey;
+}
+
+
+.alerta:hover {
+    transition: 1s;
+    box-shadow: 0 0 60px grey;
+}
+
+.selectores-graficas {
+    margin: 0 auto;
+    max-width: 60%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+/*-------------------------ESTO ES PARA QUE SEA RESPONSIVE-------------------------*/
 @media (max-width: 700px) {
     .BarraNav {
         height: auto;
@@ -302,59 +378,10 @@ header {
     #sondas {
         padding: 4%;
     }
-}
-
-/*Gráfica chart uwu*/
-.chart-container {
-    position: relative;
-    padding: 2%;
-    width: 60%;
-    height: 50vh;
-
-    border-radius: 30px;
-    box-shadow: 0 0 50px grey;
-    margin: 50px auto;
-}
-
-.menu-desplegable {
-    max-width: 50%;
-}
-
-.selector {
-    box-shadow: 0 0 20px grey;
-
-}
-
-.alerta {
-    margin: 0 auto;
-    width: 50%;
-    transition: 2s;
-    margin-bottom: 2%;
-}
-.dropdown-item:hover{
-    box-shadow: 0 0 60px #ababab;
-}
-
-.btn:hover{
-    transition: 1s;
-    box-shadow: 0 0 60px grey;
-}
-
-
-.alerta:hover {
-    transition: 1s;
-    box-shadow: 0 0 60px grey;
-}
-
-.selectores-graficas {
-    margin: 0 auto;
-    max-width: 60%;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 5%;
-}
-
-@media (max-width: 700px) {
+    #map{
+        width: 70%;
+        height: 70vh ;
+    }
     .chart-container {
         width: 85%;
     }
@@ -380,4 +407,6 @@ header {
 
     }
 }
+
+
 
