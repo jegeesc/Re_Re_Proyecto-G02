@@ -2,10 +2,6 @@ let map;
 var datos=[1,2,3,4];
 
 
-const infowindow = new google.maps.InfoWindow({
-    maxWidth: 500,
-    minWidth: 250,
-});
 
 
 
@@ -37,15 +33,33 @@ function initMap() {
         rotateControl: false,
     });
     //------------------------Marcadores------------------------
+    //-------------------------------------------------------------------------------------------
+                                //PARCELA 1
+    var sonda5 = new google.maps.Marker({
+        position: {lat: 40, lng: -0.2},
+        label: "Sonda 5",
+        animation: google.maps.Animation.DROP,
+        map: map
 
-        //------------------------SONDA 1------------------------
+    });
+    sonda5.addListener("click", () => {
+
+        var contentString = crearInfoWindow(infowindow,'Sonda 5',datos);
+        var infowindow = crearVar(contentString,map);
+        infowindow.open(map, sonda5);
+    });
+    //-------------------------------------------------------------------------------------------
+
+    //-------------------------------------------------------------------------------------------
+                                //PARCELA 2
+    //------------------------SONDA 1------------------------
     var sonda1 = new google.maps.Marker({
         position: {lat: 39.01068307409519, lng: -0.18946713596529477},
         label: "Sonda 1",
         animation: google.maps.Animation.DROP,
         map: map
-
     });
+
     sonda1.addListener("click", () => {
 
         var contentString = crearInfoWindow(infowindow,'Sonda 1',datos);
@@ -53,7 +67,7 @@ function initMap() {
         infowindow.open(map, sonda1);
     });
 
-        //------------------------SONDA 2------------------------
+    //------------------------SONDA 2------------------------
     var sonda2 = new google.maps.Marker({
         position: {lat: 39.012583796216596, lng: -0.18343753009972605},
         label: "Sonda 2",
@@ -77,11 +91,6 @@ function initMap() {
         var contentString = crearInfoWindow(infowindow,'Sonda 3',datos);
         var infowindow = crearVar(contentString,map);
         infowindow.open(map, sonda3);
-        setTimeout(closeIW(infowindow),2000)
-        setTimeout(console.log('llegado'),2000)
-        function closeIW(infowindow){
-            infowindow.close()
-        }
     });
         //------------------------SONDA 4------------------------
     var sonda4 = new google.maps.Marker({
@@ -96,6 +105,7 @@ function initMap() {
         infowindow.open(map, sonda4);
 
     });
+//-------------------------------------------------------------------------------------------
 
     //------------------------POLIGONOS------------------------
     let polygon = new google.maps.Polygon({
