@@ -26,13 +26,13 @@ if($metodo === 'POST') {
         die("Error: " . mysqli_connect_error());
     }
 
+    $envio = EnviarCorreo($_POST['email'], $_POST['asunto'], '<p>'.$_POST['contenido'].'</p>');
     $sql = "INSERT INTO * FROM `contacto` WHERE `id_contacto`='$id_contacto' AND `nombre`='$nombre' AND `apellido`='$apellido' AND `mail`='$mail' AND `motivo`='$motivo' ";
     $result = mysqli_query($conn, $sql);
 
 //-----------------------------------------------------------
     //MAIL
 //-----------------------------------------------------------
-    $envio = EnviarCorreo($_POST['email'], $_POST['asunto'], '<p>'.$_POST['contenido'].'</p>');
     $salida = ['resultado' => $envio];
     header('Content-Type: application.json;charset=utf-8');
     header('Allow: POST');
