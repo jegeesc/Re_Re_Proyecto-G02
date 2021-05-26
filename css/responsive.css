@@ -1,5 +1,5 @@
-@media (max-width: 700px ) {
-    /* HEADER */
+/*@media (max-width: 700px ) {
+    /* HEADER
     .encabezado {
         z-index: 100;
         position: fixed;
@@ -29,7 +29,7 @@
         margin-top: 20px;
     }
 
-    /* FIN HEADER */
+    FIN HEADER
     .portadagira {
         background-color: white;
         transform: skewY(-5deg);
@@ -65,7 +65,7 @@
         max-width: 3rem;
     }
 
-    /* FIN PRIMERA PÁGINA */
+    FIN PRIMERA PÁGINA
     #flechaSubir {
         width: 2.3rem;
         height: 2.3rem;
@@ -111,7 +111,7 @@
         align-items: center;
     }
 
-    /*FAQS*/
+    FAQS
     .preguntas {
         padding-top: 7%;
         padding-bottom: 5%;
@@ -149,7 +149,7 @@
         margin: 2rem;
     }
 
-    /*CONTACTO*/
+    CONTACTO
     .form {
         max-width: 85%;
         padding-bottom: 10%;
@@ -180,7 +180,7 @@
         width: 40%;
     }
 
-    /*FOOTER*/
+    FOOTER
     .piePagina {
         height: 10%;
     }
@@ -188,7 +188,7 @@
 }
 
 @media (min-width: 1000px) {
-    /* HEADER */
+    HEADER
     #img-portada {
         width: 400px;
         height: 250px;
@@ -203,8 +203,8 @@
 
     }
 
-    /* FIN HEADER */
-    /* PRIMERA PÁGINA */
+    FIN HEADER
+    PRIMERA PÁGINA
     .titulo {
         font-size: 7rem;
     }
@@ -233,7 +233,7 @@
         width: 4rem;
     }
 
-    /* FIN PRIMERA PÁGINA */
+    FIN PRIMERA PÁGINA
     #flechaSubir {
         width: 3rem;
         height: 3rem;
@@ -249,7 +249,7 @@
 
 }
 
-/*SECCION SERVICIOS*/
+SECCION SERVICIOS
 @media (min-width: 1000px) {
     .ajustar {
         display: flex;
@@ -281,7 +281,7 @@
 
 }
 
-/*Adaptar a pantallas grandes la LP*/
+Adaptar a pantallas grandes la LP
 
 @media (min-width: 1250px) {
     .titulo {
@@ -319,4 +319,4 @@
         right: 47%;
 
     }
-}
+}*/
