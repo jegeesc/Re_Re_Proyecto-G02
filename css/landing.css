@@ -168,6 +168,7 @@ body {
     right: 0;
     width: 3rem;
     height: auto;
+    animation: flecha-bajar-animacion 2s ease-in-out infinite;
 
 }
 
@@ -772,13 +773,13 @@ submit {
         font-size: 2rem;
         border-radius: 30px;
         position: relative;
-        top: -15rem;
+        top: -8rem;
         box-shadow: 1px 1px 20px grey;
     }
 
     .flecha_bajar {
         position: relative;
-        top: -15rem;
+        top: -13rem;
         width: 4rem;
     }
 
@@ -857,6 +858,21 @@ submit {
         top: 100%;
         right: 47%;
 
+    }
+}
+
+
+/*Animacion*/
+
+@keyframes flecha-bajar-animacion {
+    from{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    to{
+        transform: translateY(0);
     }
 }
 
