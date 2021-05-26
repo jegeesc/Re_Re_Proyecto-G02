@@ -8,10 +8,11 @@
     --colorSecundario: #FFFFFF;
     --girar: skewY(10deg);
     --girarTextos: skewY(-10deg);
+    --girarPortada: skewY(-5deg);
     --centrar: 0 auto;
     --textmayuscula: uppercase;
     --fuenteContacto: 2rem;
-
+    --tamSubir: 100px;
 }
 
 /*-----------------------------------------------------------*/
@@ -98,8 +99,7 @@ body {
     color: var(--colorSecundario);
     text-align: center;
     margin: 30px;
-    padding-top: 7%;
-    padding-bottom: 10%;
+    padding: 7% 0 10% 0;
     text-transform: var(--textmayuscula);
 }
 
@@ -116,7 +116,7 @@ body {
 
 .portadagira {
     background-color: var(--colorSecundario);
-    transform: skewY(-5deg);
+    transform: var(--girarPortada);
     height: 33rem;
     position: relative;
 }
@@ -536,40 +536,34 @@ submit {
     z-index: 10;
     bottom: 125px;
     right: 1%;
-    height: 100px;
-    width: 100px;
+    height: var(--tamSubir);
+    width: var(--tamSubir);
     cursor: pointer;
     text-decoration: none;
     padding: 5px;
     border-radius: 100%;
     box-shadow: 0 0 10px #a7a7a7;
-
-}
-
-#flechaSubir {
     background-color: rgba(198, 116, 234, 0.4);
 }
 
 #imagenSubir {
     position: relative;
     left: 2px;
-    width: 100px;
-    height: 100px;
+    width: var(--tamSubir);
+    height: var(--tamSubir);
 }
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
 /* RESPONSIVE */
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
-
+/*Movil*/
 @media (max-width: 700px ) {
-    /* HEADER */
+    /*-------------------FRONT PAGE----------------------*/
+    :root{
+        --tamSubir: 2.3rem;
+    }
     .encabezado {
-        z-index: 100;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
         height: 4rem;
         display: flex;
         justify-content: space-between;
@@ -593,19 +587,10 @@ submit {
         margin-top: 20px;
     }
 
-    /* FIN HEADER */
-    .portadagira {
-        background-color: white;
-        transform: skewY(-5deg);
-        height: 15rem;
-        position: relative;
-    }
-
     .titulo {
         margin-top: 5rem;
         font-size: 4rem;
-        padding-top: 1%;
-        padding-bottom: 4%;
+        padding: 1% 0 0 4%;
     }
 
     .subtitulo {
@@ -614,13 +599,17 @@ submit {
         top: -4rem;
     }
 
+    .portadagira {
+        height: 15rem;
+    }
+
     .info {
         font-size: 1rem;
         border-radius: 25px;
         position: relative;
         top: -5rem;
         padding: 1.5rem;
-        box-shadow: 1px 1px 20px grey;
+        box-shadow: 0 0 20px grey;
     }
 
     .flecha_bajar {
@@ -629,19 +618,18 @@ submit {
         max-width: 3rem;
     }
 
-    /* FIN PRIMERA PÁGINA */
+    /*-------------------FLECHA SUBIR----------------------*/
     #flechaSubir {
         width: 2.3rem;
         height: 2.3rem;
     }
 
     #imagenSubir {
-        position: relative;
         left: -.2px;
         width: 2.3rem;
         height: 2.3rem;
     }
-
+    /*-------------------SERVICIOS----------------------*/
     .imagenes {
         width: 200px;
         height: 200px;
@@ -675,7 +663,7 @@ submit {
         align-items: center;
     }
 
-    /*FAQS*/
+    /*-------------------FAQS----------------------*/
     .preguntas {
         padding-top: 7%;
         padding-bottom: 5%;
@@ -690,7 +678,6 @@ submit {
         max-width: 55%;
     }
 
-
     .texto-respuesta {
         display: block;
         width: 80%;
@@ -702,7 +689,6 @@ submit {
         display: flex;
         justify-content: center;
         font-size: 0.5rem;
-
     }
 
     .subtitulocont {
@@ -713,7 +699,7 @@ submit {
         margin: 2rem;
     }
 
-    /*CONTACTO*/
+    /*-------------------CONTACTO----------------------*/
     .form {
         max-width: 85%;
         padding-bottom: 10%;
@@ -744,15 +730,15 @@ submit {
         width: 40%;
     }
 
-    /*FOOTER*/
+    /*-------------------FOOTER----------------------*/
     .piePagina {
         height: 10%;
     }
 
 }
-
+/*Ordenador*/
 @media (min-width: 1000px) {
-    /* HEADER */
+    /*-------------------FRONT PAGE----------------------*/
     #img-portada {
         width: 400px;
         height: 250px;
@@ -767,8 +753,6 @@ submit {
 
     }
 
-    /* FIN HEADER */
-    /* PRIMERA PÁGINA */
     .titulo {
         font-size: 7rem;
     }
@@ -797,50 +781,25 @@ submit {
         width: 4rem;
     }
 
-    /* FIN PRIMERA PÁGINA */
-    #flechaSubir {
-        width: 3rem;
-        height: 3rem;
-    }
-
-    #imagenSubir {
-        position: relative;
-        left: 2px;
-        width: 3rem;
-        height: 3rem;
-    }
-
-
-}
-
-/*SECCION SERVICIOS*/
-@media (min-width: 1000px) {
+    /*-------------------SERVICIOS----------------------*/
     .ajustar {
-        display: flex;
         flex-direction: row;
         align-items: center;
     }
-
-    .flecha-mas-cont {
-        display: flex;
-        height: auto;
-        justify-content: center;
-        flex: 0.4 1 0;
+    /*-------------------FAQS----------------------*/
+    .preguntas {
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
 
     .flecha-mas {
         max-width: 25%;
     }
 
-    .preguntas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 3%;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        margin-bottom: 20%;
+    /*-------------------FAQS----------------------*/
+    #imagenSubir {
+        position: relative;
+        left: 2px;
     }
 
 }
@@ -848,9 +807,9 @@ submit {
 /*Adaptar a pantallas grandes la LP*/
 
 @media (min-width: 1250px) {
+    /*-------------------FRONT PAGE----------------------*/
     .titulo {
         padding-bottom: 4%;
-
     }
 
     #img-portada {
