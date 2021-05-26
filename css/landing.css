@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
 
-:root{
-    --fuente
+:root {
+    --fuentePrincipal: Montserrat;
+    --fuenteSecundaria: Yanone Kaffeesatz;
+    --colorPrincipal: #8343a1;
+    --colorSecundario: #FFFFFF;
+    --girar: skewY(10deg);
+    --girarTextos: skewY(-10deg);
+    --centrar: 0 auto;
+    --textmayuscula: uppercase;
+    --fuenteContacto: 2rem;
+
 }
 
 /*-----------------------------------------------------------*/
@@ -14,10 +23,11 @@
 html {
     scroll-behavior: smooth;
 }
+
 /*Hacer que el contenido de la pagina no se estire demasiado*/
 body {
-    margin: 0 auto;
-    background-color: #8343a1;
+    margin: var(--centrar);
+    background-color: var(--colorPrincipal);
     padding: 0;
     max-width: 1900px;
 }
@@ -29,14 +39,14 @@ body {
     left: 0;
     width: 100%;
     max-height: 4rem;
-    background-color: #FFFFFF;
+    background-color: var(--colorSecundario);
     display: flex;
     justify-content: space-between;
 }
 
 .LaningPage {
     position: relative;
-    background-color: #8343a1;
+    background-color: var(--colorPrincipal);
     z-index: 100;
 }
 
@@ -60,7 +70,7 @@ body {
 .item-contacto {
     display: inline;
     text-align: right;
-    margin: 0 auto;
+    margin: var(--centrar);
     max-height: 4rem;
 }
 
@@ -83,29 +93,29 @@ body {
 }
 
 .titulo {
-    font-family: "Yanone Kaffeesatz";
+    font-family: var(--fuenteSecundaria);
     font-size: 5rem;
-    color: white;
+    color: var(--colorSecundario);
     text-align: center;
     margin: 30px;
     padding-top: 7%;
     padding-bottom: 10%;
-    text-transform: uppercase;
+    text-transform: var(--textmayuscula);
 }
 
 .subtitulo {
     padding-top: 15%;
-    font-family: "Montserrat";
+    font-family: var(--fuentePrincipal);
     font-size: 4rem;
     font-weight: bold;
     text-align: center;
-    color: white;
+    color: var(--colorSecundario);
     margin-left: 20px;
     margin-right: 20px;
 }
 
 .portadagira {
-    background-color: white;
+    background-color: var(--colorSecundario);
     transform: skewY(-5deg);
     height: 33rem;
     position: relative;
@@ -119,7 +129,7 @@ body {
     height: auto;
     right: 0;
     left: 0;
-    margin: 0 auto;
+    margin: var(--centrar);
 }
 
 .div_info {
@@ -128,11 +138,11 @@ body {
 }
 
 .info {
-    font-family: "Montserrat";
+    font-family: var(--fuentePrincipal);
     font-size: 3rem;
     border-radius: 55px;
     padding: 40px;
-    color: #8343A1;
+    color: var(--colorPrincipal);
     background-color: whitesmoke;
     text-decoration: none;
     font-weight: bolder;
@@ -157,242 +167,313 @@ body {
     right: 0;
     width: 3rem;
     height: auto;
-  
+
 }
+
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
 /* --------------------SERVICIOS----------------------------*/
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
-.sensores{
-    background-color: white;
+.sensores {
+    background-color: var(--colorSecundario);
     position: relative;
-    transform: skewY(-10deg);
+    transform: var(--girarTextos);
     height: 800px;
     margin-top: 10%;
 
 }
-.girar{
-    transform: skewY(10deg);
+
+.girar {
+    transform: var(--girar);
 }
-.ajustar{
+
+.ajustar {
     display: flex;
     justify-content: space-around;
     width: 80%;
     margin: 1rem auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    flex-grow: 1;
+    padding: 0 .5rem;
+    flex: 1 1 0;
 }
-.imagenes{
+
+.imagenes {
     width: 350px;
     height: 350px;
     border-radius: 15%;
 }
-.tituloservicios{
-    font-family: "Yanone Kaffeesatz";
+
+.tituloservicios,
+.subtitulosensores {
+    font-family: var(--fuenteSecundaria);
+    text-transform: var(--textmayuscula);
+    padding-top: 10%;
+    color: var(--colorSecundario);
+    text-align: center;
+}
+
+.tituloservicios {
     font-size: 5rem;
-    color: white;
-    text-align: center;
-    margin: 0px;
-    padding-top: 10%;
-    text-transform: uppercase;
+    margin: 0;
 }
-.subtitulosensores{
-    font-family: "Yanone Kaffeesatz";
+
+.subtitulosensores {
     font-size: 450%;
-    color: white;
-    text-align: center;
     margin: 50px;
-    padding-top: 10%;
-    text-transform: uppercase;
 }
-.morado{
-    color: #8343a1;
+
+.morado {
+    color: var(--colorPrincipal);
 }
-.textow{
-    color: white;
-    font-family: "Montserrat";
+
+.textom,
+.textow {
     font-size: 2rem;
     margin: 2rem;
     text-align: center;
+    font-family: var(--fuentePrincipal);
+}
+
+.textow {
+    color: var(--colorSecundario);
 
 }
-.textom{
-    color: #8343a1;
-    font-family: "Montserrat";
-    font-size: 2rem;
-    margin: 2rem;
+
+.textom {
+    color: var(--colorPrincipal);
     font-weight: bold;
-    text-align: center;
 }
 
-.ajustar{
+.ajustar {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/* --------------------FAQS----------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+
+.ng {
+    transform: var(--girarTextos);
+}
+
+.tit-preg {
+    font-family: var(--fuentePrincipal);
+    font-size: 5rem;
+    color: var(--colorSecundario);
+    text-align: center;
+    padding-top: 7%;
+    text-transform: var(--textmayuscula);
+}
+
+.pregunta {
+    transform: var(--girar);
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: #393939;
+    margin-left: 10%;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: start;
+    opacity: 100%;
+    transition: 1s;
+    height: 20%;
+    font-size: 20px;
+}
+
+.texto-pregunta {
+
+    display: flex;
+    font-family: var(--fuentePrincipal);
+    width: 70%;
+    font-size: 2rem;
+    font-weight: bold;
+    flex: 1 1 0;
+
+}
+
+.respuesta {
+    transform: var(--girar);
+    display: flex;
+    width: 90%;
+    height: 0;
+    opacity: 0;
+    transition: 1s;
+    text-align: center;
+    font-size: 10px;
+
+}
+
+.texto-respuesta {
+    font-family: var(--fuentePrincipal);
+    font-size: 0;
+    font-weight: bold;
+    color: gray;
+}
+
+.preguntas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    margin-bottom: 20%;
+}
+
+.flecha-mas {
+    width: 100%;
+}
+
+.flecha-mas-cont {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    flex: 0.4 1 0;
+}
+
+.flecha-mas-cont:hover {
+    transition: 1s all;
+    transform: scale(1.3, 1.3);
+}
+
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
 /* --------------------CONTACTO----------------------------*/
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
+input[type=text], select, textarea, #fname, #lname, #mail {
+    background: transparent;
+    width: 100%;
+    padding: 7px;
+}
+
+
 input[type=text], select, textarea {
     margin-top: 6px;
-    resize: vertical ;
-    background: transparent;
+    resize: vertical;
     display: flex;
     margin-bottom: 20px;
-    padding: 7px;
     box-sizing: border-box;
-    font-size: 17px;
-    border-radius:0px ;
-    width: 100%
+    font-size: 1rem;
+    border-radius: 0;
 }
 
 
 input[type=submit] {
-    background-color:transparent;
-    border-radius:12px;
-    border:3px solid #FFFFFF;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-family:montserrat;
-    font-size:1rem;
-    padding:3%;
-    text-decoration:none;
-    text-shadow:0 1px 0 #2f6627;
-    position:relative;
-    top:1px;
+    border-radius: 12px;
+    border: 3px solid #FFFFFF;
+    display: inline-block;
+    cursor: pointer;
+    color: var(--colorSecundario);
+    font-family: var(--fuentePrincipal);
+    font-size: 1rem;
+    padding: 3%;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #2f6627;
+    position: relative;
+    top: 1px;
 }
 
 
-#fname{
+#fname,
+#lname,
+#mail,
+#subject {
+    font-size: var(--fuenteContacto);
+    color: #c1c1c1;
+}
+
+#fname,
+#lname,
+#mail {
     margin-bottom: 20px;
-    padding: 7px;
     box-sizing: border-box;
-    font-size: 2rem;
-    width: 100%;
-    background: transparent;
     border: none;
     border-bottom: 2px solid #FFFFFF;
-    color: #c1c1c1;
-
-}
-#fname:hover{
-    border-bottom: 2px solid #c5c5c5;
 }
 
-
-#lname{
-    margin-bottom: 20px;
-    padding: 7px;
-    box-sizing: border-box;
-    font-size: 2Rem;
-    width: 100%;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #FFFFFF;
-    color: #c1c1c1;
-}
-#lname:hover{
-    border-bottom: 2px solid #c5c5c5;
-}
-
-
-#mail{
-    margin-bottom: 20px;
-    padding: 7px;
-    box-sizing: border-box;
-    font-size: 2rem;
-    width: 100%;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #FFFFFF;
-    color: #c1c1c1;
-
-}
-#mail:hover{
-    border-bottom: 2px solid #c5c5c5;
-}
-
-#subject{
-    background: transparent;
-    border:2px solid #FFFFFF;
-    color: #c1c1c1;
-    font-size: 2rem;
-
-}
+#fname:hover,
+#lname:hover,
+#mail:hover,
 #subject:hover{
-    border: 2px solid #c5c5c5;
+    border-bottom: 2px solid #c5c5c5;
 }
 
-#boton-enviar{
-    font-size: 2rem;
-    width:20%;
-    justify-content: left;
+#subject {
+    background: transparent;
+    border: 2px solid #FFFFFF;
 }
-#boton-enviar:hover{
+
+#boton-enviar {
+    font-size: var(--fuenteContacto);
+    width: 20%;
+    justify-content: left;
+    background: transparent;
+}
+
+#boton-enviar:hover {
     background: #a156c9;
     box-shadow: gray 0 0 50px;
 }
+
 .container {
     display: flex;
     flex-direction: column;
     border-radius: 1%;
-    background-color: #8343a1;
-    padding: 5%;
-    padding-bottom: 10%;
+    background-color: var(--colorPrincipal);
+    padding: 5% 5% 10% 5%;
     align-items: center;
 }
 
-
-
-
 .subtitulocont {
-    color: #FFFFFF;
-    font-family: "Yanone Kaffeesatz";
+    color: var(--colorSecundario);
+    font-family: var(--fuenteSecundaria);
     font-size: 5rem;
     width: 90%;
     background: none;
-    padding:0px 0px;
     box-sizing: border-box;
-    margin-top: 00px;
+    margin: var(--centrar);
     text-align: center;
     margin-bottom: 10%;
 
 }
-form label{
-    color: #ffffff;
-    font-family:montserrat;
+
+form label {
+    color: var(--colorSecundario);
+    font-family: var(--fuentePrincipal);
     font-weight: bolder;
-    font-size: 2rem;
+    font-size: var(--fuenteContacto);
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin: auto;
+    margin: var(--centrar);
     background: none;
-    padding:10px 20px;
+    padding: 10px 20px 20px 30px;
     box-sizing: border-box;
     margin-top: 20px;
-    padding-bottom: 30px;
-    font-family: Montserrat;
+    font-family: var(--fuentePrincipal);
 }
 
-textarea{
+textarea {
     min-height: 100px;
     max-height: 200px;
     max-width: 100%;
 }
-submit{
-    top:800px;
-    right:900px;
+
+submit {
+    top: 800px;
+    right: 900px;
     font-size: 4rem;
 }
+
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
 /* --------------------FOOTER----------------------------*/
@@ -405,7 +486,7 @@ submit{
 }
 
 .piePagina {
-    background-color: white;
+    background-color: var(--colorSecundario);
     width: 100%;
     text-align: center;
     display: flex;
@@ -442,6 +523,7 @@ submit{
     height: 5rem;
     width: 10rem;
 }
+
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
 /* ----- BOTON SUBIR ----- */
