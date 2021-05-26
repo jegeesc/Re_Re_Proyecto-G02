@@ -1,5 +1,7 @@
 let map;
-var datos=[1,2,3,4];
+//Variable donde van los datos de la sonda
+var datos = [];
+
 
 
 
@@ -34,7 +36,7 @@ function initMap() {
     });
     //------------------------Marcadores------------------------
     //-------------------------------------------------------------------------------------------
-                                //PARCELA 1
+    //PARCELA 1
     //------------------------SONDA 5------------------------
     var sonda5 = new google.maps.Marker({
         position: {lat: 39.01904650081264, lng: -0.2042888124011707},
@@ -45,8 +47,8 @@ function initMap() {
     });
     sonda5.addListener("click", () => {
 
-        var contentString = crearInfoWindow(infowindow,'Sonda 5',datos);
-        var infowindow = crearVar(contentString,map);
+        var contentString = crearInfoWindow(infowindow, 'Sonda 5', datos);
+        var infowindow = crearVar(contentString, map);
         infowindow.open(map, sonda5);
     });
     //------------------------SONDA 6------------------------
@@ -59,9 +61,9 @@ function initMap() {
     });
     sonda6.addListener("click", () => {
 
-        var contentString = crearInfoWindow(infowindow,'Sonda 6',datos);
-        var infowindow = crearVar(contentString,map);
-        infowindow.open(map, sonda5);
+        var contentString = crearInfoWindow(infowindow, 'Sonda 6', datos);
+        var infowindow = crearVar(contentString, map);
+        infowindow.open(map, sonda6);
     });
     //------------------------SONDA 7------------------------
     var sonda7 = new google.maps.Marker({
@@ -73,14 +75,14 @@ function initMap() {
     });
     sonda7.addListener("click", () => {
 
-        var contentString = crearInfoWindow(infowindow,'Sonda 7',datos);
-        var infowindow = crearVar(contentString,map);
-        infowindow.open(map, sonda5);
+        var contentString = crearInfoWindow(infowindow, 'Sonda 7', datos);
+        var infowindow = crearVar(contentString, map);
+        infowindow.open(map, sonda7);
     });
     //-------------------------------------------------------------------------------------------
-
+    //PARCELA 2
     //-------------------------------------------------------------------------------------------
-                                //PARCELA 2
+
     //------------------------SONDA 1------------------------
     var sonda1 = new google.maps.Marker({
         position: {lat: 39.01068307409519, lng: -0.18946713596529477},
@@ -88,11 +90,10 @@ function initMap() {
         animation: google.maps.Animation.DROP,
         map: map
     });
-
     sonda1.addListener("click", () => {
 
-        var contentString = crearInfoWindow(infowindow,'Sonda 1',datos);
-        var infowindow = crearVar(contentString,map);
+        var contentString = crearInfoWindow(infowindow, 'Sonda 1', datos);
+        var infowindow = crearVar(contentString, map);
         infowindow.open(map, sonda1);
     });
 
@@ -105,11 +106,11 @@ function initMap() {
     });
     sonda2.addListener("click", () => {
 
-        var contentString = crearInfoWindow(infowindow,'Sonda 2',datos);
-        var infowindow = crearVar(contentString,map);
+        var contentString = crearInfoWindow(infowindow, 'Sonda 2', datos);
+        var infowindow = crearVar(contentString, map);
         infowindow.open(map, sonda2);
     });
-        //------------------------SONDA 3------------------------
+    //------------------------SONDA 3------------------------
     var sonda3 = new google.maps.Marker({
         position: {lat: 39.00720495033061, lng: -0.183881301062853},
         label: "Sonda 3",
@@ -117,11 +118,11 @@ function initMap() {
         map: map
     });
     sonda3.addListener("click", () => {
-        var contentString = crearInfoWindow(infowindow,'Sonda 3',datos);
-        var infowindow = crearVar(contentString,map);
+        var contentString = crearInfoWindow(infowindow, 'Sonda 3', datos);
+        var infowindow = crearVar(contentString, map);
         infowindow.open(map, sonda3);
     });
-        //------------------------SONDA 4------------------------
+    //------------------------SONDA 4------------------------
     var sonda4 = new google.maps.Marker({
         position: {lat: 39.00934263744238, lng: -0.1784923340801241},
         label: "Sonda 4",
@@ -129,14 +130,14 @@ function initMap() {
         map: map
     });
     sonda4.addListener("click", () => {
-        var contentString = crearInfoWindow(infowindow,'Sonda 4',datos);
-        var infowindow = crearVar(contentString,map);
+        var contentString = crearInfoWindow(infowindow, 'Sonda 4', datos);
+        var infowindow = crearVar(contentString, map);
         infowindow.open(map, sonda4);
 
     });
 
     //-------------------------------------------------------------------------------------------
-    //PARCELA 2
+    //PARCELA 3
     //------------------------SONDA 8------------------------
     var sonda8 = new google.maps.Marker({
         position: {lat: 39.014902060520114, lng: -0.19763593672180033},
@@ -144,12 +145,11 @@ function initMap() {
         animation: google.maps.Animation.DROP,
         map: map
     });
-
     sonda8.addListener("click", () => {
 
-        var contentString = crearInfoWindow(infowindow,'Sonda 8',datos);
-        var infowindow = crearVar(contentString,map);
-        infowindow.open(map, sonda1);
+        var contentString = crearInfoWindow(infowindow, 'Sonda 8', datos);
+        var infowindow = crearVar(contentString, map);
+        infowindow.open(map, sonda8);
     });
 
     //------------------------SONDA 9------------------------
@@ -161,9 +161,9 @@ function initMap() {
     });
     sonda9.addListener("click", () => {
 
-        var contentString = crearInfoWindow(infowindow,'Sonda 9',datos);
-        var infowindow = crearVar(contentString,map);
-        infowindow.open(map, sonda2);
+        var contentString = crearInfoWindow(infowindow, 'Sonda 9', datos);
+        var infowindow = crearVar(contentString, map);
+        infowindow.open(map, sonda9);
     });
 //-------------------------------------------------------------------------------------------
 
@@ -193,46 +193,53 @@ function initMap() {
     */
 
 
-function crearInfoWindow(infowindow,sonda,datos){
+    function crearInfoWindow(infowindow, sonda, datos) {
 
-    //------------------------ CREA CODIGO HTML ------------------------
-    const contentString =
-        '<div class="iw_container">' +
+        //Generar datos aleatorios
+        for (let i = 0; i < 5; i++) {
+            datos[i]=aleatorio(0,100)
+        }
+
+
+
+        //------------------------ CREA CODIGO HTML ------------------------
+        const contentString =
+            '<div class="iw_container">' +
             '<div class="iw_div_principal">' +
-                '<h1 class="iw_titulo">'+ sonda + '</h1>' +
+            '<h1 class="iw_titulo">' + sonda + '</h1>' +
             "</div>" +
             '<div class="iw_logosytext">' +
-                '<div class="iw_iconos">' +
+            '<div class="iw_iconos">' +
 
 
-                    '<img src="../images/temperatura.png" alt="temperatura" class="iw_imagen">' +
-                    '<img src="../images/humedad.png" alt="humedad" class="iw_imagen">' +
-                    '<img src="../images/luz.png" alt="iluminacion" class="iw_imagen">' +
-                    '<img src="../images/sal.png" alt="salinidad" class="iw_imagen">' +
-                "</div>" +
-                '<div class="iw_textos">' +
-                    '<h2 class="iw_subtitulo temperatura">Temperatura</h2>' +
-                    '<h2 class="iw_subtitulo humedad">Humedad</h2>' +
-                    '<h2 class="iw_subtitulo iluminacion">Iluminación</h2>' +
-                    '<h2 class="iw_subtitulo salinidad">Salinidad</h2>' +
-
-                "</div>" +
-                '<div class="iw_textos">' +
-                '<p class="iw_subtitulo temperatura">'+datos[0]+'</p>' +
-                '<p class="iw_subtitulo humedad">'+datos[1]+'</p>' +
-                '<p class="iw_subtitulo iluminacion">'+datos[2]+'<p/>' +
-                '<p class="iw_subtitulo salinidad">'+datos[3]+'</p>' +
-                "</div>" +
-                '<div class="iw_abajo">' +
-                    '<a class="iw_enlace" href="../html/graficas.html">Más parámetros</a>'+
-                "</div>" +
+            '<img src="../images/temperatura.png" alt="temperatura" class="iw_imagen">' +
+            '<img src="../images/humedad.png" alt="humedad" class="iw_imagen">' +
+            '<img src="../images/luz.png" alt="iluminacion" class="iw_imagen">' +
+            '<img src="../images/sal.png" alt="salinidad" class="iw_imagen">' +
             "</div>" +
-        "</div>"
-    ;
-    return contentString;
-}
+            '<div class="iw_textos">' +
+            '<h2 class="iw_subtitulo temperatura">Temperatura</h2>' +
+            '<h2 class="iw_subtitulo humedad">Humedad</h2>' +
+            '<h2 class="iw_subtitulo iluminacion">Iluminación</h2>' +
+            '<h2 class="iw_subtitulo salinidad">Salinidad</h2>' +
 
-    function crearVar(contentString,map){
+            "</div>" +
+            '<div class="iw_textos">' +
+            '<p class="iw_subtitulo temperatura">' + datos[0] + ' ºC' + '</p>' +
+            '<p class="iw_subtitulo humedad">' + datos[1] + ' %' + '</p>' +
+            '<p class="iw_subtitulo iluminacion">' + datos[2] + ' %' +  '<p/>' +
+            '<p class="iw_subtitulo salinidad">' + datos[3] + ' %' + '</p>' +
+            "</div>" +
+            '<div class="iw_abajo">' +
+            '<a class="iw_enlace" href="../html/graficas.html">Más parámetros</a>' +
+            "</div>" +
+            "</div>" +
+            "</div>"
+        ;
+        return contentString;
+    }
+
+    function crearVar(contentString, map) {
 
         const infowindow = new google.maps.InfoWindow({
             content: contentString,
@@ -240,7 +247,11 @@ function crearInfoWindow(infowindow,sonda,datos){
             minWidth: 250,
         });
 
-    return  infowindow;
+        //Cerrar infowindow a los 10s
+        setTimeout(function (){
+            infowindow.close()
+            },10000)
+        return infowindow;
     }
 }
 
