@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b053d8ab-7945-4db1-840d-36c7b0341189" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../css/estilonormal.css" beforeDir="false" afterPath="$PROJECT_DIR$/../css/estilonormal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b053d8ab-7945-4db1-840d-36c7b0341189" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +31,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -48,7 +51,7 @@
       <workItem from="1620755054317" duration="434000" />
       <workItem from="1620755855693" duration="61000" />
       <workItem from="1620834453337" duration="19000" />
-      <workItem from="1622029844997" duration="144000" />
+      <workItem from="1622029844997" duration="755000" />
     </task>
     <servers />
   </component>

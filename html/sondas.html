@@ -3,11 +3,22 @@
 <head>
     <title>Sondas</title>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="../normie/images/logo.png"/>
-    <link rel="stylesheet" href="../css/estilonormal.css">
+
     <meta http-equiv="x-ua-compatible" content="ie-edge">
     <meta name="viewport" content="width=devide-width,
     shrink-to-fit=yes, initial-scale=1, user-scalable=no">
+
+    <!-------------------------Boostrap CSS------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-------------------------------------------------------------->
+
+    <!--------------------------Estilos CSS------------------------->
+    <link rel="shortcut icon" href="../normie/images/logo.png"/>
+    <link rel="stylesheet" href="../css/estilonormal.css">
+    <!-------------------------------------------------------------->
+
+
 </head>
 <body>
 <header>
@@ -48,19 +59,24 @@
 </div>
 
 <div>
-    <div class="parcelas">
+    <!--<div class="parcelas btn btn-primary" data-toggle="collapse" href="#naranjas" aria-expanded="false" aria-controls="collapseExample">
         <div class="separar_left">
             <img class="iconos" src="../images/naranja.svg" alt="Icono Naranjas">
             <h3 class="nombre_parcela">Naranjas</h3>
         </div>
 
         <div class="separar_right">
-            <a href="mapas.html#ir_mapa" class="iconos"><img src="../images/mapa.svg" alt="Icono Mapa"></a>
-            <a href="graficas.html#ir_grafica" class="iconos"><img src="../images/grafica.svg" alt="Icono Gráfica"></a>
+            <a href="mapas.html#ir_mapa"><img class="iconos" src="../images/mapa.svg" alt="Icono Mapa"></a>
+            <a href="graficas.html#ir_grafica"><img class="iconos" src="../images/grafica.svg" alt="Icono Gráfica"></a>
         </div>
     </div>
 
-    <div class="parcelas">
+    <div id="naranjas" class="collapse">
+        <p>Sonda 1
+        Sonda 2</p>
+    </div>
+
+    <div class="parcelas btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
         <div class="separar_left">
             <img class="iconos" src="../images/fresa.svg" alt="Icono Fresas">
             <h3 class="nombre_parcela">Fresas</h3>
@@ -69,20 +85,33 @@
         <div class="separar_right">
             <a href="mapas.html#ir_mapa" class="iconos"><img src="../images/mapa.svg" alt="Icono Mapa"></a>
         <a href="graficas.html#ir_grafica" class="iconos"><img src="../images/grafica.svg" alt="Icono Gráfica"></a></div>
-    </div>
+    </div>-->
 
     <div class="parcelas">
-        <div class="separar">
+        <div class="separar_left">
         <img class="iconos" src="../images/manzana.svg" alt="Icono Manzanas">
-        <h3 class="nombre_parcela">Manzanas</h3></div>
+        <h3 class="nombre_parcela">Manzanas</h3>
+        </div>
 
-        <div class="separar">
-        <a href="mapas.html#ir_mapa" class="iconos"><img class="iconos" src="../images/mapa.svg" alt="Icono Mapa"></a>
-        <a href="graficas.html#ir_grafica" class="iconos"><img src="../images/grafica.svg" alt="Icono Gráficas"></a></div>
+        <div class="separar_right">
+        <a href="mapas.html#ir_mapa"><img class="iconos" src="../images/mapa.svg" alt="Icono Mapa"></a>
+        <a href="graficas.html#ir_grafica"><img class="iconos" src="../images/grafica.svg" alt="Icono Gráficas"></a></div>
     </div>
 </div>
 
 <!-- -------- -->
+
+<!-----------------------Boostrap JS---------------------------->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+<!-------------------------------------------------------------->
 
 <script src="../js/sesion.js"></script>
 
