@@ -385,7 +385,8 @@ header {
         padding: 4%;
     }
     #map{
-        width: 70%;
+        border-radius: 0px;
+        width: 100%;
         height: 70vh ;
     }
     .chart-container {

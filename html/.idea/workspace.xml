@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b053d8ab-7945-4db1-840d-36c7b0341189" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../css/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../css/.idea/css.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../css/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../css/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/html.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapas.html" beforeDir="false" afterPath="$PROJECT_DIR$/mapas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/estilonormal.css" beforeDir="false" afterPath="$PROJECT_DIR$/../css/estilonormal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +48,7 @@
       <workItem from="1620755054317" duration="434000" />
       <workItem from="1620755855693" duration="61000" />
       <workItem from="1620834453337" duration="19000" />
+      <workItem from="1622029844997" duration="144000" />
     </task>
     <servers />
   </component>
