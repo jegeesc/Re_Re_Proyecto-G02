@@ -1,7 +1,7 @@
 /*Globales*/
 /*Fuente*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
+/*Roots*/
 :root{
     --divlogin: 30%;
     --logoDiv: 35%;
@@ -12,7 +12,7 @@
     --logoMargenIzq: 40px;
 }
 
-/*Añade en fondo a la pàgina*/
+/*Añade en fondo a la pagina*/
 body {
     background-image: url("../Login/images_login/fondo11.png");
 }
@@ -189,6 +189,96 @@ a, a:link, a:visited, a:focus, a:hover, a:active {
 .login_cuenta:hover {
     text-decoration: underline;
 }
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*-------------------OLVIDAR CONTRASENYA----------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*Container que tiene todo lo relacionado con el olvido de la contrasenya*/
+.container-olvido-contrasenya {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+#olvido-contrasenya {
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    width: 0;
+    font-size: 0;
+
+}
+
+/*Para hacer que se muestre*/
+#olvido-contrasenya:target {
+    visibility: visible;
+    opacity: 1;
+    transition:0.5s;
+    font-size: 16px;
+
+}
+
+#olvido-contrasenya:target #recuperar-contrasenya {
+    position: absolute;
+    transform: rotate(0deg) translate(0%, -110%);
+    visibility: visible;
+    text-align: center;
+    background: white;
+    margin-top: auto;
+    border: 2px solid grey;
+    border-radius: 38px;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 70px #000000;
+    width: auto;
+}
+
+#texto-olvido-contrasenya {
+    margin-top: 1em;
+    font-family: var(--fuente);
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 1em;
+
+}
+
+/*Container de la x para cerrar la ventana*/
+.cerrar-ico-cont {
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    padding: 20px;
+}
+
+/*Container de el logo */
+.login_divlogo_2 {
+    position: absolute;
+    left: 65%;
+    top: 5px;
+    width: 35%;
+    height: 15%;
+    text-align: right;
+}
+
+.login_logo_2 {
+    width: 100%;
+}
+
+/*Campo donde se escribe el nombre de usuario*/
+#user_casilla {
+    padding: 12px;
+    padding-left: 28px;
+    width: auto;
+    margin: 0 7% 5% 7%;
+}
+
+/*Boton de recuperar contraseña*/
+#boton-recuperar-contrasenya {
+    width: auto;
+}
 
 /*Hace la página responsive*/
 @media (max-width: 2000px) {
@@ -220,6 +310,11 @@ a, a:link, a:visited, a:focus, a:hover, a:active {
     }
     body {
         background-image: url("../Login/images_login/fondoX.png");
+    }
+}
+@media (max-width: 650px) {
+    #olvido-contrasenya:target #recuperar-contrasenya {
+        width: 80%;
     }
 }
 
