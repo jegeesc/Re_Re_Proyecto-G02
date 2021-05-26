@@ -196,7 +196,8 @@ function initMap() {
     function crearInfoWindow(infowindow, sonda, datos) {
 
         //Generar datos aleatorios
-        for (let i = 0; i < 5; i++) {
+        datos[0]=aleatorio(-1,50)
+        for (let i = 1; i < 5; i++) {
             datos[i]=aleatorio(0,100)
         }
 
