@@ -24,7 +24,7 @@ function abrirMapa(){
             //añadimos algunas propiedades como el punto en el que se centrará por defecto y el zoom deseado
             mapaGoogle = new google.maps.Map(document.getElementById('map'), {
                 center: {lat: 40.41691146311564, lng: -3.703518517408268},
-                zoom: 6
+                zoom: 15
             });//map
 
             for (let i = 0; i < datos.length; i++) {
@@ -246,19 +246,7 @@ function formarPoligono(centro){
     })
 
 }
-function vistaGeneral(){
-    mapaGoogle.setZoom(6);
-    mapaGoogle.panTo({lat: 40.41691146311564, lng: -3.703518517408268});
-    console.log("Vista General.");
-}
-function iraMapa(){
-    document.getElementById("idmapa1").addListener("click", function (){
-        setTimeout(function (){
-            mapaGoogle.setZoom(16);
-            mapaGoogle.panTo({lat: 39.00984, lng: -0.18315});
-        },2000)
-    })
-}
+
 
 
 //main
