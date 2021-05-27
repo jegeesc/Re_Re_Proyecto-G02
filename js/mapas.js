@@ -1,3 +1,4 @@
+//SCRIPT SIMULADO POR SI FALLA LA BASE DE DATOS
 let map;
 //Variable donde van los datos de la sonda
 var datos = [];

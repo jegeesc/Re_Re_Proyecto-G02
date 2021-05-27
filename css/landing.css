@@ -861,7 +861,9 @@ submit {
     }
 }
 
+@media (max-width: 1000px) {
 
+}
 /*Animacion*/
 
 @keyframes flecha-bajar-animacion {

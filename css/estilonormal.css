@@ -5,17 +5,15 @@
     --fuente: Montserrat;
     --titulo: 2rem;
     --subtitulo: 1.5rem;
-    --colorSubmenu: rgba(29, 156, 97, 0.39);
-    --colorHeader: #198754;
-    --sombraSubmenu: 0 0 50px #b3b3b3;
+    --colorSubmenu: rgba(107, 201, 158, 0.39);
+    --colorHeader: rgba(25, 135, 84, 0.84);
+    --sombraSubmenu: 0 0 20px #5b5b5b;
     --sombraItems: 0 0 50px grey;
-    --sombraBotones: 0 0 60px grey;
+    --sombraBotones: 0 0 30px grey;
     --redondeado: 30px;
     --fondoVerde: 150px;
-    --circulo1: 150px;
-    --topCirculo1: 205px;
-    --circulo2: 120px;
-    --topCirculo2: 220px;
+    --circulo: 104px;
+    --topCirculo: 220px;
 }
 
 body {
@@ -38,15 +36,19 @@ header {
 
 .cerrar_sesión {
     margin: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .salir {
-    max-width: 5rem;
-    height: 5rem;
+
+    width: 3rem;
+    height: 3rem;
 }
 
 .logo_header {
-    max-width: 10rem;
+    max-width: 7.5rem;
     height: auto;
     margin: 1rem 2rem;
 }
@@ -67,10 +69,10 @@ header {
 .segundoCirculo {
     background-image: url("../normie/images/perfilejemplo.jpeg");
     background-size: cover;
-    width: var(--circulo2);
-    height: var(--circulo2);
-    border: 2px solid white;
-    top: var(--topCirculo2);
+    width: var(--circulo);
+    height: var(--circulo);
+    box-shadow: 0 0 20px #323232;
+    top: var(--topCirculo);
     display: block;
     border-radius: 50%;
 }
@@ -113,13 +115,13 @@ header {
 
 .submenu_item:hover {
     box-shadow: var(--sombraSubmenu);
-    width: 15rem;
-    height: 50%;
+    width: 13rem;
+
 }
 
 .enlace {
     font-family: var(--fuente);
-    color: black;
+    color: #242424;
     font-size: var(--subtitulo);
     text-decoration: none;
     font-weight: bold;
@@ -128,7 +130,7 @@ header {
 #sondas, #mapas, #graficas {
     padding: 1.5%;
     background-color: var(--colorSubmenu);
-    box-shadow: 0 0 20px grey;
+    box-shadow: 0 0 20px rgba(63, 63, 63, 0.53);
 }
 
 
@@ -356,10 +358,8 @@ header {
         --subtitulo: 1rem;
         --redondeado: 30px;
         --fondoVerde: 170px;
-        --circulo1: 120px;
-        --topCirculo1: 160px;
-        --circulo2: 90px;
-        --topCirculo2: 175px;
+        --circulo: 90px;
+        --topCirculo: 175px;
     }
 
     .BarraNav {
@@ -375,8 +375,15 @@ header {
         width: 7rem;
     }
 
+    .segundoCirculo{
+        margin-left: 50px;
+    }
+
     .nombre{
-        font-size: 2rem;
+        font-size: 0;
+        width: 0;
+        height: 0;
+        position: absolute;
     }
 
     .salir {
@@ -450,6 +457,8 @@ header {
 
     .chart-container {
         width: 100%;
+        border-radius: 0;
+        box-shadow: 0 0 20px #bebebe;
     }
 
     .menu-desplegable {

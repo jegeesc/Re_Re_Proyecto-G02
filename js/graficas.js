@@ -63,7 +63,7 @@ function grafica(ejePrincipal, tipoGrafica, axis,) {
         datasets: [
             { //esto es otro objeto de valores que se pondría encima de la otra
                 label: 'Temperatura',
-                data: [aleatorio(10,100), aleatorio(10,100), aleatorio(10,100), aleatorio(10,100), aleatorio(10,100)],
+                data: [aleatorio(10,40), aleatorio(10,40), aleatorio(10,40), aleatorio(10,40), aleatorio(10,40)],
                 fill: true,
                 tension: 0,
                 backgroundColor: 'rgba(255, 99, 99, 0.7)',
