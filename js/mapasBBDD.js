@@ -1,7 +1,7 @@
-var mapaGoogle;
+var mapaGoogle
 function abrirMapa(){
     fetch('../bbdd/mapas.php', {
-            method: "GET"
+        method: "GET"
     }).then(function (respuesta){
 
         //para asegurar...
@@ -11,7 +11,7 @@ function abrirMapa(){
         }//if
 
     }).then(function (datos){
-console.log(datos);
+        console.log(datos);
         //comenzamos con la creación del mapa
 
         //primero una variable para trabajar sibre ella y almacenar el propio mapa
@@ -40,61 +40,25 @@ console.log(datos);
                     map: mapaGoogle
                 });//marker
 
-                    (function (centro, i) {
-                        google.maps.event.addListener(centro, 'click', function () {
-                            mapaGoogle.panTo({lat:parseFloat(x) , lng:parseFloat(y) })
-                            mapaGoogle.setZoom(16)
-                            console.log(centro.label)
-                            infowindow = new google.maps.InfoWindow({
-                                content: 'Campo ' + (1+i),
-                            });
-                            infowindow.open(mapaGoogle, centro);
-                            iniciarSensores(centro.label);
-                            formarPoligono();
-
-
+                (function (centro, i) {
+                    google.maps.event.addListener(centro, 'click', function () {
+                        mapaGoogle.panTo({lat:parseFloat(x) , lng:parseFloat(y) })
+                        mapaGoogle.setZoom(16)
+                        console.log(centro.label)
+                        infowindow = new google.maps.InfoWindow({
+                            content: 'Campo ' + (1+i),
                         });
-                    })(centro, i);
+                        infowindow.open(mapaGoogle, centro);
+                        iniciarSensores(centro.label);
+                        formarPoligono(centro.label);
+
+
+                    });
+                })(centro, i);
 
 
             }//for
-            function formarPoligono(){
-                fetch('../bbdd/esquinas.php', {
-                    method: "GET",
-                }).then(function (respuesta) {
-                    if (respuesta.ok) {
-                        return respuesta.json()
-                    }
-                }).then(function (esquinas){
-                    console.log(esquinas);
-                    var arrayEsquinas=[];
-                    for (let i=0;i<esquinas.length;i++){
-                        if(esquinas[i].idCampos==centro.label){
-                            var latEsquina = parseFloat(esquinas[i].latitudEsquina);
-                            var lngEsquina = parseFloat(esquinas[i].longitudEsquina);
-                            arrayEsquinas.push(latEsquina,lngEsquina);
-                            console.log(arrayEsquinas)
-                            console.log(typeof arrayEsquinas[0]);
 
-                        }
-                    }
-                    var polygon = new google.maps.Polygon({
-                        paths: [
-                            {lat: arrayEsquinas[0], long: arrayEsquinas[1]},
-                            {lat: arrayEsquinas[2], long: arrayEsquinas[3]},
-                            {lat: arrayEsquinas[3], long: arrayEsquinas[4]},
-                            {lat: arrayEsquinas[5], long: arrayEsquinas[6]}
-                        ],
-                        strokeColor: "#ff8000",
-                        strokeOpacity: 0.8,
-                        strokeWeight: 2,
-                        fillColor: "#ff8000",
-                        fillOpacity: 0.35,
-                        map: mapaGoogle
-                    });
-
-                })
-            }
             function iniciarSensores(campo) {
                 fetch('../bbdd/sensores.php?idCampo='+campo, {
                     method: "GET",
@@ -154,10 +118,10 @@ console.log(datos);
 
                             "</div>" +
                             '<div class="iw_textos">' +
-                            '<p class="iw_subtitulo temperatura" id="medidaTemp">'+ '</p>' +
-                            '<p class="iw_subtitulo humedad" id="medidaHum">' +  '</p>' +
+                            '<p class="iw_subtitulo temperatura" id="medidaTemp">'+ 'ºC'+'</p>' +
+                            '<p class="iw_subtitulo humedad" id="medidaHum">' + '%'+ '</p>' +
                             '<p class="iw_subtitulo iluminacion" id="medidaLumi">' + '</p>' +
-                            '<p class="iw_subtitulo salinidad" id="medidaSal">' + '</p>' +
+                            '<p class="iw_subtitulo salinidad" id="medidaSal">' + '%'+'</p>' +
                             "</div>" +
                             '<div class="iw_abajo">' +
                             '<a class="iw_enlace" href="../html/graficas.html">Más parámetros</a>' +
@@ -178,53 +142,49 @@ console.log(datos);
                     }
 
 
-            function tomarmedidas(labe){
-                fetch('../bbdd/mediciones.php?idSensor='+labe, {
-                    method: "GET",
-            }).then(function (respuesta) {
-                    if (respuesta.ok) {
-                        return respuesta.json()
-                    }
-                }).then(function (medidas){
+                    function tomarmedidas(labe){
+                        fetch('../bbdd/mediciones.php?idSensor='+labe, {
+                            method: "GET",
+                        }).then(function (respuesta) {
+                            if (respuesta.ok) {
+                                return respuesta.json()
+                            }
+                        }).then(function (medidas){
 
-                    document.getElementById("medidaHum").textContent = medidas[0].humedad
-                    document.getElementById("medidaTemp").textContent = medidas[0].temperatura
-                    document.getElementById("medidaSal").textContent = medidas[0].salinidad
-                    document.getElementById("medidaLumi").textContent = medidas[0].luminosidad
+                            document.getElementById("medidaHum").textContent = medidas[0].humedad
+                            document.getElementById("medidaTemp").textContent = medidas[0].temperatura
+                            document.getElementById("medidaSal").textContent = medidas[0].salinidad
+                            document.getElementById("medidaLumi").textContent = medidas[0].luminosidad
 
-
-
-
-
-                });//then
+                        });//then
 
 
 
-                /*
-                                        for (let i = 0; i < 3; i++) {
-                                            var sensorX = sensores[i].latitud
-                                            var sensorY = sensores[i].longitud
-                                            var polygon = new google.maps.Polygon({
-                                                paths: [
-                                                    {lat: parseFloat(sensorX), lng: parseFloat(sensorY)},
-                                                ],
-                                                strokeColor: "#ff8000",
-                                                strokeOpacity: 0.8,
-                                                strokeWeight: 2,
-                                                fillColor: "#ff8000",
-                                                fillOpacity: 0.35,
-                                                map: mapaGoogle
-                                            });
-                                        }
-                                        let bounds = new google.maps.LatLngBounds();
-                                        polygon.getArray().forEach(function (v) {
-                                            bounds.extend(v);
-                                        })
-                                        mapaGoogle.fitBounds(bounds);
+                        /*
+                                                for (let i = 0; i < 3; i++) {
+                                                    var sensorX = sensores[i].latitud
+                                                    var sensorY = sensores[i].longitud
+                                                    var polygon = new google.maps.Polygon({
+                                                        paths: [
+                                                            {lat: parseFloat(sensorX), lng: parseFloat(sensorY)},
+                                                        ],
+                                                        strokeColor: "#ff8000",
+                                                        strokeOpacity: 0.8,
+                                                        strokeWeight: 2,
+                                                        fillColor: "#ff8000",
+                                                        fillOpacity: 0.35,
+                                                        map: mapaGoogle
+                                                    });
+                                                }
+                                                let bounds = new google.maps.LatLngBounds();
+                                                polygon.getArray().forEach(function (v) {
+                                                    bounds.extend(v);
+                                                })
+                                                mapaGoogle.fitBounds(bounds);
 
-                                        //aqui acaba
-                */
-            }//tomarTemp()
+                                                //aqui acaba
+                        */
+                    }//tomarTemp()
 
                 });//then
             }//iniciarSensores
@@ -232,12 +192,75 @@ console.log(datos);
         initMap()
     })
 }//abrirMapa()
+function formarPoligono(centro){
+    fetch('../bbdd/esquinas.php', {
+        method: "GET",
+    }).then(function (respuesta) {
+        if (respuesta.ok) {
+            return respuesta.json()
+        }
+    }).then(function (esquinas){
+        console.log(esquinas.length);
+        var arrayEsquinas=[];
+
+        for (let i=0;i<esquinas.length;i++){
+            if(esquinas[i].idCampos==centro){
+                var latEsquina = parseFloat(esquinas[i].latitudEsquina);
+                var lngEsquina = parseFloat(esquinas[i].longitudEsquina);
+                arrayEsquinas.push(latEsquina,lngEsquina);
+                console.log(arrayEsquinas)
+                console.log(typeof arrayEsquinas[0]);
+            }
+        }
+        console.log(arrayEsquinas)
+        var aux=[];
+        for (let i = 0; i < arrayEsquinas.length; i=i+2) {
+            obj= {
+                lat:arrayEsquinas[i],
+                lng:arrayEsquinas[i+1]
+            }
+            aux.push(obj)
+        }
+        console.log(aux)
+
+        var campo = new google.maps.Polygon({
+            paths: [aux],
+            /* {lat: arrayEsquinas[0], long: arrayEsquinas[1]},
+             {lat: arrayEsquinas[2], long: arrayEsquinas[3]},
+             {lat: arrayEsquinas[3], long: arrayEsquinas[4]},
+             {lat: arrayEsquinas[5], long: arrayEsquinas[6]}
+
+             */
+            strokeColor: "#ff8000",
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: "#ff8000",
+            fillOpacity: 0.8,
+            map: mapaGoogle
+        });
+        console.log(campo)
+        let bounds = new google.maps.LatLngBounds();
+        campo.getPath().getArray().forEach(function (v){
+            bounds.extend(v);
+        })
+    })
+
+}
 function vistaGeneral(){
     mapaGoogle.setZoom(6);
     mapaGoogle.panTo({lat: 40.41691146311564, lng: -3.703518517408268});
     console.log("Vista General.");
 }
+function iraMapa(){
+    document.getElementById("idmapa1").addListener("click", function (){
+        setTimeout(function (){
+            mapaGoogle.setZoom(16);
+            mapaGoogle.panTo({lat: 39.00984, lng: -0.18315});
+        },2000)
+    })
+}
+
 
 //main
 
-abrirMapa();
+//abrirMapa();
