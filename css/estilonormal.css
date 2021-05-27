@@ -11,7 +11,7 @@
     --sombraItems: 0 0 50px grey;
     --sombraBotones: 0 0 60px grey;
     --redondeado: 30px;
-    --fondoVerde: 200px;
+    --fondoVerde: 150px;
     --circulo1: 150px;
     --topCirculo1: 205px;
     --circulo2: 120px;
@@ -56,32 +56,29 @@ header {
     height: var(--fondoVerde);
     background-color: var(--colorHeader);
     border: 1px solid var(--colorHeader);
+    display: flex;
 }
 
 .perfil {
     display: flex;
-    justify-content: left;
+    margin: auto auto;
 }
-
-/*.auxiliar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}*/
 
 .segundoCirculo {
     background-image: url("../normie/images/perfilejemplo.jpeg");
     background-size: cover;
     width: var(--circulo2);
     height: var(--circulo2);
-    border: 2px solid grey;
+    border: 2px solid white;
     top: var(--topCirculo2);
     display: block;
     border-radius: 50%;
 }
 
 .nombre {
-    color: #006629;
+    margin-top: 1.5rem;
+    padding-left: 3rem;
+    color: white;
     font-family: var(--fuente);
     font-size: var(--titulo);
     text-align: center;
@@ -89,9 +86,9 @@ header {
     padding-bottom: 3%;
     font-weight: bolder;
 }
-
 .ulsubmenu {
     justify-content: space-around;
+    margin-top: 3rem;
 }
 
 .submenu_item,
@@ -111,6 +108,7 @@ header {
     width: 160px;
     border-radius: 20px;
     transition: 1s;
+    margin-right: 1rem;
 }
 
 .submenu_item:hover {
@@ -218,7 +216,7 @@ header {
 .iconos {
     display: flex;
     flex: 1 1 0;
-    width: 5rem;
+    width: 5.5rem;
     height: auto;
     padding: 1rem;
 }
@@ -241,11 +239,15 @@ header {
     margin: -2.5rem auto 2.5rem auto;
     background: rgba(29, 156, 97, 0.2);
     border-radius: 0 0 30px 30px;
+    font-family: var(--fuente);
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .nombre_parcela {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: auto auto;
+    font-family: var(--fuente);
 }
 
 .separar_left {
@@ -373,13 +375,13 @@ header {
         width: 7rem;
     }
 
+    .nombre{
+        font-size: 2rem;
+    }
+
     .salir {
         width: 3rem;
         height: 3rem;
-    }
-
-    .nombre {
-        padding-top: 15%;
     }
 
     .etiqueta {
@@ -413,14 +415,19 @@ header {
     }
 
     .ulsubmenu {
+        margin-top: 1rem;
         text-align: center;
+        display: flex;
+        flex-direction: column;
     }
 
     .submenu_item {
         margin-left: 10px;
         margin-right: 2px;
         padding: 3%;
+        margin-bottom: 1rem;
     }
+
 
     .recuadro_mapa {
         margin-bottom: 2%;
@@ -461,7 +468,15 @@ header {
         max-width: 60%;
         display: flex;
         flex-direction: column;
+    }
 
+    .iconos {
+        width: 5rem;
+        padding: 1rem;
+    }
+
+    .nombre_parcela {
+        font-size: 2rem;
     }
 
     .separar_left {
