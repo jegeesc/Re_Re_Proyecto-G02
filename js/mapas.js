@@ -32,6 +32,18 @@ function initMap() {
         streetViewControl: false,
         rotateControl: false,
     });
+
+    const icons = {
+        naranjas:{
+            icon: "../images/NaranjaMAP.png",
+        },
+        fresas:{
+            icon: "../images/FresaMAP.png",
+        },
+        manzana:{
+            icon: "../images/ManzanaMAP.png"
+        }
+    };
     //------------------------Marcadores------------------------
     //-------------------------------------------------------------------------------------------
     //PARCELA 1
@@ -40,8 +52,8 @@ function initMap() {
         position: {lat: 39.01904650081264, lng: -0.2042888124011707},
         label: "Sonda 5",
         animation: google.maps.Animation.DROP,
-        map: map
-
+        map: map,
+        icon:icons["fresas"]["icon"]
     });
     sonda5.addListener("click", () => {
 
@@ -54,7 +66,8 @@ function initMap() {
         position: {lat: 39.01890480192713, lng: -0.2016986904601482},
         label: "Sonda 6",
         animation: google.maps.Animation.DROP,
-        map: map
+        map: map,
+        icon:icons["fresas"]["icon"]
 
     });
     sonda6.addListener("click", () => {
@@ -68,7 +81,8 @@ function initMap() {
         position: {lat: 39.01743771350213, lng: -0.2030934391479297},
         label: "Sonda 7",
         animation: google.maps.Animation.DROP,
-        map: map
+        map: map,
+        icon:icons["fresas"]["icon"]
 
     });
     sonda7.addListener("click", () => {
@@ -86,7 +100,8 @@ function initMap() {
         position: {lat: 39.01068307409519, lng: -0.18946713596529477},
         label: "Sonda 1",
         animation: google.maps.Animation.DROP,
-        map: map
+        map: map,
+        icon:icons["naranjas"]["icon"]
     });
     sonda1.addListener("click", () => {
 
@@ -100,7 +115,8 @@ function initMap() {
         position: {lat: 39.012583796216596, lng: -0.18343753009972605},
         label: "Sonda 2",
         animation: google.maps.Animation.DROP,
-        map: map
+        map: map,
+        icon:icons["naranjas"]["icon"]
     });
     sonda2.addListener("click", () => {
 
@@ -113,7 +129,8 @@ function initMap() {
         position: {lat: 39.00720495033061, lng: -0.183881301062853},
         label: "Sonda 3",
         animation: google.maps.Animation.DROP,
-        map: map
+        map: map,
+        icon:icons["naranjas"]["icon"]
     });
     sonda3.addListener("click", () => {
         var contentString = crearInfoWindow(infowindow, 'Sonda 3', datos);
@@ -125,7 +142,8 @@ function initMap() {
         position: {lat: 39.00934263744238, lng: -0.1784923340801241},
         label: "Sonda 4",
         animation: google.maps.Animation.DROP,
-        map: map
+        map: map,
+        icon:icons["naranjas"]["icon"]
     });
     sonda4.addListener("click", () => {
         var contentString = crearInfoWindow(infowindow, 'Sonda 4', datos);
@@ -141,7 +159,8 @@ function initMap() {
         position: {lat: 39.014902060520114, lng: -0.19763593672180033},
         label: "Sonda 8",
         animation: google.maps.Animation.DROP,
-        map: map
+        map: map,
+        icon:icons["manzana"]["icon"]
     });
     sonda8.addListener("click", () => {
 
@@ -155,7 +174,8 @@ function initMap() {
         position: {lat: 39.01253456421008, lng: -0.19690637586973003},
         label: "Sonda 9",
         animation: google.maps.Animation.DROP,
-        map: map
+        map: map,
+        icon:icons["manzana"]["icon"]
     });
     sonda9.addListener("click", () => {
 
