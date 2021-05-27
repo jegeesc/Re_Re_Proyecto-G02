@@ -5,7 +5,7 @@
     --fuente: Montserrat;
     --titulo: 2rem;
     --subtitulo: 1.5rem;
-    --colorSubmenu: rgba(25, 135, 84, 0.39);
+    --colorSubmenu: rgba(29, 156, 97, 0.39);
     --colorHeader: #198754;
     --sombraSubmenu: 0 0 50px #b3b3b3;
     --sombraItems: 0 0 50px grey;
@@ -240,8 +240,9 @@ header {
 #naranjas, #manzanas, #fresas{
     max-width: 50%;
     padding: 2rem;
-    margin: -2.5rem auto;
-    background: var(--colorSubmenu) ;
+    margin: -2.5rem auto 2.5rem auto;
+    background: rgba(29, 156, 97, 0.2);
+    border-radius: 0 0 30px 30px;
 }
 .nombre_parcela{
     font-size: 2rem;
@@ -254,7 +255,6 @@ header {
     background: transparent;
     border: none;
 }
-
 .separar_right{
     justify-content: right;
     display: flex;
@@ -268,12 +268,12 @@ header {
 .btn:hover{
     border: none;
     transition: none;
-
+    box-shadow: 1px 1px 50px red;
 }
 .btn-primary:hover{
     background-color: transparent;
     color: black;
-    box-shadow: none;
+    box-shadow: 1px 1px 50px red;
 }
 /*-----------------------------------------------------------*/
 /*------------------MAPAS--------------------*/
