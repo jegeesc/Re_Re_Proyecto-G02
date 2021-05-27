@@ -192,6 +192,10 @@ console.log(datos);
                     document.getElementById("medidaSal").textContent = medidas[0].salinidad
                     document.getElementById("medidaLumi").textContent = medidas[0].luminosidad
 
+
+
+
+
                 });//then
 
 
