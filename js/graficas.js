@@ -3,6 +3,7 @@ graficaDefault()
 
 //SELECTOR DE GRÁFICAS
 function obtenerTipoGrafica(tipo) {
+    console.log('Obtener tipo graficas')
     if (tipo === 'barras') {
 
         console.log("BARRAS")
@@ -29,8 +30,32 @@ function obtenerTipoGrafica(tipo) {
 //-----------------------------------------------------------------------------------------
 //CONSTRUCTOR DE LA GRAFICA
 //-----------------------------------------------------------------------------------------
-function grafica(ejePrincipal, tipoGrafica, axis) {
+function grafica(ejePrincipal, tipoGrafica, axis,) {
     //DATOS DE LA GRAFICA
+    console.log('Entrado a grafica')
+
+    function tomarmedidas(labe) {
+        fetch('../bbdd/mediciones.php?idSensor=' + labe, {
+            method: "GET",
+        }).then(function (respuesta) {
+            if (respuesta.ok) {
+                return respuesta.json()
+            }
+        }).then(function (medidas) {
+            var datosMedidas;
+            datosMedidas[0] = medidas[0].humedad
+            datosMedidas[1] = medidas[0].temperatura
+            datosMedidas[2] = medidas[0].salinidad
+            datosMedidas[3] = medidas[0].luminosidad
+
+            return datosMedidas;
+        })
+    }
+
+
+    var datosMedidas = tomarmedidas(0);
+
+
     let datos = {
 
         labels: ejePrincipal,
@@ -38,7 +63,7 @@ function grafica(ejePrincipal, tipoGrafica, axis) {
         datasets: [
             { //esto es otro objeto de valores que se pondría encima de la otra
                 label: 'Temperatura',
-                data: [7, 14, 26, 20, 18],
+                data: [aleatorio(10,100), aleatorio(10,100), aleatorio(10,100), aleatorio(10,100), aleatorio(10,100)],
                 fill: true,
                 tension: 0,
                 backgroundColor: 'rgba(255, 99, 99, 0.7)',
@@ -48,7 +73,7 @@ function grafica(ejePrincipal, tipoGrafica, axis) {
             },
             { //esto es otro objeto de valores que se pondría encima de la otra
                 label: 'Salinidad',
-                data: [20, 34, 60, 53, 30],
+                data: [aleatorio(10,100), aleatorio(10,100), aleatorio(10,100), aleatorio(10,100), aleatorio(10,100)],
                 fill: true,
                 tension: 0,
                 backgroundColor: 'rgba(179, 252, 246, 0.7)',
@@ -57,7 +82,7 @@ function grafica(ejePrincipal, tipoGrafica, axis) {
                 pointRadius: 5,
             }, { //esto es otro objeto de valores que se pondría encima de la otra
                 label: 'Iluminación',
-                data: [10, 28, 67, 89, 80],
+                data: [aleatorio(10,100), aleatorio(10,100), aleatorio(10,100), aleatorio(10,100), aleatorio(10,100)],
                 fill: true,
                 tension: 0,
                 backgroundColor: 'rgba(239, 255, 133, 0.7)',
@@ -66,7 +91,7 @@ function grafica(ejePrincipal, tipoGrafica, axis) {
                 pointRadius: 5,
             }, {
                 label: 'Humedad',
-                data: [100, 70, 45, 60, 53],
+                data: [aleatorio(10,100), aleatorio(10,100), aleatorio(10,100), aleatorio(10,100), aleatorio(10,100)],
                 //así se rellena
                 fill: true,
                 //color de fondo
@@ -79,17 +104,21 @@ function grafica(ejePrincipal, tipoGrafica, axis) {
                 pointStyle: 'circle',
                 //tamaño de los puntos
                 pointRadius: 5,
+
             }
         ]
+
     };
 
     //--------------------------------------------------------
 
     //CREAR GRAFICA
     let ctx = document.getElementById('chart');
+    console.log('Se crea el ctx')
     //Destuir grafica antes de crear la nueva
     if (miGrafica) {
         miGrafica.destroy();
+        console.log('Se ha destruido')
     }
 
     //Crea el objeto grafica
@@ -125,12 +154,15 @@ function grafica(ejePrincipal, tipoGrafica, axis) {
             }
         }
     });
+    console.log('Objeto grafica creado')
+    console.log('Sale')
 }
 
 
 //LA GRÁFICA SE DIBUJA EN PANTALLA
 function cargarGrafica(ejePrincipal, tipoGrafica) {
     //Se puede cambiar el eje de los datos
+    console.log('Carga Grafica')
     if (tipoGrafica === 'bar') {
         var axis = 'x';
     } else {
@@ -146,4 +178,24 @@ function graficaDefault() {
     var axis = 'y';
     var ejePrincipal = [''];
     grafica(ejePrincipal, 'bar', axis)
+}
+
+
+//CARGAR MEDIDAS DE LA BBDD
+function tomarmedidas(labe) {
+    fetch('../bbdd/mediciones.php?idSensor=' + labe, {
+        method: "GET",
+    }).then(function (respuesta) {
+        if (respuesta.ok) {
+            return respuesta.json()
+        }
+    }).then(function (medidas) {
+        var datosMedidas;
+        datosMedidas[0] = medidas[0].humedad
+        datosMedidas[1] = medidas[0].temperatura
+        datosMedidas[2] = medidas[0].salinidad
+        datosMedidas[3] = medidas[0].luminosidad
+
+        return datosMedidas;
+    })
 }
