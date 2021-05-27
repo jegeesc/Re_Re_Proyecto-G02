@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 /*--------------------ESTO ES PARA TODOS LOS HTML USER--------------------*/
 /*--------------------VARIABLES--------------------*/
-:root{
+:root {
     --fuente: Montserrat;
     --titulo: 2rem;
     --subtitulo: 1.5rem;
@@ -35,13 +35,16 @@ header {
     display: flex;
     justify-content: space-between;
 }
-.cerrar_sesión{
+
+.cerrar_sesión {
     margin: 1rem 2rem;
 }
+
 .salir {
     max-width: 5rem;
     height: 5rem;
 }
+
 .logo_header {
     max-width: 10rem;
     height: auto;
@@ -55,35 +58,26 @@ header {
     border: 1px solid var(--colorHeader);
 }
 
-.auxiliar {
+.perfil {
+    display: flex;
+    justify-content: left;
+}
+
+/*.auxiliar {
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-.primerCirculo,
-.segundoCirculo{
-    position: absolute;
-    display: block;
-    border-radius: 50%;
-}
-
-.primerCirculo {
-    width: var(--circulo1);
-    height: var(--circulo1);
-    background: white;
-    top: var(--topCirculo1);
-    opacity: 42%;
-}
+}*/
 
 .segundoCirculo {
     background-image: url("../normie/images/perfilejemplo.jpeg");
-    background-position: center;
     background-size: cover;
     width: var(--circulo2);
     height: var(--circulo2);
     border: 2px solid grey;
-    top: var(--topCirculo2)
+    top: var(--topCirculo2);
+    display: block;
+    border-radius: 50%;
 }
 
 .nombre {
@@ -101,7 +95,7 @@ header {
 }
 
 .submenu_item,
-.submenu{
+.submenu {
     height: auto;
 }
 
@@ -118,7 +112,8 @@ header {
     border-radius: 20px;
     transition: 1s;
 }
-.submenu_item:hover{
+
+.submenu_item:hover {
     box-shadow: var(--sombraSubmenu);
     width: 15rem;
     height: 50%;
@@ -170,12 +165,12 @@ header {
 }
 
 .lista1,
-.lista2{
+.lista2 {
     flex-direction: column;
     padding-bottom: 2%;
 }
 
-.primero{
+.primero {
     font-weight: bolder;
     padding-bottom: 25%;
 }
@@ -216,74 +211,84 @@ header {
     text-decoration: none;
     color: black;
 }
+
 /*-----------------------------------------------------------*/
 /*------------------SONDAS--------------------*/
 /*-----------------------------------------------------------*/
-.iconos{
+.iconos {
     display: flex;
-    flex: 1 1 0 ;
+    flex: 1 1 0;
     width: 5rem;
     height: auto;
     padding: 1rem;
 }
-.parcelas{
+
+.parcelas {
     max-width: 80%;
     height: 30%;
     background: var(--colorSubmenu);
-    border-radius:20px;
+    border-radius: 20px;
     margin: 2.5rem auto;
-    display:flex;
+    display: flex;
     justify-content: space-around;
     flex: 1 1 0;
-    border:none;
+    border: none;
 }
-#naranjas, #manzanas, #fresas{
-    max-width: 50%;
+
+#naranjas, #manzanas, #fresas {
+    max-width: 70%;
     padding: 2rem;
     margin: -2.5rem auto 2.5rem auto;
     background: rgba(29, 156, 97, 0.2);
     border-radius: 0 0 30px 30px;
 }
-.nombre_parcela{
+
+.nombre_parcela {
     font-size: 2rem;
     margin: auto auto;
 }
-.separar_left{
+
+.separar_left {
     justify-content: left;
     display: flex;
-    margin-right:5rem ;
+    margin-right: 5rem;
     background: transparent;
     border: none;
 }
-.separar_right{
+
+.separar_right {
     justify-content: right;
     display: flex;
 }
-.btn{
+
+.btn {
     transition: none;
 }
-.btn-primary{
+
+.btn-primary {
     color: black;
 }
-.btn:hover{
+
+.btn:hover {
     border: none;
     transition: none;
-    box-shadow: 1px 1px 50px red;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     background-color: transparent;
     color: black;
-    box-shadow: 1px 1px 50px red;
 }
+
 /*-----------------------------------------------------------*/
 /*------------------MAPAS--------------------*/
 /*----------------------------------------------------------*/
-.recuadro_mapa{
+.recuadro_mapa {
     margin-top: 2.5rem;
     position: relative;
     margin-bottom: 2%;
 }
-#map{
+
+#map {
     width: 90%;
     height: 90vh;
     border: black 1px solid;
@@ -291,6 +296,7 @@ header {
     border-radius: var(--redondeado);
     box-shadow: var(--sombraItems);
 }
+
 /*-----------------------------------------------------------*/
 /*------------------GRÁFICAS--------------------*/
 /*----------------------------------------------------------*/
@@ -303,29 +309,35 @@ header {
     box-shadow: var(--sombraItems);
     margin: 50px auto;
 }
+
 .menu-desplegable {
     max-width: 50%;
 }
+
 .selector {
     box-shadow: 0 0 20px grey;
 }
+
 .alerta {
     margin: 0 auto 2%;
     width: 50%;
     transition: 2s;
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover {
     box-shadow: 0 0 60px #ababab;
 }
-.btn:hover{
+
+.btn:hover {
     transition: 1s;
     box-shadow: var(--sombraBotones);
 }
+
 .alerta:hover {
     transition: 1s;
     box-shadow: var(--sombraBotones);
 }
+
 .selectores-graficas {
     margin: 0 auto 5%;
     max-width: 60%;
@@ -337,7 +349,7 @@ header {
 /*-------------------------ESTO ES PARA QUE SEA RESPONSIVE--------------------------*/
 /*---------------------------------------------------------------------------------*/
 @media (max-width: 700px) {
-    :root{
+    :root {
         --titulo: 1.3rem;
         --subtitulo: 1rem;
         --redondeado: 30px;
@@ -347,83 +359,103 @@ header {
         --circulo2: 90px;
         --topCirculo2: 175px;
     }
+
     .BarraNav {
         height: auto;
         text-decoration: none;
     }
+
     .suprema {
         padding: 0;
     }
+
     .logo_header {
         width: 7rem;
     }
-    .salir{
+
+    .salir {
         width: 3rem;
         height: 3rem;
     }
+
     .nombre {
         padding-top: 15%;
     }
+
     .etiqueta {
         width: 350px;
         height: 200px;
     }
+
     .contenedor_img {
         margin-left: 4px;
         width: 135px;
         font-size: 80%;
     }
+
     .item {
         margin-left: 5px;
     }
+
     .imagen_sonda {
         width: 140%;
         border-radius: 100%;
     }
+
     .listas {
         margin-right: 10px;
         font-size: 100%;
     }
+
     .añadir {
         width: 40px;
         height: 40px;
     }
+
     .ulsubmenu {
         text-align: center;
     }
+
     .submenu_item {
         margin-left: 10px;
         margin-right: 2px;
         padding: 3%;
     }
-    .recuadro_mapa{
+
+    .recuadro_mapa {
         margin-bottom: 2%;
     }
+
     #mapas {
         margin-right: 47px;
         padding: 4%;
     }
+
     #sondas {
         padding: 4%;
     }
-    #map{
+
+    #map {
         border-radius: 0;
         width: 100%;
-        height: 70vh ;
+        height: 70vh;
     }
 
     .chart-container {
         width: 85%;
     }
+
     .menu-desplegable {
         width: 100%;
         padding-bottom: 10%;
         margin-left: 15%;
     }
+
     .alerta {
         width: 70%;
         margin: 5% auto;
     }
+
     .selectores-graficas {
         margin: 0 auto;
         max-width: 60%;
@@ -431,12 +463,35 @@ header {
         flex-direction: column;
 
     }
-    .separar_left{
-        margin-right:2rem ;
+
+    .separar_left {
+        margin-right: 2rem;
     }
 }
-@media(max-width: 400px){
 
+@media (max-width: 450px) {
+
+    .nombre_parcela {
+        font-size: 1.5rem;
+    }
+
+    .parcelas {
+        max-width: 100%;
+        height: 4.5rem;
+    }
+
+    .iconos {
+        width: 3rem;
+        padding: 0;
+    }
+
+    .separar_right .iconos {
+        margin-top: 0.5rem;
+    }
+
+    .iconos {
+        padding: 0.5rem;
+    }
 }
 
 
