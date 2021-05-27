@@ -58,7 +58,7 @@ if($metodo="GET"){
             $respuesta2 = [];
             $respuesta2["idCampos"]=$fila2["idCampos"];
             $respuesta2["latitudEsquina"] = $fila2["latitud"];
-            $respuesta2["longitudEsquina"] = $fila2["longiutd"];
+            $respuesta2["longitudEsquina"] = $fila2["longitud"];
             $resultado2[$nEsquina] = $respuesta2;
             $nEsquina++;
 

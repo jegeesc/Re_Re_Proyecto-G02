@@ -56,10 +56,6 @@
 <!----------------------------- PARCELAS ---------------------------->
 
 <div>
-    <!--FILTRO-->
-</div>
-
-<div>
     <div class="parcelas">
 
         <div class="separar_left btn btn-primary" data-toggle="collapse" href="#naranjas" aria-expanded="false"
@@ -69,7 +65,7 @@
         </div>
 
         <div class="separar_right">
-            <a href="mapas.html#ir_mapa"><img class="iconos" src="../images/mapa.svg" alt="Icono Mapa"></a>
+            <a href="mapas.html#ir_mapa" id="irMapa"><img class="iconos"  src="../images/mapa.svg" alt="Icono Mapa"></a>
             <a href="graficas.html#ir_grafica"><img class="iconos" src="../images/grafica.svg" alt="Icono Gráfica"></a>
         </div>
 
@@ -82,23 +78,6 @@
         <p>SONDA 4</p>
     </div>
 
-    <div class="parcelas">
-        <div class="separar_left  btn btn-primary" data-toggle="collapse" href="#fresas" aria-expanded="false"
-             aria-controls="collapseExample">
-            <img class="iconos" src="../images/fresa.svg" alt="Icono Fresas">
-            <h3 class="nombre_parcela">Fresas</h3>
-        </div>
-
-        <div class="separar_right">
-            <a href="mapas.html#ir_mapa" class="iconos"><img src="../images/mapa.svg" alt="Icono Mapa"></a>
-            <a href="graficas.html#ir_grafica" class="iconos"><img src="../images/grafica.svg" alt="Icono Gráfica"></a>
-        </div>
-    </div>
-    <div id="fresas" class="collapse">
-        <p>SONDA 5</p>
-        <p>SONDA 6</p>
-        <p>SONDA 7</p>
-    </div>
 
     <div class="parcelas">
         <div class="separar_left btn btn-primary " data-toggle="collapse" href="#manzanas" aria-expanded="false"
@@ -108,7 +87,7 @@
         </div>
 
         <div class="separar_right">
-            <a href="mapas.html#ir_mapa"><img class="iconos" src="../images/mapa.svg" alt="Icono Mapa"></a>
+            <a href="mapas.html#ir_mapa"><img class="iconos" id="idmapa2" src="../images/mapa.svg" alt="Icono Mapa"></a>
             <a href="graficas.html#ir_grafica"><img class="iconos" src="../images/grafica.svg" alt="Icono Gráficas"></a>
         </div>
     </div>
@@ -132,7 +111,8 @@
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
 <!-------------------------------------------------------------->
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=abrirMapa" async defer></script>
+<script src="../js/irMapa.js"></script>
 <script src="../js/sesion.js"></script>
 
 </body>
