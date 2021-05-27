@@ -5,7 +5,7 @@
     --fuente: Montserrat;
     --titulo: 2rem;
     --subtitulo: 1.5rem;
-    --colorSubmenu: #19875463;
+    --colorSubmenu: rgba(25, 135, 84, 0.39);
     --colorHeader: #198754;
     --sombraSubmenu: 0 0 50px #b3b3b3;
     --sombraItems: 0 0 50px grey;
@@ -216,7 +216,9 @@ header {
     text-decoration: none;
     color: black;
 }
+/*-----------------------------------------------------------*/
 /*------------------SONDAS--------------------*/
+/*-----------------------------------------------------------*/
 .iconos{
     display: flex;
     flex: 1 1 0 ;
@@ -228,14 +230,14 @@ header {
     max-width: 80%;
     height: 30%;
     background: var(--colorSubmenu);
-    border-radius: var(--redondeado);
+    border-radius:20px;
     margin: 2.5rem auto;
     display:flex;
     justify-content: space-around;
     flex: 1 1 0;
     border:none;
 }
-.collapse{
+#naranjas, #manzanas, #fresas{
     max-width: 50%;
     padding: 2rem;
     margin: -2.5rem auto;
@@ -243,14 +245,35 @@ header {
 }
 .nombre_parcela{
     font-size: 2rem;
+    margin: auto auto;
 }
 .separar_left{
     justify-content: left;
     display: flex;
+    margin-right:5rem ;
+    background: transparent;
+    border: none;
 }
+
 .separar_right{
     justify-content: right;
     display: flex;
+}
+.btn{
+    transition: none;
+}
+.btn-primary{
+    color: black;
+}
+.btn:hover{
+    border: none;
+    transition: none;
+
+}
+.btn-primary:hover{
+    background-color: transparent;
+    color: black;
+    box-shadow: none;
 }
 /*-----------------------------------------------------------*/
 /*------------------MAPAS--------------------*/
@@ -280,16 +303,12 @@ header {
     box-shadow: var(--sombraItems);
     margin: 50px auto;
 }
-
 .menu-desplegable {
     max-width: 50%;
 }
-
 .selector {
     box-shadow: 0 0 20px grey;
-
 }
-
 .alerta {
     margin: 0 auto 2%;
     width: 50%;
@@ -299,18 +318,14 @@ header {
 .dropdown-item:hover{
     box-shadow: 0 0 60px #ababab;
 }
-
 .btn:hover{
     transition: 1s;
     box-shadow: var(--sombraBotones);
 }
-
-
 .alerta:hover {
     transition: 1s;
     box-shadow: var(--sombraBotones);
 }
-
 .selectores-graficas {
     margin: 0 auto 5%;
     max-width: 60%;
@@ -331,13 +346,11 @@ header {
         --topCirculo1: 160px;
         --circulo2: 90px;
         --topCirculo2: 175px;
-
     }
     .BarraNav {
         height: auto;
         text-decoration: none;
     }
-
     .suprema {
         padding: 0;
     }
@@ -348,45 +361,36 @@ header {
         width: 3rem;
         height: 3rem;
     }
-
     .nombre {
         padding-top: 15%;
     }
-
     .etiqueta {
         width: 350px;
         height: 200px;
     }
-
     .contenedor_img {
         margin-left: 4px;
         width: 135px;
         font-size: 80%;
     }
-
     .item {
         margin-left: 5px;
     }
-
     .imagen_sonda {
         width: 140%;
         border-radius: 100%;
     }
-
     .listas {
         margin-right: 10px;
         font-size: 100%;
     }
-
     .añadir {
         width: 40px;
         height: 40px;
     }
-
     .ulsubmenu {
         text-align: center;
     }
-
     .submenu_item {
         margin-left: 10px;
         margin-right: 2px;
@@ -399,11 +403,9 @@ header {
         margin-right: 47px;
         padding: 4%;
     }
-
     #sondas {
         padding: 4%;
     }
-
     #map{
         border-radius: 0;
         width: 100%;
@@ -413,24 +415,28 @@ header {
     .chart-container {
         width: 85%;
     }
-
     .menu-desplegable {
         width: 100%;
         padding-bottom: 10%;
         margin-left: 15%;
     }
-
     .alerta {
         width: 70%;
         margin: 5% auto;
     }
-
     .selectores-graficas {
         margin: 0 auto;
         max-width: 60%;
         display: flex;
         flex-direction: column;
+
     }
+    .separar_left{
+        margin-right:2rem ;
+    }
+}
+@media(max-width: 400px){
+
 }
 
 
