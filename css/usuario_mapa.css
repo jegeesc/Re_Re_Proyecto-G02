@@ -1,0 +1,108 @@
+
+body{
+    background: white;
+    margin: 0;
+}
+.todo {
+    width: 100%
+}
+/*-------------------------------------------*/
+#mapas{
+    padding: 1.5%;
+    background-color: #c5ffbc;
+    box-shadow: 0 0 20px grey;
+}
+/*------------------MAPAS--------------------*/
+.recuadro_mapa{
+    margin-top: 2.5rem;
+    position: relative;
+    background: rgba(41, 178, 26, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.editar{
+    display: flex;
+    align-items: center;
+    margin: 0 3rem;
+
+}
+.nombre_mapa{
+    margin: 1rem auto;
+    font-size: 3rem;
+}
+.ediatar_imagen{
+    width: 3rem;
+    margin: 1rem auto;
+}
+
+#map{
+    width: 90%;
+    height: 90vh;
+    border: black 1px solid;
+    margin: auto auto;
+    border-radius: 5px;
+    box-shadow: 0 0 1rem black;
+}
+.buscar_sondas{
+    text-align: center;
+}
+input{
+    border-radius: 5px;
+}
+.navegacionMapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+}
+.navegacionMapa ul{
+    padding: 0;
+    margin: 0;
+}
+#vistaGeneral{
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.75rem black;
+    background-color: #19875463;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+/*-------------------------------------------*/
+
+/*-------------------------------------------*/
+/*-------------------------------------------*/
+
+/*------------------RESPONSIVE---------------*/
+@media(max-width:700px){
+    #map{
+        width: 90%;
+        height: 70vh ;
+        margin: auto auto;
+    }
+    .filtro{
+        margin: 2rem 0.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .triangulo{
+        border-top:40px solid white;
+        border-right:250px solid #29B21A;
+        border-left:250px solid #29B21A;
+    }
+    .triangulo2{
+        border-top:40px solid #29B21A;
+        border-right:250px solid white;
+        border-left:250px solid white;
+    }
+    .nombre_mapa{
+        font-size: 2rem;
+    }
+    #mapas{
+        margin-right: 47px;
+        padding: 4%;
+    }
+}
+/*-------------------------------------------*/
