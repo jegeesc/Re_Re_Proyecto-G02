@@ -238,20 +238,20 @@
         <form action="action_page.php" class="form">
 
             <label for="fname">Nombre</label>
-            <input type="text" id="fname" name="firstname">
+            <input type="text" id="fname" name="firstname"  required>
 
             <label for="lname">Apellido</label>
-            <input type="text" id="lname" name="lastname">
+            <input type="text" id="lname" name="lastname" required>
 
             <label for="mail">Mail</label>
-            <input type="text" id="mail" name="mail">
+            <input type="text" id="mail" name="mail" required>
 
 
             <label for="subject">Motivo</label>
             <textarea id="subject" name="subject" style="height:200px"></textarea>
 
 
-           <input type="submit" value="Enviar" id="boton-enviar" onclick="enviarContacto()">
+         <input onclick="enviarContacto()" type="submit" value="Enviar" id="boton-enviar">
 
         </form>
     </div>

@@ -1,10 +1,13 @@
 //-----------------------------------------------
-//Olvido de contraseña
+//MOK del boton de enviar
 //-----------------------------------------------
 
 function enviarContacto() {
-    alert("Se ha enviado correctamente")
+    setTimeout(function (){
+        location.href='html/contacto_submit.html'
+    },1)
 
+    alert('Esta accediendo a una zona que esta por implementar')
 
 }
 //-----------------------------------------------

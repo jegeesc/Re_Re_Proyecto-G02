@@ -591,14 +591,14 @@ submit {
 
     .titulo {
         margin-top: 5rem;
-        font-size: 4rem;
+        font-size: 3.6rem;
         padding: 1% 0 0 4%;
     }
 
     .subtitulo {
         font-size: 1.5rem;
         position: relative;
-        top: -4rem;
+        top: -2rem;
     }
 
     .portadagira {
@@ -609,14 +609,14 @@ submit {
         font-size: 1rem;
         border-radius: 25px;
         position: relative;
-        top: -5rem;
+        top: -3rem;
         padding: 1.5rem;
         box-shadow: 0 0 20px grey;
     }
 
     .flecha_bajar {
         position: relative;
-        top: -4rem;
+        top: -3rem;
         max-width: 3rem;
     }
 
@@ -699,6 +699,8 @@ submit {
 
     .tit-preg {
         margin: 2rem;
+        font-size: 2.7rem;
+        padding-bottom: 2%;
     }
 
     /*-------------------CONTACTO----------------------*/
@@ -739,7 +741,7 @@ submit {
 
 }
 /*Ordenador*/
-@media (min-width: 1000px) {
+@media (min-width: 1150px) {
     /*-------------------FRONT PAGE----------------------*/
     #img-portada {
         width: 400px;
@@ -861,8 +863,41 @@ submit {
     }
 }
 
-@media (max-width: 1000px) {
-
+@media (min-width: 750px) and (max-width: 1100px) {
+    .titulo{
+        padding: 10% 0 2% 0;
+    }
+    .portadagira{
+        height: 15rem;
+    }
+    #img-portada{
+        width: 17rem;
+    }
+    #texto-reclamo{
+        font-size: 2rem;
+        padding-top: 10%;
+    }
+    .div_info{
+        padding: 40px;
+    }
+    .info{
+        font-size: 2rem;
+        padding: 30px;
+    }
+    .textow,
+    .textom{
+        font-size: 1.5rem;
+    }
+    .imagenes{
+        width: 250px;
+        height: 250px;
+    }
+    .flecha-mas{
+        width: 50%;
+    }
+    #boton-enviar{
+        width: 30%;
+    }
 }
 /*Animacion*/
 

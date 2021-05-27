@@ -5,9 +5,6 @@ var datos = [];
 
 
 
-
-
-
 /*
 function cerrarIW(){
     console.log('Se ha cerrado')
@@ -20,7 +17,7 @@ function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 39.01455194283243, lng: -0.1912415504303265},
         zoom: 14,
-        mapTypeId: 'roadmap',
+        mapTypeId: 'satellite',
         styles: [
             {
                 featureType: 'poi',
@@ -184,7 +181,31 @@ function initMap() {
         map: map
     });
 
+    let polygon2 = new google.maps.Polygon({
+        paths: [
+            {lat: 39.019163708696, lng: -0.20492643903234295},
+            {lat: 39.019006958542676, lng: -0.20135561644468622 },
+            {lat: 39.01710170252297, lng: -0.20329182221239045}],
+        strokeColor: "#b53f3f",
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: "#b53f3f",
+        fillOpacity: 0.35,
+        map: map
+    });
 
+    let polygon3 = new google.maps.Polygon({
+        paths: [
+            {lat: 39.0150859728451, lng: -0.19805381220533194},
+            {lat: 39.01225365292216, lng: -0.19719027871011707},
+            {lat: 39.01418075640154, lng: -0.19606258326189954}],
+        strokeColor: "#00770c",
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: "#00770c",
+        fillOpacity: 0.35,
+        map: map
+    });
     /*Ajustar el mapa a un polígono
     let bounds = new google.maps.LatLngBounds();
     polygon.getPath().getArray().forEach(function (v) {
