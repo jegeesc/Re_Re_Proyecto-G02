@@ -21,38 +21,41 @@
 
 </head>
 <body>
+<!----------------------------HEADER-------------------------------->
 <header>
     <a href="mapas.html"><img class="logo_header" src="../usuario_mapas/images/logoGTI.png" alt="Logo GTI"></a>
     <div class="cerrar_sesión">
         <a href="../index.html"><img src="../normie/images/salir.png" alt="Cerrar Sesión" class="salir"></a>
     </div>
 </header>
-
-<div class="fondo_verde"></div>
-<div class="auxiliar">
-    <div class="primerCirculo"></div>
-    <div class="segundoCirculo"></div>
+<!------------------------------------------------------------------>
+<!---------------------------PERFIL--------------------------------->
+<div class="fondo_verde">
+    <div class="perfil">
+        <div class="auxiliar">
+            <div class="segundoCirculo"></div>
+        </div>
+        <h1 class="nombre" id="nombreUsuario">Ángel</h1>
+    </div>
+    <!-- Comienza el submenu -->
+    <nav class="submenu">
+        <ul class="ulsubmenu">
+            <div class="submenu_item" id="sondas">
+                <li><a class="enlace" href="sondas.html">PARCELAS</a></li>
+            </div>
+            <div class="submenu_item">
+                <li><a class="enlace" href="graficas.html">GRÁFICAS</a></li>
+            </div>
+            <div class="submenu_item">
+                <li><a class="enlace" href="mapas.html">MAPAS</a></li>
+            </div>
+        </ul>
+    </nav>
+    <!-- Acaba el submenu -->
 </div>
+<!----------------------------------------------------------------->
 
-<h1 class="nombre" id="nombreUsuario"></h1>
-
-<!-- Comienza el submenu -->
-<nav class="submenu">
-    <ul class="ulsubmenu">
-        <div class="submenu_item" id="sondas">
-            <li><a class="enlace" href="sondas.html">PARCELAS</a></li>
-        </div>
-        <div class="submenu_item">
-            <li><a class="enlace" href="graficas.html">GRÁFICAS</a></li>
-        </div>
-        <div class="submenu_item">
-            <li><a class="enlace" href="mapas.html">MAPAS</a></li>
-        </div>
-    </ul>
-</nav>
-<!-- Acaba el submenu -->
-
-<!-- PARCELAS -->
+<!----------------------------- PARCELAS ---------------------------->
 
 <div>
     <!--FILTRO-->
@@ -60,7 +63,9 @@
 
 <div>
     <div class="parcelas">
-        <div class="separar_left btn btn-primary" data-toggle="collapse" href="#naranjas" aria-expanded="false" aria-controls="collapseExample">
+
+        <div class="separar_left btn btn-primary" data-toggle="collapse" href="#naranjas" aria-expanded="false"
+             aria-controls="collapseExample">
             <img class="iconos" src="../images/naranja.svg" alt="Icono Naranjas">
             <h3 class="nombre_parcela">Naranjas</h3>
         </div>
@@ -69,6 +74,7 @@
             <a href="mapas.html#ir_mapa"><img class="iconos" src="../images/mapa.svg" alt="Icono Mapa"></a>
             <a href="graficas.html#ir_grafica"><img class="iconos" src="../images/grafica.svg" alt="Icono Gráfica"></a>
         </div>
+
     </div>
 
     <div id="naranjas" class="collapse">
@@ -77,15 +83,16 @@
     </div>
 
     <div class="parcelas">
-        <div class="separar_left  btn btn-primary" data-toggle="collapse" href="#fresas" aria-expanded="false" aria-controls="collapseExample">
+        <div class="separar_left  btn btn-primary" data-toggle="collapse" href="#fresas" aria-expanded="false"
+             aria-controls="collapseExample">
             <img class="iconos" src="../images/fresa.svg" alt="Icono Fresas">
             <h3 class="nombre_parcela">Fresas</h3>
         </div>
 
-         <div class="separar_right">
+        <div class="separar_right">
             <a href="mapas.html#ir_mapa" class="iconos"><img src="../images/mapa.svg" alt="Icono Mapa"></a>
             <a href="graficas.html#ir_grafica" class="iconos"><img src="../images/grafica.svg" alt="Icono Gráfica"></a>
-         </div>
+        </div>
     </div>
     <div id="fresas" class="collapse">
         <p>SONDA 1</p>
@@ -110,7 +117,8 @@
     </div>
 </div>
 
-<!-- -------- -->
+<!------------------------------------------------------------------>
+
 
 <!-----------------------Boostrap JS---------------------------->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
