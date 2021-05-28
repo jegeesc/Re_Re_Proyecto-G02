@@ -3,7 +3,7 @@ graficaDefault()
 
 //SELECTOR DE GRÁFICAS
 function obtenerTipoGrafica(tipo) {
-    console.log('Obtener tipo graficas')
+
     if (tipo === 'barras') {
 
         console.log("BARRAS")
@@ -32,7 +32,7 @@ function obtenerTipoGrafica(tipo) {
 //-----------------------------------------------------------------------------------------
 function grafica(ejePrincipal, tipoGrafica, axis,) {
     //DATOS DE LA GRAFICA
-    console.log('Entrado a grafica')
+
 
     function tomarmedidas(labe) {
         fetch('../bbdd/mediciones.php?idSensor=' + labe, {
@@ -118,7 +118,6 @@ function grafica(ejePrincipal, tipoGrafica, axis,) {
     //Destuir grafica antes de crear la nueva
     if (miGrafica) {
         miGrafica.destroy();
-        console.log('Se ha destruido')
     }
 
     //Crea el objeto grafica
@@ -154,8 +153,6 @@ function grafica(ejePrincipal, tipoGrafica, axis,) {
             }
         }
     });
-    console.log('Objeto grafica creado')
-    console.log('Sale')
 }
 
 
