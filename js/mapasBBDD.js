@@ -23,8 +23,8 @@ function abrirMapa(){
 
             //añadimos algunas propiedades como el punto en el que se centrará por defecto y el zoom deseado
             mapaGoogle = new google.maps.Map(document.getElementById('map'), {
-                center: {lat: 40.41691146311564, lng: -3.703518517408268},
-                zoom: 6
+                center: {lat: 39.01850, lng: -0.19241},
+                zoom: 13
             });//map
 
             for (let i = 0; i < datos.length; i++) {
@@ -67,7 +67,8 @@ function abrirMapa(){
                         return respuesta.json()
                     }
                 }).then(function (sensores) {
-                    console.log(JSON.stringify(sensores))
+                    console.log(sensores)
+                    var sensoritos = []
                     for (let i = 0; i < sensores.length; i++) {
                         var sondaLat = sensores[i].latitud
                         var sondaLng = sensores[i].longitud
@@ -78,114 +79,124 @@ function abrirMapa(){
                             animation: google.maps.Animation.DROP,
                             map: mapaGoogle
                         });//marker
-                        console.log(sensor);
+                        sensoritos.push(sensor);
+
                         (function (sensor, i) {
                             // add click event
                             google.maps.event.addListener(sensor, 'click', function () {
                                 console.log(sensor.label)
-                                var contentString = crearInfoWindow(infowindow, 'Sonda'+sensor.label, datos);
+                                var contentString = crearInfoWindow(infowindow, 'Sonda' + sensor.label, datos);
                                 tomarmedidas(sensor.label)
                                 infowindow = crearVar(contentString, map);
                                 infowindow.open(mapaGoogle, sensor);
                             });
                         })(sensor, i);
-                        if(mapaGoogle.zoom<10){
-                            sensor.remove()
-                        }
-                    }
-
-                    function crearInfoWindow(infowindow, sonda, datos) {
-
-                        //------------------------ CREA CODIGO HTML ------------------------
-                        const contentString =
-                            '<div class="iw_container">' +
-                            '<div class="iw_div_principal">' +
-                            '<h1 class="iw_titulo">' + sonda + '</h1>' +
-                            "</div>" +
-                            '<div class="iw_logosytext">' +
-                            '<div class="iw_iconos">' +
-
-                            '<img src="../images/temperatura.png" alt="temperatura" class="iw_imagen">' +
-                            '<img src="../images/humedad.png" alt="humedad" class="iw_imagen">' +
-                            '<img src="../images/luz.png" alt="iluminacion" class="iw_imagen">' +
-                            '<img src="../images/sal.png" alt="salinidad" class="iw_imagen">' +
-                            "</div>" +
-                            '<div class="iw_textos">' +
-                            '<h2 class="iw_subtitulo temperatura">Temperatura</h2>' +
-                            '<h2 class="iw_subtitulo humedad">Humedad</h2>' +
-                            '<h2 class="iw_subtitulo iluminacion">Iluminación</h2>' +
-                            '<h2 class="iw_subtitulo salinidad">Salinidad</h2>' +
-
-                            "</div>" +
-                            '<div class="iw_textos">' +
-                            '<p class="iw_subtitulo temperatura" id="medidaTemp">'+ 'ºC'+'</p>' +
-                            '<p class="iw_subtitulo humedad" id="medidaHum">' + '%'+ '</p>' +
-                            '<p class="iw_subtitulo iluminacion" id="medidaLumi">' + '</p>' +
-                            '<p class="iw_subtitulo salinidad" id="medidaSal">' + '%'+'</p>' +
-                            "</div>" +
-                            '<div class="iw_abajo">' +
-                            '<a class="iw_enlace" href="../html/graficas.html">Más parámetros</a>' +
-                            "</div>" +
-                            "</div>" +
-                            "</div>"
-                        ;
-                        return contentString
-                    }
-
-                    function crearVar(contentString, mapaGoogle) {
-                        const infowindow = new google.maps.InfoWindow({
-                            content: contentString,
-                            maxWidth: 500,
-                            minWidth: 250,
-                        });
-                        return infowindow;
-                    }
-
-
-                    function tomarmedidas(labe){
-                        fetch('../bbdd/mediciones.php?idSensor='+labe, {
-                            method: "GET",
-                        }).then(function (respuesta) {
-                            if (respuesta.ok) {
-                                return respuesta.json()
+                        google.maps.event.addListener(mapaGoogle, 'zoom_changed', function () {
+                            var zoom = mapaGoogle.getZoom();
+                            if( zoom > 10 && zoom < 7) {
+                                for (var j = 0; j < sensores.length; j++) {
+                                    sensoritos[j].setMap(mapaGoogle);
+                                }
                             }
-                        }).then(function (medidas){
+                            else {
+                                for (var j = 0; j < sensores.length; j++) {
+                                    sensoritos[j].setMap(null);
+                                }
+                            }
+                        });
 
-                            document.getElementById("medidaHum").textContent = medidas[0].humedad
-                            document.getElementById("medidaTemp").textContent = medidas[0].temperatura
-                            document.getElementById("medidaSal").textContent = medidas[0].salinidad
-                            document.getElementById("medidaLumi").textContent = medidas[0].luminosidad
+                        function crearInfoWindow(infowindow, sonda, datos) {
 
-                        });//then
+                            //------------------------ CREA CODIGO HTML ------------------------
+                            const contentString =
+                                '<div class="iw_container">' +
+                                '<div class="iw_div_principal">' +
+                                '<h1 class="iw_titulo">' + sonda + '</h1>' +
+                                "</div>" +
+                                '<div class="iw_logosytext">' +
+                                '<div class="iw_iconos">' +
+
+                                '<img src="../images/temperatura.png" alt="temperatura" class="iw_imagen">' +
+                                '<img src="../images/humedad.png" alt="humedad" class="iw_imagen">' +
+                                '<img src="../images/luz.png" alt="iluminacion" class="iw_imagen">' +
+                                '<img src="../images/sal.png" alt="salinidad" class="iw_imagen">' +
+                                "</div>" +
+                                '<div class="iw_textos">' +
+                                '<h2 class="iw_subtitulo temperatura">Temperatura</h2>' +
+                                '<h2 class="iw_subtitulo humedad">Humedad</h2>' +
+                                '<h2 class="iw_subtitulo iluminacion">Iluminación</h2>' +
+                                '<h2 class="iw_subtitulo salinidad">Salinidad</h2>' +
+
+                                "</div>" +
+                                '<div class="iw_textos">' +
+                                '<p class="iw_subtitulo temperatura" id="medidaTemp">' + 'ºC' + '</p>' +
+                                '<p class="iw_subtitulo humedad" id="medidaHum">' + '%' + '</p>' +
+                                '<p class="iw_subtitulo iluminacion" id="medidaLumi">' + '</p>' +
+                                '<p class="iw_subtitulo salinidad" id="medidaSal">' + '%' + '</p>' +
+                                "</div>" +
+                                '<div class="iw_abajo">' +
+                                '<a class="iw_enlace" href="../html/graficas.html">Más parámetros</a>' +
+                                "</div>" +
+                                "</div>" +
+                                "</div>"
+                            ;
+                            return contentString
+                        }
+
+                        function crearVar(contentString, mapaGoogle) {
+                            const infowindow = new google.maps.InfoWindow({
+                                content: contentString,
+                                maxWidth: 500,
+                                minWidth: 250,
+                            });
+                            return infowindow;
+                        }
 
 
+                        function tomarmedidas(labe) {
+                            fetch('../bbdd/mediciones.php?idSensor=' + labe, {
+                                method: "GET",
+                            }).then(function (respuesta) {
+                                if (respuesta.ok) {
+                                    return respuesta.json()
+                                }
+                            }).then(function (medidas) {
 
-                        /*
-                                                for (let i = 0; i < 3; i++) {
-                                                    var sensorX = sensores[i].latitud
-                                                    var sensorY = sensores[i].longitud
-                                                    var polygon = new google.maps.Polygon({
-                                                        paths: [
-                                                            {lat: parseFloat(sensorX), lng: parseFloat(sensorY)},
-                                                        ],
-                                                        strokeColor: "#ff8000",
-                                                        strokeOpacity: 0.8,
-                                                        strokeWeight: 2,
-                                                        fillColor: "#ff8000",
-                                                        fillOpacity: 0.35,
-                                                        map: mapaGoogle
-                                                    });
-                                                }
-                                                let bounds = new google.maps.LatLngBounds();
-                                                polygon.getArray().forEach(function (v) {
-                                                    bounds.extend(v);
-                                                })
-                                                mapaGoogle.fitBounds(bounds);
+                                document.getElementById("medidaHum").textContent = medidas[0].humedad + "%"
+                                document.getElementById("medidaTemp").textContent = medidas[0].temperatura + "ºC"
+                                document.getElementById("medidaSal").textContent = medidas[0].salinidad + "%"
+                                document.getElementById("medidaLumi").textContent = medidas[0].luminosidad
 
-                                                //aqui acaba
-                        */
-                    }//tomarTemp()
+                            });//then
 
+
+                            /*
+                                                    for (let i = 0; i < 3; i++) {
+                                                        var sensorX = sensores[i].latitud
+                                                        var sensorY = sensores[i].longitud
+                                                        var polygon = new google.maps.Polygon({
+                                                            paths: [
+                                                                {lat: parseFloat(sensorX), lng: parseFloat(sensorY)},
+                                                            ],
+                                                            strokeColor: "#ff8000",
+                                                            strokeOpacity: 0.8,
+                                                            strokeWeight: 2,
+                                                            fillColor: "#ff8000",
+                                                            fillOpacity: 0.35,
+                                                            map: mapaGoogle
+                                                        });
+                                                    }
+                                                    let bounds = new google.maps.LatLngBounds();
+                                                    polygon.getArray().forEach(function (v) {
+                                                        bounds.extend(v);
+                                                    })
+                                                    mapaGoogle.fitBounds(bounds);
+
+                                                    //aqui acaba
+                            */
+                        }//tomarTemp()
+
+                    }
                 });//then
             }//iniciarSensores
         }//initMap()
@@ -246,19 +257,13 @@ function formarPoligono(centro){
     })
 
 }
+/*
 function vistaGeneral(){
     mapaGoogle.setZoom(6);
     mapaGoogle.panTo({lat: 40.41691146311564, lng: -3.703518517408268});
     console.log("Vista General.");
 }
-function iraMapa(){
-    document.getElementById("idmapa1").addListener("click", function (){
-        setTimeout(function (){
-            mapaGoogle.setZoom(16);
-            mapaGoogle.panTo({lat: 39.00984, lng: -0.18315});
-        },2000)
-    })
-}
+*/
 
 
 //main

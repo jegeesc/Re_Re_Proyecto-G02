@@ -50,13 +50,13 @@ if($metodo="GET"){
         $_SESSION["latitudCentral".$respuesta["idCampo"]]=$respuesta["latitudCentro"];
         $_SESSION["longitudCentral".$respuesta["idCampo"]]=$respuesta["longitudCentro"];
 
-        $sql2 = "SELECT * FROM `esquinas` WHERE `idCampos`='$_SESSION[$aux]'";
+        $sql2 = "SELECT * FROM `esquinas` WHERE `idCampo`='$_SESSION[$aux]'";
         $result2 = mysqli_query($cone,$sql2);
 
 
         while ($fila2 = mysqli_fetch_array($result2)){
             $respuesta2 = [];
-            $respuesta2["idCampos"]=$fila2["idCampos"];
+            $respuesta2["idCampos"]=$fila2["idCampo"];
             $respuesta2["latitudEsquina"] = $fila2["latitud"];
             $respuesta2["longitudEsquina"] = $fila2["longitud"];
             $resultado2[$nEsquina] = $respuesta2;
