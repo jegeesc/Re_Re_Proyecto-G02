@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+/*
+-----------------------------------------------
+HEADER
+-----------------------------------------------
+*/
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.header{
+    margin: 0 auto;
+}
+.encabezado{
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.header_admin{
+    border: 1px solid white;
+    background-color: red;
+    height: auto;
+}
+.admin{
+    display: flex;
+    margin: 0 0;
+}
+.logo{
+    right: 20px;
+    width: 75%;
+    height: auto;
+}
+.salir{
+    float: right;
+    margin-right: 100px;
+    width: 20%;
+    height: auto;
+}
+.imagen{
+    width: 17%;
+    height: auto;
+    margin: 1rem 2rem;
+    border-radius: 50%;
+
+}
+.nombre_cliente{
+    font-family: "Yanone Kaffeesatz";
+    font-size: 50px;
+    margin-left: 2rem;
+    color: white;
+}
+/*-----------------------------------------------*/

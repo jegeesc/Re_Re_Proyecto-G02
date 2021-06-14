@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-05-2021 a las 01:09:53
+-- Tiempo de generación: 28-05-2021 a las 10:44:38
 -- Versión del servidor: 10.4.18-MariaDB
 -- Versión de PHP: 8.0.3
 
@@ -40,8 +40,8 @@ CREATE TABLE `campos` (
 --
 
 INSERT INTO `campos` (`idUsuario`, `idCampos`, `color`, `lat`, `long`) VALUES
-(2, 1, 'orange', 38.9813, -0.300398),
-(2, 2, 'blue', 38.940571, -0.281946);
+(2, 1, 'orange', 39.00984, -0.18315),
+(2, 2, 'blue', 39.03142, -0.20039);
 
 -- --------------------------------------------------------
 
@@ -65,13 +65,13 @@ CREATE TABLE `contacto` (
 
 CREATE TABLE `datos_usuarios` (
   `id` int(11) NOT NULL,
-  `nombre` varchar(255) DEFAULT NULL,
-  `apellidos` varchar(255) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `nSondas` int(255) DEFAULT NULL,
-  `multiRecinto` enum('Sí','No') DEFAULT NULL,
-  `tipoUsuario` enum('admin','usuario') DEFAULT NULL,
-  `ubicacion` varchar(255) DEFAULT NULL
+  `nombre` varchar(255) NOT NULL,
+  `apellidos` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `nSondas` int(255) NOT NULL,
+  `multiRecinto` enum('Sí','No') NOT NULL,
+  `tipoUsuario` enum('admin','usuario') NOT NULL,
+  `ubicacion` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -79,9 +79,9 @@ CREATE TABLE `datos_usuarios` (
 --
 
 INSERT INTO `datos_usuarios` (`id`, `nombre`, `apellidos`, `email`, `nSondas`, `multiRecinto`, `tipoUsuario`, `ubicacion`) VALUES
-(1, 'Clara', 'López Segura', 'admin@admin.com', 0, '', 'admin', 'C/Pedro Pompilo,3,Alzira'),
-(2, 'Ángel', 'Pérez Llobet', 'user@user.com', 50, 'Sí', 'usuario', 'C/La Encina,8,Granada'),
-(3, 'María', 'Alcázar Sánchez', 'marcazar@gmail.com', 25, 'Sí', 'usuario', 'Polígono Industrial Alcodar');
+(1, 'Clara', 'Lopez Segura', 'admin@admin.com', 0, '', 'admin', 'C/Pedro Pompilo,3,Alzira'),
+(2, 'Angel', 'Perez Llobet', 'user@user.com', 50, 'Sí', 'usuario', 'C/La Encina,8,Granada'),
+(3, 'María', 'Alcazar Sanchez', 'marcazar@gmail.com', 25, 'Sí', 'usuario', 'Polígono Industrial Alcodar');
 
 -- --------------------------------------------------------
 
@@ -90,24 +90,24 @@ INSERT INTO `datos_usuarios` (`id`, `nombre`, `apellidos`, `email`, `nSondas`, `
 --
 
 CREATE TABLE `esquinas` (
-  `idCampos` int(11) NOT NULL,
-  `longiutd` float NOT NULL,
-  `latitud` float NOT NULL
+  `idCampo` int(11) NOT NULL,
+  `latitud` float NOT NULL,
+  `longitud` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `esquinas`
 --
 
-INSERT INTO `esquinas` (`idCampos`, `longiutd`, `latitud`) VALUES
-(1, 38.9418, -0.288232),
-(1, 38.9443, -0.284767),
-(1, 38.9383, -0.281025),
-(1, 38.9414, -0.275564),
-(2, 38.9819, -0.30292),
-(2, 38.9832, -0.299283),
-(2, 38.9799, -0.301139),
-(2, 38.9808, -0.297706);
+INSERT INTO `esquinas` (`idCampo`, `latitud`, `longitud`) VALUES
+(2, 39.0364, -0.19829),
+(2, 39.0331, -0.20684),
+(2, 39.025, -0.20299),
+(2, 39.0306, -0.19213),
+(1, 39.0104, -0.19026),
+(1, 39.015, -0.18354),
+(1, 39.0095, -0.17823),
+(1, 39.0051, -0.1836);
 
 -- --------------------------------------------------------
 
@@ -130,9 +130,12 @@ CREATE TABLE `mediciones` (
 --
 
 INSERT INTO `mediciones` (`idSensor`, `idMedicion`, `humedad`, `salinidad`, `temperatura`, `luminosidad`, `hora`) VALUES
-(1, 1, 47, 21, 20.31, 'Soleado', '2021-05-18 14:30:00'),
-(2, 2, 42, 22, 20.6, 'Soleado', '2021-05-18 15:00:00'),
-(3, 3, 40, 21, 19.7, 'Soleado', '2021-05-25 15:30:00');
+(1, 1, 34, 21, 20.31, 'Soleado', '2021-05-28 12:00:00'),
+(2, 2, 33, 22, 20.6, 'Soleado', '2021-05-28 12:00:00'),
+(3, 3, 30, 21, 20, 'Soleado', '2021-05-28 12:00:00'),
+(4, 4, 29, 22, 20.2, 'Soleado', '2021-05-28 12:00:00'),
+(5, 5, 15, 10, 16.3, 'Escasamente Nublado', '2021-05-28 12:00:00'),
+(6, 6, 16, 12, 16.6, 'Escasamente Nublado', '2021-05-28 12:00:00');
 
 -- --------------------------------------------------------
 
@@ -153,12 +156,12 @@ CREATE TABLE `sensor` (
 --
 
 INSERT INTO `sensor` (`longitud`, `latitud`, `estado`, `idSensor`, `idCampos`) VALUES
-(38.9817, -0.30174, 'activo', 1, 1),
-(38.9819, -0.299771, 'activo', 2, 1),
-(38.981, -0.30005, 'activo', 3, 1),
-(38.9419, -0.285243, 'activo', 4, 2),
-(38.9423, -0.28225, 'activo', 5, 2),
-(38.9406, -0.282561, 'activo', 6, 2);
+(39.0107, -0.189467, 'activo', 1, 1),
+(39.0126, -0.183438, 'activo', 2, 1),
+(39.0072, -0.183881, 'activo', 3, 1),
+(39.0093, -0.178492, 'activo', 4, 1),
+(39.034, -0.20442, 'activo', 5, 2),
+(39.0295, -0.19828, 'activo', 6, 2);
 
 -- --------------------------------------------------------
 
@@ -207,8 +210,8 @@ CREATE TABLE `usuariosregistrados` (
 
 INSERT INTO `usuariosregistrados` (`id`, `usuario`, `contrasenya`, `tipoUsuario`) VALUES
 (1, 'admin', '1234', 'Admin'),
-(2, 'roberto', '1234', 'User'),
-(3, 'sandra', '1234', 'User');
+(2, 'angel', '1234', 'User'),
+(3, 'maria', '1234', 'User');
 
 --
 -- Índices para tablas volcadas
@@ -237,7 +240,7 @@ ALTER TABLE `datos_usuarios`
 -- Indices de la tabla `esquinas`
 --
 ALTER TABLE `esquinas`
-  ADD KEY `idCampos` (`idCampos`);
+  ADD KEY `idCampo` (`idCampo`);
 
 --
 -- Indices de la tabla `mediciones`
@@ -284,6 +287,12 @@ ALTER TABLE `datos_usuarios`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT de la tabla `mediciones`
+--
+ALTER TABLE `mediciones`
+  MODIFY `idMedicion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- Restricciones para tablas volcadas
 --
 
@@ -297,7 +306,7 @@ ALTER TABLE `campos`
 -- Filtros para la tabla `esquinas`
 --
 ALTER TABLE `esquinas`
-  ADD CONSTRAINT `esquinas_ibfk_1` FOREIGN KEY (`idCampos`) REFERENCES `campos` (`idCampos`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `esquinas_ibfk_1` FOREIGN KEY (`idCampo`) REFERENCES `campos` (`idCampos`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `mediciones`

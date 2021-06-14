@@ -45,19 +45,18 @@ function abrirMapa(){
                         mapaGoogle.panTo({lat:parseFloat(x) , lng:parseFloat(y) })
                         mapaGoogle.setZoom(16)
                         console.log(centro.label)
+
                         infowindow = new google.maps.InfoWindow({
                             content: 'Campo ' + (1+i),
                         });
                         infowindow.open(mapaGoogle, centro);
                         iniciarSensores(centro.label);
                         formarPoligono(centro.label);
-
-
                     });
                 })(centro, i);
-
-
             }//for
+
+
 
             function iniciarSensores(campo) {
                 fetch('../bbdd/sensores.php?idCampo='+campo, {
@@ -68,6 +67,7 @@ function abrirMapa(){
                     }
                 }).then(function (sensores) {
                     console.log(sensores)
+
                     var sensoritos = []
                     for (let i = 0; i < sensores.length; i++) {
                         var sondaLat = sensores[i].latitud
@@ -91,6 +91,8 @@ function abrirMapa(){
                                 infowindow.open(mapaGoogle, sensor);
                             });
                         })(sensor, i);
+
+                        //-----------------------------------------------------------------------
                         google.maps.event.addListener(mapaGoogle, 'zoom_changed', function () {
                             var zoom = mapaGoogle.getZoom();
                             if( zoom > 10 && zoom < 7) {
@@ -104,6 +106,7 @@ function abrirMapa(){
                                 }
                             }
                         });
+                        //-----------------------------------------------------------------------
 
                         function crearInfoWindow(infowindow, sonda, datos) {
 
@@ -203,6 +206,8 @@ function abrirMapa(){
         initMap()
     })
 }//abrirMapa()
+
+
 function formarPoligono(centro){
     fetch('../bbdd/esquinas.php', {
         method: "GET",
