@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="../admin/images_admin/logo.png"/>
-    <link rel="stylesheet" type="text/css" href="../css/admin.css">
+    <link rel="stylesheet" type="text/css" href="../css/admin_new.css">
     <title>Página administrador</title>
+
+    <!-------------------------Boostrap CSS------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-------------------------------------------------------------->
+
+    <!--------------------------Estilos CSS------------------------->
+    <link rel="stylesheet" href="../css/admin_new.css">
+    <!-------------------------------------------------------------->
+
+    <!------------------------CARGAR ICONOS------------------------->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-------------------------------------------------------------->
 </head>
 <body>
 
@@ -16,8 +29,13 @@
                 <div class="header">
                     <li><a href="#"><img class="logo" src="../admin/images_admin/logo1.png" alt="Logo"></a></li>
                 </div>
+                <div class="admin">
+                    <div><li><img src="../admin/images_admin/persona.jpg" class="imagen"></li></div>
+                    <div><li><h1 class="nombre_cliente">María López García</h1></li></div>
+                </div>
+
                 <div class="header">
-                    <li><a href="../index.html"><img class="salir" src="../admin/images_admin/salir.png" alt="Salir"></a></li>
+                    <li><a href=""><img class="salir" src="../admin/images_admin/salir.png" alt="Salir"></a></li>
                 </div>
             </ul>
         </nav>
@@ -25,15 +43,6 @@
 </header>
 <!------------------------------------------------------------------------------->
 
-<div class="verde">
-    <img src="../admin/images_admin/persona.jpg" class="imagen">
-    <h1 class="nombre_cliente">María López García</h1>
-</div>
-
-<div class="vista_usuario">
-    <h4>Cambiar vista usuario</h4>
-    <div class="ojo" ><a href="normal.html"><img class="img_ojo" src="../admin/images_admin/ojo2.PNG" alt="Ojo"></a></div>
-</div>
 
 <div class="seccion_clientes">
     <h3>Clientes</h3>
@@ -45,18 +54,11 @@
             <img class="añadir" src="../admin/images_admin/notificaciones.PNG" alt="Notificaciones">
             <img class="añadir" src="../admin/images_admin/eliminar.PNG" alt="Eliminar">
         </div>
-        <div class="filtrar">
-            <div class="caja">
-                <p>Cantidad de sondas</p>
-                <img class="flecha" src="../admin/images_admin/flechaAbajo.png" alt="Flecha">
-            </div>
-            <div class="caja">
-                <p>Zona de asignación</p>
-                <img class="flecha" src="../admin/images_admin/flechaAbajo.png" alt="Flecha">
-            </div>
-        </div>
-    </div>
+        <!--      FILTRO      -->
+        <!--    FIN FILTRO      -->
 
+    </div>
+<!--
     <div class="recuadro_clientes">
         <div class="cliente">
             <p class="texto">Juan Martínez Ramón
@@ -84,7 +86,7 @@
         </div>
 
     </div>
-</div>
+</div>-->
 
 
 </body>

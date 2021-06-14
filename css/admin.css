@@ -21,6 +21,10 @@ ul{
     background-color: white;
     height: auto;
 }
+.admin{
+    display: flex;
+    flex-direction: row;
+}
 .logo{
     right: 20px;
     width: 75%;
