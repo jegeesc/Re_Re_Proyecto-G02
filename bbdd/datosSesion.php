@@ -1,4 +1,4 @@
-<?php
+    xº<?php
 $metodo = $_SERVER['REQUEST_METHOD'];
 
 if ($metodo == 'GET') {
@@ -36,7 +36,7 @@ if ($metodo == 'GET') {
             echo json_encode($_SESSION);
         }
     } else {
-        header("Location: login.html?errorusuario=si");
+
         http_response_code(401);
         die();
     }
