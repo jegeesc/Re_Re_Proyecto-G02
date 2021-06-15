@@ -287,7 +287,7 @@ header {
 /*------------------MAPAS--------------------*/
 /*----------------------------------------------------------*/
 .recuadro_mapa {
-    margin-top: 2.5rem;
+    margin-top: 1rem;
     position: relative;
     margin-bottom: 2%;
 }
@@ -308,11 +308,11 @@ header {
     position: relative;
     padding: 2%;
     width: 60%;
-    height: 50vh;
+    height: 65vh;
     border-radius: var(--redondeado);
     box-shadow: var(--sombraItems);
-    margin: 50px auto;
-}
+    margin: 10px auto;
+    }
 
 .menu-desplegable {
     max-width: 50%;
