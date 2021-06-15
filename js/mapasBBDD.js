@@ -42,8 +42,7 @@ function abrirMapa(){
 
                 (function (centro, i) {
                     google.maps.event.addListener(centro, 'click', function () {
-                        mapaGoogle.panTo({lat:parseFloat(x) , lng:parseFloat(y) })
-                        mapaGoogle.setZoom(16)
+                        mapaGoogle.setZoom(15)
                         console.log(centro.label)
 
                         infowindow = new google.maps.InfoWindow({
@@ -52,6 +51,9 @@ function abrirMapa(){
                         infowindow.open(mapaGoogle, centro);
                         iniciarSensores(centro.label);
                         formarPoligono(centro.label);
+
+                        mapaGoogle.panTo({lat:parseFloat(datos[i].latitudCentro) , lng:parseFloat(datos[i].longitudCentro) })
+
                     });
                 })(centro, i);
             }//for
@@ -85,6 +87,7 @@ function abrirMapa(){
                             // add click event
                             google.maps.event.addListener(sensor, 'click', function () {
                                 console.log(sensor.label)
+                                mapaGoogle.setZoom(15);
                                 var contentString = crearInfoWindow(infowindow, 'Sonda' + sensor.label, datos);
                                 tomarmedidas(sensor.label)
                                 infowindow = crearVar(contentString, map);
@@ -95,14 +98,16 @@ function abrirMapa(){
                         //-----------------------------------------------------------------------
                         google.maps.event.addListener(mapaGoogle, 'zoom_changed', function () {
                             var zoom = mapaGoogle.getZoom();
-                            if( zoom > 10 && zoom < 7) {
-                                for (var j = 0; j < sensores.length; j++) {
-                                    sensoritos[j].setMap(mapaGoogle);
+                            if( zoom <14 && zoom > 1) {
+                                for (let j = 0; j < sensores.length; j++) {
+                                    sensoritos[j].setMap(null);
                                 }
                             }
                             else {
-                                for (var j = 0; j < sensores.length; j++) {
-                                    sensoritos[j].setMap(null);
+                                for (let j = 0; j < sensores.length; j++) {
+                                    if(sensoritos[j].setMap()==null){
+                                        sensoritos[j].setMap(mapaGoogle);
+                                    }
                                 }
                             }
                         });
@@ -262,15 +267,71 @@ function formarPoligono(centro){
     })
 
 }
-/*
+let vistaG=document.getElementById("vistaGeneral");
+let campo1= document.getElementById("vistaC1");
+let campo2= document.getElementById("vistaC2");
+
 function vistaGeneral(){
-    mapaGoogle.setZoom(6);
-    mapaGoogle.panTo({lat: 40.41691146311564, lng: -3.703518517408268});
+    mapaGoogle.setZoom(13);
+    mapaGoogle.panTo({lat: 39.01850, lng: -0.19241});
     console.log("Vista General.");
+    vistaG.style.cssText="background-color: #ffffff;\n" +
+        "    color: green;\n" +
+        "    padding: .5rem 1.5rem;\n" +
+        "    box-shadow: 0 0 7px #676767;";
+    campo1.style.cssText="background-color: #ffffff;\n" +
+        "    color: green;\n" +
+        "    padding: .5rem .5rem;\n" +
+        "    box-shadow: 0 0 7px #676767;";
+    campo2.style.cssText="background-color: #ffffff;\n" +
+        "    color: green;\n" +
+        "    padding: .5rem .5rem;\n" +
+        "    box-shadow: 0 0 7px #676767;";
 }
-*/
+
+function vistaCampo(ncampo){
+
+    switch(ncampo){
+        case 1:
+            mapaGoogle.setZoom(15);
+            mapaGoogle.panTo({lat: 39.00984, lng: -0.18315});
+            vistaG.style.cssText="background-color: #ffffff;\n" +
+                "    color: green;\n" +
+                "    padding: .5rem .5rem;\n" +
+                "    box-shadow: 0 0 7px #676767;";
+            campo1.style.cssText="background-color: #ffffff;\n" +
+            "    color: green;\n" +
+            "    padding: .5rem 2rem;\n" +
+            "    box-shadow: 0 0 7px #676767;";
+            campo2.style.cssText="background-color: #ffffff;\n" +
+            "    color: green;\n" +
+            "    padding: .5rem .5rem;\n" +
+            "    box-shadow: 0 0 7px #676767;";
+            break;
+
+            case 2:
+            mapaGoogle.setZoom(15);
+            mapaGoogle.panTo({lat: 39.03142, lng: -0.20039});
+                vistaG.style.cssText="background-color: #ffffff;\n" +
+                    "    color: green;\n" +
+                    "    padding: .5rem .5rem;\n" +
+                    "    box-shadow: 0 0 7px #676767;";
+                campo1.style.cssText="background-color: #ffffff;\n" +
+                    "    color: green;\n" +
+                    "    padding: .5rem .5rem;\n" +
+                    "    box-shadow: 0 0 7px #676767;";
+                campo2.style.cssText="background-color: #ffffff;\n" +
+                    "    color: green;\n" +
+                    "    padding: .5rem 2rem;\n" +
+                    "    box-shadow: 0 0 7px #676767;";
+            break;
+    }
+}
 
 
 //main
+
+function irA(){}
+
 
 //abrirMapa();

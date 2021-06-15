@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <title>Mapas</title>
     <link rel="shortcut icon" href="../normie/images/logo.png"/>
-    <link rel="stylesheet" type="text/css" href="../css/usuario_mapa.css">
     <meta name="viewport" content="width=devide-width,
     shrink-to-fit=yes, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="../css/estilonormal.css">
+    <link rel="stylesheet" type="text/css" href="../css/usuario_mapa.css">
     <link rel="stylesheet" href="../css/infowindow.css">
-    <script src="../js/funcionesGenerales.js"></script>
 
 </head>
 <body>
@@ -39,19 +38,29 @@
     <!----------------------------------------------------------------->
 
     <!-------------------------------MAPAS 1------------------------------------->
-    <div class="recuadro_mapa" id="ir_mapa">
+    <div class="recuadro_mapa" id="ir_Mapa">
+        <div class="navegacionMapa">
+            <nav>
+                <ul>
+                    <li class="elementoNavMapa"><button id="vistaGeneral" onclick="vistaGeneral()">Vista General</button></li>
+                    <li class="elementoNavMapa"><button id="vistaC1" onclick="vistaCampo(1)">Vista Campo 1</button></li>
+                    <li class="elementoNavMapa"><button id="vistaC2" onclick="vistaCampo(2)">Vista Campo 2</button></li>
+                </ul>
+            </nav>
+        </div>
         <div id="map"></div>
     </div>
-    <script src="../js/mapasBBDD.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=abrirMapa" async defer></script>
+
 
 
 </div>
 
 <!--------------------------------------------------------------------------->
 
-
+<script src="../js/mapasBBDD.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=abrirMapa" async defer></script>
 <script src="../js/sesion.js"></script>
 <script src="../js/cerrarSesion.js"></script>
+<script src="../js/funcionesGenerales.js"></script>
 </body>
 </html>

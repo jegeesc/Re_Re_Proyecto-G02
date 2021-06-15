@@ -3,7 +3,7 @@
 /*   background: white;
 /*   margin: 0;
 /*
-/*todo {
+/*odo {
 /*   width: 100%
 /*
 /**-------------------------------------------*/
@@ -106,3 +106,47 @@
 /*   }
 /*
 /**-------------------------------------------*/
+
+/* ------------ RECUADRO MAPA --------------- */
+.recuadro_mapa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.1rem;
+}
+
+/* ------------ NAVEGACIÓN MAPA ------------- */
+.navegacionMapa nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+.elementoNavMapa button {
+    text-decoration: none;
+    flex: 1 1 0;
+    text-transform: uppercase;
+    color: green;
+    border: 2px solid green;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    padding: .5rem;
+    box-shadow: var(--sombraBotones);
+    transition: .7s;
+    margin: .75rem;
+}
+.elementoNavMapa button:hover{
+    background-color: #e2e2e2;
+    color: green;
+    padding: .5rem 1.5rem;
+    box-shadow: 0 0 7px #676767;
+}
+#vistaGeneral{
+    font-weight: bold;
+}
+/* ------------- MAPA ------------------------ */
+#map{
+    flex: 3 3 45rem;
+    margin: 0;
+}
