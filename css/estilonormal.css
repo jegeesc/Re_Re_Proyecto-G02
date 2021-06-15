@@ -4,16 +4,13 @@
 :root {
     --fuente: Montserrat;
     --titulo: 2rem;
-    --subtitulo: 1.5rem;
+    --subtitulo: 1rem;
     --colorSubmenu: rgba(107, 201, 158, 0.39);
     --colorHeader: rgba(25, 135, 84, 0.84);
     --sombraSubmenu: 0 0 20px #5b5b5b;
     --sombraItems: 0 0 50px grey;
     --sombraBotones: 0 0 30px grey;
     --redondeado: 30px;
-    --fondoVerde: 150px;
-    --circulo: 104px;
-    --topCirculo: 220px;
 }
 
 body {
@@ -32,6 +29,7 @@ header {
     max-height: 20%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .cerrar_sesión {
@@ -53,44 +51,20 @@ header {
     margin: 1rem 2rem;
 }
 
-.fondo_verde {
-    width: 100%;
-    height: var(--fondoVerde);
-    background-color: var(--colorHeader);
-    border: 1px solid var(--colorHeader);
-    display: flex;
-}
-
 .perfil {
     display: flex;
     margin: auto auto;
 }
 
-.segundoCirculo {
-    background-image: url("../normie/images/perfilejemplo.jpeg");
-    background-size: cover;
-    width: var(--circulo);
-    height: var(--circulo);
-    box-shadow: 0 0 20px #323232;
-    top: var(--topCirculo);
-    display: block;
-    border-radius: 50%;
-}
-
 .nombre {
-    margin-top: 1.5rem;
-    padding-left: 3rem;
-    color: white;
+    color: var(--colorHeader);
     font-family: var(--fuente);
     font-size: var(--titulo);
-    text-align: center;
-    padding-top: 5%;
-    padding-bottom: 3%;
     font-weight: bolder;
 }
 .ulsubmenu {
     justify-content: space-around;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
 }
 
 .submenu_item,
@@ -357,9 +331,6 @@ header {
         --titulo: 1.3rem;
         --subtitulo: 1rem;
         --redondeado: 30px;
-        --fondoVerde: 170px;
-        --circulo: 90px;
-        --topCirculo: 175px;
     }
 
     .BarraNav {
@@ -373,10 +344,6 @@ header {
 
     .logo_header {
         width: 7rem;
-    }
-
-    .segundoCirculo{
-        margin-left: 50px;
     }
 
     .nombre{
