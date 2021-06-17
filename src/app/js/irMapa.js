@@ -1,6 +1,6 @@
 var mapaGoogle
 function abrirMapa(){
-    fetch('../bbdd/mapas.php', {
+    fetch('../api/v1.0/mapas.php', {
         method: "GET"
     }).then(function (respuesta){
 

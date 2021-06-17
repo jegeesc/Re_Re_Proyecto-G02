@@ -35,7 +35,7 @@ function grafica(ejePrincipal, tipoGrafica, axis,) {
 
 
     function tomarmedidas(labe) {
-        fetch('../bbdd/mediciones.php?idSensor=' + labe, {
+        fetch('../api/v1.0/mediciones.php?idSensor=' + labe, {
             method: "GET",
         }).then(function (respuesta) {
             if (respuesta.ok) {
@@ -178,21 +178,4 @@ function graficaDefault() {
 }
 
 
-//CARGAR MEDIDAS DE LA BBDD
-function tomarmedidas(labe) {
-    fetch('../bbdd/mediciones.php?idSensor=' + labe, {
-        method: "GET",
-    }).then(function (respuesta) {
-        if (respuesta.ok) {
-            return respuesta.json()
-        }
-    }).then(function (medidas) {
-        var datosMedidas;
-        datosMedidas[0] = medidas[0].humedad
-        datosMedidas[1] = medidas[0].temperatura
-        datosMedidas[2] = medidas[0].salinidad
-        datosMedidas[3] = medidas[0].luminosidad
 
-        return datosMedidas;
-    })
-}

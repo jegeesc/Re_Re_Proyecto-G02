@@ -1,4 +1,4 @@
-fetch('../bbdd/datosSesion.php', {
+fetch('../api/v1.0/datosSesion.php', {
     method: "GET"
 }).then(function (respuesta) {
     if (respuesta.ok) {
