@@ -1,3 +1,4 @@
+
 var mapaGoogle
 function abrirMapa(){
     fetch('../api/v1.0/mapas.php', {
@@ -82,16 +83,17 @@ function abrirMapa(){
                             map: mapaGoogle
                         });//marker
                         sensoritos.push(sensor);
-
                         (function (sensor, i) {
                             // add click event
                             google.maps.event.addListener(sensor, 'click', function () {
-                                console.log(sensor.label)
+                                console.log(typeof sensor.label)
                                 mapaGoogle.setZoom(15);
-                                var contentString = crearInfoWindow(infowindow, 'Sonda' + sensor.label, datos);
+                                var contentString = crearInfoWindow(infowindow, 'Sonda ' + sensor.label, datos);
                                 tomarmedidas(sensor.label)
+
                                 infowindow = crearVar(contentString, map);
                                 infowindow.open(mapaGoogle, sensor);
+
                             });
                         })(sensor, i);
 
@@ -119,7 +121,7 @@ function abrirMapa(){
                             const contentString =
                                 '<div class="iw_container">' +
                                 '<div class="iw_div_principal">' +
-                                '<h1 class="iw_titulo">' + sonda + '</h1>' +
+                                '<h1 class="iw_titulo" >' + sonda + '</h1>' +
                                 "</div>" +
                                 '<div class="iw_logosytext">' +
                                 '<div class="iw_iconos">' +

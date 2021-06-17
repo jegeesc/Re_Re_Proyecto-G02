@@ -1209,6 +1209,7 @@
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="373" parent="339" name="humedad">
       <Position>3</Position>
