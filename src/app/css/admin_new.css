@@ -100,13 +100,36 @@ Clientes
 */
 .cliente{
     background: var(--clientes);
-    margin: 2rem 4rem;
+    margin: 2rem 7rem;
     padding: 2rem 2rem;
     display:flex;
     justify-content: space-around;
+    border-radius: 30px;
 }
 
 .texto{
     color: var(--colortextos);
     font-size: 1.5rem;
+    align-items: center;
+}
+
+.flecha_texto{
+    height: auto;
+    width: 3rem;
+    background: var(--clientes);
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+#cliente1, #cliente2, #cliente3, #cliente4{
+max-width: 70%;
+padding: 2rem;
+margin: -2.5rem auto 2.5rem auto;
+background: var(--clientes);
+border-radius: 0 0 30px 30px;
+font-family: "Yanone Kaffeesatz";
+text-align: center;
+font-size: 1.5rem;
 }
