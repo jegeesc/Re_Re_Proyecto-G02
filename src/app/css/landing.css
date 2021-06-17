@@ -186,6 +186,7 @@ body {
     transform: var(--girarTextos);
     margin-top: 10%;
     height: 45rem;
+    padding-top: .2rem;
 
 }
 
@@ -614,6 +615,7 @@ submit {
     .portadagira {
         height: 15rem;
     }
+
 
     .info {
         font-size: 1rem;

@@ -15,6 +15,7 @@
 /*Añade en fondo a la pagina*/
 body {
     background-image: url("../images/fondo11.png");
+
 }
 
 /*Edita las letras de los input correspondientes*/
@@ -277,8 +278,12 @@ a, a:link, a:visited, a:focus, a:hover, a:active {
 
 /*Boton de recuperar contraseña*/
 #boton-recuperar-contrasenya {
-    width: auto;
+    width: 0%;
 }
+#olvido-contrasenya:target #recuperar-contrasenya #boton-recuperar-contrasenya{
+width: auto;
+}
+
 
 /*Hace la página responsive*/
 @media (max-width: 2000px) {
