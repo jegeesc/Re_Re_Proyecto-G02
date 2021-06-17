@@ -1,4 +1,4 @@
-    xº<?php
+<?php
 $metodo = $_SERVER['REQUEST_METHOD'];
 
 if ($metodo == 'GET') {

@@ -322,7 +322,21 @@ header {
     display: flex;
     justify-content: space-around;
 }
-
+#labelSonda{
+    display: inline;
+    margin-left:45%;
+}
+#alertaPeligro{
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    font-family: var(--fuente);
+    text-align: center;
+    padding: 1rem 0;
+    color: #FFFFFF;
+    margin-left: 25%;
+    transition: .5s;
+    max-width: 50%;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------ESTO ES PARA QUE SEA RESPONSIVE--------------------------*/
 /*---------------------------------------------------------------------------------*/
