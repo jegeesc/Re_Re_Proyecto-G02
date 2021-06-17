@@ -9,7 +9,7 @@ document.querySelector("form").addEventListener("submit", function (event) {
     console.log(dataLogin.get("usuario"));
     console.log(dataLogin.get("contrasenya"));
 
-    fetch("../bbdd/login.php", {
+    fetch("../api/v1.0/login.php", {
         method: "POST",
         body: dataLogin
     }).then(function (respuesta) {
@@ -38,12 +38,12 @@ document.querySelector("form").addEventListener("submit", function (event) {
          if(datos.tipoUsuario == 'User'){
              document.getElementById("outputLogin").textContent = "Bienvenido, " + datos.usuario + "!"
              setTimeout(function () {
-                 window.location = "../mapas.html";
+                 window.location = "../app/mapas.html";
              }, 10)
          }else {
              document.getElementById("outputLogin").textContent = "Bienvenido, " + datos.usuario + "!"
              setTimeout(function () {
-                 location.href = "../admin.html"
+                 location.href = "../app/admin.html"
              }, 10)
          }
     }).catch(function (error) {

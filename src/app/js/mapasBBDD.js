@@ -1,6 +1,6 @@
 var mapaGoogle
 function abrirMapa(){
-    fetch('../bbdd/mapas.php', {
+    fetch('../api/v1.0/mapas.php', {
         method: "GET"
     }).then(function (respuesta){
 
@@ -61,7 +61,7 @@ function abrirMapa(){
 
 
             function iniciarSensores(campo) {
-                fetch('../bbdd/sensores.php?idCampo='+campo, {
+                fetch('../api/v1.0/sensores.php?idCampo='+campo, {
                     method: "GET",
                 }).then(function (respuesta) {
                     if (respuesta.ok) {
@@ -124,10 +124,10 @@ function abrirMapa(){
                                 '<div class="iw_logosytext">' +
                                 '<div class="iw_iconos">' +
 
-                                '<img src="../images/temperatura.png" alt="temperatura" class="iw_imagen">' +
-                                '<img src="../images/humedad.png" alt="humedad" class="iw_imagen">' +
-                                '<img src="../images/luz.png" alt="iluminacion" class="iw_imagen">' +
-                                '<img src="../images/sal.png" alt="salinidad" class="iw_imagen">' +
+                                '<img src="../app/images/temperatura.png" alt="temperatura" class="iw_imagen">' +
+                                '<img src="../app/images/humedad.png" alt="humedad" class="iw_imagen">' +
+                                '<img src="../app/images/luz.png" alt="iluminacion" class="iw_imagen">' +
+                                '<img src="../app/images/sal.png" alt="salinidad" class="iw_imagen">' +
                                 "</div>" +
                                 '<div class="iw_textos">' +
                                 '<h2 class="iw_subtitulo temperatura">Temperatura</h2>' +
@@ -143,7 +143,7 @@ function abrirMapa(){
                                 '<p class="iw_subtitulo salinidad" id="medidaSal">' + '%' + '</p>' +
                                 "</div>" +
                                 '<div class="iw_abajo">' +
-                                '<a class="iw_enlace" href="../graficas.html">Más parámetros</a>' +
+                                '<a class="iw_enlace" href="../app/graficas.html">Más parámetros</a>' +
                                 "</div>" +
                                 "</div>" +
                                 "</div>"
@@ -162,7 +162,7 @@ function abrirMapa(){
 
 
                         function tomarmedidas(labe) {
-                            fetch('../bbdd/mediciones.php?idSensor=' + labe, {
+                            fetch('../api/v1.0/mediciones.php?idSensor=' + labe, {
                                 method: "GET",
                             }).then(function (respuesta) {
                                 if (respuesta.ok) {
@@ -214,7 +214,7 @@ function abrirMapa(){
 
 
 function formarPoligono(centro){
-    fetch('../bbdd/esquinas.php', {
+    fetch('../api/v1.0/esquinas.php', {
         method: "GET",
     }).then(function (respuesta) {
         if (respuesta.ok) {
