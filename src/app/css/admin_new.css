@@ -1,57 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
 
+:root{
+    --colortextos: white;
+    --fondo: #29b21a;
+    --clientes: #9d9d9d;
+}
 /*
 -----------------------------------------------
 HEADER
 -----------------------------------------------
 */
-ul{
+ul {
     list-style: none;
     display: flex;
     align-items: center;
 }
-.header{
+
+.header {
     margin: 0 auto;
 }
-.encabezado{
+
+.encabezado {
     z-index: 100;
     position: fixed;
     width: 100%;
-    top: 0;
     left: 0;
 }
-.header_admin{
-    border: 1px solid white;
-    background-color: red;
+
+.header_admin {
     height: auto;
+    background:var(--colortextos);
 }
-.admin{
+
+.admin {
     display: flex;
-    margin: 0 0;
+    padding-bottom: 0;
 }
-.logo{
+
+.logo {
     right: 20px;
-    width: 75%;
+    width: 30%;
     height: auto;
 }
-.salir{
+
+.salir {
     float: right;
     margin-right: 100px;
-    width: 20%;
+    width: 10%;
     height: auto;
 }
-.imagen{
+
+.imagen {
     width: 17%;
     height: auto;
-    margin: 1rem 2rem;
+    margin: 1rem 1rem;
     border-radius: 50%;
 
 }
-.nombre_cliente{
+
+.nombre_cliente {
     font-family: "Yanone Kaffeesatz";
     font-size: 50px;
     margin-left: 2rem;
-    color: white;
+    color: var(--fondo);
 }
+
 /*-----------------------------------------------*/
+/*
+-----------------------------------------------
+Iconos
+-----------------------------------------------
+*/
+.seccion_clientes {
+    color: var(--fondo);
+}
+
+h3 {
+    margin-left: 15rem;
+}
+
+.añadir_cosas {
+    text-align: center;
+    background: var(--fondo);
+    display: flex;
+    justify-content: space-around;
+}
+
+.añadir {
+    height: auto;
+    width: 4rem;
+}
+
+/*-----------------------------------------------*/
+/*
+-----------------------------------------------
+Clientes
+-----------------------------------------------
+*/
+.cliente{
+    background: var(--clientes);
+    margin: 2rem 4rem;
+    padding: 2rem 2rem;
+    display:flex;
+    justify-content: space-around;
+}
+
+.texto{
+    color: var(--colortextos);
+    font-size: 1.5rem;
+}
