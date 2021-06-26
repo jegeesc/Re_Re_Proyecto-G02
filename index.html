@@ -236,7 +236,7 @@
             con nosotros?</h2>
 
 
-        <form action="action_page.php" class="form">
+        <form action="src/api/v1.0/php_mailer/SendMail.php" class="form" method="post">
 
             <label for="fname">Nombre</label>
             <input type="text" id="fname" name="firstname" required>
@@ -252,7 +252,8 @@
             <textarea id="subject" name="subject" style="height:200px"></textarea>
 
 
-            <input onclick="enviarContacto()" type="submit" value="Enviar" id="boton-enviar">
+            <button type="submit" id="boton-enviar" onclick="enviar()"></button>
+            <!--<input type="submit" value="Enviar" id="boton-enviar">-->
 
         </form>
     </div>
@@ -270,6 +271,7 @@
             <a class="textoFooter" href="#">Contacto</a>
             <span class="copyright">SumiWeb © 2021</span>
         </div>
+
     </div>
 </footer>
 <script src="src/app/js/faqs.js"></script>

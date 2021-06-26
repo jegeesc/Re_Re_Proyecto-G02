@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a256077-50a1-4cc4-b264-31640a4072fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../bbdd/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bbdd/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bbdd/contacto.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../html/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../html/.idea/html.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../html/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../html/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SendMail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bbdd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bbdd/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../css/usuario_mapa.css" beforeDir="false" afterPath="$PROJECT_DIR$/../css/usuario_mapa.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../html/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/landingUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/../html/landingUser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../html/mapas.html" beforeDir="false" afterPath="$PROJECT_DIR$/../html/mapas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../js/formContacto.js" beforeDir="false" afterPath="$PROJECT_DIR$/../js/formContacto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../js/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../js/mapas.js" beforeDir="false" afterPath="$PROJECT_DIR$/../js/mapas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SendMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/SendMail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/css/landing.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/css/landing.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/images/flecha.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/images/flecha.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +17,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
   <component name="ProjectId" id="1siHDQUx5rjxY5RwQdtMl0f1JXQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -40,6 +29,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -51,6 +47,9 @@
       <option name="presentableId" value="Default" />
       <updated>1621348371280</updated>
       <workItem from="1621348373281" duration="633000" />
+      <workItem from="1624353184563" duration="2619000" />
+      <workItem from="1624357410433" duration="953000" />
+      <workItem from="1624719991570" duration="2912000" />
     </task>
     <servers />
   </component>
@@ -67,5 +66,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -1,25 +1,33 @@
 <?php
-if (!defined('INCLUDE_PATH')) {
-    define('INCLUDE_PATH', './');
-}
-define('GMAIL_ACOUNT', '********@gmail.com');
-define('GMAIL_PASSWORD', '********');
+
 //Importar las clases PHPMailer necesarias en el espacio global
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-use PHPMailer\PHPMailer\SMTP;
-require INCLUDE_PATH . '../php_mailer/Exception.php';
-require INCLUDE_PATH . '../php_mailer/PHPMailer.php';
-require INCLUDE_PATH . '../php_mailer/SMTP.php';
-function EnviarCorreo($destino, $asunto, $mensaje)
-{
-    $mail = new PHPMailer();
+
+require 'Exception.php';
+require 'PHPMailer.php';
+require 'SMTP.php';
+
+
+$mail = new PHPMailer(true);
+
+try {
+    //Definir las variables
+//-------------------------------------------------
+    $nombre = $_POST["firstname"];
+    $apellido = $_POST["lastname"];
+    $email = $_POST["mail"];
+    $mensaje = $_POST["subject"];
+
+    $body = "Nombre: " . $nombre ." <br> Apellido: " . $apellido ." <br> Email: " . $email . "<br> Mensaje: " . $mensaje;
+//-------------------------------------------------
+
     $mail->isSMTP();
     //Habilitar mensajes de SMTP
     //SMTP::DEBUG_OFF = off (para uso en producción)
     //SMTP::DEBUG_CLIENT = mensajes del cliente
     //SMTP::DEBUG_SERVER = mensajes del cliente y del servidor
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+    $mail->SMTPDebug = 0;
     //Servidor de correo
     $mail->Host = 'smtp.gmail.com';
     //Puerto – 25 para SMTP simple / 465 para SMTP sobre SSL / 587 para SMTP sobre TSL
@@ -28,27 +36,30 @@ function EnviarCorreo($destino, $asunto, $mensaje)
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     //Autentificación y opciones SMTP
     $mail->SMTPAuth = true;
-    $mail->SMTPOptions = array(
-        'ssl' => array(
-            'verify_peer' => false,
-            'verify_peer_name' => false,
-            'allow_self_signed' => true
-        )
-    );
     //Usuario para la autentificación SMTP – usar la dirección completa para gmail
-    $mail->Username = GMAIL_ACOUNT;
+    $mail->Username ='gti2021.g02@gmail.com' ;
     //Contraseña para la autentificación SMTP
-    $mail->Password = GMAIL_PASSWORD;
+    $mail->Password =  'GTIupv@grupo02';
+
     //Remitente del correo – no tiene por que ser la cuenta usada en el servidor
     //pero puede dar problemas con filtros de spam
-    $mail->setFrom('******@gmail.com', 'Nombre Apellidos');
+    $mail->setFrom('gti2021.g02@gmail.com',  $nombre, $apellido );
     //Dirección de destino del mensaje
-    $mail->addAddress($destino);
-    //Poner el asunto del correo
-    $mail->Subject = $asunto;
-    //Poner el contenido del correo en formato HTML
-    $mail->msgHTML($mensaje);
-    if (!$mail->send()) { return 'Error PHPMailer: ' . $mail->ErrorInfo; } else {
-        return true;
-    }
+    $mail->addAddress('gti2021.g02@gmail.com');
+
+    //Contentenido del mensaje
+    $mail->isHTML(true);
+    $mail->CharSet = 'UTF-8';
+    $mail->Subject = $nombre;
+    $mail->Body    = $body;
+
+
+    $mail->send();
+    echo '<script>
+        alert("EL MENSAJE SE HA ENVIADO CON ÉXITO");
+        window.history.go(-1);
+        </script>';
+
+} catch (Exception $e) {
+    echo "NO SE HA PODIDO ENVIAR EL MENSAJE. ERROR: {$mail->ErrorInfo}";
 }

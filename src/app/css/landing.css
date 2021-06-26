@@ -511,6 +511,8 @@ submit {
     flex-direction: column;
     margin-left: 35%;
     margin-top: 1rem;
+    margin-left: 35% ;
+    margin-top:1rem;
 }
 
 .textoFooter {
@@ -530,6 +532,11 @@ submit {
 
 #imagenFooter {
     margin-top: 1rem;
+    padding: 1rem 1rem ;
+}
+
+#imagenFooter {
+    margin-top:1rem;
     height: 5rem;
     width: 10rem;
 }
