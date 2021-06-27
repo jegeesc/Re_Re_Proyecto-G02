@@ -583,6 +583,15 @@ submit {
         --tamSubtitulos: 2rem;
         --tamContacto: .4rem;
     }
+    .LandingPage{
+        height: auto;
+    }
+    #sensorTemperatura{
+        margin: auto;
+    }
+    .subtitulosensores{
+        margin: 50px 0 0 0;
+    }
     .encabezado {
         height: 4rem;
         display: flex;
@@ -701,12 +710,13 @@ submit {
     }
 
     .subtitulocont {
-        font-size: 4rem;
+        font-size: 2.5rem;
+        margin-top: 2rem;
     }
 
     .tit-preg {
         margin: 2rem;
-        font-size: 2.7rem;
+        font-size: 2rem;
         padding-bottom: 2%;
     }
 
