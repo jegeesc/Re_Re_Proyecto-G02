@@ -375,7 +375,7 @@ input[type=text], select, textarea {
 }
 
 
-input[type=submit] {
+button[type=submit] {
     border-radius: 12px;
     border: 3px solid #FFFFFF;
     display: inline-block;
@@ -421,7 +421,7 @@ input[type=submit] {
     border: 2px solid #FFFFFF;
 }
 
-#boton-enviar {
+#submit {
     margin-top: 5%;
     font-size: var(--fuenteContacto);
     width: 20%;
@@ -429,7 +429,7 @@ input[type=submit] {
     background: transparent;
 }
 
-#boton-enviar:hover {
+.submit:hover {
     background: #a156c9;
     box-shadow: gray 0 0 50px;
 }
@@ -481,7 +481,7 @@ textarea {
     max-width: 100%;
 }
 
-submit {
+.submit {
     top: 800px;
     right: 900px;
     font-size: var(--tamSubtitulos);
@@ -746,7 +746,7 @@ submit {
         font-size: 1rem;
     }
 
-    #boton-enviar {
+    .submit {
         font-size: 1rem;
         width: 40%;
     }
@@ -917,7 +917,7 @@ submit {
     .flecha-mas{
         width: 50%;
     }
-    #boton-enviar{
+    #submit{
         width: 30%;
     }
 }
@@ -934,4 +934,3 @@ submit {
         transform: translateY(0);
     }
 }
-

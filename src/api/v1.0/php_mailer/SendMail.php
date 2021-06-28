@@ -55,11 +55,19 @@ try {
 
 
     $mail->send();
+
     echo '<script>
         alert("EL MENSAJE SE HA ENVIADO CON ÉXITO");
+        window.location.href='www.google.com';
         window.history.go(-1);
+       
         </script>';
 
 } catch (Exception $e) {
     echo "NO SE HA PODIDO ENVIAR EL MENSAJE. ERROR: {$mail->ErrorInfo}";
+
 }
+
+
+
+?>
