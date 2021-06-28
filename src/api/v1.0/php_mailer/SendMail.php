@@ -19,7 +19,7 @@ try {
     $email = $_POST["mail"];
     $mensaje = $_POST["subject"];
 
-    $body = "Nombre: " . $nombre ." <br> Apellido: " . $apellido ." <br> Email: " . $email . "<br> Mensaje: " . $mensaje;
+    $body = "Nombre: " . $nombre ." <br> Apellidos: " . $apellido ." <br> Email: " . $email . "<br> Mensaje: " . $mensaje;
 //-------------------------------------------------
 
     $mail->isSMTP();
@@ -50,7 +50,7 @@ try {
     //Contentenido del mensaje
     $mail->isHTML(true);
     $mail->CharSet = 'UTF-8';
-    $mail->Subject = $nombre;
+    $mail->Subject = $email;
     $mail->Body    = $body;
 
 
