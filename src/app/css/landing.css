@@ -427,11 +427,13 @@ button[type=submit] {
     font-size: var(--fuenteContacto);
     width: 30%;
     justify-content: left;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: transparent;
     color: white;
     box-shadow: 0 0 10px grey;
     transition-duration: 1s;
+    font-family: Montserrat;
+    font-weight: bold;
 
 }
 
