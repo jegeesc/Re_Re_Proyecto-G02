@@ -6,6 +6,7 @@ function subir(){
     })
 }
 
+
 //JS DE LA SECCIÓN FAQS
 
 var clic = 1;
