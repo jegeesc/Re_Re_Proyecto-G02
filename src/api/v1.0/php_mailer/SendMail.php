@@ -57,10 +57,7 @@ try {
     $mail->send();
 
     echo '<script>
-        alert("EL MENSAJE SE HA ENVIADO CON ÉXITO");
-        window.location.href='www.google.com';
-        window.history.go(-1);
-       
+        window.location.href = "/src/app/contacto_submit.html"
         </script>';
 
 } catch (Exception $e) {

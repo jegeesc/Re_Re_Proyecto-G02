@@ -236,7 +236,8 @@
             con nosotros?</h2>
 
 
-        <form action="src/api/v1.0/php_mailer/SendMail.php" class="form" method="post">
+        <form action="src/api/v1.0/php_mailer/sendMail.php" class="form" method="post">
+
 
             <label for="fname">Nombre</label>
             <input type="text" id="fname" name="firstname" required>
@@ -245,21 +246,14 @@
             <input type="text" id="lname" name="lastname" required>
 
             <label for="mail">Mail</label>
-            <input type="text" id="mail" name="mail" required>
+            <input type="email" id="mail" name="mail" required>
 
 
             <label for="subject">Motivo</label>
             <textarea id="subject" name="subject" style="height:200px"></textarea>
 
-
-<<<<<<< HEAD
             <label for="submit"></label>
-            <button type="submit" id="submit"    onclick="send();">Enviar</button>
-
-=======
-            <button type="submit" id="boton-enviar" onclick="enviar()">Enviar</button>
->>>>>>> develop
-            <!--<input type="submit" value="Enviar" id="boton-enviar">-->
+            <button type="submit" id="submit" onclick="send();">Enviar</button>
 
         </form>
     </div>
@@ -281,6 +275,5 @@
     </div>
 </footer>
 <script src="src/app/js/faqs.js"></script>
-<script src="src/app/js/formContacto.js"></script>
 </body>
 </html>
