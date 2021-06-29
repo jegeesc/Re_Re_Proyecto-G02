@@ -23,8 +23,7 @@ function registrarUsuario($id, $nombre, $apellidos, $email, $nSondas, $multiReci
 
 }
 //imp4
-`+p`4+
-08´0p`8v `
+
 $serverNombre = "localhost";
 $userNombre = "root";
 $password = "";
