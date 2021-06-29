@@ -1,0 +1,942 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+:root {
+    --fuentePrincipal: Montserrat;
+    --fuenteSecundaria: Yanone Kaffeesatz;
+    --colorPrincipal: #8343a1;
+    --colorSecundario: #FFFFFF;
+    --girar: skewY(10deg);
+    --girarTextos: skewY(-10deg);
+    --girarPortada: skewY(-5deg);
+    --centrar: 0 auto;
+    --textmayuscula: uppercase;
+    --fuenteContacto: 1.5rem;
+    --tamSubir: 50px;
+    --tamTitulos: 3.7rem;
+    --tamSubtitulos: 2.7rem;
+    --tamContacto: .5rem;
+}
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------FRONT PAGE--------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*Hacer que el scroll sea suave*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*Hacer que el contenido de la pagina no se estire demasiado*/
+body {
+    margin: var(--centrar);
+    background-color: var(--colorPrincipal);
+    padding: 0;
+    max-width: 1900px;
+}
+
+.encabezado {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 4rem;
+    background-color: var(--colorSecundario);
+    display: flex;
+    justify-content: space-between;
+}
+
+.LandingPage {
+    position: relative;
+    background-color: var(--colorPrincipal);
+    z-index: 100;
+    height: 100vh;
+}
+
+.divlogoHeader {
+    display: flex;
+    width: fit-content;
+}
+
+.contactoyLogin {
+    display: flex;
+    margin-right: .2rem;
+}
+
+.item {
+    margin: 0 1rem;
+    width: fit-content;
+    max-width: 4rem;
+    height: fit-content;
+}
+
+.item-contacto {
+    display: inline;
+    text-align: right;
+    margin: var(--centrar);
+    max-height: 4rem;
+}
+
+.logo {
+    right: 20px;
+    max-width: 7.9rem;
+    margin-top: 6px;
+}
+
+.cont {
+    max-width: 3rem;
+    margin-left: auto;
+    margin-top: 8px;
+}
+
+.login {
+    float: right;
+    width: 2rem;
+    margin-top: 15px;
+}
+
+.titulo {
+    font-family: var(--fuenteSecundaria);
+    font-size: 5rem;
+    color: var(--colorSecundario);
+    text-align: center;
+    margin: 30px;
+    padding: 7% 0 10% 0;
+    text-transform: var(--textmayuscula);
+}
+
+.subtitulo {
+    padding-top: 15%;
+    font-family: var(--fuentePrincipal);
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--colorSecundario);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.portadagira {
+    background-color: var(--colorSecundario);
+    transform: var(--girarPortada);
+    height: 33rem;
+    position: relative;
+}
+
+.nogira {
+    transform: skewY(5deg);
+    position: absolute;
+    width: 15rem;
+    top: 20%;
+    height: auto;
+    right: 0;
+    left: 0;
+    margin: var(--centrar);
+}
+
+.div_info {
+    text-align: center;
+    padding-top: 10%;
+}
+
+.info {
+    font-family: var(--fuentePrincipal);
+    font-size: 3rem;
+    border-radius: 55px;
+    padding: 40px;
+    color: var(--colorPrincipal);
+    background-color: whitesmoke;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.info:hover {
+    background-color: #ececec;
+    color: #d791fc;
+}
+
+#Servicios {
+    transition: 1s;
+}
+
+.centrar_flecha {
+    text-align: center;
+    padding-top: 6%;
+}
+
+.flecha_bajar {
+    left: 0;
+    right: 0;
+    width: 3rem;
+    height: auto;
+    animation: flecha-bajar-animacion 2s ease-in-out infinite;
+
+}
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/* --------------------SERVICIOS----------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+.sensores {
+    background-color: var(--colorSecundario);
+    position: relative;
+    transform: var(--girarTextos);
+    margin-top: 10%;
+    height: 45rem;
+    padding-top: .2rem;
+
+}
+
+.girar {
+    transform: var(--girar);
+}
+
+.ajustar {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 1rem auto;
+    padding: 0 .5rem;
+    flex: 1 1 0;
+}
+
+.imagenes {
+    width: 350px;
+    height: 350px;
+    border-radius: 15%;
+}
+
+.tituloservicios,
+.subtitulosensores {
+    font-family: var(--fuenteSecundaria);
+    text-transform: var(--textmayuscula);
+    padding-top: 1rem;
+    color: var(--colorSecundario);
+    text-align: center;
+}
+
+.tituloservicios {
+    font-size: var(--tamTitulos);
+    margin: 5% 0 0 0;
+}
+
+.subtitulosensores {
+    font-size: var(--tamSubtitulos);
+    margin: 50px;
+}
+
+.morado {
+    color: var(--colorPrincipal);
+}
+
+.textom,
+.textow {
+    font-size: 1.5rem;
+    margin: 2rem;
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+}
+
+.textow {
+    color: var(--colorSecundario);
+
+}
+
+.textom {
+    color: var(--colorPrincipal);
+    font-weight: bold;
+}
+
+.ajustar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/* --------------------FAQS----------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+
+.ng {
+    transform: skewY(5deg);
+}
+
+.tit-preg {
+    font-family: var(--fuentePrincipal);
+    font-size: var(--tamTitulos);
+    color: var(--colorSecundario);
+    text-align: center;
+    padding-top: 7%;
+    text-transform: var(--textmayuscula);
+}
+
+.pregunta {
+
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: #393939;
+    margin-left: 10%;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: start;
+    opacity: 100%;
+    transition: 1s;
+    height: 20%;
+    font-size: 20px;
+}
+
+.texto-pregunta {
+
+    display: flex;
+    font-family: var(--fuentePrincipal);
+    width: 70%;
+    font-size: 1.7rem;
+    font-weight: bold;
+    flex: 1 1 0;
+
+}
+
+.respuesta {
+    transform: skewY(5deg);
+    display: flex;
+    width: 90%;
+    height: 0;
+    opacity: 0;
+    transition: 1s;
+    text-align: center;
+    font-size: .5rem;
+
+}
+
+.texto-respuesta {
+    font-family: var(--fuentePrincipal);
+    font-size: 0;
+    font-weight: bold;
+    color: gray;
+}
+
+.preguntas {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 3% 3% 3%;
+    transform: skewY(-5deg);
+    height: 20rem;
+}
+
+.flecha-mas {
+    width: 100%;
+}
+
+.flecha-mas-cont {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    flex: 0.4 1 0;
+}
+
+.flecha-mas-cont:hover {
+    transition: 1s all;
+    transform: scale(1.3, 1.3);
+}
+
+
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/* --------------------CONTACTO----------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+input[type=text], select, textarea, #fname, #lname, #mail {
+    background: transparent;
+    width: 100%;
+    padding: 7px;
+}
+
+
+input[type=text], select, textarea {
+    margin-top: 6px;
+    resize: vertical;
+    display: flex;
+    box-sizing: border-box;
+    font-size: var(--tamContacto);
+    border-radius: 0;
+}
+
+
+button[type=submit] {
+    border-radius: 12px;
+    border: 3px solid #FFFFFF;
+    display: inline-block;
+    cursor: pointer;
+    color: var(--colorSecundario);
+    font-family: var(--fuentePrincipal);
+    font-size: var(--tamContacto);
+    padding: 3%;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #2f6627;
+    position: relative;
+    top: 1px;
+}
+
+
+#fname,
+#lname,
+#mail,
+#subject {
+    font-size: var(--fuenteContacto);
+    color: #c1c1c1;
+}
+
+#fname,
+#lname,
+#mail {
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #FFFFFF;
+    font-size: var(--fuenteContacto);
+}
+
+#fname:hover,
+#lname:hover,
+#mail:hover,
+#subject:hover{
+    border-bottom: 2px solid #c5c5c5;
+}
+
+#subject {
+    background: transparent;
+    border: 2px solid #FFFFFF;
+}
+
+#submit {
+    margin-top: 5%;
+    font-size: var(--fuenteContacto);
+    width: 20%;
+    justify-content: left;
+    background: transparent;
+}
+
+.submit:hover {
+    background: #a156c9;
+    box-shadow: gray 0 0 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1%;
+    background-color: var(--colorPrincipal);
+    padding: 5% 5% 10% 5%;
+    align-items: center;
+}
+
+.subtitulocont {
+    color: var(--colorSecundario);
+    font-family: var(--fuenteSecundaria);
+    font-size: var(--tamTitulos);
+    width: 90%;
+    background: none;
+    box-sizing: border-box;
+    margin: var(--centrar);
+    text-align: center;
+    margin-bottom: 5%;
+
+}
+
+form label {
+    color: var(--colorSecundario);
+    font-family: var(--fuentePrincipal);
+    font-weight: bolder;
+    font-size: var(--fuenteContacto);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: var(--centrar);
+    background: none;
+    padding: 10px 20px 20px 30px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    font-family: var(--fuentePrincipal);
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.submit {
+    top: 800px;
+    right: 900px;
+    font-size: var(--tamSubtitulos);
+}
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/* --------------------FOOTER----------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+#foter {
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+}
+
+.piePagina {
+    background-color: var(--colorSecundario);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.contenedorFooter {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35%;
+    margin-top: 1rem;
+    margin-left: 35% ;
+    margin-top:1rem;
+}
+
+.textoFooter {
+    font-size: 1.5rem;
+    flex: 1 1 0;
+    text-decoration: none;
+    color: darkgrey;
+}
+
+.copyright {
+    flex: 1 1 0;
+    text-decoration: none;
+    color: darkgrey;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+}
+
+#imagenFooter {
+    margin-top: 1rem;
+    padding: 1rem 1rem ;
+}
+
+#imagenFooter {
+    margin-top:1rem;
+    height: 5rem;
+    width: 10rem;
+}
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/* ----- BOTON SUBIR ----- */
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+#flechaSubir {
+    display: inline;
+    text-align: center;
+    position: fixed;
+    z-index: 10;
+    bottom: 125px;
+    right: 1%;
+    height: var(--tamSubir);
+    width: var(--tamSubir);
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 100%;
+    box-shadow: 0 0 10px #a7a7a7;
+    background-color: rgba(198, 116, 234, 0.4);
+}
+
+#imagenSubir {
+    position: relative;
+    left: 2px;
+    width: var(--tamSubir);
+    height: var(--tamSubir);
+}
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/* RESPONSIVE */
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*Movil*/
+@media (max-width: 700px ) {
+    /*-------------------FRONT PAGE----------------------*/
+    :root{
+        --tamSubir: 2.3rem;
+        --tamTitulos: 2.3rem;
+        --tamSubtitulos: 2rem;
+        --tamContacto: .4rem;
+    }
+    .LandingPage{
+        height: auto;
+    }
+    #sensorTemperatura{
+        margin: auto;
+    }
+    .subtitulosensores{
+        margin: 50px 0 0 0;
+    }
+    .encabezado {
+        height: 4rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contactoyLogin {
+        margin-left: 100px;
+    }
+
+    .logo {
+        min-width: 5rem;
+    }
+
+    .cont {
+        width: 30px;
+        margin-top: 20px;
+    }
+
+    .login {
+        width: 30px;
+        margin-top: 20px;
+    }
+
+    .titulo {
+        margin-top: 5rem;
+        font-size: 3.6rem;
+        padding: 1% 0 0 4%;
+    }
+
+    .subtitulo {
+        font-size: 1.5rem;
+        position: relative;
+        top: -2rem;
+    }
+
+    .portadagira {
+        height: 15rem;
+    }
+
+
+    .info {
+        font-size: 1rem;
+        border-radius: 25px;
+        position: relative;
+        top: -3rem;
+        padding: 1.5rem;
+        box-shadow: 0 0 20px grey;
+    }
+
+    .flecha_bajar {
+        position: relative;
+        top: -3rem;
+        max-width: 3rem;
+    }
+
+    /*-------------------FLECHA SUBIR----------------------*/
+    #flechaSubir {
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+
+    #imagenSubir {
+        left: -.2px;
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+    /*-------------------SERVICIOS----------------------*/
+    .imagenes {
+        width: 200px;
+        height: 200px;
+    }
+
+    .sensores {
+        height: 700px;
+    }
+
+    .textom {
+        font-size: 1rem;
+        margin: 1rem;
+    }
+
+    .textow {
+        font-size: 1rem;
+        margin: 1rem;
+    }
+
+    .ajustar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*-------------------FAQS----------------------*/
+
+    .texto-pregunta {
+        font-size: 2rem;
+    }
+
+
+    .flecha-mas {
+        max-width: 55%;
+    }
+
+    .texto-respuesta {
+        display: block;
+        width: 80%;
+        text-align: center;
+        align-self: auto;
+    }
+
+    .respuesta {
+        display: flex;
+        justify-content: center;
+        font-size: 0.5rem;
+    }
+
+    .subtitulocont {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .tit-preg {
+        margin: 2rem;
+        font-size: 2rem;
+        padding-bottom: 2%;
+    }
+
+    /*-------------------CONTACTO----------------------*/
+    .form {
+        max-width: 85%;
+        padding-bottom: 10%;
+    }
+    
+
+    }
+    form label {
+        font-size: 1.5rem;
+    }
+
+    #fname {
+        font-size: 1rem;
+    }
+
+    #lname {
+        font-size: 1rem;
+    }
+
+    #mail {
+        font-size: 1rem;
+    }
+
+    #subject {
+        font-size: 1rem;
+    }
+
+    .submit {
+        font-size: 1rem;
+        width: 40%;
+    }
+    .email{
+      font-size: 1rem;
+      width: 40%;
+    }
+
+    /*-------------------FOOTER----------------------*/
+    .piePagina {
+        height: 10%;
+    }
+    .contenedorFooter{
+        margin-left: 10%;
+    }
+}
+/*Ordenador*/
+@media (min-width: 1150px) {
+    /*-------------------FRONT PAGE----------------------*/
+    #img-portada {
+        width: 400px;
+        height: 250px;
+    }
+
+    .portadagira {
+        background-color: white;
+        transform: skewY(-5deg);
+        height: 20rem;
+        position: relative;
+        top: -3rem;
+
+    }
+
+    .titulo {
+        font-size: 7rem;
+    }
+
+    .nogira {
+        width: 25rem;
+    }
+
+    .subtitulo {
+        position: relative;
+        top: -12rem;
+        font-size: 2rem;
+    }
+
+    .info {
+        font-size: 2rem;
+        border-radius: 30px;
+        position: relative;
+        top: -8rem;
+        box-shadow: 1px 1px 20px grey;
+    }
+
+    .flecha_bajar {
+        position: relative;
+        top: -13rem;
+        width: 4rem;
+    }
+
+    /*-------------------SERVICIOS----------------------*/
+    .ajustar {
+        flex-direction: row;
+        align-items: center;
+    }
+    .subtitulosensores{
+        padding-top: 4rem;
+    }
+    /*-------------------FAQS----------------------*/
+    .preguntas {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .flecha-mas {
+        max-width: 25%;
+    }
+
+    /*-------------------FAQS----------------------*/
+    #imagenSubir {
+        position: relative;
+        left: 2px;
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+    .div_info {
+        position: absolute;
+        top: 60%;
+        right: 40%;
+    }
+
+    .centrar_flecha {
+        position: absolute;
+        top: 120%;
+        right: 47%;
+
+    }
+}
+
+/*Adaptar a pantallas grandes la LP*/
+
+@media (min-width: 1250px) {
+    /*-------------------FRONT PAGE----------------------*/
+    .titulo {
+        padding-bottom: 4%;
+    }
+
+    #img-portada {
+        position: absolute;
+        right: 50%;
+    }
+
+    #texto-reclamo {
+        position: absolute;
+        color: #8343a1;
+        top: 8%;
+        right: 05%;
+        width: 30%;
+    }
+
+    .div_info {
+        position: absolute;
+        top: 52%;
+        right: 40%;
+    }
+
+    .info {
+        box-shadow: 1px 1px 20px grey;
+    }
+
+    .centrar_flecha {
+        position: absolute;
+        top: 100%;
+        right: 47%;
+
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1100px) {
+    .titulo{
+        padding: 10% 0 2% 0;
+    }
+    .portadagira{
+        height: 15rem;
+    }
+    #img-portada{
+        width: 17rem;
+    }
+    #texto-reclamo{
+        font-size: 2rem;
+        padding-top: 10%;
+    }
+    .div_info{
+        padding: 40px;
+    }
+    .info{
+        font-size: 2rem;
+        padding: 30px;
+    }
+    .textow,
+    .textom{
+        font-size: 1.5rem;
+    }
+    .imagenes{
+        width: 250px;
+        height: 250px;
+    }
+    .flecha-mas{
+        width: 50%;
+    }
+    #submit{
+        width: 30%;
+    }
+}
+/*Animacion*/
+
+@keyframes flecha-bajar-animacion {
+    from{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
