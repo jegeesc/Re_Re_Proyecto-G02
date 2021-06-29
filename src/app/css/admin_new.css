@@ -135,3 +135,25 @@ Clientes
     font-size: 1.5rem;
     color: white;
 }
+
+
+@media (max-width: 700px){
+    .salir{
+        width: 20%;
+    }
+    .nombre_cliente{
+        font-size: 5rem;
+    }
+    .logo{
+        width: 65%;
+    }
+    .añadir{
+        width: 6rem;
+    }
+    .cliente{
+        margin: 2rem 1rem 2rem 1rem;
+    }
+    .texto{
+        font-size: 3rem;
+    }
+}
