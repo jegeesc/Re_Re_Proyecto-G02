@@ -1,0 +1,26 @@
+.selectorMapa {
+    width: 15rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    color: green;
+    border: 1px solid green ;
+}
+.select2{
+    margin-bottom: 1rem;
+
+}
+.select2-selection--single{
+    background-color: transparent;
+    color: green;
+    border: 1px solid green ;
+}
+.select2-search__field{
+    border: 1px solid green ;
+}.select2-results__option {
+    color: green;
+    font-weight: bold;
+    border: 2px solid green;
+     border-radius: 4px;
+     margin: 5px;
+ }
