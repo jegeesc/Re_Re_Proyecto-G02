@@ -380,7 +380,7 @@ button[type=submit] {
     border: 3px solid #FFFFFF;
     display: inline-block;
     cursor: pointer;
-    color: var(--colorSecundario);
+    background: transparent;
     font-family: var(--fuentePrincipal);
     font-size: var(--tamContacto);
     padding: 3%;
@@ -389,6 +389,7 @@ button[type=submit] {
     position: relative;
     top: 1px;
 }
+
 
 
 #fname,
@@ -424,19 +425,17 @@ button[type=submit] {
 #submit {
     margin-top: 5%;
     font-size: var(--fuenteContacto);
-    width: 20%;
+    width: 70%;
     justify-content: left;
     border-radius: 5px;
-    background-color: #c3c3c3;
-    color: #8343A1;
-    box-shadow: 0 0 10px 1px white;
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 0 10px grey;
     transition-duration: 1s;
-}#boton-enviar:hover {
-    background: #ffffff;
-    box-shadow: white 0 0 50px;
+
 }
 
-.submit:hover {
+#submit:hover {
     background: #a156c9;
     box-shadow: gray 0 0 50px;
 }
