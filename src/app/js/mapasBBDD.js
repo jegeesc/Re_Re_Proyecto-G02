@@ -40,6 +40,7 @@ function abrirMapa(){
                     animation: google.maps.Animation.DROP,
                     map: mapaGoogle
                 });//marker
+                document.getElementById("navMapa").innerHTML= document.getElementById("navMapa").innerHTML + '<option value="'+lab+'">'+'Campo' + lab+'</option>';
 
                 (function (centro, i) {
                     google.maps.event.addListener(centro, 'click', function () {
@@ -292,9 +293,9 @@ function vistaGeneral(){
 }
 
 function vistaCampo(ncampo){
-
     switch(ncampo){
         case 1:
+            console.log("se Ejectuta campo1")
             mapaGoogle.setZoom(15);
             mapaGoogle.panTo({lat: 39.00984, lng: -0.18315});
             vistaG.style.cssText="background-color: #ffffff;\n" +
@@ -302,38 +303,47 @@ function vistaCampo(ncampo){
                 "    padding: .5rem .5rem;\n" +
                 "    box-shadow: 0 0 7px #676767;";
             campo1.style.cssText="background-color: #ffffff;\n" +
-            "    color: green;\n" +
-            "    padding: .5rem 2rem;\n" +
-            "    box-shadow: 0 0 7px #676767;";
+                "    color: green;\n" +
+                "    padding: .5rem 2rem;\n" +
+                "    box-shadow: 0 0 7px #676767;";
             campo2.style.cssText="background-color: #ffffff;\n" +
-            "    color: green;\n" +
-            "    padding: .5rem .5rem;\n" +
-            "    box-shadow: 0 0 7px #676767;";
+                "    color: green;\n" +
+                "    padding: .5rem .5rem;\n" +
+                "    box-shadow: 0 0 7px #676767;";
             break;
 
-            case 2:
+        case 2:
+            console.log("se Ejectuta campo2")
+
             mapaGoogle.setZoom(15);
             mapaGoogle.panTo({lat: 39.03142, lng: -0.20039});
-                vistaG.style.cssText="background-color: #ffffff;\n" +
-                    "    color: green;\n" +
-                    "    padding: .5rem .5rem;\n" +
-                    "    box-shadow: 0 0 7px #676767;";
-                campo1.style.cssText="background-color: #ffffff;\n" +
-                    "    color: green;\n" +
-                    "    padding: .5rem .5rem;\n" +
-                    "    box-shadow: 0 0 7px #676767;";
-                campo2.style.cssText="background-color: #ffffff;\n" +
-                    "    color: green;\n" +
-                    "    padding: .5rem 2rem;\n" +
-                    "    box-shadow: 0 0 7px #676767;";
+            vistaG.style.cssText="background-color: #ffffff;\n" +
+                "    color: green;\n" +
+                "    padding: .5rem .5rem;\n" +
+                "    box-shadow: 0 0 7px #676767;";
+            campo1.style.cssText="background-color: #ffffff;\n" +
+                "    color: green;\n" +
+                "    padding: .5rem .5rem;\n" +
+                "    box-shadow: 0 0 7px #676767;";
+            campo2.style.cssText="background-color: #ffffff;\n" +
+                "    color: green;\n" +
+                "    padding: .5rem 2rem;\n" +
+                "    box-shadow: 0 0 7px #676767;";
             break;
     }
+
 }
 
 
 //main
+setTimeout(function (){
+    $(document).ready(function() {
+        $('.js-example-basic-single').select2();
+    });
+},300)
 
-function irA(){}
+function quieroIrAlCampo(ncampo){
+    vistaCampo(ncampo)
+    window.location="mapas.html";
+}//quieroiralcampo()
 
-
-//abrirMapa();

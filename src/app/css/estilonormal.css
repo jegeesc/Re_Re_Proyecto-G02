@@ -21,7 +21,6 @@ body {
 ul {
     list-style: none;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -61,6 +60,8 @@ header {
     font-family: var(--fuente);
     font-size: var(--titulo);
     font-weight: bolder;
+    position: relative;
+    right: 2rem;
 }
 .ulsubmenu {
     justify-content: space-around;
@@ -317,7 +318,7 @@ header {
 }
 
 .selectores-graficas {
-    margin: 0 auto 5%;
+    margin: 0 auto 1rem;
     max-width: 60%;
     display: flex;
     justify-content: space-around;
@@ -336,6 +337,47 @@ header {
     margin-left: 25%;
     transition: .5s;
     max-width: 50%;
+}
+
+/*          Selector de Medidas Máximas          */
+#formMedidasPersonalizadas{
+    max-width: 35%;
+    padding-top: 1rem;
+    margin: 0 auto 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 1px grey;
+    text-align: center;
+}
+.medidasPerso{
+    width: 20rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1rem;
+
+}.medidasPerso input{
+    margin-bottom: 1rem;
+    border: 1px solid green;
+    text-shadow: 0 0 2px 1px grey;
+ }.medidasPerso label{
+    font-weight: bold;
+ }#dropdownMenuButton1{
+    font-weight: bold;
+     }
+ .tituloFormMedidas{
+     color: green;
+     font-weight: bold;
+     font-size: 1.5rem;
+     font-family: var(--fuente);
+ }
+#enviarMedidasPerso{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+    border: 1px solid green;
+    background-color: white;
+    color: green;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------ESTO ES PARA QUE SEA RESPONSIVE--------------------------*/
@@ -458,7 +500,6 @@ header {
         margin: 0 auto;
         max-width: 60%;
         display: flex;
-        flex-direction: column;
     }
 
     .iconos {
@@ -476,11 +517,21 @@ header {
 }
 
 @media (max-width: 450px) {
-
+    .padreGrafica{
+        display: flex;
+        flex-direction: column;
+    }
     .nombre_parcela {
         font-size: 1.5rem;
     }
-
+    #labelSonda{
+        margin-left: 10rem;
+    }
+    .selectores-graficas{
+        flex-direction: column;
+        position: relative;
+        right: 1rem;
+    }
     .parcelas {
         max-width: 100%;
         height: 4.5rem;

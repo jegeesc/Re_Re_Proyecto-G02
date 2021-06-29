@@ -123,10 +123,11 @@
     padding: 0;
 
 }
-.elementoNavMapa button {
+.botonNavegacionMapas {
     text-decoration: none;
     flex: 1 1 0;
     text-transform: uppercase;
+    text-align: center;
     color: green;
     border: 2px solid green;
     border-radius: 10px;
@@ -135,8 +136,9 @@
     box-shadow: var(--sombraBotones);
     transition: .7s;
     margin: .75rem;
+    max-width: 12rem;
 }
-.elementoNavMapa button:hover{
+.botonNavegacionMapas:hover{
     background-color: #e2e2e2;
     color: green;
     padding: .5rem 1.5rem;

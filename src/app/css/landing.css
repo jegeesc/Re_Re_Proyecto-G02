@@ -426,7 +426,14 @@ button[type=submit] {
     font-size: var(--fuenteContacto);
     width: 20%;
     justify-content: left;
-    background: transparent;
+    border-radius: 5px;
+    background-color: #c3c3c3;
+    color: #8343A1;
+    box-shadow: 0 0 10px 1px white;
+    transition-duration: 1s;
+}#boton-enviar:hover {
+    background: #ffffff;
+    box-shadow: white 0 0 50px;
 }
 
 .submit:hover {
@@ -919,6 +926,8 @@ textarea {
     }
     #submit{
         width: 30%;
+        margin: 1rem auto;
+
     }
 }
 /*Animacion*/

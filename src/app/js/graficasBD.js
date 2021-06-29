@@ -92,7 +92,7 @@ function tomarmedidas(labe) {
                 ]
 
             };
-            if (medidas[0].temperatura<8||medidas[0].temperatura>28 || lumi>95 || medidas[0].humedad<10 ||medidas[0].humedad>75||medidas[0].salinidad>60){
+            /*if (medidas[0].temperatura>medidasObjeto.temperaturaPerso || lumi>medidasObjeto.luminosidadPerso || medidas[0].humedad<medidas ||medidas[0].humedad>75||medidas[0].salinidad>60){
                 document.getElementById("alertaPeligro").style.backgroundColor='rgba(255,0,0,0.6)'
                 document.getElementById("alertaPeligro").style.boxShadow='0 0 5px grey'
                 document.getElementById("alertaPeligro").textContent=" Los niveles del recinto están llegando a niveles extremos! "
@@ -101,7 +101,87 @@ function tomarmedidas(labe) {
                 document.getElementById("alertaPeligro").style.backgroundColor='white'
                 document.getElementById("alertaPeligro").textContent=""
                 document.getElementById("alertaPeligro").style.boxShadow='none'
-            }
+            }*/
+
+            document.querySelector("#formMedidasPersonalizadas").addEventListener("submit",function (event) {
+                event.preventDefault();
+                let dataForm = new FormData(event.target);
+                var medidasObjeto = {
+                    humedadPerso: dataForm.get("humedadPerso"),
+                    temperaturaPerso: dataForm.get("temperaturaPerso"),
+                    salinidadPerso: dataForm.get("salinidadPerso"),
+                    luminosidadPerso: dataForm.get("luminosidadPerso")
+                }
+                console.log(medidas[0].temperatura)
+                console.log(medidasObjeto.temperaturaPerso)
+                console.log(parseFloat(medidasObjeto.temperaturaPerso))
+               if(medidas[0].temperatura > parseFloat(medidasObjeto.temperaturaPerso)) {
+                   console.log(" Los niveles de temperatura del recinto están llegando a niveles extremos! ")
+                   document.getElementById("alertaPeligro").style.backgroundColor = 'rgba(255,0,0,0.6)'
+                   document.getElementById("alertaPeligro").style.boxShadow = '0 0 5px grey'
+                   document.getElementById("alertaPeligro").textContent = " Los niveles de temperatura del recinto están llegando a niveles extremos! "
+
+               }else if(lumi > parseFloat(medidasObjeto.luminosidadPerso)) {
+                   console.log(" Los niveles de luminosidad del recinto están llegando a niveles extremos! ")
+                   document.getElementById("alertaPeligro").style.backgroundColor = 'rgba(255,0,0,0.6)'
+                   document.getElementById("alertaPeligro").style.boxShadow = '0 0 5px grey'
+                   document.getElementById("alertaPeligro").textContent = " Los niveles de iluminación del recinto están llegando a niveles extremos! "
+
+               }else if(medidas[0].humedad > parseFloat(medidasObjeto.humedadPerso)) {
+                   console.log(" Los niveles de humedad del recinto están llegando a niveles extremos! ")
+                   document.getElementById("alertaPeligro").style.backgroundColor = 'rgba(255,0,0,0.6)'
+                   document.getElementById("alertaPeligro").style.boxShadow = '0 0 5px grey'
+                   document.getElementById("alertaPeligro").textContent = " Los niveles de humedad del recinto están llegando a niveles extremos! "
+
+               }else if(medidas[0].salinidad >parseFloat(medidasObjeto.salinidadPerso)) {
+                   console.log(" Los niveles de salinidad del recinto están llegando a niveles extremos! ")
+                   document.getElementById("alertaPeligro").style.backgroundColor = 'rgba(255,0,0,0.6)'
+                   document.getElementById("alertaPeligro").style.boxShadow = '0 0 5px grey'
+                   document.getElementById("alertaPeligro").textContent = " Los niveles de salinidad del recinto están llegando a niveles extremos! "
+               }else{
+                   document.getElementById("alertaPeligro").style.backgroundColor = 'rgba(0,255,0,0.5)'
+                   document.getElementById("alertaPeligro").style.boxShadow = '0 0 5px grey'
+                   document.getElementById("alertaPeligro").style.color = 'black'
+                   document.getElementById("alertaPeligro").textContent = " Los niveles del recinto están ESTABLES! "
+               }
+
+            /* default:
+                        document.getElementById("alertaPeligro").style.backgroundColor = 'rgba(0,255,0,0.5)'
+                        document.getElementById("alertaPeligro").style.boxShadow = '0 0 5px grey'
+                        document.getElementById("alertaPeligro").textContent = " Los niveles del recinto son ESTABLES "
+                        break;*/
+                document.querySelector("#dropdownMenuButton1").addEventListener("button",function (){
+                    if(medidas[0].temperatura > parseFloat(medidasObjeto.temperaturaPerso)) {
+                        console.log(" Los niveles de temperatura del recinto están llegando a niveles extremos! ")
+                        document.getElementById("alertaPeligro").style.backgroundColor = 'rgba(255,0,0,0.6)'
+                        document.getElementById("alertaPeligro").style.boxShadow = '0 0 5px grey'
+                        document.getElementById("alertaPeligro").textContent = " Los niveles de temperatura del recinto están llegando a niveles extremos! "
+
+                    }else if(lumi > parseFloat(medidasObjeto.luminosidadPerso)) {
+                        console.log(" Los niveles de luminosidad del recinto están llegando a niveles extremos! ")
+                        document.getElementById("alertaPeligro").style.backgroundColor = 'rgba(255,0,0,0.6)'
+                        document.getElementById("alertaPeligro").style.boxShadow = '0 0 5px grey'
+                        document.getElementById("alertaPeligro").textContent = " Los niveles de iluminación del recinto están llegando a niveles extremos! "
+
+                    }else if(medidas[0].humedad > parseFloat(medidasObjeto.humedadPerso)) {
+                        console.log(" Los niveles de humedad del recinto están llegando a niveles extremos! ")
+                        document.getElementById("alertaPeligro").style.backgroundColor = 'rgba(255,0,0,0.6)'
+                        document.getElementById("alertaPeligro").style.boxShadow = '0 0 5px grey'
+                        document.getElementById("alertaPeligro").textContent = " Los niveles de humedad del recinto están llegando a niveles extremos! "
+
+                    }else if(medidas[0].salinidad >parseFloat(medidasObjeto.salinidadPerso)) {
+                        console.log(" Los niveles de salinidad del recinto están llegando a niveles extremos! ")
+                        document.getElementById("alertaPeligro").style.backgroundColor = 'rgba(255,0,0,0.6)'
+                        document.getElementById("alertaPeligro").style.boxShadow = '0 0 5px grey'
+                        document.getElementById("alertaPeligro").textContent = " Los niveles de salinidad del recinto están llegando a niveles extremos! "
+                    }else{
+                        document.getElementById("alertaPeligro").style.backgroundColor = 'rgba(0,255,0,0.5)'
+                        document.getElementById("alertaPeligro").style.boxShadow = '0 0 5px grey'
+                        document.getElementById("alertaPeligro").style.color = 'black'
+                        document.getElementById("alertaPeligro").textContent = " Los niveles del recinto están ESTABLES! "
+                    }
+                })//querySelectorDropdown
+            })//querySelector
             //CREAR GRAFICA
             let ctx = document.getElementById('chart');
             console.log('Se crea el ctx')

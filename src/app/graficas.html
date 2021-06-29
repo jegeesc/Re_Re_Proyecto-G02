@@ -8,6 +8,7 @@
     shrink-to-fit=yes, initial-scale=1, user-scalable=no">
 
     <link rel="stylesheet" href="css/estilonormal.css">
+    <link rel="stylesheet" href="css/usuario_mapa.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"
             integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg=="
@@ -26,16 +27,6 @@
             <h1 class="nombre" id="nombreUsuario"></h1>
         </div>
         <!-- Comienza el submenu -->
-        <nav class="submenu">
-            <ul class="ulsubmenu">
-                <div class="submenu_item">
-                    <li><a class="enlace" href="sondas.html">PARCELAS</a></li>
-                </div>
-                <div class="submenu_item">
-                    <li><a class="enlace" href="mapas.html">MAPAS</a></li>
-                </div>
-            </ul>
-        </nav>
         <!-- Acaba el submenu -->
         <div class="cerrar_sesión">
             <a href="../../index.html"><img src="images/salir.png" alt="Cerrar Sesión" class="salir"></a>
@@ -47,6 +38,8 @@
         <div class="padreGrafica">
         <!--    GRÁFICA         -->
         <h2 id="labelSonda"></h2>
+            <a class="botonNavegacionMapas" style="position: relative;left:5rem" href="mapas.html">VOLVER AL MAPA</a>
+
             <div id="alertaPeligro"></div>
 
             <div class="chart-container" id="ir_grafica">
@@ -122,7 +115,7 @@
                     <button class="btn btn-secondary dropdown-toggle selector" type="button"
                             id="dropdownMenuButton1"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                        Cambiar tipo
+                        Cambiar Sonda
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <li><a class="dropdown-item" href="#chart" onclick="tomarmedidas(1)">Sonda 1</a>
@@ -144,7 +137,24 @@
 
         </div>
 
-
+            <form id="formMedidasPersonalizadas">
+                <h2 class="tituloFormMedidas">Personalizar Medidas Máximas</h2>
+                <div class="form-group medidasPerso">
+                    <label for="humedadPer">Humedad máxima</label>
+                    <input type="text" class="form-control" id="humedadPer" name="humedadPerso"
+                           placeholder="Introducir Humedad máxima deseada">
+                    <label for="temperaturaPer">Temperatura máxima</label>
+                    <input type="text" class="form-control" id="temperaturaPer" name="temperaturaPerso"
+                           placeholder="Introducir Temperatura máxima deseada">
+                    <label for="salinidadPer">Salinidad Máxima</label>
+                    <input type="text" class="form-control" id="salinidadPer" name="salinidadPerso"
+                           placeholder="Introducir Salinidad máxima deseada">
+                    <label for="luminosidadPer">Salinidad Máxima</label>
+                    <input type="text" class="form-control" id="luminosidadPer" name="luminosidadPerso"
+                           placeholder="Introducir Luminosidad máxima deseada">
+                </div>
+                <button id="enviarMedidasPerso" type="submit" class="btn btn-primary">Establecer Niveles</button>
+            </form>
         </div>
         <!--   Hacer que la alerta desaparezca a los 10 segs    -->
         <script>
@@ -165,6 +175,7 @@
 
     <script src="js/sesion.js"></script>
     <script src="js/cerrarSesion.js"></script>
+    <script src="js/medidasPersonalizadas.js"></script>
     <script src="js/graficasBD.js"></script>
     <script src="js/funcionesGenerales.js"></script>
     <script src="js/mapasBBDD.js"></script>
