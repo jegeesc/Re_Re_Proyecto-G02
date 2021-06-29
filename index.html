@@ -8,10 +8,11 @@
 </head>
 
 <body>
+<div id="top"></div>
 <section class="LandingPage" id="inicio">
     <!----------------------------Encabezado-------------------------------------->
 
-    <header class="encabezado">
+    <header class="encabezado" id="encabezado_">
         <div class="divlogoHeader">
             <a class="item" href="index.html"><img class="logo" src="src/app/images/logoGTI.png" alt="Logo GTI"></a>
         </div>
@@ -25,7 +26,8 @@
     <!--  LANDING PAGE  -->
     <!------------------------------------------------------------------------------->
 
-    <h1 class="titulo">Líderes en control de precisión</h1>
+
+    <h1 class="titulo" id="titulo_principal">Líderes en control de precisión</h1>
     <div class="portadagira">
         <img class="nogira" src="src/app/images/portada.png" alt="portada" id="img-portada">
     </div>
@@ -81,9 +83,9 @@
             </span>
         </div>
     </section>
-    <!------------------------------------------------------------------------------->
+    <!---------------------------------FLECHA SUBIR---------------------------------------------->
 
-    <a id="flechaSubir" href="#inicio"><img id="imagenSubir" src="src/app/images/flechaArriba.png" alt="Boton Subir"></a>
+    <a id="flechaSubir" onclick="subir()"><img id="imagenSubir" src="src/app/images/flechaArriba.png" alt="Boton Subir"></a>
 
     <!---SENSOR SALINIDAD--->
     <section class="contenedor-apartado">
@@ -274,5 +276,7 @@
     </div>
 </footer>
 <script src="src/app/js/faqs.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" type='text/javascript'></script>
+
 </body>
 </html>

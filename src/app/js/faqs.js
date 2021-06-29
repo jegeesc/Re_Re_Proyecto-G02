@@ -1,14 +1,20 @@
+//HACER QUE SUBA
+
+function subir(){
+    $('body, html').animate({
+        scrollTop:0
+    })
+}
+
 //JS DE LA SECCIÓN FAQS
 
 var clic = 1;
 
 
-
-
 //PREGUNTA 1
-function preg1show(){
+function preg1show() {
 
-    if(clic==1){
+    if (clic == 1) {
         document.getElementById("cont-preg").style.height = "100%";
         //preg1
         document.getElementById("respuesta1").style.opacity = "100%";
@@ -17,8 +23,6 @@ function preg1show(){
         document.getElementById("preg1").style.transform = "rotate(180deg)";
 
         document.getElementById("txres1").style.fontSize = "2.5em";
-
-
 
 
         //preg2
@@ -31,10 +35,9 @@ function preg1show(){
         document.getElementById("txres3").style.fontSize = "0%";
 
 
-
         clic = clic + 1;
 
-    } else{
+    } else {
         document.getElementById("cont-preg").style.height = "";
         //preg1
         document.getElementById("respuesta1").style.opacity = "0%";
@@ -74,9 +77,9 @@ function preg1show(){
 }
 
 //PREGUNTA 2
-function preg2show(){
+function preg2show() {
 
-    if(clic==1){
+    if (clic == 1) {
         document.getElementById("cont-preg").style.height = "100%";
         //preg2
         document.getElementById("respuesta2").style.opacity = "100%";
@@ -96,10 +99,9 @@ function preg2show(){
         document.getElementById("cont-preg3").style.height = "10%";
 
 
-
         clic = clic + 1;
 
-    } else{
+    } else {
         document.getElementById("cont-preg").style.height = "";
         //preg2
         document.getElementById("respuesta2").style.opacity = "0%";
@@ -136,9 +138,9 @@ function preg2show(){
 }
 
 //PREGUNTA 3
-function preg3show(){
+function preg3show() {
 
-    if(clic==1){
+    if (clic == 1) {
         document.getElementById("cont-preg").style.height = "130%";
         //preg3
         document.getElementById("respuesta3").style.opacity = "100%";
@@ -155,7 +157,7 @@ function preg3show(){
 
         clic = clic + 1;
 
-    } else{
+    } else {
         document.getElementById("cont-preg").style.height = "";
         //preg3
         document.getElementById("respuesta3").style.opacity = "0%";
